@@ -1,3 +1,3 @@
-module github.com/McShelby/hugo-theme-relearn
+module github.com/ouhft/hugo-theme-relearn
 
 go 1.18
