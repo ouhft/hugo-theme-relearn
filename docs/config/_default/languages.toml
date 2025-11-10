@@ -20,7 +20,7 @@
 [[en.menu.shortcuts]]
   pre = '<i class="fa-fw fab fa-github"></i> '
   name = 'GitHub Repo'
-  url = 'https://github.com/McShelby/hugo-theme-relearn'
+  url = 'https://github.com/ouhft/hugo-theme-relearn'
   weight = 10
 [[en.menu.shortcuts]]
   name = 'Showcases'
@@ -113,7 +113,7 @@
 [[pir.menu.shortcuts]]
   pre = '<i class="fa-fw fab fa-github"></i> '
   name = 'GitHub Repo'
-  url = 'https://github.com/McShelby/hugo-theme-relearn'
+  url = 'https://github.com/ouhft/hugo-theme-relearn'
   weight = 10
 [[pir.menu.shortcuts]]
   pre = '<i class="fa-fw fas fa-camera"></i> '

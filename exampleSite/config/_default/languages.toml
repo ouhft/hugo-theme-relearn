@@ -21,7 +21,7 @@
 [[en.menu.shortcuts]]
   pre = '<i class="fa-fw fab fa-github"></i> '
   name = 'GitHub Repo'
-  url = 'https://github.com/McShelby/hugo-theme-relearn'
+  url = 'https://github.com/ouhft/hugo-theme-relearn'
   weight = 20
 
 # this is ourrr way t' showcase th' multilang settings by
@@ -53,5 +53,5 @@
 [[pir.menu.shortcuts]]
   pre = '<i class="fa-fw fab fa-github"></i> '
   name = 'GitHub Repo'
-  url = 'https://github.com/McShelby/hugo-theme-relearn'
+  url = 'https://github.com/ouhft/hugo-theme-relearn'
   weight = 20

@@ -229,7 +229,7 @@ disableNextPrev = false
 # `${FilePath}` was appended at the end of the value. This can be overridden
 # in the pages frontmatter. This is useful if you want to give the opportunity
 # for people to create merge request for your content.
-editURL = 'https://github.com/McShelby/hugo-theme-relearn/edit/main/docs/content/${FilePath}'
+editURL = 'https://github.com/ouhft/hugo-theme-relearn/edit/main/docs/content/${FilePath}'
 
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # Search
