@@ -1,3 +1,4 @@
-          <a id="R-logo" class="R-default" href="{{ partial "permalink.gotmpl" (dict "to" .Site.Home) }}">
-            <div class="logo-title">{{ .Site.Params.linkTitle | default .Site.Title }}</div>
-          </a>
+<a id="R-logo" class="R-default" href="{{ partial "permalink.gotmpl" (dict "to" .Site.Home) }}">
+    <!-- <div class="logo-title">{{ .Site.Params.linkTitle | default .Site.Title }}</div> -->
+    <img src="{{"images/DES-Logo-1-Wide-White.svg" | relURL }}" alt="Digital Engineering Service Logo">
+</a>
