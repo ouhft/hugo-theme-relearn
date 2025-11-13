@@ -34,3 +34,15 @@
   "taxonomy" "categories"
   "icon" "layer-group"
 ) }}
+{{- partial "term-list.html" (dict
+  "page" .
+  "taxonomy" "tags"
+  "style" "note"
+  "icon" "tags"
+) }}
+{{- partial "term-list.html" (dict
+  "page" .
+  "taxonomy" "doc-type"
+  "style" "info"
+  "icon" "layer-group"
+) }}
