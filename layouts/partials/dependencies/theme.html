@@ -70,8 +70,6 @@
       {{- if $versionIndexUrl }}
       window.relearn.version_js_url={{ (printf "%s%s" $versionIndexUrl $assetBusting) | relURL }};
       {{- end }}
-      window.relearn.disableAnchorCopy={{ printf "%t" (eq .Site.Params.disableAnchorCopy true) | safeJS }};
-      window.relearn.disableAnchorScrolling={{ printf "%t" (eq .Site.Params.disableAnchorScrolling true) | safeJS }};
       window.relearn.disableInlineCopyToClipboard={{ printf "%t" (eq $disableInlineCopyToClipboard true) | safeJS }};
       window.relearn.enableBlockCodeWrap={{ printf "%t" (eq $wrap true) | safeJS }};
       {{ "// legal" | safeJS }}
@@ -81,12 +79,12 @@
       {{ "// translations" | safeJS }}
       {{ printf "window.T_Copy_to_clipboard = `%s`;" (T `Copy-to-clipboard`) | safeJS }}
       {{ printf "window.T_Copied_to_clipboard = `%s`;" (T `Copied-to-clipboard`) | safeJS }}
-      {{ printf "window.T_Copy_link_to_clipboard = `%s`;" (T `Copy-link-to-clipboard`) | safeJS }}
       {{ printf "window.T_Link_copied_to_clipboard = `%s`;" (T `Link-copied-to-clipboard`) | safeJS }}
       {{ printf "window.T_Reset_view = `%s`;" (T `Reset-view`) | safeJS }}
       {{ printf "window.T_View_reset = `%s`;" (T `View-reset`) | safeJS }}
       {{ printf "window.T_No_results_found = `%s`;" (T "No-results-found") | safeJS }}
       {{ printf "window.T_N_results_found = `%s`;" (T "N-results-found") | safeJS }}
+      {{ printf "window.T_Browser_unsupported_feature = `%s`;" (T "Browser-unsupported-feature") | safeJS }}
       {{ "// variant stuff" | safeJS }}
       window.relearn.themevariants = [ {{ delimit $quotedthemevariants ", " | safeJS }} ];
       window.relearn.customvariantname = "my-custom-variant";
@@ -118,9 +116,6 @@
   {{- end }}
 {{- else if eq $location "footer" }}
   {{- with $page }}
-    {{- with resources.Get "/js/clipboard/clipboard.min.js" }}
-    <script src="{{ .RelPermalink }}{{ $assetBusting }}" defer></script>
-    {{- end }}
     {{- with resources.Get "/js/perfect-scrollbar/perfect-scrollbar.min.js" }}
     <script src="{{ .RelPermalink }}{{ $assetBusting }}" defer></script>
     {{- end }}

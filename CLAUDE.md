@@ -6,7 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Hugo Relearn Theme is a documentation theme for Hugo, forked from the Learn theme. It's designed for creating documentation sites with features like multilingual support, dark mode, search, print support, and extensive shortcodes.
 
-**Minimum Hugo version required:** 0.141.0
+Minimum Hugo version required can be found in `theme.toml`.
 
 ## Development Commands
 
@@ -17,7 +17,7 @@ Development uses the `docs` for manual testing and documenting new features.
 ```bash
 # Run the dev server from exampleSite directory
 cd exampleSite
-hugo server
+hugo server -p 1414
 ```
 
 Development uses the `exampleSite` for manual testing and providing a simple showcase. The goal is to keep configuration minimal and be a first starting point for new users.
