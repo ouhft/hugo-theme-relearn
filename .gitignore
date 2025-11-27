@@ -10,3 +10,4 @@ public/*
 hugo*.exe
 *.xcf
 *.zip
+content/blog/*

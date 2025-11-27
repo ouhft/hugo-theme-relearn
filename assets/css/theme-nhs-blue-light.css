@@ -358,7 +358,7 @@
 
   /* Contrast default color */
   --nhs-orange-contrast: dark;
-   */
+
   --nhs-pale-grey-50: rgba(253, 253, 253, 1);
   --nhs-pale-grey-100: rgba(249, 249, 249, 1);
   --nhs-pale-grey-200: rgba(245, 245, 245, 1);
@@ -369,16 +369,16 @@
   --nhs-pale-grey-700: rgba(228, 228, 228, 1);
   --nhs-pale-grey-800: rgba(224, 224, 224, 1);
   --nhs-pale-grey-900: rgba(217, 217, 217, 1);
-  
+
   /* NHS Pale Grey - Accent Shades */
   --nhs-pale-grey-a100: rgba(255, 255, 255, 1);
   --nhs-pale-grey-a200: rgba(255, 255, 255, 1);
   --nhs-pale-grey-a400: rgba(255, 255, 255, 1);
   --nhs-pale-grey-a700: rgba(255, 255, 255, 1);
-  
+
   /* NHS Pale Grey - Primary (500 shade) */
   --nhs-pale-grey: rgba(235, 235, 235, 1);
-  
+
   /* Contrast default color */
   --nhs-pale-grey-contrast: dark;
 
@@ -393,16 +393,16 @@
   --nhs-pink-700: rgba(157, 27, 96, 1);
   --nhs-pink-800: rgba(148, 22, 86, 1);
   --nhs-pink-900: rgba(132, 13, 67, 1);
-  
+
   /* NHS Pink - Accent Shades */
   --nhs-pink-a100: rgba(255, 181, 211, 1);
   --nhs-pink-a200: rgba(255, 130, 181, 1);
   --nhs-pink-a400: rgba(255, 79, 151, 1);
   --nhs-pink-a700: rgba(255, 54, 136, 1);
-  
+
   /* NHS Pink - Primary (500 shade) */
   --nhs-pink: rgba(174, 37, 115, 1);
-  
+
   /* Contrast default color */
   --nhs-pink-contrast: light;
 
@@ -417,16 +417,16 @@
   --nhs-purple-700: rgba(75, 27, 116, 1);
   --nhs-purple-800: rgba(65, 22, 106, 1);
   --nhs-purple-900: rgba(47, 13, 87, 1);
-  
+
   /* NHS Purple - Accent Shades */
   --nhs-purple-a100: rgba(203, 181, 255, 1);
   --nhs-purple-a200: rgba(165, 130, 255, 1);
   --nhs-purple-a400: rgba(127, 79, 255, 1);
   --nhs-purple-a700: rgba(107, 54, 255, 1);
-  
+
   /* NHS Purple - Primary (500 shade) */
   --nhs-purple: rgba(94, 37, 135, 1);
-  
+
   /* Contrast default color */
   --nhs-purple-contrast: light;
 
@@ -441,16 +441,16 @@
   --nhs-red-700: rgba(208, 31, 20, 1);
   --nhs-red-800: rgba(203, 25, 17, 1);
   --nhs-red-900: rgba(194, 15, 9, 1);
-  
+
   /* NHS Red - Accent Shades */
   --nhs-red-a100: rgba(255, 237, 237, 1);
   --nhs-red-a200: rgba(255, 187, 186, 1);
   --nhs-red-a400: rgba(255, 137, 135, 1);
   --nhs-red-a700: rgba(255, 112, 110, 1);
-  
+
   /* NHS Red - Primary (500 shade) */
   --nhs-red: rgba(218, 41, 28, 1);
-  
+
   /* Contrast default color */
   --nhs-red-contrast: light;
 
@@ -465,22 +465,22 @@
   --nhs-warm-yellow-700: rgba(255, 168, 20, 1);
   --nhs-warm-yellow-800: rgba(255, 160, 17, 1);
   --nhs-warm-yellow-900: rgba(255, 145, 9, 1);
-  
+
   /* NHS Warm Yellow - Accent Shades */
   --nhs-warm-yellow-a100: rgba(255, 255, 255, 1);
   --nhs-warm-yellow-a200: rgba(255, 250, 245, 1);
   --nhs-warm-yellow-a400: rgba(255, 225, 194, 1);
   --nhs-warm-yellow-a700: rgba(255, 213, 168, 1);
-  
+
   /* NHS Warm Yellow - Primary (500 shade) */
   --nhs-warm-yellow: rgba(255, 184, 28, 1);
-  
+
   /* Contrast default color */
   --nhs-warm-yellow-contrast: dark;
 
   /* NHS White - Primary (500 shade) */
   --nhs-white: rgba(255, 255, 255, 1);
-  
+
   /* Contrast default color */
   --nhs-white-contrast: dark;
 
@@ -495,16 +495,16 @@
   --nhs-yellow-700: rgba(249, 217, 0, 1);
   --nhs-yellow-800: rgba(248, 213, 0, 1);
   --nhs-yellow-900: rgba(246, 205, 0, 1);
-  
+
   /* NHS Yellow - Accent Shades */
   --nhs-yellow-a100: rgba(255, 255, 255, 1);
   --nhs-yellow-a200: rgba(255, 251, 234, 1);
   --nhs-yellow-a400: rgba(255, 241, 183, 1);
   --nhs-yellow-a700: rgba(255, 236, 157, 1);
-  
+
   /* NHS Yellow - Primary (500 shade) */
   --nhs-yellow: rgba(250, 225, 0, 1);
-  
+
   /* Contrast default color */
   --nhs-yellow-contrast: dark;
   /* ======================================= END NHS COLOURS ==================== */
@@ -528,8 +528,8 @@
   /* theme-nhs-blue-light */
   --PRIMARY-color: var(--nhs-blue); /* brand primary color */
   --PRIMARY-HOVER-color: var(--nhs-blue-300); /* brand primary hover color */
-  --SECONDARY-color: var(--nhs-pink); /* brand secondary color */
-  --SECONDARY-HOVER-color: var(--nhs-pink-300); /* brand secondary hover color */
+  --SECONDARY-color: var(--nhs-dark-pink); /* brand secondary color */
+  --SECONDARY-HOVER-color: var(--nhs-dark-pink-300); /* brand secondary hover color */
   --ACCENT-color: var(--nhs-warm-yellow); /* brand accent color, used for search highlights */
   --ACCENT-HOVER-color: var(--nhs-warm-yellow-300); /* brand accent hover color */
 
