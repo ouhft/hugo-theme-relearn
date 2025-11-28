@@ -19,8 +19,13 @@
   {{- with and (not site.Params.hideAuthorEmail) .Params.LastModifierEmail }}
     {{- $LastModifierEmail = . }}
   {{- end }}
-  {{- with and (not site.Params.hideAuthorDate) .Date }}
-    {{- $Date = . | time.Format $dateFormat }}
+  {{- /* Use page date if available, otherwise use current time */}}
+  {{- if not site.Params.hideAuthorDate }}
+    {{- if .Date }}
+      {{- $Date = .Date | time.Format $dateFormat }}
+    {{- else }}
+      {{- $Date = now | time.Format $dateFormat }}
+    {{- end }}
   {{- end }}
 {{- end }}
 Last Modified

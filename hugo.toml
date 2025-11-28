@@ -52,3 +52,10 @@
     name = 'Search'
   [params.relearn.dependencies.theme]
     name = 'Theme'
+
+[params.search]
+    adapter.identifier = 'pagefind'
+    # Keep the search index enabled but it won't be used
+    index.disable = false
+    # Keep the search page enabled
+    page.disable = false
