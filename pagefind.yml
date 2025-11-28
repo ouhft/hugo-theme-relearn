@@ -11,13 +11,6 @@ output_subdir: pagefind
 # Only index regular HTML files, exclude print versions
 glob: "**/*.html"
 
-# Exclude specific file patterns
-exclude_patterns:
-  - "**/*.print.html"
-  - "**/*.source.html"
-  - "**/print/**"
-  - "**/pagefind/**"
-
 # Exclude UI elements from indexing
 exclude_selectors:
   - nav

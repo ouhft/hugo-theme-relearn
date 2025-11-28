@@ -1,5 +1,6 @@
 
-<article class="home">
+{{- $outputFormat := .Store.Get "relearnOutputFormat" | default "html" }}
+<article class="home" {{- if eq $outputFormat "html" }}data-pagefind-body{{- end }}>
   <header class="headline">
     {{- partial "content-header.html" . }}
   </header>
