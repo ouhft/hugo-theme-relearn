@@ -23,11 +23,12 @@
     {{- $Date = . | time.Format $dateFormat }}
   {{- end }}
 {{- end }}
+Last Modified
 {{- if $LastModifierDisplayName }}
-              <i class='fa-fw fas fa-user'></i> {{ with $LastModifierEmail }}<a href="mailto:{{ . }}">{{ end }}{{ $LastModifierDisplayName }}{{ with $LastModifierEmail }}</a>{{ end }}
+              by <i class='fa-fw fas fa-user'></i> {{ with $LastModifierEmail }}<a href="mailto:{{ . }}">{{ end }}{{ $LastModifierDisplayName }}{{ with $LastModifierEmail }}</a>{{ end }}
 {{- end }}
 {{- with $Date }}
-              <i class='fa-fw fas fa-calendar'></i> {{ . }}
+              on <i class='fa-fw fas fa-calendar'></i> {{ . }}
 {{- end }}
 {{- partial "term-list.html" (dict
   "page" .
