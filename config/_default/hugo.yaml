@@ -1,0 +1,126 @@
+## title is the most relevant attribute to be overridden on each new build
+title: "[Localhost] My New Hugo Site"
+
+### Base Hugo settings
+baseURL: http://docs.des.ouh.nhs.uk/
+copyright: "Oxford University Hospitals NHS Foundation Trust"
+defaultoutputformat: html
+enableRobotsTXT: true
+enableGitInfo: true
+environment: development
+languageCode: en-gb
+
+### Root Hugo Configuration keys - https://gohugo.io/configuration/introduction/
+author:
+    name: DES Team
+    email: digital.engineering@ouh.nhs.uk
+# HTTPCache
+# build
+# caches
+# cascade
+# contentTypes
+# deployment
+# frontmatter
+# imaging
+imaging:
+    resampleFilter: MitchellNetravali
+# languages
+# markup
+# mediaTypes
+# menus
+menu:
+    shortcuts:
+        # - name: All Products
+        #   url: /products/
+        #   weight: 100
+        #   pre: '<i class="far fa-rectangle-list"></i> '
+        - name: Service Now
+          url: https://ouh.service-now.com/esc
+          weight: 200
+          pre: '<i class="fa-fw far fa-ticket"></i> '
+        - name: Azure Git Repo
+          url: https://dev.azure.com/ouh-des/_git/digital-engineering-service
+          weight: 300
+          pre: '<i class="fa-brands far fa-microsoft"></i> '
+        - pre: '<i class="fa-fw far fa-tags"></i> '
+          name: Tags
+          pageRef: /tags
+          weight: 400
+        - pre: '<i class="fa-fw far fa-layer-group"></i> '
+          name: Doc Types
+          pageRef: /doc-type
+          weight: 500
+# minify
+# module
+# outputFormats
+# outputs
+outputs:
+    _merge: deep
+    home:
+        - html
+        - rss
+        - source
+    page:
+        - html
+        - print
+        - source
+    section:
+        - html
+        - rss
+        - print
+        - source
+# page
+# pagination
+# params
+params:
+    externalLinkTarget: _blank
+    hideAuthorEmail: true
+    mermaidZoom: true
+    search:
+        adapter:
+            identifier: pagefind
+        index:
+            disable: false
+        page:
+            disable: false
+    showVisitedLinks: true
+    titleSeparator: '--'
+    themeVariant:
+        - auto:
+              - nhs-blue-light
+              - nhs-warm-yellow-dark
+          identifier: nhs-auto
+          name: NHS Auto
+        - identifier: nhs-blue-light
+          name: NHS Blue
+        - identifier: nhs-warm-yellow-dark
+          name: NHS Warm Yellow
+        - identifier: neon
+        - identifier: learn
+  
+# permalinks
+permalinks:
+    page:
+        /blog/: /:year/:month/:slug/
+# privacy
+privacy:
+    disqus:
+        disable: true
+    googleAnalytics:
+        disable: true
+    instagram:
+        disable: true
+    x:
+        disable: true
+# related
+# security
+# segments
+# server
+# services
+# sitemap
+# taxonomies
+taxonomies:
+    _merge: deep
+    tag: tags
+    diataxis: doc-type
+# uglyURLs
