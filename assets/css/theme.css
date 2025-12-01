@@ -187,20 +187,21 @@ a:focus {
   text-decoration: none;
 }
 
-#R-header-wrapper {
-  background-color: var(--INTERNAL-MENU-HEADER-BG-color);
+#R-header-wrapper > * {
+  padding-inline: 1rem;
+}
+#R-header-wrapper > search {
   color: var(--INTERNAL-MENU-SEARCH-color);
-  text-align: center;
-  padding: 1rem;
-  position: relative;
+  display: block;
+  margin-block: 0.5rem;
 }
-#R-header {
-  border-block-end: 1px solid transparent;
-  position: relative;
-  z-index: 1;
+
+#R-header-wrapper > search:not(:only-child) {
+  margin-bottom: 1rem;
 }
-#R-header a {
-  display: inline-block;
+
+#R-header-wrapper > search > form {
+  overflow: hidden;
 }
 
 .searchbox {
@@ -210,7 +211,6 @@ a:focus {
   border-style: solid;
   border-width: 1px;
   position: relative;
-  margin-top: 1rem;
 }
 
 .searchbox > :first-child {
@@ -1229,8 +1229,9 @@ tbody > tr:nth-child(even) > td {
   border-inline-start-color: var(--INTERNAL-MENU-TOPBAR-SEPARATOR-color);
   border-inline-start-style: solid;
   border-inline-start-width: 1px;
-  margin-inline-end: calc(var(--bpx1) * -0.75px);
-  inset-inline-start: calc(var(--bpx1) * -0.75px);
+  height: 2rem;
+  margin-inline-end: calc(var(--bpx1) * -3px);
+  inset-inline-start: calc(var(--bpx1) * -1px);
   position: relative;
   width: 1px;
 }
@@ -1347,12 +1348,10 @@ html[dir='rtl'] .topbar-button-next i {
     display: inline;
   }
   .mobile-support #R-body {
+    margin-inline-start: 0;
     min-width: 100%;
     max-width: 100%;
     width: 100%;
-  }
-  .mobile-support #R-body {
-    margin-inline-start: 0;
   }
   .mobile-support.sidebar-flyout {
     overflow: hidden;
@@ -2412,30 +2411,7 @@ html[dir='rtl'] #R-sidebar ul.collapsible-menu > li > input:checked + label > i.
   transform: rotate(90deg);
 }
 
-/* basic logo stuff
-
-a#R-logo {
-  color: var(--INTERNAL-MENU-HEADER-color);
-  font-variation-settings: var(--INTERNAL-MAIN-TITLES-H4-font-variation-settings);
-  font-weight: var(--INTERNAL-MAIN-TITLES-H4-font-weight);
-  font-family: var(--INTERNAL-MAIN-TITLES-H4-font);
-  letter-spacing: var(--INTERNAL-MAIN-TITLES-H4-letter-spacing);
-  text-transform: uppercase;
-  white-space: nowrap;
-}
-a#R-logo:hover {
-  color: var(--INTERNAL-MENU-HEADER-color);
-}
-
-/* those sizes are for the default logo */
-a#R-logo.R-default {
-  font-size: 1.875rem;
-}
-@media only all and (max-width: 59.999rem) {
-  a#R-logo.R-default {
-    font-size: 1.5625rem;
-  }
-}
+/* common logo */
 
 body a#R-logo,
 body a#R-logo:hover,
@@ -2454,6 +2430,52 @@ body #R-logo svg :not([fill='black']),
 body #R-logo svg :not([fill='#000000']) {
   fill: var(--INTERNAL-MENU-HEADER-color) !important;
 }
+
+/* default logo */
+
+#R-logo.R-default {
+  align-items: center;
+  column-gap: 0.4em;
+  display: flex;
+  flex-direction: row;
+  font-size: var(--INTERNAL-LOGO-font-size);
+  justify-content: center;
+  line-height: 1;
+  overflow: hidden;
+  margin-block: 0.5rem;
+  row-gap: 0.1em;
+  width: 100%;
+}
+#R-logo.R-default.direction-column {
+  flex-direction: column;
+}
+@media only all and (max-width: 59.999rem) {
+  #R-logo.R-default {
+    font-size: calc(var(--INTERNAL-LOGO-font-size) * 0.8);
+    margin-block: 0.9rem;
+  }
+}
+
+#R-logo.R-default > :not(.logo-title) {
+  /* the logo image which could be a img or svg and we can not give it a class */
+  flex-shrink: 0;
+  opacity: 0.945;
+  max-width: var(--INTERNAL-LOGO-width);
+}
+
+#R-logo.R-default .logo-title {
+  font-size: 2em;
+  flex-shrink: 1;
+  min-width: 0;
+  text-align: start;
+  white-space: pre;
+  word-break: break-word;
+}
+#R-logo.R-default.direction-column .logo-title {
+  text-align: center;
+}
+
+/* columnize content */
 
 .columnize {
   column-count: 2;
@@ -2619,7 +2641,25 @@ body #R-logo svg :not([fill='#000000']) {
   --VARIABLE-LINK-HOVER-color: var(--INTERNAL-TOPBAR-LINK-HOVER-color);
 }
 
-#R-header-topbar {
+#R-sidebar > #R-header-wrapper {
+  background-color: var(--INTERNAL-MENU-HEADER-BG-color);
+  color: var(--INTERNAL-MENU-HEADER-color);
+  text-align: center;
+}
+
+#R-sidebar > #R-header-wrapper :is(a, span) {
+  color: var(--INTERNAL-MENU-HEADER-color);
+}
+
+#R-sidebar > :has(~ #R-content-wrapper),
+#R-sidebar > #R-content-wrapper > * {
+  border-inline-end-color: var(--INTERNAL-MENU-BORDER-color);
+  border-inline-end-style: solid;
+  border-inline-end-width: 1px;
+}
+
+#R-sidebar > #R-header-topbar {
+  background-color: transparent;
   border-bottom-color: transparent;
   border-bottom-style: solid;
   border-bottom-width: 1px;
@@ -2627,6 +2667,7 @@ body #R-logo svg :not([fill='#000000']) {
   border-inline-end-style: solid;
   border-inline-end-width: 1px;
   height: 3rem;
+  pointer-events: none;
   position: absolute;
   top: 0;
   width: 100%;
@@ -2636,14 +2677,6 @@ body #R-logo svg :not([fill='#000000']) {
   .mobile-support #R-header-topbar {
     border-inline-end-color: var(--INTERNAL-MENU-BORDER-color);
   }
-}
-
-#R-header-wrapper,
-#R-homelinks,
-#R-content-wrapper > * {
-  border-inline-end-color: var(--INTERNAL-MENU-BORDER-color);
-  border-inline-end-style: solid;
-  border-inline-end-width: 1px;
 }
 
 #topics > ul {
@@ -2674,6 +2707,8 @@ body #R-logo svg :not([fill='#000000']) {
 
 #R-homelinks {
   background-color: var(--INTERNAL-MENU-HEADER-BORDER-color);
+  color: var(--INTERNAL-MENU-HOME-LINK-color);
+  overflow: hidden;
   padding: 0;
 }
 
@@ -2736,44 +2771,44 @@ article .R-taxonomy ul > li ~ li:before {
   content: ' | ';
 }
 
-body.notfound p {
-  text-align: center;
-}
-body.notfound #R-body {
+#R-body:has(article:first-of-type.notfound) {
   margin-inline-start: 0;
   max-width: 100%;
   min-width: 100%;
   width: 100%;
 }
-body.notfound h1 {
+article.notfound p {
+  text-align: center;
+}
+article.notfound h1 {
   color: var(--MAIN-TEXT-color);
   line-height: 1;
   font-size: 5rem;
   overflow: hidden;
 }
-body.notfound h1 span {
+article.notfound h1 span {
   font-size: 6.5rem;
   font-weight: 500;
 }
-body.notfound h1 i {
+article.notfound h1 i {
   font-size: 5rem;
   vertical-align: text-top;
 }
-body.notfound h2 {
+article.notfound h2 {
   color: var(--MAIN-TEXT-color);
   font-size: 2.5rem;
   font-weight: 500;
   padding: 0;
   text-align: center;
 }
-body.notfound #shrug svg,
-body.notfound #shrug svg * {
+article.notfound #shrug svg,
+article.notfound #shrug svg * {
   color: #000000;
   color: var(--MAIN-TEXT-color);
   fill: #000000 !important;
   fill: var(--MAIN-TEXT-color) !important;
 }
-body.notfound #shrug svg {
+article.notfound #shrug svg {
   transform: scaleX(-1);
   width: 15rem;
 }
