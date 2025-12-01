@@ -29,6 +29,9 @@ imaging:
 # languages
 # markup
 # mediaTypes
+mediaTypes:
+    text/javascript:
+      suffixes: [.js,.jsx,.ts,.tsx]
 # menus
 menu:
     _merge: deep
@@ -55,7 +58,27 @@ menu:
           weight: 500
 # minify
 # module
+module:
+    _merge: deep
+    hugoVersion: 
+        min: "0.141.0"
 # outputFormats
+outputFormats:
+    _merge: deep
+    print:
+        name: print
+        baseName: index.print
+        isHTML: true
+        mediatype: text/html
+        permalinkable: false
+        noUgly: true
+    source:
+        name: source
+        baseName: index.source
+        isHTML: false
+        mediatype: text/markdown
+        permalinkable: false
+        noUgly: true
 # outputs
 outputs:
     _merge: deep
@@ -79,6 +102,18 @@ params:
     externalLinkTarget: _blank
     hideAuthorEmail: true
     mermaidZoom: true
+    relearn:
+        dependencies:
+            math:
+                name: Math
+            mermaid:
+                name: Mermaid
+            openapi:
+                name: OpenAPI
+            search:
+                name: Search
+            theme:
+                name: Theme
     search:
         adapter:
             identifier: pagefind
