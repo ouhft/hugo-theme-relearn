@@ -12,6 +12,7 @@ languageCode: en-gb
 
 ### Root Hugo Configuration keys - https://gohugo.io/configuration/introduction/
 author:
+    _merge: deep
     name: DES Team
     email: digital.engineering@ouh.nhs.uk
 # HTTPCache
@@ -23,12 +24,14 @@ author:
 # frontmatter
 # imaging
 imaging:
+    _merge: deep
     resampleFilter: MitchellNetravali
 # languages
 # markup
 # mediaTypes
 # menus
 menu:
+    _merge: deep
     shortcuts:
         # - name: All Products
         #   url: /products/
@@ -100,10 +103,12 @@ params:
   
 # permalinks
 permalinks:
+    _merge: deep
     page:
         /blog/: /:year/:month/:slug/
 # privacy
 privacy:
+    _merge: shallow
     disqus:
         disable: true
     googleAnalytics:
@@ -120,7 +125,7 @@ privacy:
 # sitemap
 # taxonomies
 taxonomies:
-    _merge: deep
+    _merge: shallow
     tag: tags
     diataxis: doc-type
 # uglyURLs
