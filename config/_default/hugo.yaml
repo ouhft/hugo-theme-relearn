@@ -40,19 +40,19 @@ menu:
         - name: Service Now
           url: https://ouh.service-now.com/esc
           weight: 200
-          pre: '<i class="fa-fw far fa-ticket"></i> '
+          pre: '<i class="fa-fw fas fa-ticket"></i> '
         - name: Azure Git Repo
           url: https://dev.azure.com/ouh-des/_git/digital-engineering-service
           weight: 300
-          pre: '<i class="fa-brands far fa-microsoft"></i> '
-        - pre: '<i class="fa-fw far fa-tags"></i> '
-          name: Tags
+          pre: '<i class="fa-fw fa-brands fa-microsoft"></i> '
+        - name: Tags
           pageRef: /tags
           weight: 400
-        - pre: '<i class="fa-fw far fa-layer-group"></i> '
-          name: Doc Types
+          pre: '<i class="fa-fw fas fa-tags"></i> '
+        - name: Doc Types
           pageRef: /doc-type
           weight: 500
+          pre: '<i class="fa-fw fas fa-layer-group"></i> '
 # minify
 # module
 module:
