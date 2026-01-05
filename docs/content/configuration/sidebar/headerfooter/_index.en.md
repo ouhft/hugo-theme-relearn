@@ -1,18 +1,14 @@
 +++
 categories = ['howto']
 description = 'Configure the header and footer'
-options = ['disableLandingPageButton', 'landingPageName', 'linkTitle', 'showVisitedLinks']
+options = ['disableLandingPageButton', 'landingPageName', 'showVisitedLinks']
 title = 'Header & Footer'
 weight = 2
 +++
 
-## Title
+## Title & Logo
 
-{{% badge style="option" %}}Option{{% /badge %}} With the [default partials](configuration/branding/logo#change-the-logo) for the logo, The site title will also be used for the text at the top of the sidebar. If you want to show a different text in the sidebar, you can overwrite `linkTitle`.
-
-{{< multiconfig file=hugo section=params >}}
-linkTitle = 'Relearn'
-{{< /multiconfig >}}
+See the [title & logo configuration](configuration/branding/logo#change-the-menu-title) on how to set a title and a logo.
 
 ## Home Button Configuration
 

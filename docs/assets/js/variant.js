@@ -13,8 +13,36 @@ function ready(fn) {
 
 var variants = {
   variants: window.relearn.themevariants,
-  customvariantname: window.relearn.customvariantname,
   isstylesheetloaded: true,
+
+  getCustomVariant: function (customvariantbase) {
+    return window.relearn.customvariantprefix + customvariantbase;
+  },
+
+  getAllCustomVariants: function () {
+    var customVariants = [];
+    var prefix = window.relearn.absBaseUri + '/variantstylesheet-' + window.relearn.customvariantprefix;
+    for (var i = 0; i < window.localStorage.length; i++) {
+      var key = window.localStorage.key(i);
+      if (key && key.startsWith(prefix)) {
+        var variantName = key.substring((window.relearn.absBaseUri + '/variantstylesheet-').length);
+        customVariants.push(variantName);
+      }
+    }
+    return customVariants;
+  },
+
+  getCustomVariantStylesheet: function (customVariantName) {
+    return window.localStorage.getItem(window.relearn.absBaseUri + '/variantstylesheet-' + customVariantName) || '';
+  },
+
+  getCustomVariantBase: function (customvariant) {
+    // Derive source variant from custom variant name
+    if (customvariant && customvariant.startsWith(window.relearn.customvariantprefix)) {
+      return customvariant.substring(window.relearn.customvariantprefix.length);
+    }
+    return '';
+  },
 
   setup: function () {
     this.variantvariables = [];
@@ -29,21 +57,14 @@ var variants = {
       }
     }.bind(this);
     extractVariables(this.structure);
-    this.addCustomVariantStyles();
 
-    var customvariantstylesheet = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + '/customvariantstylesheet');
-    var customvariant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + '/customvariant');
-    if (!customvariantstylesheet || !customvariant) {
-      customvariantstylesheet = '';
-      window.relearn.removeItem(window.localStorage, window.relearn.absBaseUri + '/customvariantstylesheet');
-      customvariant = '';
-      window.relearn.removeItem(window.localStorage, window.relearn.absBaseUri + '/customvariant');
-    } else if (customvariant && !window.relearn.themevariants.includes(customvariant)) {
-      // this can only happen on initial load, if a previously selected variant is not available anymore
-      customvariant = window.relearn.themevariants[0];
-      window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + '/customvariant', customvariant);
-    }
-    this.updateCustomVariantStyles(customvariantstylesheet);
+    // Load all custom variants from localStorage
+    var customVariants = this.getAllCustomVariants();
+    customVariants.forEach((customvariant) => {
+      var stylesheet = this.getCustomVariantStylesheet(customvariant);
+      this.addCustomVariantStyles(customvariant);
+      this.updateCustomVariantStyles(customvariant, stylesheet);
+    });
 
     this.init();
     ready(this.init.bind(this));
@@ -52,64 +73,69 @@ var variants = {
   init: function (variant, old_path) {
     this.addCustomVariantOption();
     window.relearn.markVariant();
-    window.relearn.changeVariant(window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + '/variant'));
+    window.relearn.changeVariant(window.localStorage.getItem(window.relearn.absBaseUri + '/variant'));
   },
 
-  addCustomVariantOption: function () {
-    var customvariant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + '/customvariant');
-    if (!customvariant) {
-      return;
-    }
-    document.querySelectorAll('.R-variantswitcher select').forEach((select) => {
-      var option = select.options[`R-select-variant-${this.customvariantname}`];
-      if (!option) {
-        option = document.createElement('option');
-        option.id = `R-select-variant-${this.customvariantname}`;
-        option.value = this.customvariantname;
-        option.text = this.customvariantname.replace(/-/g, ' ').replace(/\w\S*/g, function (w) {
-          return w.replace(/^\w/g, function (c) {
-            return c.toUpperCase();
+  addCustomVariantOption: function (customvariant) {
+    var customVariants = customvariant ? [customvariant] : this.getAllCustomVariants();
+    customVariants.forEach((customvariant) => {
+      document.querySelectorAll('.R-variantswitcher select').forEach((select) => {
+        var option = select.options[`R-select-variant-${customvariant}`];
+        if (!option) {
+          option = document.createElement('option');
+          option.id = `R-select-variant-${customvariant}`;
+          option.value = customvariant;
+          option.text = customvariant.replace(/-/g, ' ').replace(/\w\S*/g, function (w) {
+            return w.replace(/^\w/g, function (c) {
+              return c.toUpperCase();
+            });
           });
-        });
-        select.appendChild(option);
-      }
+          select.appendChild(option);
+        }
+      });
     });
   },
 
-  removeCustomVariantOption: function () {
-    document.querySelectorAll(`.R-variantswitcher option[value="${this.customvariantname}"]`).forEach((option) => {
+  removeCustomVariantOption: function (customvariant) {
+    document.querySelectorAll(`.R-variantswitcher option[value="${customvariant}"]`).forEach((option) => {
       option.remove();
     });
   },
 
-  addCustomVariantStyles: function () {
+  addCustomVariantStyles: function (customvariant) {
     var head = document.querySelector('head');
     var style = document.createElement('style');
-    style.id = 'R-variant-styles-' + this.customvariantname;
+    style.id = 'R-variant-styles-' + customvariant;
     head.appendChild(style);
   },
 
-  updateCustomVariantStyles: function (stylesheet) {
-    stylesheet = ":root:not([data-r-output-format='print'])[data-r-theme-variant='" + this.customvariantname + "']  {" + '\n&' + stylesheet + '\n}';
-    var style = document.querySelector('#R-variant-styles-' + this.customvariantname);
+  updateCustomVariantStyles: function (customvariant, stylesheet) {
+    stylesheet = ":root:not([data-r-output-format='print'])[data-r-theme-variant='" + customvariant + "']  {" + '\n&' + stylesheet + '\n}';
+    var style = document.querySelector('#R-variant-styles-' + customvariant);
     if (style) {
       style.textContent = stylesheet;
     }
   },
 
   saveCustomVariant: function () {
-    var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + '/variant');
-    if (variant != this.customvariantname) {
-      window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + '/customvariant', variant);
+    var variant = window.localStorage.getItem(window.relearn.absBaseUri + '/variant') ?? '';
+    var customvariant = variant;
+    if (!variant.startsWith(window.relearn.customvariantprefix)) {
+      customvariant = this.getCustomVariant(variant);
     }
-    var stylesheet = this.generateStylesheet(this.customvariantname);
-    window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + '/variant', this.customvariantname);
-    window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + '/customvariantstylesheet', stylesheet);
-    this.updateCustomVariantStyles(stylesheet);
 
-    this.addCustomVariantOption();
+    var stylesheet = this.generateStylesheet(customvariant);
+    window.localStorage.setItem(window.relearn.absBaseUri + '/variant', customvariant);
+    window.localStorage.setItem(window.relearn.absBaseUri + '/variantstylesheet-' + customvariant, stylesheet);
+
+    if (!document.querySelector('#R-variant-styles-' + customvariant)) {
+      this.addCustomVariantStyles(customvariant);
+    }
+    this.updateCustomVariantStyles(customvariant, stylesheet);
+
+    this.addCustomVariantOption(customvariant);
     window.relearn.markVariant();
-    window.relearn.changeVariant(this.customvariantname);
+    window.relearn.changeVariant(customvariant);
   },
 
   normalizeColor: function (c) {
@@ -188,19 +214,19 @@ var variants = {
 
   generateStylesheet: function (variant) {
     var style = null;
-    if (variant != this.customvariantname) {
+    if (!variant.startsWith(window.relearn.customvariantprefix)) {
       style = this.findLoadedStylesheet('R-format-style', [':root:not([data-r-output-format="print"])[data-r-theme-variant="' + variant + '"]']);
       if (!style) {
-        alert('There is nothing to be generated as auto mode variants will be generated by Hugo');
+        alert('There is nothing to be generated as auto mode variants will be generated by Hugo.');
         return;
       }
     } else {
       style = this.findLoadedStylesheet('R-variant-styles-' + variant, [':root:not([data-r-output-format="print"])[data-r-theme-variant="' + variant + '"]']);
       if (!style) {
-        var customvariantbase = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + '/customvariant');
+        var customvariantbase = this.getCustomVariantBase(variant);
         style = this.findLoadedStylesheet('R-format-style', [':root:not([data-r-output-format="print"])[data-r-theme-variant="' + customvariantbase + '"]']);
         if (!style) {
-          alert('There is nothing to be generated as auto mode variants will be generated by Hugo');
+          alert('There is nothing to be generated as auto mode variants will be generated by Hugo.');
           return;
         }
       }
@@ -235,25 +261,29 @@ var variants = {
   // ------------------------------------------------------------------------
 
   changeColor: function (c) {
-    var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + '/variant');
-    var customvariantbase = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + '/customvariant');
-
-    if (customvariantbase && this.customvariantname != variant) {
-      alert('You already have changes based on the "' + customvariantbase + '" variant. Please proceed editing the custom variant, reset your changes or ignore this message.');
-      return;
+    var variant = window.localStorage.getItem(window.relearn.absBaseUri + '/variant') ?? '';
+    var customvariantbase = variant;
+    var customvariant = variant;
+    if (!variant.startsWith(window.relearn.customvariantprefix)) {
+      customvariant = this.getCustomVariant(customvariantbase);
+      if (this.getCustomVariantStylesheet(customvariant)) {
+        alert('You already have changes based on the "' + customvariantbase + '" variant. Please proceed editing the custom variant, reset your changes or ignore this message.');
+        return;
+      }
+    } else {
+      customvariantbase = this.getCustomVariantBase(customvariant);
     }
-    customvariantbase = customvariantbase ?? variant;
 
     var base_style = this.findLoadedStylesheet('R-format-style', [':root:not([data-r-output-format="print"])[data-r-theme-variant="' + customvariantbase + '"]']);
     if (!base_style) {
-      alert('An auto mode variant can not be changed. Please select its light/dark variant directly to make changes');
+      alert('An auto mode variant can not be changed. Please select its light/dark variant directly to make changes.');
       return;
     }
 
-    var custom_style = this.findLoadedStylesheet('R-variant-styles-' + this.customvariantname, [':root:not([data-r-output-format="print"])[data-r-theme-variant="' + this.customvariantname + '"]']);
+    var custom_style = this.findLoadedStylesheet('R-variant-styles-' + customvariant, [':root:not([data-r-output-format="print"])[data-r-theme-variant="' + customvariant + '"]']);
     if (!custom_style) {
       this.saveCustomVariant();
-      custom_style = this.findLoadedStylesheet('R-variant-styles-' + this.customvariantname, [':root:not([data-r-output-format="print"])[data-r-theme-variant="' + this.customvariantname + '"]']);
+      custom_style = this.findLoadedStylesheet('R-variant-styles-' + customvariant, [':root:not([data-r-output-format="print"])[data-r-theme-variant="' + customvariant + '"]']);
     }
 
     var e = this.findColor(c);
@@ -285,25 +315,56 @@ var variants = {
   },
 
   resetVariant: function () {
-    var customvariant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + '/customvariant');
-    if (customvariant && confirm('You have made changes to your custom variant. Are you sure you want to reset all changes?')) {
-      var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + '/variant');
-      if (variant != this.customvariantname) {
-        customvariant = variant;
-      }
-      window.relearn.removeItem(window.localStorage, window.relearn.absBaseUri + '/customvariant');
-      window.relearn.removeItem(window.localStorage, window.relearn.absBaseUri + '/customvariantstylesheet');
-      window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + '/variant', customvariant);
-      this.updateCustomVariantStyles('');
+    var customvariant = window.localStorage.getItem(window.relearn.absBaseUri + '/variant');
+    if (!customvariant.startsWith(window.relearn.customvariantprefix)) {
+      alert('There is nothing to be reset here as built-in variants can not be changed.');
+      return;
+    }
 
-      this.removeCustomVariantOption();
+    if (confirm('You have made changes to your custom variant "' + customvariant + '". Are you sure you want to reset all changes?')) {
+      window.localStorage.removeItem(window.relearn.absBaseUri + '/variantstylesheet-' + customvariant);
+      this.updateCustomVariantStyles(customvariant, '');
+      this.removeCustomVariantOption(customvariant);
+
+      var customvariantbase = this.getCustomVariantBase(customvariant);
+      if (!customvariantbase || !window.relearn.themevariants.includes(customvariantbase)) {
+        customvariantbase = window.relearn.themevariants[0];
+      }
+
+      window.localStorage.setItem(window.relearn.absBaseUri + '/variant', customvariantbase);
       window.relearn.markVariant();
-      window.relearn.changeVariant(customvariant);
+      window.relearn.changeVariant(customvariantbase);
+    }
+  },
+
+  resetAllVariants: function () {
+    var customVariants = this.getAllCustomVariants();
+    if (!customVariants.length) {
+      return;
+    }
+
+    var variantList = customVariants.map((v) => '"' + v + '"').join(', ');
+    if (confirm('Are you sure you want to reset all ' + customVariants.length + ' custom variant(s): ' + variantList + '?')) {
+      var customvariant = window.localStorage.getItem(window.relearn.absBaseUri + '/variant');
+      customVariants.forEach((customvariant) => {
+        window.localStorage.removeItem(window.relearn.absBaseUri + '/variantstylesheet-' + customvariant);
+        this.updateCustomVariantStyles(customvariant, '');
+        this.removeCustomVariantOption(customvariant);
+      });
+
+      var customvariantbase = this.getCustomVariantBase(customvariant);
+      if (!customvariantbase || !window.relearn.themevariants.includes(customvariantbase)) {
+        customvariantbase = window.relearn.themevariants[0];
+      }
+
+      window.localStorage.setItem(window.relearn.absBaseUri + '/variant', customvariantbase);
+      window.relearn.markVariant();
+      window.relearn.changeVariant(customvariantbase);
     }
   },
 
   getStylesheet: function () {
-    var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + '/variant');
+    var variant = window.localStorage.getItem(window.relearn.absBaseUri + '/variant');
     var style = this.generateStylesheet(variant);
     if (style) {
       console.log(style);
@@ -446,6 +507,22 @@ var variants = {
         title: 'brand colors',
         direction: 'LR',
         color: 'TOPBAR-BG-color',
+        children: [
+          {
+            id: 'logo',
+            title: 'logo formatting',
+            direction: 'LR',
+            color: 'TOPBAR-BG-color',
+            variables: [
+              { name: 'LOGO-font-size', default: '1em', tooltip: 'font-size of the text beside the logo' },
+              { name: 'LOGO-LINK-color', fallback: 'MENU-HEADER-color', tooltip: 'color of the logo SVG and text beside' },
+              { name: 'LOGO-LINK-HOVER-color', fallback: 'LOGO-LINK-color', tooltip: 'hovered color of the logo SVG and text beside' },
+              { name: 'LOGO-IMAGE-width', default: '4em', tooltip: 'width of the logo image' },
+              { name: 'LOGO-IMAGE-color', fallback: 'LOGO-LINK-color', tooltip: 'color of the logo SVG' },
+              { name: 'LOGO-IMAGE-HOVER-color', fallback: 'LOGO-LINK-HOVER-color', tooltip: 'hovered color of the logo SVG' },
+            ],
+          },
+        ],
         variables: [
           { name: 'PRIMARY-color', fallback: 'MENU-HEADER-BG-color', tooltip: 'brand primary color' },
           { name: 'PRIMARY-HOVER-color', fallback: 'MENU-HEADER-BORDER-color', tooltip: 'brand primary hover color' },
@@ -474,6 +551,7 @@ var variants = {
               { name: 'MENU-HEADER-BG-color', fallback: 'PRIMARY-color', tooltip: 'background color of menu header' },
               { name: 'MENU-HEADER-BORDER-color', fallback: 'MENU-HEADER-BG-color', tooltip: 'border color between menu header and menu' },
               { name: 'MENU-SEARCH-color', default: '#e0e0e0', tooltip: 'text and icon color of search box' },
+              { name: 'MENU-SEARCH-HOVER-color', fallback: 'MENU-SEARCH-color', tooltip: 'hovered icon color of search box' },
               { name: 'MENU-SEARCH-BG-color', default: '#323232', tooltip: 'background color of search box' },
               { name: 'MENU-SEARCH-BORDER-color', fallback: 'MENU-SEARCH-BG-color', tooltip: 'border color of search box' },
             ],
@@ -485,7 +563,7 @@ var variants = {
             color: 'MENU-HEADER-BORDER-color',
             variables: [
               { name: 'MENU-HOME-LINK-color', default: '#323232', tooltip: 'home button color if configured' },
-              { name: 'MENU-HOME-LINK-HOVER-color', default: '#808080', tooltip: 'hoverd home button color if configured' },
+              { name: 'MENU-HOME-LINK-HOVER-color', default: '#808080', tooltip: 'hovered home button color if configured' },
               { name: 'MENU-HOME-TOP-SEPARATOR-color', fallback: 'MENU-HOME-LINK-color', tooltip: 'separator color between menu search box and home menu' },
               { name: 'MENU-HOME-SEPARATOR-color', fallback: 'MENU-HOME-LINK-color', tooltip: 'separator color between home menus' },
               { name: 'MENU-HOME-BOTTOM-SEPARATOR-color', fallback: 'MENU-HEADER-BORDER-color', tooltip: 'separator color between home menu and menu' },
@@ -498,9 +576,9 @@ var variants = {
             color: 'MENU-SECTIONS-ACTIVE-BG-color',
             variables: [
               { name: 'MENU-SECTIONS-BG-color', default: '#282828', tooltip: 'background of the menu; this is NOT just a color value but can be a complete CSS background definition including gradients, etc.' },
-              { name: 'MENU-SECTIONS-ACTIVE-BG-color', default: 'rgba( 0, 0, 0, .166 )', tooltip: 'background color of the active menu section' },
+              { name: 'MENU-SECTIONS-ACTIVE-BG-color', default: 'rgba(0, 0, 0, .166)', tooltip: 'background color of the active menu section' },
               { name: 'MENU-SECTIONS-LINK-color', default: '#bababa', tooltip: 'link color of menu topics' },
-              { name: 'MENU-SECTIONS-LINK-HOVER-color', fallback: 'MENU-SECTIONS-LINK-color', tooltip: 'hoverd link color of menu topics' },
+              { name: 'MENU-SECTIONS-LINK-HOVER-color', fallback: 'MENU-SECTIONS-LINK-color', tooltip: 'hovered link color of menu topics' },
               { name: 'MENU-SECTION-ACTIVE-CATEGORY-color', default: '#444444', tooltip: 'text color of the displayed menu topic' },
               { name: 'MENU-SECTION-ACTIVE-CATEGORY-BG-color', fallback: 'MAIN-BG-color', tooltip: 'background color of the displayed menu topic' },
               { name: 'MENU-SECTION-ACTIVE-CATEGORY-BORDER-color', default: 'transparent', tooltip: 'border color between the displayed menu topic and the content' },
@@ -508,6 +586,11 @@ var variants = {
               { name: 'MENU-VISITED-color', fallback: 'SECONDARY-color', tooltip: 'icon color of visited menu topics if configured' },
             ],
           },
+        ],
+        variables: [
+          { name: 'MENU-S-width', default: '14.375rem', tooltip: 'menu width of the mobile layout' },
+          { name: 'MENU-M-width', default: '14.375rem', tooltip: 'menu width of the desktop layout for smaller screens' },
+          { name: 'MENU-L-width', default: '18.75rem', tooltip: 'menu width of the desktop layout' },
         ],
       },
       {
@@ -517,9 +600,9 @@ var variants = {
         color: 'TOPBAR-BG-color',
         variables: [
           { name: 'TOPBAR-LINK-color', fallback: 'MAIN-LINK-color', tooltip: 'link color of topbar' },
-          { name: 'TOPBAR-LINK-HOVER-color', fallback: 'MAIN-LINK-HOVER-color', tooltip: 'hoverd link color of topbar' },
+          { name: 'TOPBAR-LINK-HOVER-color', fallback: 'MAIN-LINK-HOVER-color', tooltip: 'hovered link color of topbar' },
           { name: 'TOPBAR-BUTTON-color', fallback: 'TOPBAR-LINK-color', tooltip: 'button color of topbar' },
-          { name: 'TOPBAR-BUTTON-HOVER-color', fallback: 'TOPBAR-LINK-HOVER-color', tooltip: 'hoverd button color of topbar' },
+          { name: 'TOPBAR-BUTTON-HOVER-color', fallback: 'TOPBAR-LINK-HOVER-color', tooltip: 'hovered button color of topbar' },
           { name: 'TOPBAR-BG-color', default: 'color-mix(in srgb, var(--INTERNAL-MAIN-BG-color), rgba(134, 134, 134, 0.133))', tooltip: 'background color of topbar' },
           { name: 'TOPBAR-TEXT-color', fallback: 'MAIN-TEXT-color', tooltip: 'text color of topbar' },
           { name: 'TOPBAR-SEPARATOR-color', default: 'color-mix(in srgb, var(--INTERNAL-TOPBAR-BG-color), rgba(134, 134, 134, 0.666))', tooltip: 'separator color of vertical lines topbar buttons' },
@@ -534,13 +617,14 @@ var variants = {
         color: 'MAIN-BG-color',
         variables: [
           { name: 'MAIN-LINK-color', fallback: 'SECONDARY-color', tooltip: 'link color of content' },
-          { name: 'MAIN-LINK-HOVER-color', fallback: 'SECONDARY-HOVER-color', tooltip: 'hoverd link color of content' },
+          { name: 'MAIN-LINK-HOVER-color', fallback: 'SECONDARY-HOVER-color', tooltip: 'hovered link color of content' },
           { name: 'MAIN-BUTTON-color', fallback: 'MAIN-LINK-color', tooltip: 'button color of content' },
-          { name: 'MAIN-BUTTON-HOVER-color', fallback: 'MAIN-LINK-HOVER-color', tooltip: 'hoverd button color of content' },
+          { name: 'MAIN-BUTTON-HOVER-color', fallback: 'MAIN-LINK-HOVER-color', tooltip: 'hovered button color of content' },
           { name: 'MAIN-BG-color', default: '#ffffff', tooltip: 'background color of content' },
           { name: 'TAG-BG-color', fallback: 'PRIMARY-color', tooltip: 'tag color' },
           { name: 'MAIN-TEXT-color', default: '#101010', tooltip: 'text color of content and titles' },
           { name: 'MAIN-font', default: '"Roboto Flex", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif', tooltip: 'text font of content and titles' },
+          { name: 'MAIN-MAX-width', default: '81.25rem', tooltip: 'maximum width of the content' },
         ],
         children: [
           {
@@ -576,17 +660,6 @@ var variants = {
             ],
             children: [
               {
-                id: 'inlinecode',
-                title: 'inline code',
-                direction: 'LR',
-                color: 'CODE-INLINE-BG-color',
-                variables: [
-                  { name: 'CODE-INLINE-color', default: '#5e5e5e', tooltip: 'text color of inline code' },
-                  { name: 'CODE-INLINE-BG-color', default: '#fffae9', tooltip: 'background color of inline code' },
-                  { name: 'CODE-INLINE-BORDER-color', default: '#fbf0cb', tooltip: 'border color of inline code' },
-                ],
-              },
-              {
                 id: 'blockcode',
                 title: 'code blocks',
                 direction: 'LR',
@@ -595,6 +668,17 @@ var variants = {
                   { name: 'CODE-BLOCK-color', default: '#000000', tooltip: 'fallback text color of block code; should be adjusted to your selected chroma style' },
                   { name: 'CODE-BLOCK-BG-color', default: '#f8f8f8', tooltip: 'fallback background color of block code; should be adjusted to your selected chroma style' },
                   { name: 'CODE-BLOCK-BORDER-color', fallback: 'CODE-BLOCK-BG-color', tooltip: 'border color of block code' },
+                ],
+              },
+              {
+                id: 'inlinecode',
+                title: 'inline code',
+                direction: 'LR',
+                color: 'CODE-INLINE-BG-color',
+                variables: [
+                  { name: 'CODE-INLINE-color', default: '#5e5e5e', tooltip: 'text color of inline code' },
+                  { name: 'CODE-INLINE-BG-color', default: '#fffae9', tooltip: 'background color of inline code' },
+                  { name: 'CODE-INLINE-BORDER-color', default: '#fbf0cb', tooltip: 'border color of inline code' },
                 ],
               },
             ],
@@ -617,34 +701,34 @@ var variants = {
             direction: 'LR',
             color: 'BOX-BG-color',
             variables: [
-              { name: 'BOX-CAPTION-color', default: 'rgba( 255, 255, 255, 1 )', tooltip: 'text color of colored box titles' },
-              { name: 'BOX-BG-color', default: 'rgba( 255, 255, 255, .833 )', tooltip: 'background color of colored boxes' },
+              { name: 'BOX-CAPTION-color', default: 'rgba(255, 255, 255, 1)', tooltip: 'text color of colored box titles' },
+              { name: 'BOX-BG-color', default: 'rgba(255, 255, 255, .833)', tooltip: 'background color of colored boxes' },
               { name: 'BOX-TEXT-color', fallback: 'MAIN-TEXT-color', tooltip: 'text color of colored box content' },
-              { name: 'BOX-BLUE-color', default: 'rgba( 48, 117, 229, 1 )', tooltip: 'background color of blue boxes' },
+              { name: 'BOX-BLUE-color', default: 'rgba(48, 117, 229, 1)', tooltip: 'background color of blue boxes' },
               { name: 'BOX-INFO-color', fallback: 'BOX-BLUE-color', tooltip: 'background color of info boxes' },
               { name: 'BOX-BLUE-TEXT-color', fallback: 'BOX-TEXT-color', tooltip: 'text color of blue boxes' },
               { name: 'BOX-INFO-TEXT-color', fallback: 'BOX-BLUE-TEXT-color', tooltip: 'text color of info boxes' },
-              { name: 'BOX-CYAN-color', default: 'rgba( 45, 190, 200, 1 )', tooltip: 'background color of cyan boxes' },
+              { name: 'BOX-CYAN-color', default: 'rgba(45, 190, 200, 1)', tooltip: 'background color of cyan boxes' },
               { name: 'BOX-IMPORTANT-color', fallback: 'BOX-CYAN-color', tooltip: 'background color of info boxes' },
               { name: 'BOX-CYAN-TEXT-color', fallback: 'BOX-TEXT-color', tooltip: 'text color of cyan boxes' },
               { name: 'BOX-IMPORTANT-TEXT-color', fallback: 'BOX-CYAN-TEXT-color', tooltip: 'text color of info boxes' },
-              { name: 'BOX-GREEN-color', default: 'rgba( 42, 178, 24, 1 )', tooltip: 'background color of green boxes' },
+              { name: 'BOX-GREEN-color', default: 'rgba(42, 178, 24, 1)', tooltip: 'background color of green boxes' },
               { name: 'BOX-TIP-color', fallback: 'BOX-GREEN-color', tooltip: 'background color of tip boxes' },
               { name: 'BOX-GREEN-TEXT-color', fallback: 'BOX-TEXT-color', tooltip: 'text color of green boxes' },
               { name: 'BOX-TIP-TEXT-color', fallback: 'BOX-GREEN-TEXT-color', tooltip: 'text color of tip boxes' },
-              { name: 'BOX-GREY-color', default: 'rgba( 128, 128, 128, 1 )', tooltip: 'background color of grey boxes' },
+              { name: 'BOX-GREY-color', default: 'rgba(128, 128, 128, 1)', tooltip: 'background color of grey boxes' },
               { name: 'BOX-NEUTRAL-color', fallback: 'BOX-GREY-color', tooltip: 'background color of neutral boxes' },
               { name: 'BOX-GREY-TEXT-color', fallback: 'BOX-TEXT-color', tooltip: 'text color of grey boxes' },
               { name: 'BOX-NEUTRAL-TEXT-color', fallback: 'BOX-GREY-TEXT-color', tooltip: 'text color of neutral boxes' },
-              { name: 'BOX-MAGENTA-color', default: 'rgba( 229, 50, 210, 1 )', tooltip: 'background color of magenta boxes' },
+              { name: 'BOX-MAGENTA-color', default: 'rgba(229, 50, 210, 1)', tooltip: 'background color of magenta boxes' },
               { name: 'BOX-CAUTION-color', fallback: 'BOX-MAGENTA-color', tooltip: 'background color of info boxes' },
               { name: 'BOX-MAGENTA-TEXT-color', fallback: 'BOX-TEXT-color', tooltip: 'text color of magenta boxes' },
               { name: 'BOX-CAUTION-TEXT-color', fallback: 'BOX-MAGENTA-TEXT-color', tooltip: 'text color of info boxes' },
-              { name: 'BOX-ORANGE-color', default: 'rgba( 237, 153, 9, 1 )', tooltip: 'background color of orange boxes' },
+              { name: 'BOX-ORANGE-color', default: 'rgba(237, 153, 9, 1)', tooltip: 'background color of orange boxes' },
               { name: 'BOX-NOTE-color', fallback: 'BOX-ORANGE-color', tooltip: 'background color of note boxes' },
               { name: 'BOX-ORANGE-TEXT-color', fallback: 'BOX-TEXT-color', tooltip: 'text color of orange boxes' },
               { name: 'BOX-NOTE-TEXT-color', fallback: 'BOX-ORANGE-TEXT-color', tooltip: 'text color of note boxes' },
-              { name: 'BOX-RED-color', default: 'rgba( 224, 62, 62, 1 )', tooltip: 'background color of red boxes' },
+              { name: 'BOX-RED-color', default: 'rgba(224, 62, 62, 1)', tooltip: 'background color of red boxes' },
               { name: 'BOX-WARNING-color', fallback: 'BOX-RED-color', tooltip: 'background color of warning boxes' },
               { name: 'BOX-RED-TEXT-color', fallback: 'BOX-TEXT-color', tooltip: 'text color of red boxes' },
               { name: 'BOX-WARNING-TEXT-color', fallback: 'BOX-RED-TEXT-color', tooltip: 'text color of warning boxes' },

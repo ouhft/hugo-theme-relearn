@@ -27,6 +27,7 @@ author.emailname = ''
 # protocol and twitter cards.
 # This can be overridden in the page's frontmatter.
 images = [ 'images/hero.png' ]
+
 ###############################################################################
 # Relearn Theme
 # These options are specific to the Relearn theme.
@@ -35,11 +36,25 @@ images = [ 'images/hero.png' ]
 # Branding
 # These options set your overall visual appearance.
 
-# The title to be used for links to the main page
+# The title to be used for links in the upper left corner
 # Default: not set
 # This name will be used for the link to the main page in the upper section
 # of the menu. If not set, `title` from the Hugo settings will be used.
-linkTitle = 'Relearn'
+# If the title is to long to fit on a single line it is automatically wrapped.
+# If you want manual control over the line breaks, you can insert newline characters.
+linkTitle = "Relearn"
+
+# The title logo to be used in the upper left corner
+# Default: not set
+# If the value is not set or empty, the theme searches for a global resource
+# `/images/logo.<TYPE>`. Setting the `src` sub-field will override the
+# default logo (see logo parameter). If `src` is set to string containing all
+# whitespace, no logo will be displayed for that variant regardless of the
+# default logo. A logo will only be printed if you haven't overwritten
+# layouts/partials/logo.html.
+# If you als print a `linkTitle` you can set the `direction` sub-field to
+# either `column` or `row` to arrange logo and title accordingly.
+logo = { src = '/images/logo.svg?inlinecontent', direction = 'row' }
 
 # Used color variants.
 # Default: 'auto'
@@ -51,6 +66,11 @@ linkTitle = 'Relearn'
 # The last form allows to set further options for each variant.
 # The `identifier` is mandatory. You can also set `name` which overrides the
 # value displayed in the variant selector.
+# Setting the `logo` field and setting the `src` sub-field will override the
+# default logo (see logo parameter). If `src` is set to string containing all
+# whitespace, no logo will be displayed for that variant regardless of the
+# default logo. A logo will only be printed if you haven't overwritten
+# layouts/partials/logo.html.
 # If the array has more than one entry, a variant selector
 # is shown in the lower part of the menu. The first entry in the array is the
 # default variant, used for first time visitors.
@@ -69,7 +89,7 @@ themeVariant = [
 	{ identifier = 'zen-dark'       },
 	{ identifier = 'zen-light'      },
 	{ identifier = 'retro-auto',    name = 'Retro Learn/Neon', auto = [ 'learn', 'neon' ] },
-	{ identifier = 'neon'           },
+	{ identifier = 'neon',          logo = { src = '/images/magic.gif' } },
 	{ identifier = 'learn'          },
 	{ identifier = 'blue'           },
 	{ identifier = 'green'          },
