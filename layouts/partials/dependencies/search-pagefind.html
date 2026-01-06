@@ -1,0 +1,27 @@
+{{- $page := .page }}
+{{- $location := .location }}
+{{- $assetBusting := partialCached "assetbusting.gotmpl" site.Home }}
+
+{{- if eq $location "header" }}
+  {{- /* Load Pagefind CSS */ -}}
+  {{- with resources.Get "/css/search-pagefind.css" }}
+    {{- $res := . }}
+    {{- if not hugo.IsServer }}
+      {{- $res = $res | minify }}
+    {{- end }}
+  <link href="{{ $res.RelPermalink }}{{ $assetBusting }}" rel="stylesheet">
+  {{- end }}
+
+  {{- /* Load our Pagefind adapter early so it's available */ -}}
+  {{- with resources.Get "/js/search-pagefind.js" }}
+    {{- $res := . }}
+    {{- if not hugo.IsServer }}
+      {{- $res = $res | minify }}
+    {{- end }}
+  <script src="{{ $res.RelPermalink }}{{ $assetBusting }}"></script>
+  {{- end }}
+  
+{{- else if eq $location "footer" }}
+  {{- /* Pagefind search is initialized via the adapter in search-pagefind.js */ -}}
+  {{- /* No additional scripts needed here */ -}}
+{{- end }}

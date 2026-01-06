@@ -75,13 +75,13 @@
       {{- partial "inline/children/cards" (dict "pages" .pages "count" 1 "depth" $depth "showHidden" $showHidden "withBreadcrumb" $withBreadcrumb "withDescription" $withDescription "withImage" $withImage "page" $page) }}
     {{- else }}
 {{ if .capital }}
-  {{- strings.Repeat $headingDepth "#" }} {{ .capital }}
+{{- strings.Repeat $headingDepth "#" }} {{ .capital }}
 {{- end }}
 
 {{ partial "inline/children/default" (dict "pages" .pages "count" 1 "depth" $depth "showHidden" $showHidden "withBreadcrumb" $withBreadcrumb "withDescription" $withDescription "type" $type "headingDepth" $headingDepth) }}
-{class="children children-type-{{$type}} children-sort-{{$sortTerm}}{{$classes}}"}
+{{/* {class="children children-type-{{$type}} children-sort-{{$sortTerm}}{{$classes}}"} */}}
 
-{{ end }}
+    {{- end }}
   {{- end }}
 {{- end }}
 

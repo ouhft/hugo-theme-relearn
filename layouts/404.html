@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+{{- $haikus := site.Data.haikus.notfound }}
+{{- $randomHaiku := index $haikus (mod now.Unix (len $haikus)) }}
 {{- .Store.Set "relearnOutputFormat" "html" }}
 <html id="R-html" lang="{{ .Page.Language.LanguageCode }}" dir="{{ .Page.Language.LanguageDirection | default (T "Reading-direction") | default "ltr" }}" itemscope itemtype="http://schema.org/Article" data-r-output-format="{{ with .Store.Get "relearnOutputFormat" }}{{ . }}{{ else }}html{{ end }}">
   <head>
@@ -12,6 +14,22 @@
     {{- partialCached "favicon.html" site.Home }}
     {{- partial "dependencies.html" (dict "page" . "location" "header") }}
     {{- partial "custom-header.html" . }}
+    <style>
+        .haiku-404 {
+            font-family: serif;
+            font-style: italic;
+            text-align: center;
+            font-size: x-large;
+            margin: 2em auto;
+            padding: 1.5em;
+            max-width: 400px;
+            line-height: 1.8;
+            border-left: 3px solid var(--MAIN-LINK-color);
+            border-right: 3px solid var(--MAIN-LINK-color);
+            background: var(--INTERNAL-BOX-BG-color);
+            border-radius: 4px;
+        }
+    </style>
   </head>
   <body class="mobile-support {{ with .Store.Get "relearnOutputFormat" }}{{ . }}{{ else }}html{{ end }}" data-origin="{{ partial "permalink.gotmpl" (dict "to" .) }}">
     <div id="R-body" class="default-animation">
@@ -21,7 +39,9 @@
             <h1 id="404"><span>4</span>{{ partial "shortcodes/icon.html" (dict "page" . "icon" "far fa-frown" )}}<span>4</span></h1>
             <h2 id="{{ T "title-404" | plainify | anchorize }}">{{ T "title-404" }}</h2>
             <p></p>
-            <p>{{ T "message-404" }}</p>
+            <div class="haiku-404">
+                {{ replace $randomHaiku "\n" "<br>" | safeHTML }}
+            </div>
             <p></p>
             <p><a href="{{ partial "permalink.gotmpl" (dict "to" site.Home) }}">{{ T "Go-to-homepage" }}</a></p>
             <p id="shrug">

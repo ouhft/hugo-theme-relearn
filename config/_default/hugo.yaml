@@ -1,0 +1,167 @@
+## title is the most relevant attribute to be overridden on each new build
+title: "[Localhost] My New Hugo Site"
+
+### Base Hugo settings
+baseURL: http://docs.des.ouh.nhs.uk/
+copyright: "Oxford University Hospitals NHS Foundation Trust"
+defaultoutputformat: html
+enableRobotsTXT: true
+enableGitInfo: true
+environment: development
+languageCode: en-gb
+
+### Root Hugo Configuration keys - https://gohugo.io/configuration/introduction/
+# HTTPCache
+# build
+# caches
+# cascade
+# contentTypes
+# deployment
+# frontmatter
+# imaging
+imaging:
+    resampleFilter: MitchellNetravali
+# languages
+# markup
+# mediaTypes
+mediaTypes:
+    text/javascript:
+      suffixes: [.js,.jsx,.ts,.tsx]
+# menus
+menu:
+    shortcuts:
+        # - name: All Products
+        #   url: /products/
+        #   weight: 100
+        #   pre: '<i class="far fa-rectangle-list"></i> '
+        - name: Service Now
+          url: https://ouh.service-now.com/esc
+          weight: 200
+          pre: '<i class="fa-fw fas fa-ticket"></i> '
+        - name: Azure Git Repo
+          url: https://dev.azure.com/ouh-des/_git/digital-engineering-service
+          weight: 300
+          pre: '<i class="fa-fw fa-brands fa-microsoft"></i> '
+        - name: Tags
+          pageRef: /tags
+          weight: 400
+          pre: '<i class="fa-fw fas fa-tags"></i> '
+        - name: Doc Types
+          pageRef: /doc-type
+          weight: 500
+          pre: '<i class="fa-fw fas fa-layer-group"></i> '
+# minify
+# module
+module:
+    hugoVersion: 
+        min: "0.154.0"
+# outputFormats
+outputFormats:
+    print:
+        name: print
+        baseName: index.print
+        isHTML: true
+        mediatype: text/html
+        permalinkable: false
+        noUgly: true
+    source:
+        name: source
+        baseName: index.source
+        isHTML: false
+        mediatype: text/markdown
+        permalinkable: false
+        noUgly: true
+# outputs
+outputs:
+    home:
+        - html
+        - rss
+        - source
+    page:
+        - html
+        - print
+        - source
+    section:
+        - html
+        - rss
+        - print
+        - source
+# page
+# pagination
+# params
+params:
+    author:
+        name: DES Team
+        email: digital.engineering@ouh.nhs.uk
+    externalLinkTarget: _blank
+    hideAuthorEmail: true
+    mermaidZoom: true
+    relearn:
+        dependencies:
+            math:
+                name: Math
+            mermaid:
+                name: Mermaid
+            openapi:
+                name: OpenAPI
+            search:
+                name: Search
+            theme:
+                name: Theme
+    search:
+        adapter:
+            identifier: pagefind
+        index:
+            disable: false
+        page:
+            disable: false
+    showVisitedLinks: true
+    titleSeparator: '--'
+    themeVariant:
+        - auto:
+              - nhs-light
+              - nhs-dark
+          identifier: nhs-auto
+          name: NHS Auto
+        - identifier: nhs-light
+          name: NHS Light
+          logoOUH:
+              src: /branding/ouh/OUHFT-White-Left-Logo.svg
+              alt: "Oxford University Hospitals NHS Foundation Trust (brandmark)"
+          logo:
+              src: /branding/des/logos/DES-Logo-1-Wide-White.svg
+              alt: "Digital Engineering Service (logo)"
+        - identifier: nhs-dark
+          name: NHS Dark
+          logoOUH:
+              src: /branding/ouh/OUHFT-Black-Left-Logo.svg
+              alt: "Oxford University Hospitals NHS Foundation Trust (brandmark)"
+          logo:
+              src: /branding/des/logos/DES-Logo-1-Wide-Black.svg
+              alt: "Digital Engineering Service (logo)"
+  
+# permalinks
+permalinks:
+    page:
+        /blog/: /blog/:year/:month/:slug/
+# privacy
+privacy:
+    disqus:
+        disable: true
+    googleAnalytics:
+        disable: true
+    instagram:
+        disable: true
+    x:
+        disable: true
+# related
+# security
+# segments
+# server
+# services
+# sitemap
+# taxonomies
+taxonomies:
+    tag: tags
+    diataxis: doc-type
+# uglyURLs

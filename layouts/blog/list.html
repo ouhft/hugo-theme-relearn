@@ -1,0 +1,118 @@
+{{- define "storeOutputFormat" }}
+	{{- .Store.Set "relearnOutputFormat" "html" }}
+{{- end }}
+
+{{- define "body" }}
+<article class="blog-list" data-pagefind-body >
+  <header class="headline">
+    {{- partial "content-header.html" . }}
+  </header>
+
+  {{ partial "heading-pre.html" . }}
+  {{ partial "heading.html" . }}
+  {{ partial "heading-post.html" . }}
+
+  {{- if .Content }}
+  <div class="blog-intro">
+    {{ .Content }}
+  </div>
+  {{- end }}
+
+  {{- $pages := slice }}
+  {{- range .Site.Pages }}
+    {{- if eq .Kind "page" }}
+      {{- if and (eq .Type "blog") (not .Params.hidden) }}
+        {{- $pages = $pages | append . }}
+      {{- end }}
+    {{- end }}
+  {{- end }}
+  {{- $pages = sort $pages ".Date" "desc" }}
+  {{- $paginator := .Paginate $pages }}
+
+  <div class="blog-posts">
+    {{- range $paginator.Pages }}
+    <article class="blog-post-summary">
+      <h2 class="blog-post-title">
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      </h2>
+      
+      <div class="blog-post-meta">
+        {{- with .Date }}
+        <span class="blog-post-date">
+          <i class="fa-fw fas fa-calendar"></i>
+          <time datetime="{{ .Format "2006-01-02" }}">{{ .Format "January 2, 2006" }}</time>
+        </span>
+        {{- end }}
+        
+        {{- with .Params.author }}
+        <span class="blog-post-author">
+          <i class="fa-fw fas fa-user"></i>
+          {{ . | markdownify | safeHTML }}
+        </span>
+        {{- end }}
+        
+        <span class="blog-post-reading-time">
+          <i class="fa-fw fas fa-clock"></i>
+          {{ .ReadingTime }} min read
+        </span>
+      </div>
+      
+      {{- with .Description }}
+      <div class="blog-post-description">
+        {{ . | markdownify | safeHTML }}
+      </div>
+      {{- end }}
+
+    {{- with .GetTerms "tags" }}
+    <div class="blog-post-tags">
+    <i class="fa-fw fas fa-tags"></i>
+    {{- range $index, $tag := . }}
+        {{- if $index }}, {{ end }}
+        <a href="{{ $tag.RelPermalink }}" class="blog-tag">{{ $tag.LinkTitle }}</a>
+    {{- end }}
+    </div>
+    {{- end }}
+      
+      <a href="{{ .RelPermalink }}" class="blog-post-read-more">
+        Read more <i class="fa-fw fas fa-arrow-right"></i>
+      </a>
+    </article>
+    {{- end }}
+  </div>
+
+  {{- if gt $paginator.TotalPages 1 }}
+  <nav class="blog-pagination" aria-label="Blog pagination">
+    <ul class="pagination">
+      {{- if $paginator.HasPrev }}
+      <li class="page-item">
+        <a class="page-link" href="{{ $paginator.Prev.URL }}" aria-label="Previous">
+          <i class="fa-fw fas fa-chevron-left"></i> Newer posts
+        </a>
+      </li>
+      {{- end }}
+      
+      {{- range $paginator.Pagers }}
+      <li class="page-item{{ if eq . $paginator }} active{{ end }}">
+        <a class="page-link" href="{{ .URL }}">{{ .PageNumber }}</a>
+      </li>
+      {{- end }}
+      
+      {{- if $paginator.HasNext }}
+      <li class="page-item">
+        <a class="page-link" href="{{ $paginator.Next.URL }}" aria-label="Next">
+          Older posts <i class="fa-fw fas fa-chevron-right"></i>
+        </a>
+      </li>
+      {{- end }}
+    </ul>
+  </nav>
+  {{- end }}
+
+  <footer class="footline">
+    {{- partial "content-footer.html" . }}
+  </footer>
+</article>
+{{- end }}
+{{- define "menu" }}
+	{{- partial "menu.html" . }}
+{{- end }}

@@ -28,11 +28,11 @@ features = [
 
 [module]
   [module.hugoVersion]
-    min = '0.141.0'
+    min = '0.154.0'
 
 [author]
-  name = 'Sören Weber'
-  homepage = 'https://github.com/McShelby'
+  name = 'Digital Engineering Service'
+  homepage = 'https://docs.des.ouh.nhs.uk'
 
 [original]
   author = 'Mathieu Cornic'

@@ -6,6 +6,7 @@
 **/node_modules
 docs/public*
 exampleSite/public*
+/public*
 hugo*.exe
 *.xcf
 *.zip

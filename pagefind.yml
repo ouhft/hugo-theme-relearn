@@ -1,0 +1,25 @@
+
+# Pagefind configuration for Hugo Relearn Theme
+# https://pagefind.app/docs/config-options/
+
+# The directory containing your built static site
+site: public
+
+# The directory to output the search bundle
+output_subdir: pagefind
+
+# Exclude UI elements from indexing
+exclude_selectors:
+  - nav
+  - "#R-sidebar"
+  - "#R-topbar"
+  - footer
+  - "#R-footer"
+  - .copy-to-clipboard-button
+  - "[aria-hidden='true']"
+  - .hidden
+
+# Keep HTML structure for better excerpts
+keep_index_url: true
+
+verbose: true

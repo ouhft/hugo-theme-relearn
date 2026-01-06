@@ -1,0 +1,583 @@
+:root {
+  /* ===================================== START NHS COLOURS ==================== */
+  /* NHS Aqua Blue - Standard Shades */
+  --nhs-aqua-blue-50: rgba(224, 245, 250, 1);
+  --nhs-aqua-blue-100: rgba(179, 230, 242, 1);
+  --nhs-aqua-blue-200: rgba(128, 213, 233, 1);
+  --nhs-aqua-blue-300: rgba(77, 196, 223, 1);
+  --nhs-aqua-blue-400: rgba(38, 184, 217, 1);
+  --nhs-aqua-blue-500: rgba(0, 173, 210, 1);
+  --nhs-aqua-blue-600: rgba(0, 165, 202, 1);
+  --nhs-aqua-blue-700: rgba(0, 155, 192, 1);
+  --nhs-aqua-blue-800: rgba(0, 146, 183, 1);
+  --nhs-aqua-blue-900: rgba(0, 130, 167, 1);
+
+  /* NHS Aqua Blue - Accent Shades */
+  --nhs-aqua-blue-a100: rgba(179, 242, 255, 1);
+  --nhs-aqua-blue-a200: rgba(128, 233, 255, 1);
+  --nhs-aqua-blue-a400: rgba(77, 223, 255, 1);
+  --nhs-aqua-blue-a700: rgba(51, 218, 255, 1);
+
+  /* NHS Aqua Blue - Primary (500 shade) */
+  --nhs-aqua-blue: rgba(0, 173, 210, 1);
+
+  /* Contrast default color */
+  --nhs-aqua-blue-contrast: dark;
+
+  /* NHS Aqua Green - Standard Shades */
+  --nhs-aqua-green-50: rgba(224, 243, 239, 1);
+  --nhs-aqua-green-100: rgba(179, 227, 218, 1);
+  --nhs-aqua-green-200: rgba(128, 209, 193, 1);
+  --nhs-aqua-green-300: rgba(77, 191, 168, 1);
+  --nhs-aqua-green-400: rgba(38, 178, 149, 1);
+  --nhs-aqua-green-500: rgba(0, 165, 129, 1);
+  --nhs-aqua-green-600: rgba(0, 157, 121, 1);
+  --nhs-aqua-green-700: rgba(0, 147, 111, 1);
+  --nhs-aqua-green-800: rgba(0, 138, 102, 1);
+  --nhs-aqua-green-900: rgba(0, 121, 85, 1);
+
+  /* NHS Aqua Green - Accent Shades */
+  --nhs-aqua-green-a100: rgba(128, 255, 218, 1);
+  --nhs-aqua-green-a200: rgba(77, 255, 195, 1);
+  --nhs-aqua-green-a400: rgba(26, 255, 172, 1);
+  --nhs-aqua-green-a700: rgba(0, 255, 162, 1);
+
+  /* NHS Aqua Green - Primary (500 shade) */
+  --nhs-aqua-green: rgba(0, 165, 129, 1);
+
+  /* Contrast default color */
+  --nhs-aqua-green-contrast: dark;
+
+  /* NHS Black - Standard Shades */
+  --nhs-black-50: rgba(229, 228, 228, 1);
+  --nhs-black-100: rgba(189, 188, 188, 1);
+  --nhs-black-200: rgba(145, 143, 144, 1);
+  --nhs-black-300: rgba(101, 98, 99, 1);
+  --nhs-black-400: rgba(68, 65, 65, 1);
+  --nhs-black-500: rgba(35, 31, 32, 1);
+  --nhs-black-600: rgba(31, 27, 28, 1);
+  --nhs-black-700: rgba(26, 23, 24, 1);
+  --nhs-black-800: rgba(21, 18, 19, 1);
+  --nhs-black-900: rgba(12, 10, 11, 1);
+
+  /* NHS Black - Accent Shades */
+  --nhs-black-a100: rgba(255, 82, 255, 1);
+  --nhs-black-a200: rgba(255, 31, 255, 1);
+  --nhs-black-a400: rgba(235, 0, 235, 1);
+  --nhs-black-a700: rgba(210, 0, 210, 1);
+
+  /* NHS Black - Primary (500 shade) */
+  --nhs-black: rgba(35, 31, 32, 1);
+
+  /* Contrast default color */
+  --nhs-black-contrast: light;
+
+  /* NHS Blue - Standard Shades */
+  --nhs-blue-50: rgba(224, 236, 246, 1);
+  --nhs-blue-100: rgba(179, 207, 234, 1);
+  --nhs-blue-200: rgba(128, 175, 220, 1);
+  --nhs-blue-300: rgba(77, 142, 205, 1);
+  --nhs-blue-400: rgba(38, 118, 195, 1);
+  --nhs-blue-500: rgba(0, 94, 184, 1);
+  --nhs-blue-600: rgba(0, 86, 177, 1);
+  --nhs-blue-700: rgba(0, 76, 168, 1);
+  --nhs-blue-800: rgba(0, 66, 160, 1);
+  --nhs-blue-900: rgba(0, 49, 145, 1);
+
+  /* NHS Blue - Accent Shades */
+  --nhs-blue-a100: rgba(189, 206, 255, 1);
+  --nhs-blue-a200: rgba(138, 168, 255, 1);
+  --nhs-blue-a400: rgba(87, 130, 255, 1);
+  --nhs-blue-a700: rgba(61, 111, 255, 1);
+
+  /* NHS Blue - Primary (500 shade) */
+  --nhs-blue: rgba(0, 94, 184, 1);
+
+  /* Contrast default color */
+  --nhs-blue-contrast: light;
+
+  /* NHS Bright Blue - Standard Shades */
+  --nhs-bright-blue-50: rgba(224, 238, 249, 1);
+  --nhs-bright-blue-100: rgba(179, 213, 240, 1);
+  --nhs-bright-blue-200: rgba(128, 185, 231, 1);
+  --nhs-bright-blue-300: rgba(77, 156, 221, 1);
+  --nhs-bright-blue-400: rgba(38, 135, 213, 1);
+  --nhs-bright-blue-500: rgba(0, 114, 206, 1);
+  --nhs-bright-blue-600: rgba(0, 106, 201, 1);
+  --nhs-bright-blue-700: rgba(0, 95, 194, 1);
+  --nhs-bright-blue-800: rgba(0, 85, 188, 1);
+  --nhs-bright-blue-900: rgba(0, 66, 176, 1);
+
+  /* NHS Bright Blue - Accent Shades */
+  --nhs-bright-blue-a100: rgba(218, 229, 255, 1);
+  --nhs-bright-blue-a200: rgba(167, 193, 255, 1);
+  --nhs-bright-blue-a400: rgba(116, 158, 255, 1);
+  --nhs-bright-blue-a700: rgba(90, 140, 255, 1);
+
+  /* NHS Bright Blue - Primary (500 shade) */
+  --nhs-bright-blue: rgba(0, 114, 206, 1);
+
+  /* Contrast default color */
+  --nhs-bright-blue-contrast: light;
+
+  /* NHS Dark Blue - Standard Shades */
+  --nhs-dark-blue-50: rgba(224, 230, 241, 1);
+  --nhs-dark-blue-100: rgba(179, 193, 219, 1);
+  --nhs-dark-blue-200: rgba(128, 152, 195, 1);
+  --nhs-dark-blue-300: rgba(77, 110, 171, 1);
+  --nhs-dark-blue-400: rgba(38, 79, 153, 1);
+  --nhs-dark-blue-500: rgba(0, 48, 135, 1);
+  --nhs-dark-blue-600: rgba(0, 43, 127, 1);
+  --nhs-dark-blue-700: rgba(0, 36, 116, 1);
+  --nhs-dark-blue-800: rgba(0, 30, 106, 1);
+  --nhs-dark-blue-900: rgba(0, 19, 87, 1);
+
+  /* NHS Dark Blue - Accent Shades */
+  --nhs-dark-blue-a100: rgba(137, 152, 255, 1);
+  --nhs-dark-blue-a200: rgba(86, 107, 255, 1);
+  --nhs-dark-blue-a400: rgba(35, 63, 255, 1);
+  --nhs-dark-blue-a700: rgba(9, 40, 255, 1);
+
+  /* NHS Dark Blue - Primary (500 shade) */
+  --nhs-dark-blue: rgba(0, 48, 135, 1);
+
+  /* Contrast default color */
+  --nhs-dark-blue-contrast: light;
+
+  /* NHS Dark Green - Standard Shades */
+  --nhs-dark-green-50: rgba(224, 237, 233, 1);
+  --nhs-dark-green-100: rgba(179, 209, 200, 1);
+  --nhs-dark-green-200: rgba(128, 179, 163, 1);
+  --nhs-dark-green-300: rgba(77, 149, 126, 1);
+  --nhs-dark-green-400: rgba(38, 126, 99, 1);
+  --nhs-dark-green-500: rgba(0, 103, 71, 1);
+  --nhs-dark-green-600: rgba(0, 95, 64, 1);
+  --nhs-dark-green-700: rgba(0, 84, 55, 1);
+  --nhs-dark-green-800: rgba(0, 74, 47, 1);
+  --nhs-dark-green-900: rgba(0, 57, 32, 1);
+
+  /* NHS Dark Green - Accent Shades */
+  --nhs-dark-green-a100: rgba(111, 255, 178, 1);
+  --nhs-dark-green-a200: rgba(60, 255, 151, 1);
+  --nhs-dark-green-a400: rgba(9, 255, 123, 1);
+  --nhs-dark-green-a700: rgba(0, 239, 111, 1);
+
+  /* NHS Dark Green - Primary (500 shade) */
+  --nhs-dark-green: rgba(0, 103, 71, 1);
+
+  /* Contrast default color */
+  --nhs-dark-green-contrast: light;
+
+  /* NHS Dark Grey - Standard Shades */
+  --nhs-dark-grey-50: rgba(232, 235, 236, 1);
+  --nhs-dark-grey-100: rgba(198, 204, 208, 1);
+  --nhs-dark-grey-200: rgba(161, 170, 177, 1);
+  --nhs-dark-grey-300: rgba(123, 136, 146, 1);
+  --nhs-dark-grey-400: rgba(94, 111, 122, 1);
+  --nhs-dark-grey-500: rgba(66, 85, 99, 1);
+  --nhs-dark-grey-600: rgba(60, 78, 91, 1);
+  --nhs-dark-grey-700: rgba(51, 68, 81, 1);
+  --nhs-dark-grey-800: rgba(43, 59, 71, 1);
+  --nhs-dark-grey-900: rgba(29, 42, 53, 1);
+
+  /* NHS Dark Grey - Accent Shades */
+  --nhs-dark-grey-a100: rgba(123, 192, 255, 1);
+  --nhs-dark-grey-a200: rgba(72, 168, 255, 1);
+  --nhs-dark-grey-a400: rgba(21, 144, 255, 1);
+  --nhs-dark-grey-a700: rgba(0, 131, 251, 1);
+
+  /* NHS Dark Grey - Primary (500 shade) */
+  --nhs-dark-grey: rgba(66, 85, 99, 1);
+
+  /* Contrast default color */
+  --nhs-dark-grey-contrast: light;
+
+  /* NHS Dark Pink - Standard Shades */
+  --nhs-dark-pink-50: rgba(238, 225, 232, 1);
+  --nhs-dark-pink-100: rgba(213, 185, 201, 1);
+  --nhs-dark-pink-200: rgba(185, 141, 166, 1);
+  --nhs-dark-pink-300: rgba(157, 97, 131, 1);
+  --nhs-dark-pink-400: rgba(136, 65, 106, 1);
+  --nhs-dark-pink-500: rgba(115, 32, 80, 1);
+  --nhs-dark-pink-600: rgba(107, 29, 74, 1);
+  --nhs-dark-pink-700: rgba(97, 24, 65, 1);
+  --nhs-dark-pink-800: rgba(88, 20, 57, 1);
+  --nhs-dark-pink-900: rgba(71, 12, 41, 1);
+
+  /* NHS Dark Pink - Accent Shades */
+  --nhs-dark-pink-a100: rgba(255, 128, 184, 1);
+  --nhs-dark-pink-a200: rgba(255, 77, 151, 1);
+  --nhs-dark-pink-a400: rgba(255, 26, 118, 1);
+  --nhs-dark-pink-a700: rgba(255, 0, 102, 1);
+
+  /* NHS Dark Pink - Primary (500 shade) */
+  --nhs-dark-pink: rgba(115, 32, 80, 1);
+
+  /* Contrast default color */
+  --nhs-dark-pink-contrast: light;
+
+  /* NHS Dark Red - Standard Shades */
+  --nhs-dark-red-50: rgba(241, 227, 231, 1);
+  --nhs-dark-red-100: rgba(220, 185, 195, 1);
+  --nhs-dark-red-200: rgba(197, 138, 156, 1);
+  --nhs-dark-red-300: rgba(173, 91, 116, 1);
+  --nhs-dark-red-400: rgba(156, 56, 86, 1);
+  --nhs-dark-red-500: rgba(138, 21, 56, 1);
+  --nhs-dark-red-600: rgba(130, 18, 50, 1);
+  --nhs-dark-red-700: rgba(119, 15, 43, 1);
+  --nhs-dark-red-800: rgba(109, 12, 36, 1);
+  --nhs-dark-red-900: rgba(90, 6, 23, 1);
+
+  /* NHS Dark Red - Accent Shades */
+  --nhs-dark-red-a100: rgba(255, 140, 157, 1);
+  --nhs-dark-red-a200: rgba(255, 89, 114, 1);
+  --nhs-dark-red-a400: rgba(255, 38, 71, 1);
+  --nhs-dark-red-a700: rgba(255, 13, 49, 1);
+
+  /* NHS Dark Red - Primary (500 shade) */
+  --nhs-dark-red: rgba(138, 21, 56, 1);
+
+  /* Contrast default color */
+  --nhs-dark-red-contrast: light;
+  /* NHS Green - Standard Shades */
+  --nhs-green-50: rgba(224, 242, 231, 1);
+  --nhs-green-100: rgba(179, 224, 196, 1);
+  --nhs-green-200: rgba(128, 203, 156, 1);
+  --nhs-green-300: rgba(77, 182, 116, 1);
+  --nhs-green-400: rgba(38, 166, 87, 1);
+  --nhs-green-500: rgba(0, 150, 57, 1);
+  --nhs-green-600: rgba(0, 142, 51, 1);
+  --nhs-green-700: rgba(0, 131, 44, 1);
+  --nhs-green-800: rgba(0, 121, 36, 1);
+  --nhs-green-900: rgba(0, 104, 23, 1);
+
+  /* NHS Green - Accent Shades */
+  --nhs-green-a100: rgba(151, 255, 165, 1);
+  --nhs-green-a200: rgba(100, 255, 121, 1);
+  --nhs-green-a400: rgba(49, 255, 77, 1);
+  --nhs-green-a700: rgba(24, 255, 55, 1);
+
+  /* NHS Green - Primary (500 shade) */
+  --nhs-green: rgba(0, 150, 57, 1);
+
+  /* Contrast default color */
+  --nhs-green-contrast: light;
+
+  /* NHS Light Blue - Standard Shades */
+  --nhs-light-blue-50: rgba(232, 246, 252, 1);
+  --nhs-light-blue-100: rgba(198, 233, 248, 1);
+  --nhs-light-blue-200: rgba(160, 219, 243, 1);
+  --nhs-light-blue-300: rgba(122, 204, 238, 1);
+  --nhs-light-blue-400: rgba(94, 193, 234, 1);
+  --nhs-light-blue-500: rgba(65, 182, 230, 1);
+  --nhs-light-blue-600: rgba(59, 175, 227, 1);
+  --nhs-light-blue-700: rgba(50, 166, 223, 1);
+  --nhs-light-blue-800: rgba(42, 158, 219, 1);
+  --nhs-light-blue-900: rgba(28, 142, 213, 1);
+
+  /* NHS Light Blue - Accent Shades */
+  --nhs-light-blue-a100: rgba(255, 255, 255, 1);
+  --nhs-light-blue-a200: rgba(215, 239, 255, 1);
+  --nhs-light-blue-a400: rgba(164, 218, 255, 1);
+  --nhs-light-blue-a700: rgba(139, 207, 255, 1);
+
+  /* NHS Light Blue - Primary (500 shade) */
+  --nhs-light-blue: rgba(65, 182, 230, 1);
+
+  /* Contrast default color */
+  --nhs-light-blue-contrast: dark;
+
+  /* NHS Light Green - Standard Shades */
+  --nhs-light-green-50: rgba(239, 247, 228, 1);
+  --nhs-light-green-100: rgba(215, 236, 188, 1);
+  --nhs-light-green-200: rgba(188, 223, 144, 1);
+  --nhs-light-green-300: rgba(161, 210, 99, 1);
+  --nhs-light-green-400: rgba(140, 200, 65, 1);
+  --nhs-light-green-500: rgba(120, 190, 32, 1);
+  --nhs-light-green-600: rgba(112, 184, 28, 1);
+  --nhs-light-green-700: rgba(101, 175, 24, 1);
+  --nhs-light-green-800: rgba(91, 167, 19, 1);
+  --nhs-light-green-900: rgba(72, 153, 11, 1);
+
+  /* NHS Light Green - Accent Shades */
+  --nhs-light-green-a100: rgba(221, 255, 200, 1);
+  --nhs-light-green-a200: rgba(189, 255, 149, 1);
+  --nhs-light-green-a400: rgba(157, 255, 98, 1);
+  --nhs-light-green-a700: rgba(142, 255, 72, 1);
+
+  /* NHS Light Green - Primary (500 shade) */
+  --nhs-light-green: rgba(120, 190, 32, 1);
+
+  /* Contrast default color */
+  --nhs-light-green-contrast: dark;
+
+  /* NHS Mid Grey - Standard Shades */
+  --nhs-mid-grey-50: rgba(239, 240, 242, 1);
+  --nhs-mid-grey-100: rgba(214, 219, 222, 1);
+  --nhs-mid-grey-200: rgba(187, 195, 201, 1);
+  --nhs-mid-grey-300: rgba(159, 170, 179, 1);
+  --nhs-mid-grey-400: rgba(139, 152, 162, 1);
+  --nhs-mid-grey-500: rgba(118, 134, 146, 1);
+  --nhs-mid-grey-600: rgba(110, 126, 138, 1);
+  --nhs-mid-grey-700: rgba(99, 115, 127, 1);
+  --nhs-mid-grey-800: rgba(89, 105, 117, 1);
+  --nhs-mid-grey-900: rgba(70, 86, 99, 1);
+
+  /* NHS Mid Grey - Accent Shades */
+  --nhs-mid-grey-a100: rgba(193, 227, 255, 1);
+  --nhs-mid-grey-a200: rgba(142, 204, 255, 1);
+  --nhs-mid-grey-a400: rgba(91, 181, 255, 1);
+  --nhs-mid-grey-a700: rgba(65, 170, 255, 1);
+
+  /* NHS Mid Grey - Primary (500 shade) */
+  --nhs-mid-grey: rgba(118, 134, 146, 1);
+
+  /* Contrast default color */
+  --nhs-mid-grey-contrast: dark;
+
+  /* NHS Orange - Standard Shades */
+  --nhs-orange-50: rgba(254, 239, 224, 1);
+  --nhs-orange-100: rgba(253, 216, 179, 1);
+  --nhs-orange-200: rgba(252, 190, 128, 1);
+  --nhs-orange-300: rgba(251, 163, 77, 1);
+  --nhs-orange-400: rgba(250, 144, 38, 1);
+  --nhs-orange-500: rgba(250, 125, 0, 1);
+  --nhs-orange-600: rgba(249, 118, 0, 1);
+  --nhs-orange-700: rgba(249, 109, 0, 1);
+  --nhs-orange-800: rgba(248, 101, 0, 1);
+  --nhs-orange-900: rgba(246, 85, 0, 1);
+
+  /* NHS Orange - Accent Shades */
+  --nhs-orange-a100: rgba(255, 255, 255, 1);
+  --nhs-orange-a200: rgba(255, 234, 221, 1);
+  --nhs-orange-a400: rgba(255, 197, 170, 1);
+  --nhs-orange-a700: rgba(255, 179, 144, 1);
+
+  /* NHS Orange - Primary (500 shade) */
+  --nhs-orange: rgba(250, 125, 0, 1);
+
+  /* Contrast default color */
+  --nhs-orange-contrast: dark;
+   */
+  --nhs-pale-grey-50: rgba(253, 253, 253, 1);
+  --nhs-pale-grey-100: rgba(249, 249, 249, 1);
+  --nhs-pale-grey-200: rgba(245, 245, 245, 1);
+  --nhs-pale-grey-300: rgba(241, 241, 241, 1);
+  --nhs-pale-grey-400: rgba(238, 238, 238, 1);
+  --nhs-pale-grey-500: rgba(235, 235, 235, 1);
+  --nhs-pale-grey-600: rgba(232, 232, 232, 1);
+  --nhs-pale-grey-700: rgba(228, 228, 228, 1);
+  --nhs-pale-grey-800: rgba(224, 224, 224, 1);
+  --nhs-pale-grey-900: rgba(217, 217, 217, 1);
+  
+  /* NHS Pale Grey - Accent Shades */
+  --nhs-pale-grey-a100: rgba(255, 255, 255, 1);
+  --nhs-pale-grey-a200: rgba(255, 255, 255, 1);
+  --nhs-pale-grey-a400: rgba(255, 255, 255, 1);
+  --nhs-pale-grey-a700: rgba(255, 255, 255, 1);
+  
+  /* NHS Pale Grey - Primary (500 shade) */
+  --nhs-pale-grey: rgba(235, 235, 235, 1);
+  
+  /* Contrast default color */
+  --nhs-pale-grey-contrast: dark;
+
+  /* NHS Pink - Standard Shades */
+  --nhs-pink-50: rgba(245, 229, 238, 1);
+  --nhs-pink-100: rgba(231, 190, 213, 1);
+  --nhs-pink-200: rgba(215, 146, 185, 1);
+  --nhs-pink-300: rgba(198, 102, 157, 1);
+  --nhs-pink-400: rgba(186, 70, 136, 1);
+  --nhs-pink-500: rgba(174, 37, 115, 1);
+  --nhs-pink-600: rgba(167, 33, 107, 1);
+  --nhs-pink-700: rgba(157, 27, 96, 1);
+  --nhs-pink-800: rgba(148, 22, 86, 1);
+  --nhs-pink-900: rgba(132, 13, 67, 1);
+  
+  /* NHS Pink - Accent Shades */
+  --nhs-pink-a100: rgba(255, 181, 211, 1);
+  --nhs-pink-a200: rgba(255, 130, 181, 1);
+  --nhs-pink-a400: rgba(255, 79, 151, 1);
+  --nhs-pink-a700: rgba(255, 54, 136, 1);
+  
+  /* NHS Pink - Primary (500 shade) */
+  --nhs-pink: rgba(174, 37, 115, 1);
+  
+  /* Contrast default color */
+  --nhs-pink-contrast: light;
+
+  /* NHS Purple - Standard Shades */
+  --nhs-purple-50: rgba(235, 229, 241, 1);
+  --nhs-purple-100: rgba(206, 190, 219, 1);
+  --nhs-purple-200: rgba(173, 146, 195, 1);
+  --nhs-purple-300: rgba(140, 102, 171, 1);
+  --nhs-purple-400: rgba(117, 70, 153, 1);
+  --nhs-purple-500: rgba(94, 37, 135, 1);
+  --nhs-purple-600: rgba(86, 33, 127, 1);
+  --nhs-purple-700: rgba(75, 27, 116, 1);
+  --nhs-purple-800: rgba(65, 22, 106, 1);
+  --nhs-purple-900: rgba(47, 13, 87, 1);
+  
+  /* NHS Purple - Accent Shades */
+  --nhs-purple-a100: rgba(203, 181, 255, 1);
+  --nhs-purple-a200: rgba(165, 130, 255, 1);
+  --nhs-purple-a400: rgba(127, 79, 255, 1);
+  --nhs-purple-a700: rgba(107, 54, 255, 1);
+  
+  /* NHS Purple - Primary (500 shade) */
+  --nhs-purple: rgba(94, 37, 135, 1);
+  
+  /* Contrast default color */
+  --nhs-purple-contrast: light;
+
+  /* NHS Red - Standard Shades */
+  --nhs-red-50: rgba(251, 229, 228, 1);
+  --nhs-red-100: rgba(244, 191, 187, 1);
+  --nhs-red-200: rgba(237, 148, 142, 1);
+  --nhs-red-300: rgba(229, 105, 96, 1);
+  --nhs-red-400: rgba(224, 73, 62, 1);
+  --nhs-red-500: rgba(218, 41, 28, 1);
+  --nhs-red-600: rgba(214, 36, 25, 1);
+  --nhs-red-700: rgba(208, 31, 20, 1);
+  --nhs-red-800: rgba(203, 25, 17, 1);
+  --nhs-red-900: rgba(194, 15, 9, 1);
+  
+  /* NHS Red - Accent Shades */
+  --nhs-red-a100: rgba(255, 237, 237, 1);
+  --nhs-red-a200: rgba(255, 187, 186, 1);
+  --nhs-red-a400: rgba(255, 137, 135, 1);
+  --nhs-red-a700: rgba(255, 112, 110, 1);
+  
+  /* NHS Red - Primary (500 shade) */
+  --nhs-red: rgba(218, 41, 28, 1);
+  
+  /* Contrast default color */
+  --nhs-red-contrast: light;
+
+  /* NHS Warm Yellow - Standard Shades */
+  --nhs-warm-yellow-50: rgba(255, 246, 228, 1);
+  --nhs-warm-yellow-100: rgba(255, 234, 187, 1);
+  --nhs-warm-yellow-200: rgba(255, 220, 142, 1);
+  --nhs-warm-yellow-300: rgba(255, 205, 96, 1);
+  --nhs-warm-yellow-400: rgba(255, 195, 62, 1);
+  --nhs-warm-yellow-500: rgba(255, 184, 28, 1);
+  --nhs-warm-yellow-600: rgba(255, 177, 25, 1);
+  --nhs-warm-yellow-700: rgba(255, 168, 20, 1);
+  --nhs-warm-yellow-800: rgba(255, 160, 17, 1);
+  --nhs-warm-yellow-900: rgba(255, 145, 9, 1);
+  
+  /* NHS Warm Yellow - Accent Shades */
+  --nhs-warm-yellow-a100: rgba(255, 255, 255, 1);
+  --nhs-warm-yellow-a200: rgba(255, 250, 245, 1);
+  --nhs-warm-yellow-a400: rgba(255, 225, 194, 1);
+  --nhs-warm-yellow-a700: rgba(255, 213, 168, 1);
+  
+  /* NHS Warm Yellow - Primary (500 shade) */
+  --nhs-warm-yellow: rgba(255, 184, 28, 1);
+  
+  /* Contrast default color */
+  --nhs-warm-yellow-contrast: dark;
+
+  /* NHS White - Primary (500 shade) */
+  --nhs-white: rgba(255, 255, 255, 1);
+  
+  /* Contrast default color */
+  --nhs-white-contrast: dark;
+
+  /* NHS Yellow - Standard Shades */
+  --nhs-yellow-50: rgba(254, 251, 224, 1);
+  --nhs-yellow-100: rgba(254, 246, 179, 1);
+  --nhs-yellow-200: rgba(253, 240, 128, 1);
+  --nhs-yellow-300: rgba(252, 234, 77, 1);
+  --nhs-yellow-400: rgba(251, 230, 38, 1);
+  --nhs-yellow-500: rgba(250, 225, 0, 1);
+  --nhs-yellow-600: rgba(249, 221, 0, 1);
+  --nhs-yellow-700: rgba(249, 217, 0, 1);
+  --nhs-yellow-800: rgba(248, 213, 0, 1);
+  --nhs-yellow-900: rgba(246, 205, 0, 1);
+  
+  /* NHS Yellow - Accent Shades */
+  --nhs-yellow-a100: rgba(255, 255, 255, 1);
+  --nhs-yellow-a200: rgba(255, 251, 234, 1);
+  --nhs-yellow-a400: rgba(255, 241, 183, 1);
+  --nhs-yellow-a700: rgba(255, 236, 157, 1);
+  
+  /* NHS Yellow - Primary (500 shade) */
+  --nhs-yellow: rgba(250, 225, 0, 1);
+  
+  /* Contrast default color */
+  --nhs-yellow-contrast: dark;
+  /* ======================================= END NHS COLOURS ==================== */
+
+  /* optional base colors for colored boxes as in badges, buttons, notice, etc. shortcode */
+  --BOX-BLUE-color: var(--nhs-blue); /* background color of blue boxes */
+  --BOX-BLUE-TEXT-color: var(--BOX-BLUE-color); /* text color of blue boxes */
+  --BOX-CYAN-color: var(--nhs-aqua-blue); /* background color of cyan boxes */
+  --BOX-CYAN-TEXT-color: var(--BOX-CYAN-color); /* text color of cyan boxes */
+  --BOX-GREEN-color: var(--nhs-green); /* background color of green boxes */
+  --BOX-GREEN-TEXT-color: var(--BOX-GREEN-color); /* text color of green boxes */
+  --BOX-GREY-color: var(--nhs-mid-grey); /* background color of grey boxes */
+  --BOX-GREY-TEXT-color: var(--BOX-GREY-color); /* text color of grey boxes */
+  --BOX-MAGENTA-color: var(--nhs-pink); /* background color of magenta boxes */
+  --BOX-MAGENTA-TEXT-color: var(--BOX-MAGENTA-color); /* text color of magenta boxes */
+  --BOX-ORANGE-color: var(--nhs-orange); /* background color of orange boxes */
+  --BOX-ORANGE-TEXT-color: var(--BOX-ORANGE-color); /* text color of orange boxes */
+  --BOX-RED-color: var(--nhs-red); /* background color of red boxes */
+  --BOX-RED-TEXT-color: var(--BOX-RED-color); /* text color of red boxes */
+
+  /* theme-nhs-warm-yellow-dark */
+  --PRIMARY-color: var(--nhs-warm-yellow); /* brand primary color */
+  --PRIMARY-HOVER-color: var(--nhs-warm-yellow-700); /* brand primary hover color */
+  --SECONDARY-color: var(--nhs-blue); /* brand secondary color */
+  --SECONDARY-HOVER-color: var(--nhs-blue-700); /* brand secondary hover color */
+  --ACCENT-color: var(--nhs-pink); /* brand accent color, used for search highlights */
+  --ACCENT-HOVER-color: var(--nhs-pink-700); /* brand accent hover color */
+
+  --BROWSER-theme: dark; /* name of the theme for browser scrollbars of the main section */
+  --MERMAID-theme: dark; /* name of the default Mermaid theme for this variant, can be overridden in hugo.toml */
+  --OPENAPI-theme: dark; /* name of the default OpenAPI theme for this variant, can be overridden in hugo.toml */
+  --OPENAPI-CODE-theme: tomorrow-night; /* name of the default OpenAPI code theme for this variant, can be overridden in hugo.toml */
+
+  --MAIN-TEXT-color: var(--nhs-pale-grey-500); /* Color of text by default */
+  --MAIN-TITLES-TEXT-color: var(--nhs-pale-grey-300); /* Color of titles h2-h3-h4-h5-h6 */
+  --MAIN-TITLES-H1-TEXT-color: var(--nhs-white); /* text color of h1 titles */
+  --MAIN-LINK-color: var(--PRIMARY-color); /* Color of links */
+  --MAIN-LINK-HOVER-color: var(--PRIMARY-HOVER-color); /* Color of hovered links */
+  --MAIN-BG-color: var(--nhs-black); /* color of text by default */
+
+  --CODE-theme: neon; /* name of the chroma stylesheet file */
+  --CODE-BLOCK-color: var(--nhs-pale-grey-700); /* fallback color for code text */
+  --CODE-BLOCK-BG-color: var(--nhs-black); /* fallback color for code background */
+  --CODE-BLOCK-BORDER-color: var(--nhs-dark-grey-700); /* color of block code border */
+  --CODE-INLINE-color: rgba(94, 94, 94, 1); /* color for inline code text */
+  --CODE-INLINE-BG-color: rgba(255, 247, 221, 1); /* color for inline code background */
+  --CODE-INLINE-BORDER-color: rgba(251, 240, 203, 1); /* color of inline code border */
+
+  --MENU-HEADER-color: var(--nhs-black); /* color of menu header */
+  --MENU-HEADER-BG-color: var(--nhs-warm-yellow); /* Background color of menu header */
+  --MENU-HEADER-BORDER-color: var(--nhs-warm-yellow-300); /*Color of menu header border */
+
+  --MENU-SEARCH-color: var(--nhs-black); /* Color of search field text */
+  --MENU-SEARCH-BG-color: var(--nhs-warm-yellow-800); /* Search field background color (by default borders + icons) */
+  --MENU-SEARCH-BORDER-color: var(--nhs-warm-yellow-600); /* Override search field border color */
+
+  --MENU-HOME-LINK-color: rgba(224, 224, 224, 1); /* Color of the home button text */
+  --MENU-HOME-LINK-HOVER-color: rgba(240, 240, 240, 1); /* Color of the hovered home button text */
+  --MENU-HOME-TOP-SEPARATOR-color: var(--MENU-HEADER-BORDER-color); /* separator color between menu search box and home menu */
+
+  --MENU-SECTIONS-ACTIVE-BG-color: var(--nhs-warm-yellow-900); /* Background color of the active section and its children */
+  --MENU-SECTIONS-BG-color: var(--nhs-warm-yellow-800); /* Background color of other sections */
+  --MENU-SECTIONS-LINK-color: var(--nhs-dark-grey-900); /* Color of links in menu */
+  --MENU-SECTIONS-LINK-HOVER-color: var(--nhs-dark-grey-800); /* Color of links in menu, when hovered */
+  --MENU-SECTION-ACTIVE-CATEGORY-color: var(--nhs-white); /* Color of active category text */
+  --MENU-SECTION-ACTIVE-CATEGORY-BG-color: var(--nhs-black); /* Color of background for the active category (only) */
+
+  --MENU-VISITED-color: var(--nhs-warm-yellow-a200); /* Color of 'page visited' icons in menu */
+  --MENU-SECTION-SEPARATOR-color: var(--nhs-warm-yellow-900); /* Color of <hr> separator in menu */
+
+
+  /* base styling for boxes */
+  --BOX-CAPTION-color: var(--nhs-pale-grey-300); /* text color of colored box titles */
+  --BOX-BG-color: rgba(8, 8, 8, 1); /* background color of colored boxes */
+  --BOX-TEXT-color: initial; /* text color of colored box content */
+}

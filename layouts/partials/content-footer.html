@@ -19,18 +19,43 @@
   {{- with and (not site.Params.hideAuthorEmail) .Params.LastModifierEmail }}
     {{- $LastModifierEmail = . }}
   {{- end }}
-  {{- with and (not site.Params.hideAuthorDate) .Date }}
-    {{- $Date = . | time.Format $dateFormat }}
+  {{- /* Use page date if available, otherwise use current time */}}
+  {{- if not site.Params.hideAuthorDate }}
+    {{- if .Date }}
+      {{- $Date = .Date | time.Format $dateFormat }}
+    {{- else }}
+      {{- $Date = now | time.Format $dateFormat }}
+    {{- end }}
   {{- end }}
-{{- end }}
-{{- if $LastModifierDisplayName }}
-              <i class='fa-fw fas fa-user'></i> {{ with $LastModifierEmail }}<a href="mailto:{{ . }}">{{ end }}{{ $LastModifierDisplayName }}{{ with $LastModifierEmail }}</a>{{ end }}
-{{- end }}
-{{- with $Date }}
-              <i class='fa-fw fas fa-calendar'></i> {{ . }}
 {{- end }}
 {{- partial "term-list.html" (dict
   "page" .
   "taxonomy" "categories"
   "icon" "layer-group"
 ) }}
+{{- partial "term-list.html" (dict
+  "page" .
+  "taxonomy" "tags"
+  "style" "note"
+  "icon" "tags"
+) }}
+{{- partial "term-list.html" (dict
+  "page" .
+  "taxonomy" "doc-type"
+  "style" "info"
+  "icon" "layer-group"
+) }}
+<hr>
+Last Modified
+{{- if $LastModifierDisplayName }}
+              by <i class='fa-fw fas fa-user'></i> {{ with $LastModifierEmail }}<a href="mailto:{{ . }}">{{ end }}{{ $LastModifierDisplayName }}{{ with $LastModifierEmail }}</a>{{ end }}
+{{- end }}
+{{- with $Date }}
+              on <i class='fa-fw fas fa-calendar'></i> {{ . }}
+{{- end }}
+{{- $copyrightText := site.Copyright | default "Digital Engineering Service @ OUH" }}
+{{- with $copyrightText }}
+    <div class="copyright">
+      &copy;2023-{{ now.Format "2006" }} {{ . | markdownify | safeHTML }}
+    </div>
+{{- end }}

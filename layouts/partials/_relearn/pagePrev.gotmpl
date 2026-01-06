@@ -8,10 +8,31 @@
   {{- $prev = .Site.Home }}
 {{- else if eq .Page.Kind "home" }}
   {{- /* no prev here */}}
+{{- else if eq .Section "blog" }}
+  {{- /* Special handling for blog section - use date-based ordering */}}
+  {{- $prev = partial "inline/prev-blog-page" . }}
 {{- else }}
   {{- $prev = or (partial "inline/prev_page" .) .Site.Home }}
 {{- end }}
 {{- return $prev }}
+
+{{- define "partials/inline/prev-blog-page" }}
+  {{- $currentNode := . }}
+  {{- $allBlogPosts := where .Site.RegularPages "Section" "blog" }}
+  {{- $allBlogPosts = $allBlogPosts.ByDate }}
+  {{- $last := "" }}
+  {{- $result := "" }}
+  {{- range $allBlogPosts }}
+    {{- if eq .RelPermalink $currentNode.RelPermalink }}
+      {{- $result = $last }}
+      {{- break }}
+    {{- end }}
+    {{- if not (or (eq .Title "") .Params.hidden) }}
+      {{- $last = . }}
+    {{- end }}
+  {{- end }}
+  {{- return $result }}
+{{- end }}
 
 {{- define "partials/inline/prev-term" }}
   {{- $collection := .collection }}

@@ -1,0 +1,75 @@
+<article class="blog" data-pagefind-body >
+  <header class="headline">
+    {{- partial "content-header.html" . }}
+  </header>
+
+  {{ partial "heading-pre.html" . }}{{ partial "heading.html" . }}{{ partial "heading-post.html" . }}
+
+  <div class="blog-article-meta">
+    {{- with .Date }}
+    <span class="blog-article-date">
+      Written on
+      <i class="fa-fw fas fa-calendar"></i>
+      <time datetime="{{ .Format "2006-01-02" }}">{{ .Format "January 2, 2006" }}</time>
+    </span>
+    {{- end }}
+    
+    {{- with .Params.author }}
+    <span class="blog-article-author">
+      Written by
+      <i class="fa-fw fas fa-user"></i>
+      {{ . | markdownify | safeHTML }}
+    </span>
+    {{- end }}
+    
+    <span class="blog-article-reading-time">
+      <i class="fa-fw fas fa-clock"></i>
+      {{ .ReadingTime }} min read
+    </span>
+    
+    {{- with .Description }}
+    <div class="blog-article-description">
+      {{ . | markdownify | safeHTML }}
+    </div>
+    {{- end }}
+  </div>
+
+  {{ partial "article-content.html" . }}
+
+  {{- $allBlogPosts := where .Site.RegularPages "Section" "blog" }}
+  {{- $allBlogPosts = $allBlogPosts.ByDate.Reverse }}
+  {{- $currentIndex := 0 }}
+  {{- range $index, $page := $allBlogPosts }}
+    {{- if eq $page .File.Path $.File.Path }}
+      {{- $currentIndex = $index }}
+    {{- end }}
+  {{- end }}
+  
+  {{- $prevPost := partial "_relearn/pagePrev.gotmpl" . }}
+  {{- $nextPost := partial "_relearn/pageNext.gotmpl" . }}
+
+  <nav class="blog-article-navigation">
+    {{- if $prevPost }}
+    <div class="blog-nav-prev">
+      <a href="{{ $prevPost.RelPermalink }}" title="{{ $prevPost.Title }}">
+        <span class="blog-nav-label"><i class="fa-fw fas fa-chevron-left"></i> Older post</span>
+        <span class="blog-nav-title">{{ $prevPost.Title }}</span>
+      </a>
+    </div>
+    {{- end }}
+    
+    {{- if $nextPost }}
+    <div class="blog-nav-next">
+      <a href="{{ $nextPost.RelPermalink }}" title="{{ $nextPost.Title }}">
+        <span class="blog-nav-label">Newer post <i class="fa-fw fas fa-chevron-right"></i></span>
+        <span class="blog-nav-title">{{ $nextPost.Title }}</span>
+        
+      </a>
+    </div>
+    {{- end }}
+  </nav>
+
+  <footer class="footline">
+    {{- partial "content-footer.html" . }}
+  </footer>
+</article>

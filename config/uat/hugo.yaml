@@ -1,0 +1,7 @@
+
+title: "[UAT] My New Hugo Site"
+
+### This is the base configuration for the DES UAT Azure Subscription
+### Base Hugo settings - overrides _default
+baseURL: http://docs.uat.des.ouh.nhs.uk/
+environment: development
