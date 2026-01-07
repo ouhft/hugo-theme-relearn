@@ -23,6 +23,11 @@ imaging:
     resampleFilter: MitchellNetravali
 # languages
 # markup
+markup:
+    goldmark:
+        parser:
+          attribute:
+            block: true
 # mediaTypes
 mediaTypes:
     text/javascript:
