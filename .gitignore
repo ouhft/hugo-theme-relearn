@@ -10,3 +10,4 @@ exampleSite/public*
 hugo*.exe
 *.xcf
 *.zip
+tmp/*
