@@ -19,8 +19,12 @@
   {{- end }}
 {{- end }}
 
-{{- if eq .Type "blog" }}
 <style>
+h1 {
+    hyphens: none !important;
+}
+
+{{- if eq .Type "blog" }}
   /* Blog listing styles */
   .blog-posts {
     display: flex;
@@ -228,5 +232,5 @@
       align-items: flex-start;
     }
   }
-</style>
 {{- end }}
+</style>
