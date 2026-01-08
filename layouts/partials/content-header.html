@@ -1,3 +1,11 @@
 <!-- Moved to content-footer.html 
 {{- partial "tags.html" . }}
 -->
+{{- if .Params.draft }}
+{{ partial "shortcodes/notice.html" (dict
+  "page"  .
+  "style" "warning"
+  "title" "THIS IS A DRAFT"
+  "icon" "pen-ruler"
+)}}
+{{- end }}

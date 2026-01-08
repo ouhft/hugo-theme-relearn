@@ -45,6 +45,16 @@
   "style" "info"
   "icon" "layer-group"
 ) }}
+{{- if .Params.draft }}
+<hr>
+{{ partial "shortcodes/notice.html" (dict
+  "page"  .
+  "style" "warning"
+  "title" "THIS IS A DRAFT"
+  "icon" "pen-ruler"
+  "content" "<p>It may need to be updated or reviewed yet, and <b>WILL NOT BE PUBLISHED</b>.</p><p>To publish, set <i>draft: false</i> in your post front matter. This message will then automatically be removed.</p>"
+)}}
+{{- end }}
 <hr>
 Last Modified
 {{- if $LastModifierDisplayName }}
