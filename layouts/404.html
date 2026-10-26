@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-{{- $haikus := site.Data.haikus.notfound }}
+{{- $haikus := hugo.Data.haikus.notfound }}
 {{- $randomHaiku := index $haikus (mod now.Unix (len $haikus)) }}
 {{- .Store.Set "relearnOutputFormat" "html" }}
 <html id="R-html" lang="{{ .Page.Language.Locale }}" dir="{{ .Page.Language.Direction | default (T "Reading-direction") | default "ltr" }}" itemscope itemtype="http://schema.org/Article" data-r-output-format="{{ with .Store.Get "relearnOutputFormat" }}{{ . }}{{ else }}html{{ end }}">
