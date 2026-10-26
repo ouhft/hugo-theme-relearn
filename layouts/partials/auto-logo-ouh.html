@@ -31,32 +31,24 @@
 {{- range $variantId, $logoInfo := $logoMap }}
   {{- $src := $logoInfo.src }}
   {{- if $src }}
-    {{- $existingData := dict "variants" slice "alt" "" }}
+    {{- $existingVariants := slice }}
     {{- if isset $logoGroups $src }}
-      {{- $existingData = index $logoGroups $src }}
+      {{- $existingVariants = index $logoGroups $src }}
     {{- end }}
-    {{- $updatedVariants := $existingData.variants | append $variantId }}
-    {{- /* Use the first non-empty alt text found */}}
-    {{- $altText := $existingData.alt }}
-    {{- if and (not $altText) $logoInfo.alt }}
-      {{- $altText = $logoInfo.alt }}
-    {{- end }}
-    {{- $logoGroups = merge $logoGroups (dict $src (dict "variants" $updatedVariants "alt" $altText)) }}
+    {{- $existingVariants = $existingVariants | append $variantId }}
+    {{- $logoGroups = merge $logoGroups (dict $src $existingVariants) }}
   {{- end }}
 {{- end }}
 
 {{- /* Render logo container with all variants */}}
 {{- if or $logoGroups $title }}
-        <a id="R-logo" class="R-default direction-{{ $direction }}{{ if $manualWrap }} manual-wrap{{ end }}" href="{{ partial "permalink.gotmpl" (dict "to" site.Home) }}">
-  {{- range $logoSrc, $logoData := $logoGroups }}
-    {{- $variantList := delimit $logoData.variants " " }}
-    {{- $altText := $logoData.alt | default "Logo image" }}
+        <a id="R-logo" class="R-default layout-{{ $layout }}{{ if $manualWrap }} manual-wrap{{ end }}" href="{{ partial "permalink.gotmpl" (dict "to" site.Home) }}">
+  {{- range $logoSrc, $variants := $logoGroups }}
+    {{- $variantList := delimit $variants " " }}
           <span class="logo-image default-animation" data-r-logo-variant="{{ $variantList }}">
-{{ partial "shortcodes/image.html" (dict "page" site.Home "url" $logoSrc "alt" $altText "attributes" $attributes) }}
+{{ partial "shortcodes/image.html" (dict "page" site.Home "url" $logoSrc "alt" $alt "attributes" $attributes) }}
           </span>
   {{- end }}
-        </a>
-{{- end }}
 
 {{- /* Build map of variant logos (standard logo) */}}
 {{- $logoMap := dict }}
