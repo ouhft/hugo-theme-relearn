@@ -1,0 +1,10 @@
+---
+params:
+  disableToc: false
+  minHugoVersion: 0.126.0
+title: Version 7
+type: releasenotes
+weight: -7
+---
+
+{{% pages display="content" hidden="true" %}}

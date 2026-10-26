@@ -1,0 +1,1864 @@
+<!DOCTYPE html>
+<html id="R-html" lang="art-x-pir" dir="rtl" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.168.0">
+    <meta name="generator" content="Relearn 9.4.0">
+    <meta name="description" content="Reference of CommonMark and Markdown extensions">
+    <meta name="author" content="Sören Weber">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://ouhft.github.io/hugo-theme-relearn/images/hero.png">
+    <meta name="twitter:title" content="Marrrkdown Rules :: Cap&#39;n Hugo Relearrrn Theme">
+    <meta name="twitter:description" content="Reference of CommonMark and Markdown extensions">
+    <meta property="og:url" content="https://ouhft.github.io/hugo-theme-relearn/pir/authoring/markdown/index.html">
+    <meta property="og:site_name" content="Cap&#39;n Hugo Relearrrn Theme">
+    <meta property="og:title" content="Marrrkdown Rules :: Cap&#39;n Hugo Relearrrn Theme">
+    <meta property="og:description" content="Reference of CommonMark and Markdown extensions">
+    <meta property="og:locale" content="art_x_pir">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Rambl&#39;n">
+    <meta property="og:image" content="https://ouhft.github.io/hugo-theme-relearn/images/hero.png">
+    <meta itemprop="name" content="Marrrkdown Rules :: Cap&#39;n Hugo Relearrrn Theme">
+    <meta itemprop="description" content="Reference of CommonMark and Markdown extensions">
+    <meta itemprop="wordCount" content="4099">
+    <meta itemprop="image" content="https://ouhft.github.io/hugo-theme-relearn/images/hero.png">
+    <meta itemprop="keywords" content="Howto,Reference,Table.sortable,Table.sortable">
+    <title>Marrrkdown Rules :: Cap&#39;n Hugo Relearrrn Theme</title>
+    <link href="https://ouhft.github.io/hugo-theme-relearn/authoring/markdown/index.html" rel="alternate" hreflang="x-default">
+    <link href="https://ouhft.github.io/hugo-theme-relearn/authoring/markdown/index.html" rel="alternate" hreflang="en">
+    <link href="https://ouhft.github.io/hugo-theme-relearn/pir/authoring/markdown/index.html" rel="alternate" hreflang="art-x-pir">
+    <link href="/hugo-theme-relearn/pir/authoring/markdown/index.print.html" rel="alternate" type="text/html" title="Marrrkdown Rules :: Cap&#39;n Hugo Relearrrn Theme">
+    <link href="/hugo-theme-relearn/pir/authoring/markdown/index.md" rel="alternate" type="text/markdown" title="Marrrkdown Rules :: Cap&#39;n Hugo Relearrrn Theme">
+    <link href="/hugo-theme-relearn/pir/authoring/markdown/index.source.md" rel="alternate" type="text/markdown" title="Marrrkdown Rules :: Cap&#39;n Hugo Relearrrn Theme">
+    <link href="/hugo-theme-relearn/images/logo.d2952b3b403590be64a7c6c1d73fd7d15a09e0fad6b532e5a2f23d990c5503df.svg" rel="icon" type="image/svg&#43;xml">
+    <link href="/hugo-theme-relearn/css/auto-complete/auto-complete.min.19b8eb7faa53e727a407aa2d781e21185a35cfc9330628acc11df190f919f003.css" rel="stylesheet">
+    <script src="/hugo-theme-relearn/js/auto-complete/auto-complete.min.ee095762d0ba22fe9c154ccbc9a1d92d5eae5ebaf7cedfbc9b9991710d739d05.js" defer></script>
+    <script src="/hugo-theme-relearn/js/search-lunr.min.9897ffe790e716e8b90e4a9e200dce63c2603e69a9eec9bbdce6a483811ea180.js" defer></script>
+    <script src="/hugo-theme-relearn/js/search.min.4bcf60afa00d9f5c3adf08ff55811ce4cc679bd6d4b5747d674667994ee1debb.js" defer></script>
+    <script type="application/json" id="R-search-config">{
+      "indexFile": "searchindex.pir.min.068859c60987ae31c517fadda0293a23424564fbce22cde7ffe6308c0255e0bd.js"
+    }</script>
+    <script src="/hugo-theme-relearn/js/lunr/lunr.min.75e90b6cec204a54a07060b42ec82f3816430c63ffd689d1e9771f469dc493dd.js" defer></script>
+    <script src="/hugo-theme-relearn/js/lunr/lunr.stemmer.support.min.5ff7b6bd53462911fc1311c09f654085b748338aced249e719c0b16fda0b90fb.js" defer></script>
+    <script src="/hugo-theme-relearn/js/lunr/lunr.multi.min.ffaee7f1e07179595fe8a4b7c469761f90999470e1f04dcb0a94dc2c1cb44f9c.js" defer></script>
+    <script src="/hugo-theme-relearn/js/lunr/lunr.en.min.94d0a7cb1f111200e2f5be9dc32699cf266aaa29011e414bdcd36a18ea0fd5ee.js" defer></script>
+    <script src="/hugo-theme-relearn/js/lunr/lunr.art.min.d3a9a00c6a815a619b46177e86e5d73b27b26c3b2a9d99951d359ab00deb7158.js" defer></script>
+    <script type="application/json" id="R-search-lunr-config">{
+      "contentLangs": [
+        "en",
+        "art"
+      ]
+    }</script>
+    <link href="/hugo-theme-relearn/fonts/fontawesome/css/all.min.e0b69df26e19596d4b81bf7eb0c54b6047e7221ec18d5d4d40c11eefd3ef8a4b.css" rel="stylesheet" media="print" class="R-async-style"><noscript><link href="/hugo-theme-relearn/fonts/fontawesome/css/all.min.e0b69df26e19596d4b81bf7eb0c54b6047e7221ec18d5d4d40c11eefd3ef8a4b.css" rel="stylesheet"></noscript>
+    <link href="/hugo-theme-relearn/css/theme.min.bba7025345a3ad33f5296e7fed3b0f46c339149a3d2af5a320b8957d4b66325c.css" rel="stylesheet">
+    <link href="/hugo-theme-relearn/css/format-html.min.098d26bcd5c4388c2fcad7ab4334c3b5346bc88800c0ad07d5f9db521e317323.css" rel="stylesheet" id="R-format-style">
+    <script type="application/json" id="R-theme-config">{
+      "disableInlineCopyToClipboard": true,
+      "enableBlockCodeWrap": true,
+      "path": "/pir/authoring/markdown/index.html",
+      "relBasePath": "../../..",
+      "relBaseUri": "../../../..",
+      "themevariants": [
+        "relearn-auto",
+        "relearn-dark",
+        "relearn-light",
+        "zen-auto",
+        "zen-dark",
+        "zen-light",
+        "contrast-auto",
+        "contrast-dark",
+        "contrast-light",
+        "tome-auto",
+        "tome-dark",
+        "tome-light",
+        "retro-auto",
+        "neon",
+        "learn",
+        "blue",
+        "green",
+        "red"
+      ],
+      "translations": {
+        "Browser_unsupported_feature": "This browserrr doesn't supporrrt this featurrre",
+        "Change_sorting": "Change th' sortin'",
+        "Close_graph": "Close th' enlarrrged chart",
+        "Copied_to_clipboard": "Text copied t' clipboard!",
+        "Copy_to_clipboard": "Copy text t' clipboard",
+        "Deleted_text_end": "End o' text sent overboard",
+        "Deleted_text_start": "Start o' text sent overboard",
+        "Enlarge_graph": "Enlarrrge th' chart",
+        "History_cleared": "Historrry clearrred",
+        "Inserted_text_end": "End o' text hauled aboard",
+        "Inserted_text_start": "Start o' text hauled aboard",
+        "Link_copied_to_clipboard": "Link copied t' clipboard!",
+        "N_matches_on_page": "{1} matches fer \"{0}\" on this here page",
+        "N_results_found": "{1} rrresults found fer \"{0}\"",
+        "No_results_found": "No rrresults found fer \"{0}\"",
+        "Reset_sorting": "Reset th' sortin'",
+        "Reset_view": "Rrreset view",
+        "Sort_key_ascending": "sorted at position {0}, risin'",
+        "Sort_key_descending": "sorted at position {0}, sinkin'",
+        "Sortable_columns": "Column headers wit' buttons can be sorted.",
+        "Sorted_by_ascending": "Sorted by \"{0}\", risin'",
+        "Sorted_by_descending": "Sorted by \"{0}\", sinkin'",
+        "Sorting_reset": "Sortin' reset!",
+        "Unsorted_by": "No longer sorted by \"{0}\"",
+        "View_reset": "View rrreset!"
+      }
+    }</script>
+    <script src="/hugo-theme-relearn/js/theme-head.min.f7e473c3e5d5d7ea4c1ad508c6ae60b8d3c54f1c5f68e660f71087333cc95e5a.js"></script>
+    <style>
+       
+      #R-body img.bg-white {
+        background-color: white;
+      }
+       
+      :root[data-r-theme-variant^='tome-'] .github-buttons {
+        filter: sepia(0.6) brightness(0.95);
+      }
+    </style>
+  </head>
+  <body class="mobile-support html" data-origin="/hugo-theme-relearn/pir/authoring/markdown/index.html">
+    <a id="R-skip-link" href="#R-body-inner">Skip t&#39; th&#39; main rrreadin&#39;</a>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <a id="R-logo" class="R-default layout-sidebar-row" href="/hugo-theme-relearn/pir/index.html">
+          <span class="logo-image default-animation" data-r-logo-variant="blue contrast-dark contrast-light green learn red relearn-dark relearn-light tome-dark tome-light zen-dark zen-light">
+<svg aria-hidden="true" class="bg-white border inlinecontent lazy rounded figure-image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64.044 64.044" fill="currentColor"><style>svg:root{color:#000}@media (prefers-color-scheme:dark){svg:root{color:#fff}}</style><path d="M46.103 136.34c-.642-.394-1.222-2.242-1.98-2.358-.76-.117-1.353.506-1.618 1.519-.266 1.012-.446 4.188.173 5.538.213.435.482.787 1.03.845.547.057.967-.504 1.45-1.027.482-.523.437-.9 1.142-.612.705.289 1.051.4 1.586 1.229.535.828 1.085 4.043.868 5.598-.241 1.458-.531 2.8-.59 4.088.26.075.517.148.772.217 2.68.724 5.373 1.037 7.873.02.001-.028.01-.105.008-.11-.048-.165-.18-.41-.36-.698-.18-.29-.414-.645-.586-1.114a3.212 3.212 0 0 1-.125-1.735c.056-.21.153-.342.249-.475 1.237-1.193 2.932-1.373 4.244-1.384.557-.004 1.389.016 2.198.255.809.239 1.706.724 2.068 1.843.187.578.114 1.17-.043 1.623-.153.438-.369.783-.545 1.091-.178.31-.329.6-.401.821-.007.02-.003.071-.005.094 2.256 1.008 4.716.91 7.189.398.55-.114 1.11-.247 1.673-.377.344-1.085.678-2.145.852-3.208.124-.752.158-2.311-.078-3.538-.118-.613-.306-1.15-.52-1.489-.221-.349-.413-.501-.747-.538-.243-.027-.51.013-.796.098-.67.223-1.33.606-1.966.76l-.008.002-.109.032c-.556.152-1.233.158-1.797-.36-.556-.51-.89-1.367-1.117-2.596-.283-1.528-.075-3.279.89-4.518l.071-.09h.07c.65-.71 1.485-.802 2.16-.599.706.213 1.333.629 1.772.84.736.354 1.185.319 1.475.171.291-.148.5-.439.668-.955.332-1.017.301-2.819.022-4.106-.148-.684-.13-1.292-.13-1.883-1.558-.463-3.067-.982-4.574-1.208-1.128-.169-2.263-.173-3.298.164-.13.046-.256.095-.38.15-.373.164-.633.342-.805.52-.077.098-.081.105-.087.21-.004.068.031.289.13.571.1.282.256.634.467 1.03.279.524.448 1.063.431 1.618a2.12 2.12 0 0 1-.499 1.309 1.757 1.757 0 0 1-.62.51h-.002c-.515.291-1.107.404-1.723.464-.86.083-1.787.026-2.598-.097-.806-.123-1.47-.28-1.948-.555-.444-.256-.79-.547-1.037-.925a2.273 2.273 0 0 1-.356-1.301c.029-.837.403-1.437.625-1.897.111-.23.191-.433.236-.583.045-.15.044-.25.046-.24-.005-.029-.127-.355-1.015-.741-1.138-.495-2.322-.673-3.533-.668h-.015a9.711 9.711 0 0 0-.521.016h-.002c-1.163.057-2.35.308-3.541.569.383 1.531.79 2.753.818 4.502-.096 1.297.158 2.114-1.03 2.935-.85.588-1.508.729-2.15.335" transform="translate(-40.698 -95.175)"/><path d="M61.472 101.34v.002c-.3-.003-.603.01-.894.04-.544.055-1.39.165-1.778.306-1.238.364.13 2.344.41 2.913.28.569.285 2.03.14 2.134-.144.103-.375.261-.934.345-.56.084.03-.037-1.589.086-1.62.122-5.506.29-8.265.248-.022.26-.036.521-.097.808-.309 1.442-.63 3.163-.494 4.074.071.473.168.65.414.8.23.14.737.235 1.62-.004.834-.227 1.3-.442 1.887-.456.595-.016 1.555.472 1.965.717.411.245-.03-.008.002 0s.128.05.176.102c.049.053-.276-.523.104.199.379.721.72 3.256.002 4.68-.46.913-1.01 1.49-1.64 1.711-.63.22-1.229.067-1.734-.135-.881-.353-1.584-.7-2.205-.647-1.199 1.94-1.186 4.17-.6 6.602.097.397.212.814.327 1.23 2.68-.556 5.542-1.016 8.337.132 1.064.437 1.73 1.015 1.902 1.857.169.831-.193 1.508-.438 1.986-.122.238-.23.46-.307.642-.07.164-.096.28-.104.324.069.429.309.723.686.945.385.227.89.355 1.35.423.723.104 1.567.152 2.287.086.693-.064 1.032-.338 1.241-.544a2.447 2.447 0 0 0 .303-.437.175.175 0 0 0 .013-.035c-.004-.066-.037-.246-.195-.527-.46-.816-.87-1.595-.817-2.51.028-.476.218-.938.529-1.288.304-.343.698-.586 1.186-.79 1.442-.606 2.96-.609 4.372-.409 1.525.216 2.963.679 4.378 1.083.226-2.09.784-3.9.592-5.77-.058-.565-.287-1.333-.598-1.827-.32-.508-.59-.717-1.036-.642-.648.11-1.472.935-2.707 1.078-.791.092-1.494-.267-1.95-.86-.45-.583-.678-1.335-.78-2.101-.202-1.525.031-3.229.89-4.27.615-.747 1.45-.887 2.15-.74.687.145 1.307.492 1.857.745v-.002c.546.252 1.033.388 1.281.344a.547.547 0 0 0 .353-.188c.113-.124.242-.35.384-.75.604-1.712.206-3.68-.303-5.654-.667.145-1.336.293-2.018.413-1.341.236-2.73.392-4.136.273-.656-.055-1.695-.085-2.58-.476-.442-.195-.903-.514-1.157-1.093-.259-.591-.205-1.313.08-2.014.223-.64 1.082-2.178.692-2.585-.391-.407-1.651-.56-2.554-.571z" transform="translate(-40.698 -95.175)"/><path d="M83.128 98.116c-.484 1.875-1.057 3.757-2.486 5.033-.638.57-1.13.666-1.483.548-.401-.134-.715-.506-1.058-.973-.338-.461-.655-.97-1.076-1.332-.192-.165-.404-.315-.683-.38-.279-.066-.599-.02-.9.102-.489.196-.89.58-1.28 1.047a6.1 6.1 0 0 0-.985 1.632c-.234.591-.356 1.174-.277 1.713.072.487.392.977.905 1.185.463.187.926.156 1.36.154.433 0 .843.01 1.242.147.55.189.79.736.822 1.368.034.66-.145 1.412-.393 1.988l-.008.021c-.74 1.705-1.946 2.893-3.004 4.349l-.664.915.979.099c.924.092 1.788.26 2.468.675.46.281 1.806 1.205 2.794 2.222.497.513.888 1.031 1.047 1.502.078.231.095.422.05.6a.93.93 0 0 1-.345.474c-.301.223-.606.395-.864.532l-.354.186c-.107.058-.189.087-.345.228a.637.637 0 0 1 .062-.045l-.064.041-.209.236-.103.343s.003.126.007.152c.003.017.003.007.004.015v.002c.016.195.061.307.133.476a4.1 4.1 0 0 0 .32.596 5.7 5.7 0 0 0 2.8 2.258c.284.108.908.321 1.548.36.33.02.59.015.912-.13h.002c.08-.037.228-.095.382-.281.153-.186.19-.355.212-.445l.019-.075.003-.078c.023-.585-.037-1.296.072-1.899.153-.657.435-.956 1.009-.909 2.771.239 4.74 1.955 6.693 3.83l.742.714.279-1.155c.55-2.29 1.093-4.464 2.928-5.977.692-.57 1.184-.642 1.527-.509.39.151.676.536.996.995.319.458.605.926 1.07 1.212.194.119.464.232.784.209.32-.024.638-.163.988-.384 1.022-.645 1.778-1.756 2.086-2.942.136-.522.102-.991-.046-1.301-.158-.334-.433-.553-.754-.707-.653-.314-1.468-.373-2.094-.486-.825-.15-1.22-.475-1.345-.878-.13-.417 0-.953.335-1.61.6-1.173 1.887-2.602 3.13-3.911l.498-.526-.449-.432c-1.545-1.49-3.163-3.01-5.252-3.715h-.002c-.473-.16-1.097-.413-1.73-.424h-.003c-.311-.004-.596.04-.883.24v.002c-.22.155-.483.537-.583.937l-.008.036-.006.038c-.116.773-.06 1.467-.217 1.995-.063.212-.198.418-.359.507-.202.111-.492.153-.976.072-.582-.097-1.978-.69-3.021-1.503-.523-.407-.934-.85-1.117-1.3a1.153 1.153 0 0 1-.083-.63c.03-.184.1-.477.308-.593.21-.116.941-.32 1.377-.642h.002c.192-.141.403-.367.518-.64.114-.275.127-.526.123-.774-.006-.142-.036-.192-.08-.3a8.417 8.417 0 0 0-3-3.027c-1.226-.725-2.585-1.135-3.927-1.539-.434-.12-.844-.111-1.02.466zm.912.947c1.186.364 2.357.718 3.345 1.303 1.035.612 1.864 1.488 2.507 2.528-.514.263-1.095.5-1.44.79-.345.29-.729.914-.815 1.434-.084.509 0 .968.155 1.347.301.74.85 1.276 1.44 1.735 1.18.92 2.554 1.545 3.47 1.698.604.1 1.186.088 1.739-.216.594-.327.935-.911 1.088-1.427.264-.884.193-1.664.262-2.17h.1c.3.006.926.206 1.417.371 1.646.554 3.044 1.773 4.431 3.089-1.102 1.174-2.222 2.423-2.888 3.73-.42.823-.73 1.789-.453 2.687.283.913 1.1 1.415 2.138 1.603.691.126 1.472.226 1.84.403.19.091.258.182.278.223.03.064.058.075-.023.387-.21.804-.761 1.598-1.413 2.01-.247.155-.365.183-.407.187-.042.003-.061.002-.172-.066-.144-.088-.455-.473-.772-.929-.317-.454-.714-1.07-1.452-1.356-.783-.304-1.776-.022-2.713.75-1.942 1.6-2.626 3.764-3.146 5.8-1.802-1.676-3.772-3.138-6.589-3.517h-.002c-.346-.095-1.013-.031-1.293.143-.735.501-1.005 1.132-1.168 2.007-.125.69-.082 1.216-.074 1.659-.055.006-.046.01-.104.006-.42-.026-1.035-.215-1.244-.295-.947-.361-1.774-1.006-2.314-1.857-.054-.085-.072-.132-.109-.2l.027-.016c.284-.15.656-.36 1.045-.648.44-.327.789-.798.93-1.35a2.4 2.4 0 0 0-.068-1.379c-.254-.751-.753-1.353-1.295-1.911-1.09-1.124-2.452-2.049-2.99-2.378-.609-.372-1.303-.44-1.981-.56.875-1.094 1.878-2.251 2.596-3.921.294-.823.543-1.907.513-2.658-.049-.97-.489-2.013-1.52-2.367-.579-.2-1.131-.204-1.58-.203-.45.002-.786-.006-.97-.08h-.002c-.264-.107-.236-.108-.268-.33-.025-.17.021-.553.183-.962a4.67 4.67 0 0 1 .725-1.192c.29-.348.617-.59.705-.626.142-.057.176-.05.22-.04.045.011.127.052.263.17.235.201.56.671.92 1.161.354.484.791 1.08 1.543 1.33.8.267 1.784-.052 2.671-.846 1.594-1.424 2.235-3.317 2.714-5.051zm11.705 7.023c-.02.014.042-.002.042 0l-.008.035c.05-.2-.028-.04-.034-.035zM79.472 122.45a.198.198 0 0 1 .005.023v.014c-.002-.01-.003-.03-.005-.037zm-.29.732-.006.01-.044.027c.016-.01.033-.024.05-.036z" transform="translate(-40.698 -95.175)"/><path d="M76.694 128.845c-.85-.012-1.668.253-2.434.67-.01.592-.015 1.17.109 1.772.323 1.573.422 3.553-.07 5.147-.247.804-.684 1.535-1.347 1.891-.663.356-1.467.296-2.362-.159-.522-.266-1.059-.62-1.487-.757-.223-.072-.392-.096-.522-.069-.13.027-.232.094-.362.27-.53.719-.681 1.823-.497 2.876.177 1.012.418 1.438.543 1.56.143.137.26.154.604.055.548-.158 1.523-.857 2.573-.972l.02-.002.5.058c.686.081 1.247.562 1.622 1.19.372.62.591 1.37.73 2.136.279 1.532.25 3.16.083 4.232-.14.91-.394 1.72-.632 2.53 1.719-.385 3.485-.692 5.307-.36 1.174.214 2.749.574 3.762 1.977l.088.122.046.159c.162.551.16 1.114.024 1.578-.13.45-.348.772-.533 1.023-.181.246-.336.444-.437.606-.102.16-.141.275-.145.336-.01.17 0 .197.07.315.057.1.186.242.39.366.408.246 1.106.414 1.843.45a7.842 7.842 0 0 0 2.174-.21 4.28 4.28 0 0 0 .822-.296c.218-.106.385-.242.377-.233l.029-.031c.025-.035.05-.072.05-.068 0-.004 0-.017-.003-.05a2.733 2.733 0 0 0-.21-.579c-.26-.548-.839-1.333-.822-2.46.01-.657.27-1.21.598-1.576.32-.357.696-.575 1.074-.736.759-.323 1.57-.418 2.054-.458 1.653-.136 3.252.296 4.755.765.457.142.905.29 1.352.434.325-2.258.902-4.247.598-6.217-.071-.46-.25-1.169-.486-1.684-.238-.518-.495-.762-.675-.779-.351-.032-.716.14-1.174.418-.457.277-1.005.665-1.695.742-.745.082-1.406-.291-1.84-.908-.428-.608-.653-1.394-.754-2.196-.203-1.596.016-3.377.794-4.493.568-.813 1.358-.984 2.024-.835.65.146 1.243.51 1.769.779.524.267.99.413 1.237.365a.527.527 0 0 0 .346-.2c.11-.132.235-.373.37-.798.612-1.918.27-3.894-.246-6.054-2.815-.851-5.49-1.534-8.089-.267a.727.727 0 0 0-.223.148c-.024.028-.018.021-.026.056.001-.003-.01.178.07.44.162.522.611 1.29.911 1.978l.004.009.029.063.024.084V133c.162.635.016 1.297-.274 1.727-.272.404-.618.636-.952.81-.675.353-1.399.484-1.724.533a5.888 5.888 0 0 1-3.973-.795c-.512-.311-.876-.594-1.133-1.02-.282-.466-.318-1.084-.172-1.557.252-.814.715-1.266.971-1.89a.663.663 0 0 0 .047-.14c.001-.013 0-.006-.007-.037a.761.761 0 0 0-.184-.268c-.264-.267-.865-.595-1.54-.826-1.356-.462-3.07-.659-3.583-.686-.062-.002-.121-.006-.178-.006z" transform="translate(-40.698 -95.175)"/></svg>
+          </span>
+          <span class="logo-image default-animation" data-r-logo-variant="neon">
+<img alt="" class="bg-white border lazy rounded figure-image" height="252" loading="lazy" src="/hugo-theme-relearn/images/magic.gif" width="252">
+          </span>
+          <span class="logo-title default-animation">Relearn</span>
+        </a>
+        <search><form action="/hugo-theme-relearn/pir/search/index.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Open th&#39; searrrch page" aria-label="Open th&#39; searrrch page"><i class="fas fa-fw fa-search" aria-hidden="true"></i></button>
+            <input data-search-input name="search-by" class="search-by" type="search" aria-label="Searrrch" placeholder="Searrrch..." title="Searrrch (CTRL+ALT+f)">
+            <button class="search-clear" type="button" data-search-clear="" title="Clearrr searrrch" aria-label="Clearrr searrrch"><i class="fas fa-fw fa-times" aria-hidden="true" title="Clearrr searrrch"></i></button>
+          </div>
+        </form></search>
+      </div>
+      <div id="R-homelinks" class="default-animation">
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-homelinks default-animation">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-headercontrols default-animation">
+          <ul class="">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+      </div>
+      <nav id="R-content-wrapper" class="highlightable" aria-label="Menu" tabindex="-1">
+        <div id="R-scrollbar" aria-hidden="true"><div id="R-scrollbar-thumb"></div></div>
+        <div class="R-sidebarmenu R-shortcutmenu-main default-animation">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/introduction/index.html"><label><input type="checkbox"><i class="fa-fw fas fa-chevron-right" aria-hidden="true"></i><span class="a11y-only">Submenu Introduction</span></label><a class="padding default-animation" href="/hugo-theme-relearn/pir/introduction/index.html"><i class="fa-fw fas fa-star"></i> Introduction<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a><ul class="collapsible-menu">
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/introduction/quickstart/index.html"><a class="padding" href="/hugo-theme-relearn/pir/introduction/quickstart/index.html">Gettin&#39; started<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li>
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/introduction/upgrade/index.html"><a class="padding" href="/hugo-theme-relearn/pir/introduction/upgrade/index.html">Upgrade<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li>
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/introduction/releasenotes/index.html"><label><input type="checkbox"><i class="fa-fw fas fa-chevron-right" aria-hidden="true"></i><span class="a11y-only">Submenu What&#39;s New</span></label><a class="padding default-animation" href="/hugo-theme-relearn/pir/introduction/releasenotes/index.html">What&#39;s New<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a><ul class="collapsible-menu">
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/introduction/releasenotes/8/index.html"><a class="padding" href="/hugo-theme-relearn/pir/introduction/releasenotes/8/index.html">Version 8<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li>
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/introduction/releasenotes/7/index.html"><a class="padding" href="/hugo-theme-relearn/pir/introduction/releasenotes/7/index.html">Version 7<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li>
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/introduction/releasenotes/6/index.html"><a class="padding" href="/hugo-theme-relearn/pir/introduction/releasenotes/6/index.html">Version 6<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li>
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/introduction/releasenotes/5/index.html"><a class="padding" href="/hugo-theme-relearn/pir/introduction/releasenotes/5/index.html">Version 5<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li>
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/introduction/releasenotes/4/index.html"><a class="padding" href="/hugo-theme-relearn/pir/introduction/releasenotes/4/index.html">Version 4<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li>
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/introduction/releasenotes/3/index.html"><a class="padding" href="/hugo-theme-relearn/pir/introduction/releasenotes/3/index.html">Version 3<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li>
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/introduction/releasenotes/2/index.html"><a class="padding" href="/hugo-theme-relearn/pir/introduction/releasenotes/2/index.html">Version 2<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li>
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/introduction/releasenotes/1/index.html"><a class="padding" href="/hugo-theme-relearn/pir/introduction/releasenotes/1/index.html">Version 1<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li></ul></li>
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/introduction/changelog/index.html"><label><input type="checkbox"><i class="fa-fw fas fa-chevron-right" aria-hidden="true"></i><span class="a11y-only">Submenu Changelog</span></label><a class="padding default-animation" href="/hugo-theme-relearn/pir/introduction/changelog/index.html">Changelog<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a><ul class="collapsible-menu">
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/introduction/changelog/8/index.html"><a class="padding" href="/hugo-theme-relearn/pir/introduction/changelog/8/index.html">Version 8<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li>
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/introduction/changelog/7/index.html"><a class="padding" href="/hugo-theme-relearn/pir/introduction/changelog/7/index.html">Version 7<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li>
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/introduction/changelog/6/index.html"><a class="padding" href="/hugo-theme-relearn/pir/introduction/changelog/6/index.html">Version 6<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li>
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/introduction/changelog/5/index.html"><a class="padding" href="/hugo-theme-relearn/pir/introduction/changelog/5/index.html">Version 5<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li>
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/introduction/changelog/4/index.html"><a class="padding" href="/hugo-theme-relearn/pir/introduction/changelog/4/index.html">Version 4<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li>
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/introduction/changelog/3/index.html"><a class="padding" href="/hugo-theme-relearn/pir/introduction/changelog/3/index.html">Version 3<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li>
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/introduction/changelog/2/index.html"><a class="padding" href="/hugo-theme-relearn/pir/introduction/changelog/2/index.html">Version 2<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li>
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/introduction/changelog/1/index.html"><a class="padding" href="/hugo-theme-relearn/pir/introduction/changelog/1/index.html">Version 1<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li></ul></li></ul></li>
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/configuration/index.html"><label><input type="checkbox"><i class="fa-fw fas fa-chevron-right" aria-hidden="true"></i><span class="a11y-only">Submenu Configurrrat&#39;n</span></label><a class="padding default-animation" href="/hugo-theme-relearn/pir/configuration/index.html"><i class="fa-fw fas fa-gears"></i> Configurrrat&#39;n<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a><ul class="collapsible-menu">
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/configuration/sitemanagement/index.html"><label><input type="checkbox"><i class="fa-fw fas fa-chevron-right" aria-hidden="true"></i><span class="a11y-only">Submenu Site Management</span></label><a class="padding default-animation" href="/hugo-theme-relearn/pir/configuration/sitemanagement/index.html">Site Management<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a><ul class="collapsible-menu">
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/configuration/sitemanagement/structure/index.html"><a class="padding" href="/hugo-theme-relearn/pir/configuration/sitemanagement/structure/index.html">Directory Structure<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li>
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/configuration/sitemanagement/multilingual/index.html"><a class="padding" href="/hugo-theme-relearn/pir/configuration/sitemanagement/multilingual/index.html">Multilingual<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li>
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/configuration/sitemanagement/versioning/index.html"><a class="padding" href="/hugo-theme-relearn/pir/configuration/sitemanagement/versioning/index.html">Versioning<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li>
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/configuration/sitemanagement/meta/index.html"><a class="padding" href="/hugo-theme-relearn/pir/configuration/sitemanagement/meta/index.html">Meta Information<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li>
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/configuration/sitemanagement/outputformats/index.html"><a class="padding" href="/hugo-theme-relearn/pir/configuration/sitemanagement/outputformats/index.html">Available Output Formats<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li></ul></li>
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/configuration/branding/index.html"><label><input type="checkbox"><i class="fa-fw fas fa-chevron-right" aria-hidden="true"></i><span class="a11y-only">Submenu Brrrand&#39;n</span></label><a class="padding default-animation" href="/hugo-theme-relearn/pir/configuration/branding/index.html">Brrrand&#39;n<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a><ul class="collapsible-menu">
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/configuration/branding/logo/index.html"><a class="padding" href="/hugo-theme-relearn/pir/configuration/branding/logo/index.html">Logo &amp; Title<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li>
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/configuration/branding/colors/index.html"><a class="padding" href="/hugo-theme-relearn/pir/configuration/branding/colors/index.html">Brrrand&#39;n<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li>
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/configuration/branding/modules/index.html"><a class="padding" href="/hugo-theme-relearn/pir/configuration/branding/modules/index.html">Module Theming<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li>
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/configuration/branding/generator/index.html"><a class="padding" href="/hugo-theme-relearn/pir/configuration/branding/generator/index.html">Stylesheet Generrrat&#39;r<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li></ul></li>
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/configuration/sidebar/index.html"><label><input type="checkbox"><i class="fa-fw fas fa-chevron-right" aria-hidden="true"></i><span class="a11y-only">Submenu Sidebar</span></label><a class="padding default-animation" href="/hugo-theme-relearn/pir/configuration/sidebar/index.html">Sidebar<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a><ul class="collapsible-menu">
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/configuration/sidebar/width/index.html"><a class="padding" href="/hugo-theme-relearn/pir/configuration/sidebar/width/index.html">Width<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li>
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/configuration/sidebar/headerfooter/index.html"><a class="padding" href="/hugo-theme-relearn/pir/configuration/sidebar/headerfooter/index.html">Header &amp; Footer<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li>
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/configuration/sidebar/search/index.html"><a class="padding" href="/hugo-theme-relearn/pir/configuration/sidebar/search/index.html">Search<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li>
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/configuration/sidebar/menus/index.html"><a class="padding" href="/hugo-theme-relearn/pir/configuration/sidebar/menus/index.html">Menus<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li></ul></li>
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/configuration/content/index.html"><label><input type="checkbox"><i class="fa-fw fas fa-chevron-right" aria-hidden="true"></i><span class="a11y-only">Submenu Content</span></label><a class="padding default-animation" href="/hugo-theme-relearn/pir/configuration/content/index.html">Content<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a><ul class="collapsible-menu">
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/configuration/content/width/index.html"><a class="padding" href="/hugo-theme-relearn/pir/configuration/content/width/index.html">Width<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li>
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/configuration/content/titles/index.html"><a class="padding" href="/hugo-theme-relearn/pir/configuration/content/titles/index.html">Titles &amp; Breadcrumbs<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li>
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/configuration/content/meta/index.html"><a class="padding" href="/hugo-theme-relearn/pir/configuration/content/meta/index.html">Page Meta Information<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li>
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/configuration/content/headings/index.html"><a class="padding" href="/hugo-theme-relearn/pir/configuration/content/headings/index.html">Headings<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li>
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/configuration/content/linking/index.html"><a class="padding" href="/hugo-theme-relearn/pir/configuration/content/linking/index.html">Linking<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li>
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/configuration/content/hidden/index.html"><a class="padding" href="/hugo-theme-relearn/pir/configuration/content/hidden/index.html">Hidden Pages<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li></ul></li>
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/configuration/customization/index.html"><label><input type="checkbox"><i class="fa-fw fas fa-chevron-right" aria-hidden="true"></i><span class="a11y-only">Submenu Customization</span></label><a class="padding default-animation" href="/hugo-theme-relearn/pir/configuration/customization/index.html">Customization<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a><ul class="collapsible-menu">
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/configuration/customization/partials/index.html"><a class="padding" href="/hugo-theme-relearn/pir/configuration/customization/partials/index.html">Partials<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li>
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/configuration/customization/extending/index.html"><a class="padding" href="/hugo-theme-relearn/pir/configuration/customization/extending/index.html">Adding Scripts<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li>
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/configuration/customization/linkeffects/index.html"><a class="padding" href="/hugo-theme-relearn/pir/configuration/customization/linkeffects/index.html">Link Effects<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li>
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/configuration/customization/imageeffects/index.html"><a class="padding" href="/hugo-theme-relearn/pir/configuration/customization/imageeffects/index.html">Image Effects<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li>
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/configuration/customization/topbar/index.html"><a class="padding" href="/hugo-theme-relearn/pir/configuration/customization/topbar/index.html">Topbarrr<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li>
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/configuration/customization/designs/index.html"><a class="padding" href="/hugo-theme-relearn/pir/configuration/customization/designs/index.html">Page Designs<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li>
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/configuration/customization/outputformats/index.html"><a class="padding" href="/hugo-theme-relearn/pir/configuration/customization/outputformats/index.html">Output Formats<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li>
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/configuration/customization/taxonomy/index.html"><a class="padding" href="/hugo-theme-relearn/pir/configuration/customization/taxonomy/index.html">Taxonomies<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li></ul></li>
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/configuration/publishing/index.html"><label><input type="checkbox"><i class="fa-fw fas fa-chevron-right" aria-hidden="true"></i><span class="a11y-only">Submenu Publishing</span></label><a class="padding default-animation" href="/hugo-theme-relearn/pir/configuration/publishing/index.html">Publishing<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a><ul class="collapsible-menu">
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/configuration/publishing/accessibility/index.html"><a class="padding" href="/hugo-theme-relearn/pir/configuration/publishing/accessibility/index.html">Accessibility<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li>
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/configuration/publishing/deployment/index.html"><a class="padding" href="/hugo-theme-relearn/pir/configuration/publishing/deployment/index.html">Deployment Scenarios<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li>
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/configuration/publishing/storedinformation/index.html"><a class="padding" href="/hugo-theme-relearn/pir/configuration/publishing/storedinformation/index.html">GDPR &amp; Cookie Consent<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li>
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/configuration/publishing/stableoutput/index.html"><a class="padding" href="/hugo-theme-relearn/pir/configuration/publishing/stableoutput/index.html">Stable Output<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li>
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/configuration/publishing/sbom/index.html"><a class="padding" href="/hugo-theme-relearn/pir/configuration/publishing/sbom/index.html">SBOM<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li>
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/configuration/publishing/csp/index.html"><a class="padding" href="/hugo-theme-relearn/pir/configuration/publishing/csp/index.html">Content Security Policy<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li>
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/configuration/publishing/frontmattercms/index.html"><a class="padding" href="/hugo-theme-relearn/pir/configuration/publishing/frontmattercms/index.html">VS Code Front Matter CMS<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li>
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/configuration/publishing/shortcuts/index.html"><a class="padding" href="/hugo-theme-relearn/pir/configuration/publishing/shortcuts/index.html">Keyboard Shortcuts<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li></ul></li>
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/configuration/reference/index.html"><a class="padding" href="/hugo-theme-relearn/pir/configuration/reference/index.html">Options Reference<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li></ul></li>
+            <li class="parent " data-nav-id="/hugo-theme-relearn/pir/authoring/index.html"><label><input type="checkbox" checked><i class="fa-fw fas fa-chevron-right" aria-hidden="true"></i><span class="a11y-only">Submenu Rambl&#39;n</span></label><a class="padding default-animation" href="/hugo-theme-relearn/pir/authoring/index.html"><i class="fa-fw fab fa-markdown"></i> Rambl&#39;n<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a><ul class="collapsible-menu">
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/authoring/structure/index.html"><a class="padding" href="/hugo-theme-relearn/pir/authoring/structure/index.html">Directory Structure<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li>
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/authoring/frontmatter/index.html"><label><input type="checkbox"><i class="fa-fw fas fa-chevron-right" aria-hidden="true"></i><span class="a11y-only">Submenu Front Matter</span></label><a class="padding default-animation" href="/hugo-theme-relearn/pir/authoring/frontmatter/index.html">Front Matter<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a><ul class="collapsible-menu">
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/authoring/frontmatter/designs/index.html"><a class="padding" href="/hugo-theme-relearn/pir/authoring/frontmatter/designs/index.html">Page Designs<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li>
+            <li class="crosslink " data-nav-id="/hugo-theme-relearn/pir/configuration/sidebar/menus/index.html#expand-state-of-submenus"><a class="padding" href="/hugo-theme-relearn/pir/configuration/sidebar/menus/index.html#expand-state-of-submenus">Menus<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li>
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/authoring/frontmatter/linking/index.html"><a class="padding" href="/hugo-theme-relearn/pir/authoring/frontmatter/linking/index.html">Linking<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li>
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/authoring/frontmatter/topbar/index.html"><a class="padding" href="/hugo-theme-relearn/pir/authoring/frontmatter/topbar/index.html">Topbarrr<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li>
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/authoring/frontmatter/reference/index.html"><a class="padding" href="/hugo-theme-relearn/pir/authoring/frontmatter/reference/index.html">Reference<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li></ul></li>
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/authoring/meta/index.html"><a class="padding" href="/hugo-theme-relearn/pir/authoring/meta/index.html">Meta Information<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li>
+            <li class="active " data-nav-id="/hugo-theme-relearn/pir/authoring/markdown/index.html"><a class="padding" href="/hugo-theme-relearn/pir/authoring/markdown/index.html" aria-current="page">Marrrkdown Rules<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li>
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/authoring/linking/index.html"><label><input type="checkbox"><i class="fa-fw fas fa-chevron-right" aria-hidden="true"></i><span class="a11y-only">Submenu Linking</span></label><a class="padding default-animation" href="/hugo-theme-relearn/pir/authoring/linking/index.html">Linking<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a><ul class="collapsible-menu">
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/authoring/linking/pages/index.html"><a class="padding" href="/hugo-theme-relearn/pir/authoring/linking/pages/index.html">Pages &amp; Resources<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li>
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/authoring/linking/linkeffects/index.html"><a class="padding" href="/hugo-theme-relearn/pir/authoring/linking/linkeffects/index.html">Link Effects<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li>
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/authoring/linking/imageeffects/index.html"><a class="padding" href="/hugo-theme-relearn/pir/authoring/linking/imageeffects/index.html">Image Effects<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li></ul></li>
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/authoring/taxterm/index.html"><a class="padding" href="/hugo-theme-relearn/pir/authoring/taxterm/index.html">Taxonomy / Term Pages<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li></ul></li>
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/shortcodes/index.html"><label><input type="checkbox"><i class="fa-fw fas fa-chevron-right" aria-hidden="true"></i><span class="a11y-only">Submenu Shorrrtcodes</span></label><a class="padding default-animation" href="/hugo-theme-relearn/pir/shortcodes/index.html"><i class="fa-fw fas fa-shapes"></i> Shorrrtcodes<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a><ul class="collapsible-menu">
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/shortcodes/badge/index.html"><a class="padding" href="/hugo-theme-relearn/pir/shortcodes/badge/index.html">Badge<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li>
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/shortcodes/button/index.html"><a class="padding" href="/hugo-theme-relearn/pir/shortcodes/button/index.html">Button<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li>
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/shortcodes/callout/index.html"><a class="padding" href="/hugo-theme-relearn/pir/shortcodes/callout/index.html">Callout<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li>
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/shortcodes/cards/index.html"><a class="padding" href="/hugo-theme-relearn/pir/shortcodes/cards/index.html">Cards<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li>
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/shortcodes/details/index.html"><a class="padding" href="/hugo-theme-relearn/pir/shortcodes/details/index.html">Details<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li>
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/shortcodes/highlight/index.html"><a class="padding" href="/hugo-theme-relearn/pir/shortcodes/highlight/index.html">Highlight<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li>
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/shortcodes/icon/index.html"><a class="padding" href="/hugo-theme-relearn/pir/shortcodes/icon/index.html">Icon<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li>
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/shortcodes/include/index.html"><a class="padding" href="/hugo-theme-relearn/pir/shortcodes/include/index.html">Include<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li>
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/shortcodes/math/index.html"><a class="padding" href="/hugo-theme-relearn/pir/shortcodes/math/index.html">Math<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li>
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/shortcodes/mermaid/index.html"><a class="padding" href="/hugo-theme-relearn/pir/shortcodes/mermaid/index.html">Merrrmaid<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li>
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/shortcodes/openapi/index.html"><a class="padding" href="/hugo-theme-relearn/pir/shortcodes/openapi/index.html">OpenAPI<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li>
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/shortcodes/pages/index.html"><a class="padding" href="/hugo-theme-relearn/pir/shortcodes/pages/index.html">Pages<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li>
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/shortcodes/resources/index.html"><a class="padding" href="/hugo-theme-relearn/pir/shortcodes/resources/index.html">Resources<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li>
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/shortcodes/siteparam/index.html"><a class="padding" href="/hugo-theme-relearn/pir/shortcodes/siteparam/index.html">SiteParam<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li>
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/shortcodes/tabs/index.html"><a class="padding" href="/hugo-theme-relearn/pir/shortcodes/tabs/index.html">Tabs<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li>
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/shortcodes/tree/index.html"><a class="padding" href="/hugo-theme-relearn/pir/shortcodes/tree/index.html">Tree<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li></ul></li>
+          </ul>
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts default-animation">
+          <div class="nav-title padding">Morrre</div>
+          <ul class="space collapsible-menu">
+            <li class="" data-nav-id="/hugo-theme-relearn/exampleSite/pir/about/index.html"><a class="padding" href="/hugo-theme-relearn/exampleSite/pir/about/index.html"><i class="fa-fw fas fa-anchor"></i> Example Site<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li>
+            <li class="" data-nav-id="https://github.com/McShelby/hugo-theme-relearn"><a class="padding" href="https://github.com/McShelby/hugo-theme-relearn" rel="external" target="_self"><i class="fa-fw fab fa-github"></i> GitHub Repo<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li>
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/showcase/index.html"><a class="padding" href="/hugo-theme-relearn/pir/showcase/index.html"><i class="fa-fw fas fa-camera"></i> Showcases<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li>
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/more/credits/index.html"><a class="padding" href="/hugo-theme-relearn/pir/more/credits/index.html"><i class="fa-fw fas fa-bullhorn"></i> Crrredits<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li>
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/tags/index.html"><a class="padding" href="/hugo-theme-relearn/pir/tags/index.html">Arrr! Tags<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li>
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/categories/index.html"><label><input type="checkbox"><i class="fa-fw fas fa-chevron-right" aria-hidden="true"></i><span class="a11y-only">Submenu Categorrries</span></label><a class="padding default-animation" href="/hugo-theme-relearn/pir/categories/index.html"><i class="fa-fw fas fa-layer-group"></i> Categorrries<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a><ul class="collapsible-menu">
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/categories/explanation/index.html"><a class="padding" href="/hugo-theme-relearn/pir/categories/explanation/index.html">Explanation<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li>
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/categories/howto/index.html"><a class="padding" href="/hugo-theme-relearn/pir/categories/howto/index.html">Howto<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li>
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/categories/reference/index.html"><a class="padding" href="/hugo-theme-relearn/pir/categories/reference/index.html">Reference<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li>
+            <li class="" data-nav-id="/hugo-theme-relearn/pir/categories/tutorial/index.html"><a class="padding" href="/hugo-theme-relearn/pir/categories/tutorial/index.html">Tutorial<i class="fa-fw fas fa-check read-icon" aria-hidden="true"></i></a></li></ul></li>
+          </ul>
+        </div>
+        <div id="R-footer-margin" class="default-animation"></div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-footercontrols default-animation">
+          <ul class="">
+            <li class="R-languageswitcher">
+              <div class="padding menu-control">
+                <i class="fa-fw fas fa-language" aria-hidden="true"></i>
+                <span>&nbsp;</span>
+                <div class="control-style">
+                  <select aria-label="Language">
+                    <option value="en" data-url="/hugo-theme-relearn/authoring/markdown/index.html" lang="en">English</option>
+                    <option value="pir" data-url="/hugo-theme-relearn/pir/authoring/markdown/index.html" lang="art-x-pir" selected data-selected>Arrr! ☠ Pirrratish ☠</option>
+                  </select>
+                </div>
+                <div class="clear"></div>
+              </div>
+            </li>
+            <li class="R-variantswitcher">
+              <div class="padding menu-control">
+                <i class="fa-fw fas fa-paint-brush" aria-hidden="true"></i>
+                <span>&nbsp;</span>
+                <div class="control-style">
+                  <select aria-label="Theme" autocomplete="off">
+                    <optgroup label="Relearn">
+                      <option value="relearn-auto" selected>Relearn Light/Dark</option>
+                      <option value="relearn-dark">Relearn Dark</option>
+                      <option value="relearn-light">Relearn Light</option>
+                    </optgroup>
+                    <optgroup label="Zen">
+                      <option value="zen-auto">Zen Light/Dark</option>
+                      <option value="zen-dark">Zen Dark</option>
+                      <option value="zen-light">Zen Light</option>
+                    </optgroup>
+                    <optgroup label="Contrast">
+                      <option value="contrast-auto">Contrast Light/Dark</option>
+                      <option value="contrast-dark">Contrast Dark</option>
+                      <option value="contrast-light">Contrast Light</option>
+                    </optgroup>
+                    <optgroup label="Tome">
+                      <option value="tome-auto">Tome Light/Dark</option>
+                      <option value="tome-dark">Tome Dark</option>
+                      <option value="tome-light">Tome Light</option>
+                    </optgroup>
+                    <optgroup label="Retro">
+                      <option value="retro-auto">Retro Learn/Neon</option>
+                      <option value="neon">Neon</option>
+                      <option value="learn">Learn</option>
+                    </optgroup>
+                    <optgroup label="Colors">
+                      <option value="blue">Blue</option>
+                      <option value="green">Green</option>
+                      <option value="red">Red</option>
+                    </optgroup>
+                  </select>
+                </div>
+                <div class="clear"></div>
+              </div>
+            </li>
+            <li class="R-historyclearer">
+              <div class="padding menu-control">
+                <i class="fa-fw fas fa-history" aria-hidden="true"></i>
+                <span>&nbsp;</span>
+                <div class="control-style">
+                  <button>Clearrr Historrry</button>
+                </div>
+                <div class="clear"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+<div id="R-footer" class="default-animation"><span class="github-buttons"></span>
+<p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn/releases/tag/9.4.0" title="Relearn 9.4.0"><i class="fas fa-fw fa-heart"></i></a> by <a href="https://gohugo.io/" title="Hugo 0.168.0">Hugo</a></p>
+<script src="/hugo-theme-relearn/js/github-buttons-init.min.46d9f4ac9c492d6e152b83b335c9e5d127ec0f0b5fc282e1c3f588a4e42dd422.js"></script>
+<script async src="/hugo-theme-relearn/js/github-buttons/github-buttons.min.396875a4c3b16f1f090a5324972f068ebeee9dc3902a275b352dd4a74e99b648.js"></script></div>
+      </nav>
+    </aside>
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <header id="R-topbar" class="default-animation">
+        <div class="topbar-wrapper default-animation">
+          <div class="topbar-sidebar-divider default-animation"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+<span class="btn cstyle button link noborder notitle interactive"><button data-button-action="toggle-nav" type="button" title="Menu (CTRL&#43;ALT&#43;n)" aria-label="Menu (CTRL&#43;ALT&#43;n)" aria-expanded="false"><i class="fa-fw fas fa-bars" aria-hidden="true"></i></button></span>
+            </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button data-button-action="toggle-flyout" type="button" title="Table o&#39; Contents (CTRL&#43;ALT&#43;t)" aria-label="Table o&#39; Contents (CTRL&#43;ALT&#43;t)" aria-expanded="false"><i class="fa-fw fas fa-table-list" aria-hidden="true"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper" tabindex="-1">
+<nav class="TableOfContents" aria-label="Table o&#39; Contents">
+  <ul>
+    <li><a href="#standard-and-extensions">Standard an' Extensions</a></li>
+    <li><a href="#paragraphs">Paragraphs</a></li>
+    <li><a href="#headings">Head'ns</a></li>
+    <li><a href="#horizontal-rules">Horizontal Rules</a></li>
+    <li><a href="#blockquotes">Blockquotes</a>
+      <ul>
+        <li><a href="#quotations">Quotat'ns</a></li>
+        <li><a href="#quotations-with-attribution">Quotat'ns wit' Attribut'n</a></li>
+        <li><a href="#github-alerts">GitHub Alerts</a></li>
+        <li><a href="#obsidian-callouts">Obsidian Callouts</a></li>
+      </ul>
+    </li>
+    <li><a href="#text-markers">Text Markers</a>
+      <ul>
+        <li><a href="#bold">Bold</a></li>
+        <li><a href="#italics">Italics</a></li>
+        <li><a href="#marked-text">Marked Text</a></li>
+        <li><a href="#inserted-text">Inserted Text</a></li>
+        <li><a href="#deleted-text">Deleted Text</a></li>
+      </ul>
+    </li>
+    <li><a href="#special-typesetting">Special Typesett'n</a>
+      <ul>
+        <li><a href="#text-substitution">Text Substitut'n</a></li>
+        <li><a href="#subscript-and-superscript">Subscript an' Superscript</a></li>
+        <li><a href="#keyboard-shortcuts">Keyboard Shortcuts</a></li>
+      </ul>
+    </li>
+    <li><a href="#lists">Lists</a>
+      <ul>
+        <li><a href="#unordered">Unordered</a></li>
+        <li><a href="#ordered">Ordered</a></li>
+        <li><a href="#tasks">Tasks</a></li>
+        <li><a href="#tree">Tree</a></li>
+        <li><a href="#definitions">Definit'ns</a></li>
+      </ul>
+    </li>
+    <li><a href="#code">Code</a>
+      <ul>
+        <li><a href="#inline-code">Inline Code</a></li>
+        <li><a href="#indented-code-block">Indented Code Block</a></li>
+        <li><a href="#fenced-code-block">Fenced Code Block</a></li>
+      </ul>
+    </li>
+    <li><a href="#tables">Tables</a>
+      <ul>
+        <li><a href="#aligned-columns">Aligned Columns</a></li>
+        <li><a href="#merged-cells">Merged Cells</a></li>
+        <li><a href="#sortable-columns">Sortable Columns</a></li>
+      </ul>
+    </li>
+    <li><a href="#links">Links</a>
+      <ul>
+        <li><a href="#autolink">Autolink</a></li>
+        <li><a href="#basic-link">Basic Link</a></li>
+        <li><a href="#link-with-tooltip">Link wit' Tooltip</a></li>
+        <li><a href="#link-references">Link References</a></li>
+        <li><a href="#footnotes">Footnotes</a></li>
+        <li><a href="#link-effects">Link Effects</a></li>
+      </ul>
+    </li>
+    <li><a href="#images">Images</a>
+      <ul>
+        <li><a href="#basic-images">Basic Images</a></li>
+        <li><a href="#image-with-tooltip">Image wit' Tooltip</a></li>
+        <li><a href="#image-references">Image References</a></li>
+        <li><a href="#image-effects">Image Effects</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav> 
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="topbar-area topbar-area-middle" data-area="middle">
+            <nav class="topbar-breadcrumbs breadcrumbs highlightable" aria-label="Brrreadcrumbs" data-overflow-title="Rambl&#39;n &gt; Marrrkdown Rules">
+              <ol itemscope itemtype="http://schema.org/BreadcrumbList"><li class="topbar-breadcrumbs-divider" aria-hidden="true">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class="a11y-only"><a itemprop="item" href="/hugo-theme-relearn/pir/index.html" tabindex="-1"><span itemprop="name">Cap&#39;n Hugo Relearrrn Theme</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/hugo-theme-relearn/pir/authoring/index.html"><span itemprop="name">Rambl&#39;n</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class="" aria-current="page"><span itemprop="name">Marrrkdown Rules</span><meta itemprop="position" content="3"></li>
+              </ol>
+            </nav>
+          </div>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a aria-label="Meta Information (🡒)" href="/hugo-theme-relearn/pir/authoring/meta/index.html" title="Meta Information (🡒)"><i class="fa-fw fas fa-chevron-left" aria-hidden="true"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-next default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a aria-label="Linking (🡐)" href="/hugo-theme-relearn/pir/authoring/linking/index.html" title="Linking (🡐)"><i class="fa-fw fas fa-chevron-right" aria-hidden="true"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-more default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button data-button-action="toggle-flyout" type="button" title="Morrre" aria-label="Morrre" aria-expanded="false"><i class="fa-fw fas fa-ellipsis-v" aria-hidden="true"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper" tabindex="-1">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+            <div class="topbar-button topbar-button-edit default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a aria-label="Edit (CTRL&#43;ALT&#43;w)" href="https://github.com/McShelby/hugo-theme-relearn/edit/main/docs/content/authoring/markdown.pir.md" rel="external" target="_self" title="Edit (CTRL&#43;ALT&#43;w)"><i class="fa-fw fas fa-pen" aria-hidden="true"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-source default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a aria-label="Show source code" href="/hugo-theme-relearn/pir/authoring/markdown/index.source.md" title="Show source code"><i class="fa-fw fas fa-code" aria-hidden="true"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-markdown default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a aria-label="Show Marrrkd&#39;n" href="/hugo-theme-relearn/pir/authoring/markdown/index.md" title="Show Marrrkd&#39;n"><i class="fa-fw fab fa-markdown" aria-hidden="true"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-print default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a aria-label="Prrrint whole chapterrr (CTRL&#43;ALT&#43;p)" href="/hugo-theme-relearn/pir/authoring/markdown/index.print.html" title="Prrrint whole chapterrr (CTRL&#43;ALT&#43;p)"><i class="fa-fw fas fa-print" aria-hidden="true"></i></a></span>
+            </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable authoring" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="marrrkdown-rules">Marrrkdown Rules</h1>
+
+<p>Let&rsquo;s face it: Writ'n rrrambl'n fer th' web be tiresome. WYSIWYG editors help alleviate this task, but they generally result 'n horr'ble code, or worse yet, ugly web planks.</p>
+<p><strong>Marrrkdown</strong> be a better way t' write <strong>HTML</strong>, without all th' complexities an' ugliness that usually accompanies it.</p>
+<p>Some o' th' key benefits be:</p>
+<ol>
+<li>Marrrkdown be simple t' learn, wit' minimal extra characters so it&rsquo;s also quicker t' write rrrambl'n.</li>
+<li>Less chance o' errors when writ'n 'n Marrrkdown.</li>
+<li>Produces valid HTML output.</li>
+<li>Keeps th' rrrambl'n an' th' visual display separate, so ye cannot mess up th' look o' yer ship.</li>
+<li>Write 'n any text editor or Marrrkdown applicat'n ye like.</li>
+<li>Marrrkdown be a joy t' use!</li>
+</ol>
+<p>John Gruber, th' author o' Marrrkdown, puts it like this:</p>
+<figure class="quote">
+  <blockquote>
+<p>Th' overrid'n design goal fer Markdown&rsquo;s formatt'n rules be t' make it as read'ble as poss'ble. Th' idea be that a Markdown-formatted document should be publish'ble as-is, as plain text, without look'n like it&rsquo;s been marked up wit' tags or formatt'n instruct'ns. While Markdown&rsquo;s rules has been influenced by several exist'n text-to-HTML filters, th' single biggest source o' inspirat'n fer Markdown&rsquo;s rules be th' format o' plain text email.</p>
+</blockquote>
+  <figcaption>John Gruber</figcaption>
+</figure>
+
+
+<div role="note" aria-labelledby="R-box-label-765df0daa440cb561365eee3b428e4ea" class="box cstyle callout tip">
+  <div id="R-box-label-765df0daa440cb561365eee3b428e4ea" class="box-label">
+    <i class="fa-fw fas fa-lightbulb" aria-hidden="true"></i> 
+    Smarrrt Arrrse
+  </div>
+  <div class="box-content">
+<p><i class="fa-fw fas fa-bookmark" aria-hidden="true"></i> Bookmark this plank fer easy future reference!</p>
+  </div>
+</div>
+<h2 id="standard-and-extensions">Standard an' Extensions<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h2>
+<p>If not otherwise noted, th' shown examples adhere t' th' <a href="https://commonmark.org/help/" rel="external" target="_self">CommonMark</a> standard. In addit'n th' theme supports th' follow'n extensions that <a href="https://gohugo.io/getting-started/configuration-markup/#goldmark" rel="external" target="_self">can be activated</a> 'n yer project configurat'n or be built into th' theme:</p>
+<ul>
+<li>
+<p><span class="badge cstyle gfm badge-with-title"><span class="badge-title"><i class="fa-fw fab fa-github" aria-hidden="true"></i></span><span class="badge-content">GFM</span></span> Extension on top o' standard Marrrkdown adher'n t' <a href="https://github.github.com/gfm/" rel="external" target="_self">GitHub Flavored Marrrkdown</a>.</p>
+</li>
+<li>
+<p><span class="badge cstyle php badge-with-title"><span class="badge-title"><i class="fa-fw fab fa-php" aria-hidden="true"></i></span><span class="badge-content">PHP</span></span> Extension on top o' standard Marrrkdown adher'n t' <a href="https://michelf.ca/projects/php-markdown/extra/" rel="external" target="_self">PHP Marrrkdown</a>.</p>
+</li>
+<li>
+<p><span class="badge cstyle pants badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-lightbulb" aria-hidden="true"></i></span><span class="badge-content">Pants</span></span> Extension by John Gruber adher'n t' <a href="https://daringfireball.net/projects/smartypants/" rel="external" target="_self">SmartyPants</a>.</p>
+</li>
+<li>
+<p><span class="badge cstyle hugo badge-with-title"><span class="badge-title"><i class="fa-fw fab fa-hackerrank" aria-hidden="true"></i></span><span class="badge-content">Cap'n Hugo</span></span> <a href="https://github.com/gohugoio/hugo-goldmark-extensions?tab=readme-ov-file#extras-extension" rel="external" target="_self">Cap'n Hugo Extra Extension</a> supported by Cap'n Hugo.</p>
+</li>
+<li>
+<p><span class="badge cstyle obsidian badge-with-title"><span class="badge-title"><i class="fa-fw far fa-gem" aria-hidden="true"></i></span><span class="badge-content">Obsidian</span></span> Extension implemented by <a href="https://obsidian.md/" rel="external" target="_self">Obsidian</a>.</p>
+</li>
+<li>
+<p><span class="badge cstyle mpe badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-display" aria-hidden="true"></i></span><span class="badge-content">MPE</span></span> Extension implemented by <a href="https://shd101wyy.github.io/markdown-preview-enhanced/" rel="external" target="_self">Marrrkdown Preview Enhanced</a>.</p>
+</li>
+<li>
+<p><span class="badge cstyle html badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-code" aria-hidden="true"></i></span><span class="badge-content">HTML</span></span> If th' <a href="https://gohugo.io/getting-started/configuration-markup/#rendererunsafe" rel="external" target="_self">usage o' HTML</a> be allowed, th' theme supports styl'n fer further HTML elements.</p>
+</li>
+<li>
+<p><span class="badge cstyle relearn badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-puzzle-piece" aria-hidden="true"></i></span><span class="badge-content">Relearrrn</span></span> Extension specific t' this theme.</p>
+</li>
+</ul>
+<h2 id="paragraphs">Paragraphs<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h2>
+<p>In Marrrkdown yer rrrambl'n usually spans th' whole avail'ble document width. This be called a block. Blocks be always separated by whitespace t' their adjacent blocks 'n th' result'n document.</p>
+<p>Any text not start'n wit' a special sign be written as normal, plain text paragraph block an' must be separated t' its adjacent blocks by empty lines.</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-md" data-lang="md"><span class="line"><span class="cl">Lorem ipsum dolor sit amet, graecis denique ei vel, at duo primis mandamus.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Et legere ocurreret pri, animal tacimates complectitur ad cum. Cu eum inermis inimicus efficiendi. Labore officiis his ex, soluta officiis concludaturque ei qui, vide sensibus vim ad.</span></span></code></pre></div>
+
+
+<div role="note" aria-labelledby="R-box-label-412b8e08d1b88883f133039dd5984d7d" class="box cstyle callout example">
+  <div id="R-box-label-412b8e08d1b88883f133039dd5984d7d" class="box-label">
+    <i class="fa-fw fas fa-eye" aria-hidden="true"></i> 
+    Result
+  </div>
+  <div class="box-content">
+<p>Lorem ipsum dolor sit amet, graecis denique ei vel, at duo primis mandamus.</p>
+<p>Et legere ocurreret pri, animal tacimates complectitur ad cum. Cu eum inermis inimicus efficiendi. Labore officiis his ex, soluta officiis concludaturque ei qui, vide sensibus vim ad.</p>
+  </div>
+</div>
+<h2 id="headings">Head'ns<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h2>
+<p>A bloody idea be t' structure yer rrrambl'n us'n head'ns an' subhead'ns. HTML-head'ns from <code>h1</code> through <code>h6</code> be constructed wit' a <code>#</code> fer each level.</p>
+<p>In Hugo ye usually don&rsquo;t use <code>h1</code> as this be generated by yer theme an' ye should only have one such element 'n a document.</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-md" data-lang="md"><span class="line"><span class="cl"><span class="gh"># h1 Head'n
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="gu">## h2 Head'n
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="gu">### h3 Head'n
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="gu">#### h4 Head'n
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="gu">##### h5 Head'n
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">###### h6 Head'n</span></span></code></pre></div>
+
+
+<div role="note" aria-labelledby="R-box-label-0e0d6df0322f09f0817f39267c67308d" class="box cstyle callout example">
+  <div id="R-box-label-0e0d6df0322f09f0817f39267c67308d" class="box-label">
+    <i class="fa-fw fas fa-eye" aria-hidden="true"></i> 
+    Result
+  </div>
+  <div class="box-content">
+<h1 id="h1-heading">h1 Head'n<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h1>
+<h2 id="h2-heading">h2 Head'n<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h2>
+<h3 id="h3-heading">h3 Head'n<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
+<h4 id="h4-heading">h4 Head'n<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h4>
+<h5 id="h5-heading">h5 Head'n<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h5>
+<h6 id="h6-heading">h6 Head'n<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h6>
+  </div>
+</div>
+<h2 id="horizontal-rules">Horizontal Rules<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h2>
+<p>T' further structure yer rrrambl'n ye can add horizontal rules. They create a &ldquo;thematic break&rdquo; between paragraph blocks. In Marrrkdown, ye can create it wit' three consecutive dashes <code>---</code>.</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-md" data-lang="md"><span class="line"><span class="cl">Lorem ipsum dolor sit amet, graecis denique ei vel, at duo primis mandamus.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">---
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Et legere ocurreret pri, animal tacimates complectitur ad cum. Cu eum inermis inimicus efficiendi. Labore officiis his ex, soluta officiis concludaturque ei qui, vide sensibus vim ad.</span></span></code></pre></div>
+
+
+<div role="note" aria-labelledby="R-box-label-941431a2b86e524b950dbcbe49f9ead7" class="box cstyle callout example">
+  <div id="R-box-label-941431a2b86e524b950dbcbe49f9ead7" class="box-label">
+    <i class="fa-fw fas fa-eye" aria-hidden="true"></i> 
+    Result
+  </div>
+  <div class="box-content">
+<p>Lorem ipsum dolor sit amet, graecis denique ei vel, at duo primis mandamus.</p>
+<hr>
+<p>Et legere ocurreret pri, animal tacimates complectitur ad cum. Cu eum inermis inimicus efficiendi. Labore officiis his ex, soluta officiis concludaturque ei qui, vide sensibus vim ad.</p>
+  </div>
+</div>
+<h2 id="blockquotes">Blockquotes<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h2>
+<h3 id="quotations">Quotat'ns<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
+<p>For quot'n blocks o' rrrambl'n from another source within yer document add <code>&gt;</code> before any text ye want t' quote.</p>
+<p>Blockquotes can also be nested.</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-md" data-lang="md"><span class="line"><span class="cl"><span class="k">&gt; </span><span class="ge">Donec massa lacus, ultricies a ullamcorper 'n, fermentum sed augue. Nunc augue, aliquam non hendrerit ac, commodo vel nisi.
+</span></span></span><span class="line"><span class="cl"><span class="k">&gt;
+</span></span></span><span class="line"><span class="cl"><span class="ge">&gt; &gt; Sed adipisc'n elit vitae augue consectetur a gravida nunc vehicula. Donec auctor odio non est accumsan facilisis. Aliquam id turpis 'n dolor tincidunt mollis ac eu diam.
+</span></span></span><span class="line"><span class="cl">&gt;
+</span></span><span class="line"><span class="cl">&gt; Mauris sit amet ligula egestas, feugiat metus tincidunt, luctus libero. Donec congue finibus tempor. Vestibulum aliquet sollicitudin erat, ut aliquet purus posuere luctus.</span></span></code></pre></div>
+
+
+<div role="note" aria-labelledby="R-box-label-71d5f34d4c93605183c8379d36d40451" class="box cstyle callout example">
+  <div id="R-box-label-71d5f34d4c93605183c8379d36d40451" class="box-label">
+    <i class="fa-fw fas fa-eye" aria-hidden="true"></i> 
+    Result
+  </div>
+  <div class="box-content">
+<blockquote>
+<p>Donec massa lacus, ultricies a ullamcorper 'n, fermentum sed augue. Nunc augue, aliquam non hendrerit ac, commodo vel nisi.</p>
+<blockquote>
+<p>Sed adipisc'n elit vitae augue consectetur a gravida nunc vehicula. Donec auctor odio non est accumsan facilisis. Aliquam id turpis 'n dolor tincidunt mollis ac eu diam.</p>
+</blockquote>
+<p>Mauris sit amet ligula egestas, feugiat metus tincidunt, luctus libero. Donec congue finibus tempor. Vestibulum aliquet sollicitudin erat, ut aliquet purus posuere luctus.</p>
+</blockquote>
+  </div>
+</div>
+<h3 id="quotations-with-attribution">Quotat'ns wit' Attribut'n<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
+<p><span class="badge cstyle relearn badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-puzzle-piece" aria-hidden="true"></i></span><span class="badge-content">Relearrrn</span></span> Ye can attribute a quotat'n wit' <a href="https://gohugo.io/render-hooks/blockquotes/#attributes" rel="external" target="_self">Marrrkdown attributes</a> 'n a line follow'n th' blockquote. Use <code>author</code> fer th' person quoted an' <code>source</code> fer th' title o' th' work th' quotat'n be taken from. Both be optional, be displayed below th' quotat'n an' may contain Marrrkdown itself.</p>
+<p>Wit' <code>href</code> ye can give th' address th' quotat'n be taken from. It turns th' displayed author an' source into a link an' be written t' th' <code>cite</code> attribute o' th' quotat'n fer machines t' read. It be resolved like any other link, so it can also point t' a plank o' yer ship.</p>
+<p>This requires <code>marrrkup.goldmark.parser.attribute.block</code> set t' <code>true</code> 'n yer project configurat'n. Th' attributes be ignored fer th' alerts an' callouts below.</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-md" data-lang="md"><span class="line"><span class="cl"><span class="k">&gt; </span><span class="ge">Sed adipisc'n elit vitae augue consectetur a gravida nunc vehicula.
+</span></span></span><span class="line"><span class="cl">{author=&#34;Marcus Tullius Cicero&#34; source=&#34;De finibus bonorum et malorum&#34; href=&#34;https://en.wikipedia.org/wiki/De_finibus_bonorum_et_malorum&#34;}</span></span></code></pre></div>
+
+
+<div role="note" aria-labelledby="R-box-label-e7970028d6ab9435c706e732bdb6f86f" class="box cstyle callout example">
+  <div id="R-box-label-e7970028d6ab9435c706e732bdb6f86f" class="box-label">
+    <i class="fa-fw fas fa-eye" aria-hidden="true"></i> 
+    Result
+  </div>
+  <div class="box-content">
+<figure class="quote">
+  <blockquote cite="https://en.wikipedia.org/wiki/De_finibus_bonorum_et_malorum">
+<p>Sed adipisc'n elit vitae augue consectetur a gravida nunc vehicula.</p>
+</blockquote>
+  <figcaption><a href="https://en.wikipedia.org/wiki/De_finibus_bonorum_et_malorum" rel="external" target="_self">Marcus Tullius Cicero, <cite>De finibus bonorum et malorum</cite></a></figcaption>
+</figure>
+  </div>
+</div>
+<h3 id="github-alerts">GitHub Alerts<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
+<p><span class="badge cstyle gfm badge-with-title"><span class="badge-title"><i class="fa-fw fab fa-github" aria-hidden="true"></i></span><span class="badge-content">GFM</span></span> <a href="https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#alerts" rel="external" target="_self">GitHub alerts</a> be supported. Please note, that color'n an' ay'cons o' severities may differ between GitHub an' this theme.</p>
+<p>If ye be 'n need o' more advanced options t' style yer alerts, like ay'cons, use th' <a href="/hugo-theme-relearn/pir/shortcodes/callout/index.html">callout shortcode</a>.</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-md" data-lang="md"><span class="line"><span class="cl"><span class="k">&gt; </span><span class="ge">[!caution]
+</span></span></span><span class="line"><span class="cl"><span class="k">&gt; </span><span class="ge">Advises about risks or negative outcomes o' certain actions.
+</span></span></span><span class="line"><span class="cl"><span class="k">
+</span></span></span><span class="line"><span class="cl"><span class="k">&gt; </span><span class="ge">[!important]
+</span></span></span><span class="line"><span class="cl"><span class="k">&gt; </span><span class="ge">Key informat'n users need t' know t' achieve their goal.
+</span></span></span><span class="line"><span class="cl"><span class="k">
+</span></span></span><span class="line"><span class="cl"><span class="k">&gt; </span><span class="ge">[!info]
+</span></span></span><span class="line"><span class="cl"><span class="k">&gt; </span><span class="ge">Informat'n that users &lt;ins&gt;_might_&lt;/ins&gt; find interest'n.
+</span></span></span><span class="line"><span class="cl"><span class="k">
+</span></span></span><span class="line"><span class="cl"><span class="k">&gt; </span><span class="ge">[!note]
+</span></span></span><span class="line"><span class="cl"><span class="k">&gt; </span><span class="ge">Useful informat'n that users should know, even when skimm'n rrrambl'n.
+</span></span></span><span class="line"><span class="cl"><span class="k">
+</span></span></span><span class="line"><span class="cl"><span class="k">&gt; </span><span class="ge">[!tip]
+</span></span></span><span class="line"><span class="cl"><span class="k">&gt; </span><span class="ge">Helpful advice fer do'n th'ns better or more easily.
+</span></span></span><span class="line"><span class="cl"><span class="k">
+</span></span></span><span class="line"><span class="cl"><span class="k">&gt; </span><span class="ge">[!warning]
+</span></span></span><span class="line"><span class="cl">&gt; Urgent info that needs immediate user attent'n t' avoid problems.</span></span></code></pre></div>
+
+
+<div role="note" aria-labelledby="R-box-label-3a83c0513327404ea804a5e15f024381" class="box cstyle callout example">
+  <div id="R-box-label-3a83c0513327404ea804a5e15f024381" class="box-label">
+    <i class="fa-fw fas fa-eye" aria-hidden="true"></i> 
+    Result
+  </div>
+  <div class="box-content">
+<div role="note" aria-labelledby="R-box-label-5a2c755b1b94e42c414d9a0fe92f4d43" class="box cstyle callout caution">
+  <div id="R-box-label-5a2c755b1b94e42c414d9a0fe92f4d43" class="box-label">
+    <i class="fa-fw fas fa-hand" aria-hidden="true"></i> 
+    Caut'n
+  </div>
+  <div class="box-content">
+<p>Advises about risks or negative outcomes o' certain actions.</p>
+  </div>
+</div>
+
+
+<div role="note" aria-labelledby="R-box-label-60d6938d6e6bdbf2232921259bde41c7" class="box cstyle callout important">
+  <div id="R-box-label-60d6938d6e6bdbf2232921259bde41c7" class="box-label">
+    <i class="fa-fw fas fa-bolt" aria-hidden="true"></i> 
+    Important
+  </div>
+  <div class="box-content">
+<p>Key informat'n users need t' know t' achieve their goal.</p>
+  </div>
+</div>
+
+
+<div role="note" aria-labelledby="R-box-label-15f311cdcb947e89041ca41356ab1cab" class="box cstyle callout info">
+  <div id="R-box-label-15f311cdcb947e89041ca41356ab1cab" class="box-label">
+    <i class="fa-fw fas fa-info-circle" aria-hidden="true"></i> 
+    Ahoi
+  </div>
+  <div class="box-content">
+<p>Informat'n that users <ins><em>might</em></ins> find interest'n.</p>
+  </div>
+</div>
+
+
+<div role="note" aria-labelledby="R-box-label-952515f277e0c3dee1d37bd5fb92aa0f" class="box cstyle callout note">
+  <div id="R-box-label-952515f277e0c3dee1d37bd5fb92aa0f" class="box-label">
+    <i class="fa-fw fas fa-exclamation-circle" aria-hidden="true"></i> 
+    Avast
+  </div>
+  <div class="box-content">
+<p>Useful informat'n that users should know, even when skimm'n rrrambl'n.</p>
+  </div>
+</div>
+
+
+<div role="note" aria-labelledby="R-box-label-fe2adb9096df6825df8a314cb853f965" class="box cstyle callout tip">
+  <div id="R-box-label-fe2adb9096df6825df8a314cb853f965" class="box-label">
+    <i class="fa-fw fas fa-lightbulb" aria-hidden="true"></i> 
+    Smarrrt Arrrse
+  </div>
+  <div class="box-content">
+<p>Helpful advice fer do'n th'ns better or more easily.</p>
+  </div>
+</div>
+
+
+<div role="note" aria-labelledby="R-box-label-056b1bd2d00814ff9f510a7304e2aa60" class="box cstyle callout warning">
+  <div id="R-box-label-056b1bd2d00814ff9f510a7304e2aa60" class="box-label">
+    <i class="fa-fw fas fa-exclamation-triangle" aria-hidden="true"></i> 
+    Arrr
+  </div>
+  <div class="box-content">
+<p>Urgent info that needs immediate user attent'n t' avoid problems.</p>
+  </div>
+</div>
+  </div>
+</div>
+<h3 id="obsidian-callouts">Obsidian Callouts<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
+<p><span class="badge cstyle obsidian badge-with-title"><span class="badge-title"><i class="fa-fw far fa-gem" aria-hidden="true"></i></span><span class="badge-content">Obsidian</span></span> <a href="https://help.obsidian.md/Editing&#43;and&#43;formatting/Callouts#Change&#43;the&#43;title" rel="external" target="_self">Obsidian callouts</a> be supported. Which enables configur'ble title text an' expand/collapse.</p>
+<p>If ye be 'n need o' more advanced options t' style yer alerts, like ay'cons, use th' <a href="/hugo-theme-relearn/pir/shortcodes/callout/index.html">callout shortcode</a>.</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-md" data-lang="md"><span class="line"><span class="cl"><span class="k">&gt; </span><span class="ge">[!tip] Callouts can have **custom** titles
+</span></span></span><span class="line"><span class="cl"><span class="k">&gt; </span><span class="ge">Like this one.
+</span></span></span><span class="line"><span class="cl"><span class="k">
+</span></span></span><span class="line"><span class="cl"><span class="k">&gt; </span><span class="ge">[!tip] Title-only callout
+</span></span></span><span class="line"><span class="cl"><span class="k">
+</span></span></span><span class="line"><span class="cl"><span class="k">&gt; </span><span class="ge">[!note]- Be callouts fold'ble?
+</span></span></span><span class="line"><span class="cl"><span class="k">&gt; </span><span class="ge">Yes! In a fold'ble callout, th' contents be hidden when th' callout be collapsed
+</span></span></span><span class="line"><span class="cl"><span class="k">
+</span></span></span><span class="line"><span class="cl"><span class="k">&gt; </span><span class="ge">[!note]+ Be callouts fold'ble?
+</span></span></span><span class="line"><span class="cl">&gt; Yes! In a fold'ble callout, th' contents be hidden when th' callout be collapsed</span></span></code></pre></div>
+
+
+<div role="note" aria-labelledby="R-box-label-f1796e50f4052f4d40b29cde9a96633d" class="box cstyle callout example">
+  <div id="R-box-label-f1796e50f4052f4d40b29cde9a96633d" class="box-label">
+    <i class="fa-fw fas fa-eye" aria-hidden="true"></i> 
+    Result
+  </div>
+  <div class="box-content">
+<div role="note" aria-labelledby="R-box-label-f0d761c7c46ccd16ebdd044475fce87e" class="box cstyle callout tip">
+  <div id="R-box-label-f0d761c7c46ccd16ebdd044475fce87e" class="box-label">
+    <i class="fa-fw fas fa-lightbulb" aria-hidden="true"></i> 
+    Callouts can have <strong>custom</strong> titles
+  </div>
+  <div class="box-content">
+<p>Like this one.</p>
+  </div>
+</div>
+
+
+<div role="note" aria-labelledby="R-box-label-a7703b4f1d692a2035ab174b6f385f79" class="box cstyle callout tip">
+  <div id="R-box-label-a7703b4f1d692a2035ab174b6f385f79" class="box-label">
+    <i class="fa-fw fas fa-lightbulb" aria-hidden="true"></i> 
+    Title-only callout
+  </div>
+</div>
+
+
+<details class="box cstyle callout note expand">
+  <summary class="box-label">
+    <i class="expander-icon fa-fw fas fa-chevron-right" aria-hidden="true"></i> 
+    <i class="fa-fw fas fa-exclamation-circle" aria-hidden="true"></i> 
+    Be callouts fold'ble?
+  </summary>
+  <div class="box-content">
+<p>Yes! In a fold'ble callout, th' contents be hidden when th' callout be collapsed</p>
+  </div>
+</details>
+
+
+<details open class="box cstyle callout note expand">
+  <summary class="box-label">
+    <i class="expander-icon fa-fw fas fa-chevron-right" aria-hidden="true"></i> 
+    <i class="fa-fw fas fa-exclamation-circle" aria-hidden="true"></i> 
+    Be callouts fold'ble?
+  </summary>
+  <div class="box-content">
+<p>Yes! In a fold'ble callout, th' contents be hidden when th' callout be collapsed</p>
+  </div>
+</details>
+  </div>
+</div>
+<h2 id="text-markers">Text Markers<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h2>
+<h3 id="bold">Bold<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
+<p>Ye can show importance o' a snippet o' text wit' a heavier font-weight by enclos'n it wit' two asterisks <code>**</code>.</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-md" data-lang="md"><span class="line"><span class="cl">I am rendered wit' **bold text**</span></span></code></pre></div>
+
+
+<div role="note" aria-labelledby="R-box-label-38ddb3be0a15037b20e0dcc877d12302" class="box cstyle callout example">
+  <div id="R-box-label-38ddb3be0a15037b20e0dcc877d12302" class="box-label">
+    <i class="fa-fw fas fa-eye" aria-hidden="true"></i> 
+    Result
+  </div>
+  <div class="box-content">
+<p>I am rendered wit' <strong>bold text</strong></p>
+  </div>
+</div>
+<h3 id="italics">Italics<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
+<p>Ye can emphasize a snippet o' text wit' italics by enclos'n it wit' underscores <code>_</code>.</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-md" data-lang="md"><span class="line"><span class="cl">I am rendered wit' _italicized text_</span></span></code></pre></div>
+
+
+<div role="note" aria-labelledby="R-box-label-c74b4925965dfe374f6a55ba670c5730" class="box cstyle callout example">
+  <div id="R-box-label-c74b4925965dfe374f6a55ba670c5730" class="box-label">
+    <i class="fa-fw fas fa-eye" aria-hidden="true"></i> 
+    Result
+  </div>
+  <div class="box-content">
+<p>I am rendered wit' <em>italicized text</em></p>
+  </div>
+</div>
+<h3 id="marked-text">Marked Text<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
+<p>Ye can mark text 'n th' predefined accent color o' yer stylesheet.</p>
+<p><span class="badge cstyle hugo badge-with-title"><span class="badge-title"><i class="fa-fw fab fa-hackerrank" aria-hidden="true"></i></span><span class="badge-content">Cap'n Hugo</span></span> Ye can <a href="https://github.com/gohugoio/hugo-goldmark-extensions?tab=readme-ov-file#extras-extension" rel="external" target="_self">activate this through th' <em>Cap'n Hugo Extra Extension</em></a> 'n yer project configurat'n</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-md" data-lang="md"><span class="line"><span class="cl">==Parts== o' this text ==are marked!==</span></span></code></pre></div>
+<p><span class="badge cstyle html badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-code" aria-hidden="true"></i></span><span class="badge-content">HTML</span></span> Ye can also use it by configur'n Hugo fer <a href="https://gohugo.io/getting-started/configuration-markup/#rendererunsafe" rel="external" target="_self">usage o' HTML</a>.</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">mark</span><span class="p">&gt;</span>Parts<span class="p">&lt;/</span><span class="nt">mark</span><span class="p">&gt;</span> o' this text <span class="p">&lt;</span><span class="nt">mark</span><span class="p">&gt;</span>be marked!<span class="p">&lt;/</span><span class="nt">mark</span><span class="p">&gt;</span></span></span></code></pre></div>
+
+
+<div role="note" aria-labelledby="R-box-label-f45bd6d9019373ab5a397e1050c430c5" class="box cstyle callout example">
+  <div id="R-box-label-f45bd6d9019373ab5a397e1050c430c5" class="box-label">
+    <i class="fa-fw fas fa-eye" aria-hidden="true"></i> 
+    Result
+  </div>
+  <div class="box-content">
+<p><mark>Parts</mark> o' this text <mark>be marked!</mark></p>
+  </div>
+</div>
+<h3 id="inserted-text">Inserted Text<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
+<p>Ye can mark text addit'ns t' exist'n text.</p>
+<p><span class="badge cstyle hugo badge-with-title"><span class="badge-title"><i class="fa-fw fab fa-hackerrank" aria-hidden="true"></i></span><span class="badge-content">Cap'n Hugo</span></span> Ye can <a href="https://github.com/gohugoio/hugo-goldmark-extensions?tab=readme-ov-file#extras-extension" rel="external" target="_self">activate this through th' <em>Cap'n Hugo Extra Extension</em></a> 'n yer project configurat'n</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-md" data-lang="md"><span class="line"><span class="cl">Th' ++hot, new++ stuff</span></span></code></pre></div>
+<p><span class="badge cstyle html badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-code" aria-hidden="true"></i></span><span class="badge-content">HTML</span></span> Ye can also use it by configur'n Hugo fer <a href="https://gohugo.io/getting-started/configuration-markup/#rendererunsafe" rel="external" target="_self">usage o' HTML</a>.</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">Th' <span class="p">&lt;</span><span class="nt">ins</span><span class="p">&gt;</span>hot, new<span class="p">&lt;/</span><span class="nt">ins</span><span class="p">&gt;</span> stuff</span></span></code></pre></div>
+
+
+<div role="note" aria-labelledby="R-box-label-f4807249cec7a7a2971c51c6fb548333" class="box cstyle callout example">
+  <div id="R-box-label-f4807249cec7a7a2971c51c6fb548333" class="box-label">
+    <i class="fa-fw fas fa-eye" aria-hidden="true"></i> 
+    Result
+  </div>
+  <div class="box-content">
+<p>Th' <ins>hot, new</ins> stuff</p>
+  </div>
+</div>
+<h3 id="deleted-text">Deleted Text<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
+<p><span class="badge cstyle gfm badge-with-title"><span class="badge-title"><i class="fa-fw fab fa-github" aria-hidden="true"></i></span><span class="badge-content">GFM</span></span> Ye can do strikethroughs by enclos'n text wit' two tildes <code>~~</code>. See <a href="https://gohugo.io/getting-started/configuration-markup/#extras" rel="external" target="_self">Hugo&rsquo;s documentat'n remarks</a> if ye want t' use this together wit' th' subscript rules.</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-md" data-lang="md"><span class="line"><span class="cl">~~Strike through~~ this text</span></span></code></pre></div>
+
+
+<div role="note" aria-labelledby="R-box-label-1a00795489539bcebecd50cf24227c33" class="box cstyle callout example">
+  <div id="R-box-label-1a00795489539bcebecd50cf24227c33" class="box-label">
+    <i class="fa-fw fas fa-eye" aria-hidden="true"></i> 
+    Result
+  </div>
+  <div class="box-content">
+<p><del>Strike through</del> this text</p>
+  </div>
+</div>
+<h2 id="special-typesetting">Special Typesett'n<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h2>
+<h3 id="text-substitution">Text Substitut'n<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
+<p><span class="badge cstyle pants badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-lightbulb" aria-hidden="true"></i></span><span class="badge-content">Pants</span></span> Ye can combine multiple punctuat'n characters t' single typographic entities. This will only be applied t' text outside o' code blocks or inline code.</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-md" data-lang="md"><span class="line"><span class="cl">Do'ble quotes <span class="sb">`&#34;`</span> an' single quotes <span class="sb">`&#39;`</span> o' enclosed text be replaced by <span class="ge">**</span>&#34;do'ble curly quotes&#34;** an' <span class="ge">**</span>&#39;single curly quotes&#39;**.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Do'ble dashes <span class="sb">`--`</span> an' triple dashes <span class="sb">`---`</span> be replaced by en-dash <span class="ge">**</span>--** an' em-dash <span class="ge">**</span>---** entities.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Do'ble arrows point'n left <span class="sb">`&lt;&lt;`</span> or right <span class="sb">`&gt;&gt;`</span> be replaced by arrow <span class="ge">**</span>&lt;&lt;** an' <span class="ge">**</span>&gt;&gt;** entities.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Three consecutive dots <span class="sb">`...`</span> be replaced by an ellipsis <span class="ge">**</span>...** entity.</span></span></code></pre></div>
+
+
+<div role="note" aria-labelledby="R-box-label-5879f1a45e0f90ac1293171cae641d40" class="box cstyle callout example">
+  <div id="R-box-label-5879f1a45e0f90ac1293171cae641d40" class="box-label">
+    <i class="fa-fw fas fa-eye" aria-hidden="true"></i> 
+    Result
+  </div>
+  <div class="box-content">
+<p>Do'ble quotes <code>&quot;</code> an' single quotes <code>'</code> o' enclosed text be replaced by <strong>&ldquo;do'ble curly quotes&rdquo;</strong> an' <strong>&lsquo;single curly quotes&rsquo;</strong>.</p>
+<p>Do'ble dashes <code>--</code> an' triple dashes <code>---</code> be replaced by en-dash <strong>&ndash;</strong> an' em-dash <strong>&mdash;</strong> entities.</p>
+<p>Do'ble arrows point'n left <code>&lt;&lt;</code> or right <code>&gt;&gt;</code> be replaced by arrow <strong>&laquo;</strong> an' <strong>&raquo;</strong> entities.</p>
+<p>Three consecutive dots <code>...</code> be replaced by an ellipsis <strong>&hellip;</strong> entity.</p>
+  </div>
+</div>
+<h3 id="subscript-and-superscript">Subscript an' Superscript<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
+<p>Ye can also use  subscript an' superscript text. For more complex stuff, ye can use th' <a href="/hugo-theme-relearn/pir/shortcodes/math/index.html"><code>math</code> shortcode</a>.</p>
+<p><span class="badge cstyle hugo badge-with-title"><span class="badge-title"><i class="fa-fw fab fa-hackerrank" aria-hidden="true"></i></span><span class="badge-content">Cap'n Hugo</span></span> Ye can <a href="https://github.com/gohugoio/hugo-goldmark-extensions?tab=readme-ov-file#extras-extension" rel="external" target="_self">activate this through th' <em>Cap'n Hugo Extra Extension</em></a> 'n yer project configurat'n</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-md" data-lang="md"><span class="line"><span class="cl">How many liters H~2~O fit into 1dm^3^?</span></span></code></pre></div>
+<p><span class="badge cstyle html badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-code" aria-hidden="true"></i></span><span class="badge-content">HTML</span></span> Ye can also use it by configur'n Hugo fer <a href="https://gohugo.io/getting-started/configuration-markup/#rendererunsafe" rel="external" target="_self">usage o' HTML</a>.</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">How many liters H<span class="p">&lt;</span><span class="nt">sub</span><span class="p">&gt;</span>2<span class="p">&lt;/</span><span class="nt">sub</span><span class="p">&gt;</span>O fit into 1dm<span class="p">&lt;</span><span class="nt">sup</span><span class="p">&gt;</span>3<span class="p">&lt;/</span><span class="nt">sup</span><span class="p">&gt;</span>?</span></span></code></pre></div>
+
+
+<div role="note" aria-labelledby="R-box-label-b016ddc745d87842aec9101043686225" class="box cstyle callout example">
+  <div id="R-box-label-b016ddc745d87842aec9101043686225" class="box-label">
+    <i class="fa-fw fas fa-eye" aria-hidden="true"></i> 
+    Result
+  </div>
+  <div class="box-content">
+<p>How many liters H<sub>2</sub>O fit into 1dm<sup>3</sup>?</p>
+  </div>
+</div>
+<h3 id="keyboard-shortcuts">Keyboard Shortcuts<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
+<p><span class="badge cstyle html badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-code" aria-hidden="true"></i></span><span class="badge-content">HTML</span></span> Ye can use th' <code>&lt;kbd&gt;</code> element t' style keyboard shortcuts.</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">Press <span class="p">&lt;</span><span class="nt">kbd</span><span class="p">&gt;</span>STRG<span class="p">&lt;/</span><span class="nt">kbd</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nt">kbd</span><span class="p">&gt;</span>ALT<span class="p">&lt;/</span><span class="nt">kbd</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nt">kbd</span><span class="p">&gt;</span>DEL<span class="p">&lt;/</span><span class="nt">kbd</span><span class="p">&gt;</span> t' end yer shift early.</span></span></code></pre></div>
+
+
+<div role="note" aria-labelledby="R-box-label-bc9271f6efb5240874f60761de69fd4e" class="box cstyle callout example">
+  <div id="R-box-label-bc9271f6efb5240874f60761de69fd4e" class="box-label">
+    <i class="fa-fw fas fa-eye" aria-hidden="true"></i> 
+    Result
+  </div>
+  <div class="box-content">
+<p>Press <kbd>STRG</kbd> <kbd>ALT</kbd> <kbd>DEL</kbd> t' end yer shift early.</p>
+  </div>
+</div>
+<h2 id="lists">Lists<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h2>
+<h3 id="unordered">Unordered<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
+<p>Ye can write a list o' items 'n which th' order o' th' items does not explicitly matter.</p>
+<p>It be poss'ble t' nest lists by indent'n an item fer th' next sublevel.</p>
+<p>Ye may use any o' <code>-</code>, <code>*</code> or <code>+</code> t' denote bullets fer each list item but should not switch between those symbols inside one whole list.</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-md" data-lang="md"><span class="line"><span class="cl"><span class="k">-</span> Lorem ipsum dolor sit amet
+</span></span><span class="line"><span class="cl"><span class="k">-</span> Consectetur adipisc'n elit
+</span></span><span class="line"><span class="cl">  <span class="k">-</span> Vestibulum laoreet porttitor sem
+</span></span><span class="line"><span class="cl">  <span class="k">-</span> Ac tristique libero volutpat at
+</span></span><span class="line"><span class="cl"><span class="k">-</span> Nulla volutpat aliquam velit
+</span></span><span class="line"><span class="cl">  <span class="k">-</span> Phasellus iaculis neque
+</span></span><span class="line"><span class="cl">  <span class="k">-</span> Purus sodales ultricies
+</span></span><span class="line"><span class="cl">- Faucibus porta lacus fringilla vel</span></span></code></pre></div>
+
+
+<div role="note" aria-labelledby="R-box-label-dabde5d9a09dd9e1d29198a95d9b159a" class="box cstyle callout example">
+  <div id="R-box-label-dabde5d9a09dd9e1d29198a95d9b159a" class="box-label">
+    <i class="fa-fw fas fa-eye" aria-hidden="true"></i> 
+    Result
+  </div>
+  <div class="box-content">
+<ul>
+<li>Lorem ipsum dolor sit amet</li>
+<li>Consectetur adipisc'n elit
+<ul>
+<li>Vestibulum laoreet porttitor sem</li>
+<li>Ac tristique libero volutpat at</li>
+</ul>
+</li>
+<li>Nulla volutpat aliquam velit
+<ul>
+<li>Phasellus iaculis neque</li>
+<li>Purus sodales ultricies</li>
+</ul>
+</li>
+<li>Faucibus porta lacus fringilla vel</li>
+</ul>
+  </div>
+</div>
+<h3 id="ordered">Ordered<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
+<p>Ye can create a list o' items 'n which th' order o' items does explicitly matter.</p>
+<p>It be poss'ble t' nest lists by indent'n an item fer th' next sublevel.</p>
+<p>Marrrkdown will automatically number each o' yer items consecutively. This means, th' order number ye be provid'n be irrelevant.</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-md" data-lang="md"><span class="line"><span class="cl"><span class="k">1.</span> Lorem ipsum dolor sit amet
+</span></span><span class="line"><span class="cl"><span class="k">3.</span> Consectetur adipisc'n elit
+</span></span><span class="line"><span class="cl">    <span class="k">1.</span> Integer molestie lorem at massa
+</span></span><span class="line"><span class="cl">    <span class="k">7.</span> Facilisis 'n pretium nisl aliquet
+</span></span><span class="line"><span class="cl"><span class="k">99.</span> Nulla volutpat aliquam velit
+</span></span><span class="line"><span class="cl">    <span class="k">1.</span> Faucibus porta lacus fringilla vel
+</span></span><span class="line"><span class="cl">    <span class="k">1.</span> Aenean sit amet erat nunc
+</span></span><span class="line"><span class="cl">17. Eget porttitor lorem</span></span></code></pre></div>
+
+
+<div role="note" aria-labelledby="R-box-label-fd1b8c4e09885a573a0faebfda8ce78c" class="box cstyle callout example">
+  <div id="R-box-label-fd1b8c4e09885a573a0faebfda8ce78c" class="box-label">
+    <i class="fa-fw fas fa-eye" aria-hidden="true"></i> 
+    Result
+  </div>
+  <div class="box-content">
+<ol>
+<li>Lorem ipsum dolor sit amet</li>
+<li>Consectetur adipisc'n elit
+<ol>
+<li>Integer molestie lorem at massa</li>
+<li>Facilisis 'n pretium nisl aliquet</li>
+</ol>
+</li>
+<li>Nulla volutpat aliquam velit
+<ol>
+<li>Faucibus porta lacus fringilla vel</li>
+<li>Aenean sit amet erat nunc</li>
+</ol>
+</li>
+<li>Eget porttitor lorem</li>
+</ol>
+  </div>
+</div>
+<h3 id="tasks">Tasks<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
+<p><span class="badge cstyle gfm badge-with-title"><span class="badge-title"><i class="fa-fw fab fa-github" aria-hidden="true"></i></span><span class="badge-content">GFM</span></span> Ye can add task lists result'n 'n checked or unchecked non-click'ble items</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-md" data-lang="md"><span class="line"><span class="cl"><span class="k">- [x]</span> Basic Test
+</span></span><span class="line"><span class="cl"><span class="k">- [ ]</span> More Tests
+</span></span><span class="line"><span class="cl">  <span class="k">- [x]</span> View
+</span></span><span class="line"><span class="cl">  <span class="k">- [x]</span> Hear
+</span></span><span class="line"><span class="cl">  - [ ] Smell</span></span></code></pre></div>
+
+
+<div role="note" aria-labelledby="R-box-label-273440e8d165bc9ede57eada35c72291" class="box cstyle callout example">
+  <div id="R-box-label-273440e8d165bc9ede57eada35c72291" class="box-label">
+    <i class="fa-fw fas fa-eye" aria-hidden="true"></i> 
+    Result
+  </div>
+  <div class="box-content">
+<ul>
+<li><input checked="" disabled="" type="checkbox"> Basic Test</li>
+<li><input disabled="" type="checkbox"> More Tests
+<ul>
+<li><input checked="" disabled="" type="checkbox"> View</li>
+<li><input checked="" disabled="" type="checkbox"> Hear</li>
+<li><input disabled="" type="checkbox"> Smell</li>
+</ul>
+</li>
+</ul>
+  </div>
+</div>
+<h3 id="tree">Tree<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
+<p><span class="badge cstyle relearn badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-puzzle-piece" aria-hidden="true"></i></span><span class="badge-content">Relearrrn</span></span> Ye can add lists as a tree wit' configur'ble ay'cons an' colors.</p>
+<p>Th' name can be followed by an optional pipe (<code>|</code>) t' define an ay'con an' further optional pipe t' define th' icon&rsquo;s color.</p>
+<p>More details can be found 'n th' <a href="/hugo-theme-relearn/pir/shortcodes/tree/index.html"><code>tree</code> shortcode docs</a>.</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-md" data-lang="md"><span class="line"><span class="cl"><span class="s">```tree
+</span></span></span><span class="line"><span class="cl">- home | folder
+</span></span><span class="line"><span class="cl">  - .config | folder
+</span></span><span class="line"><span class="cl">  - My Documents | folder | gold
+</span></span><span class="line"><span class="cl">    - index.html
+</span></span><span class="line"><span class="cl">    - resume.odt | file-word | #df6f40
+</span></span><span class="line"><span class="cl">  - Images | folder
+</span></span><span class="line"><span class="cl">    - pic1.jpg
+</span></span><span class="line"><span class="cl">    - pic2.jpg | file-image | secondary
+</span></span><span class="line"><span class="cl">  - Code | folder
+</span></span><span class="line"><span class="cl">    - home.php | fa-fw fab fa-php | #888cc4
+</span></span><span class="line"><span class="cl"><span class="s">```</span></span></span></code></pre></div>
+
+
+<div role="note" aria-labelledby="R-box-label-9b7deddf1e68a00749be0f2ec62d0679" class="box cstyle callout example">
+  <div id="R-box-label-9b7deddf1e68a00749be0f2ec62d0679" class="box-label">
+    <i class="fa-fw fas fa-eye" aria-hidden="true"></i> 
+    Result
+  </div>
+  <div class="box-content">
+<div class="list-tree"><ul>
+<li><i class="fa-fw fas fa-folder" aria-hidden="true"></i><span>home</span><ul>
+<li><i class="fa-fw fas fa-folder" aria-hidden="true"></i><span>.config</span></li>
+<li><i class="fa-fw fas fa-folder" aria-hidden="true" style="color: gold;"></i><span>My Documents</span><ul>
+<li>index.html</li>
+<li><i class="fa-fw fas fa-file-word" aria-hidden="true" style="color: #df6f40;"></i><span>resume.odt</span></li>
+</ul>
+</li>
+<li><i class="fa-fw fas fa-folder" aria-hidden="true"></i><span>Images</span><ul>
+<li>pic1.jpg</li>
+<li><i class="fa-fw fas fa-file-image secondary cstyle" aria-hidden="true"></i><span>pic2.jpg</span></li>
+</ul>
+</li>
+<li><i class="fa-fw fas fa-folder" aria-hidden="true"></i><span>Code</span><ul>
+<li><i class="fa-fw fab fa-php" aria-hidden="true" style="color: #888cc4;"></i><span>home.php</span></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+  </div>
+</div>
+<h3 id="definitions">Definit'ns<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
+<p><span class="badge cstyle php badge-with-title"><span class="badge-title"><i class="fa-fw fab fa-php" aria-hidden="true"></i></span><span class="badge-content">PHP</span></span> Definit'n lists be made o' terms an' definit'ns o' these terms, much like 'n a dictionary.</p>
+<p>A definit'n list 'n Marrrkdown Extra be made o' a single-line term followed by a colon an' th' definit'n fer that term. Ye can also associate more than one term t' a definit'n.</p>
+<p>If ye add empty lines around th' definit'n terms, additional vertical space will be generated. Also multiple paragraphs be poss'ble</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-md" data-lang="md"><span class="line"><span class="cl">Apple
+</span></span><span class="line"><span class="cl">: Pomaceous fruit o' plants o' th' genus Malus 'n th' family Rosaceae.
+</span></span><span class="line"><span class="cl">: An American computer company.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Orange
+</span></span><span class="line"><span class="cl">: Th' fruit o' an evergreen tree o' th' genus Citrus.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  Ye can make juice out o' it.
+</span></span><span class="line"><span class="cl">: A telecommunicat'n company.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  Ye can&#39;t make juice out o' it.</span></span></code></pre></div>
+
+
+<div role="note" aria-labelledby="R-box-label-83772b63989a6b7d1aa4bd2bd0f4fc87" class="box cstyle callout example">
+  <div id="R-box-label-83772b63989a6b7d1aa4bd2bd0f4fc87" class="box-label">
+    <i class="fa-fw fas fa-eye" aria-hidden="true"></i> 
+    Result
+  </div>
+  <div class="box-content">
+<dl>
+<dt>Apple</dt>
+<dd>Pomaceous fruit o' plants o' th' genus Malus 'n th' family Rosaceae.</dd>
+<dd>An American computer company.</dd>
+<dt>Orange</dt>
+<dd>Th' fruit o' an evergreen tree o' th' genus Citrus.
+<p>Ye can make juice out o' it.</p>
+</dd>
+<dd>A telecommunicat'n company.
+<p>Ye can&rsquo;t make juice out o' it.</p>
+</dd>
+</dl>
+  </div>
+</div>
+<h2 id="code">Code<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h2>
+<h3 id="inline-code">Inline Code<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
+<p>Inline snippets o' code can be wrapped wit' backticks <code>`</code>.</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-md" data-lang="md"><span class="line"><span class="cl">In this example, <span class="sb">`&lt;div&gt;&lt;/div&gt;`</span> be marked as code.</span></span></code></pre></div>
+
+
+<div role="note" aria-labelledby="R-box-label-44930d112457623122cc65c23e7e483f" class="box cstyle callout example">
+  <div id="R-box-label-44930d112457623122cc65c23e7e483f" class="box-label">
+    <i class="fa-fw fas fa-eye" aria-hidden="true"></i> 
+    Result
+  </div>
+  <div class="box-content">
+<p>In this example, <code>&lt;div&gt;&lt;/div&gt;</code> be marked as code.</p>
+  </div>
+</div>
+<h3 id="indented-code-block">Indented Code Block<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
+<p>A simple code block can be generated by indent'n several lines o' code by at least two spaces.</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-md" data-lang="md"><span class="line"><span class="cl">Be impressed by my advanced code:
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    // Some comments
+</span></span><span class="line"><span class="cl">    line 1 o' code
+</span></span><span class="line"><span class="cl">    line 2 o' code
+</span></span><span class="line"><span class="cl">    line 3 o' code</span></span></code></pre></div>
+
+
+<div role="note" aria-labelledby="R-box-label-6375e6de0545c8019478e42fb951b8da" class="box cstyle callout example">
+  <div id="R-box-label-6375e6de0545c8019478e42fb951b8da" class="box-label">
+    <i class="fa-fw fas fa-eye" aria-hidden="true"></i> 
+    Result
+  </div>
+  <div class="box-content">
+<p>Be impressed by my advanced code:</p>
+<pre><code>// Some comments
+line 1 o' code
+line 2 o' code
+line 3 o' code
+</code></pre>
+  </div>
+</div>
+<h3 id="fenced-code-block">Fenced Code Block<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
+<p>If ye want t' gain more control o' yer code block ye can enclose yer code by at least three backticks <code>```</code> a so called fence.</p>
+<p><span class="badge cstyle gfm badge-with-title"><span class="badge-title"><i class="fa-fw fab fa-github" aria-hidden="true"></i></span><span class="badge-content">GFM</span></span> Ye can also add a language specifier directly after th' open'n fence, <code>```js</code>, an' rules highlight'n will automatically be applied accord'n t' th' selected language 'n th' rendered HTML.</p>
+<p>See <a href="/hugo-theme-relearn/pir/shortcodes/highlight/index.html">Code Highlight'n</a> fer additional documentat'n.</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-plaintext" data-lang="plaintext"><span class="line"><span class="cl">```js
+</span></span><span class="line"><span class="cl">{
+</span></span><span class="line"><span class="cl">    name: &#34;Claus&#34;,
+</span></span><span class="line"><span class="cl">    surname: &#34;Santa&#34;,
+</span></span><span class="line"><span class="cl">    profession: &#34;courier&#34;,
+</span></span><span class="line"><span class="cl">    age: 666,
+</span></span><span class="line"><span class="cl">    address: {
+</span></span><span class="line"><span class="cl">        city: &#34;North Pole&#34;,
+</span></span><span class="line"><span class="cl">        postalCode: 1,
+</span></span><span class="line"><span class="cl">        country: &#34;Arctic&#34;
+</span></span><span class="line"><span class="cl">    },
+</span></span><span class="line"><span class="cl">    friends: [ &#34;Dasher&#34;, &#34;Dancer&#34;, &#34;Prancer&#34;, &#34;Vixen&#34;, &#34;Comet&#34;, &#34;Cupid&#34;, &#34;Donder&#34;, &#34;Blitzen&#34;, &#34;Rudolph&#34; ]
+</span></span><span class="line"><span class="cl">};
+</span></span><span class="line"><span class="cl">```</span></span></code></pre></div>
+
+
+<div role="note" aria-labelledby="R-box-label-9b2009276ad9c953d5a5c0ad8210ec72" class="box cstyle callout example">
+  <div id="R-box-label-9b2009276ad9c953d5a5c0ad8210ec72" class="box-label">
+    <i class="fa-fw fas fa-eye" aria-hidden="true"></i> 
+    Result
+  </div>
+  <div class="box-content">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">name</span><span class="o">:</span> <span class="s2">&#34;Claus&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">surname</span><span class="o">:</span> <span class="s2">&#34;Santa&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">profession</span><span class="o">:</span> <span class="s2">&#34;courier&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">age</span><span class="o">:</span> <span class="mi">666</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">address</span><span class="o">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">city</span><span class="o">:</span> <span class="s2">&#34;North Pole&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">postalCode</span><span class="o">:</span> <span class="mi">1</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">country</span><span class="o">:</span> <span class="s2">&#34;Arctic&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">friends</span><span class="o">:</span> <span class="p">[</span> <span class="s2">&#34;Dasher&#34;</span><span class="p">,</span> <span class="s2">&#34;Dancer&#34;</span><span class="p">,</span> <span class="s2">&#34;Prancer&#34;</span><span class="p">,</span> <span class="s2">&#34;Vixen&#34;</span><span class="p">,</span> <span class="s2">&#34;Comet&#34;</span><span class="p">,</span> <span class="s2">&#34;Cupid&#34;</span><span class="p">,</span> <span class="s2">&#34;Donder&#34;</span><span class="p">,</span> <span class="s2">&#34;Blitzen&#34;</span><span class="p">,</span> <span class="s2">&#34;Rudolph&#34;</span> <span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span></span></span></code></pre></div>
+  </div>
+</div>
+<h2 id="tables">Tables<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h2>
+<p><span class="badge cstyle gfm badge-with-title"><span class="badge-title"><i class="fa-fw fab fa-github" aria-hidden="true"></i></span><span class="badge-content">GFM</span></span> Ye can create tables by add'n pipes as dividers between each cell, an' by add'n a line o' dashes (also separated by bars) beneath th' header. Avast that th' pipes do not need t' be vertically aligned.</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-md" data-lang="md"><span class="line"><span class="cl">| Opt'n | Descript'n |
+</span></span><span class="line"><span class="cl">|--------|-------------|
+</span></span><span class="line"><span class="cl">| data   | path t' data files t' supply th' data that will be passed into templates. |
+</span></span><span class="line"><span class="cl">| engine | engine t' be used fer process'n templates. Handlebars be th' default. |
+</span></span><span class="line"><span class="cl">| ext    | extension t' be used fer dest files. |</span></span></code></pre></div>
+
+
+<div role="note" aria-labelledby="R-box-label-aafd85db7303c8b6d23d600ed8b6d34b" class="box cstyle callout example">
+  <div id="R-box-label-aafd85db7303c8b6d23d600ed8b6d34b" class="box-label">
+    <i class="fa-fw fas fa-eye" aria-hidden="true"></i> 
+    Result
+  </div>
+  <div class="box-content">
+<table>
+  <thead>
+    <tr>
+      <th>Opt'n</th>
+      <th>Descript'n</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>data</td>
+      <td>path t' data files t' supply th' data that will be passed into templates.</td>
+    </tr>
+    <tr>
+      <td>engine</td>
+      <td>engine t' be used fer process'n templates. Handlebars be th' default.</td>
+    </tr>
+    <tr>
+      <td>ext</td>
+      <td>extension t' be used fer dest files.</td>
+    </tr>
+  </tbody>
+</table>
+  </div>
+</div>
+<h3 id="aligned-columns">Aligned Columns<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
+<p>Add'n a colon on th' left and/or right side o' th' dashes below any head'n will align th' text fer that column accordingly.</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-md" data-lang="md"><span class="line"><span class="cl">| Opt'n | Number | Descript'n |
+</span></span><span class="line"><span class="cl">|-------:|:------:|:------------|
+</span></span><span class="line"><span class="cl">| data   | 1      | path t' data files t' supply th' data that will be passed into templates. |
+</span></span><span class="line"><span class="cl">| engine | 2      | engine t' be used fer process'n templates. Handlebars be th' default. |
+</span></span><span class="line"><span class="cl">| ext    | 3      | extension t' be used fer dest files. |</span></span></code></pre></div>
+
+
+<div role="note" aria-labelledby="R-box-label-648b3a37e9105585e03b7ca7eb354a96" class="box cstyle callout example">
+  <div id="R-box-label-648b3a37e9105585e03b7ca7eb354a96" class="box-label">
+    <i class="fa-fw fas fa-eye" aria-hidden="true"></i> 
+    Result
+  </div>
+  <div class="box-content">
+<table>
+  <thead>
+    <tr>
+      <th class="align-right">Opt'n</th>
+      <th class="align-center">Number</th>
+      <th class="align-left">Descript'n</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="align-right">data</td>
+      <td class="align-center">1</td>
+      <td class="align-left">path t' data files t' supply th' data that will be passed into templates.</td>
+    </tr>
+    <tr>
+      <td class="align-right">engine</td>
+      <td class="align-center">2</td>
+      <td class="align-left">engine t' be used fer process'n templates. Handlebars be th' default.</td>
+    </tr>
+    <tr>
+      <td class="align-right">ext</td>
+      <td class="align-center">3</td>
+      <td class="align-left">extension t' be used fer dest files.</td>
+    </tr>
+  </tbody>
+</table>
+  </div>
+</div>
+<h3 id="merged-cells">Merged Cells<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
+<p><span class="badge cstyle mpe badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-display" aria-hidden="true"></i></span><span class="badge-content">MPE</span></span> A cell contain'n only <code>&gt;</code> merges into th' cell t' its right, a cell contain'n only <code>^</code> merges into th' cell above. Markers can be chained an' combined t' let a cell span multiple columns an' rows. Merg'n never crosses from th' header into th' body.</p>
+<p>A <code>&gt;</code> 'n th' last column or a <code>^</code> 'n th' first row o' th' header or body has noth'n t' merge into an' be shown as be. Elsewhere, t' show only <code>&gt;</code> or <code>^</code> 'n a cell, escape it wit' two backslashes as <code>\\&gt;</code> or <code>\\^</code>. A single backslash does not help, as <code>\&gt;</code> an' <code>\^</code> result 'n th' unescaped character.</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-md" data-lang="md"><span class="line"><span class="cl">| Opt'n | Number | Descript'n |
+</span></span><span class="line"><span class="cl">|--------|--------|-------------|
+</span></span><span class="line"><span class="cl">| data   | 1      | path t' data files t' supply th' data that will be passed into templates. |
+</span></span><span class="line"><span class="cl">| engine | &gt;      | engine t' be used fer process'n templates. Handlebars be th' default. |
+</span></span><span class="line"><span class="cl">| ^      | 2      | also used fer partials. |
+</span></span><span class="line"><span class="cl">| layout | &gt;      | directories that be merged wit' those o' th' theme. |
+</span></span><span class="line"><span class="cl">| static | ^      | ^           |
+</span></span><span class="line"><span class="cl">| ext    | \\&gt;    | extension t' be used fer dest files. |</span></span></code></pre></div>
+
+
+<div role="note" aria-labelledby="R-box-label-3b47178014ca9b7e54576fc3da21373a" class="box cstyle callout example">
+  <div id="R-box-label-3b47178014ca9b7e54576fc3da21373a" class="box-label">
+    <i class="fa-fw fas fa-eye" aria-hidden="true"></i> 
+    Result
+  </div>
+  <div class="box-content">
+<table>
+  <thead>
+    <tr>
+      <th>Opt'n</th>
+      <th>Number</th>
+      <th>Descript'n</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>data</td>
+      <td>1</td>
+      <td>path t' data files t' supply th' data that will be passed into templates.</td>
+    </tr>
+    <tr>
+      <td rowspan="2">engine</td>
+      <td colspan="2">engine t' be used fer process'n templates. Handlebars be th' default.</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>also used fer partials.</td>
+    </tr>
+    <tr>
+      <td>layout</td>
+      <td rowspan="2" colspan="2">directories that be merged wit' those o' th' theme.</td>
+    </tr>
+    <tr>
+      <td>static</td>
+    </tr>
+    <tr>
+      <td>ext</td>
+      <td>&gt;</td>
+      <td>extension t' be used fer dest files.</td>
+    </tr>
+  </tbody>
+</table>
+  </div>
+</div>
+<h3 id="sortable-columns">Sortable Columns<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
+<p><span class="badge cstyle relearn badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-puzzle-piece" aria-hidden="true"></i></span><span class="badge-content">Relearrrn</span></span> Give a table th' class <code>sortable</code> t' let yer readers sort it by its columns. This requires <a href="https://gohugo.io/getting-started/configuration-markup/#parserattribute" rel="external" target="_self">block attributes</a> t' be enabled 'n yer project configurat'n.</p>
+<p>Click'n a column header sorts by this column, click'n it again reverses th' order, an' a third click stops sort'n by it. Click'n further headers sorts by those columns while keep'n th' previous order fer equal values. Th' reset button br'ns back th' original order.</p>
+<p>Rows joined by merged cells stay together an' be sorted by th' values o' their first row. A column whose header spans multiple columns be not sortable.</p>
+<p><span class="badge cstyle option badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-gears" aria-hidden="true"></i></span><span class="badge-content">Opt'n</span></span> <span class="badge cstyle frontmatter badge-with-title"><span class="badge-title"><i class="fa-fw fab fa-markdown" aria-hidden="true"></i></span><span class="badge-content">Front Matter</span></span> Set <code>table.sortable</code> t' <code>true</code> t' make all tables sortable. This can be overridden 'n a page&rsquo;s front matter.</p>
+<div class="tab-panel" data-tab-group="R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9">
+  <div class="tab-nav">
+    <div class="tab-nav-title">&#8203;</div>
+    <div class="tab-nav-list" role="tablist">
+      <button
+        role="tab" id="R-tab-id-9cb764cdb27febc159344a320a2d14d1-tab" aria-controls="R-tab-id-9cb764cdb27febc159344a320a2d14d1" aria-selected="true"
+        data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
+        class="tab-nav-button tab-panel-style cstyle code active" tabindex="0"
+      >
+        <span class="tab-nav-text">yaml</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-261e69b28ea58f829b72154976ae80c1-tab" aria-controls="R-tab-id-261e69b28ea58f829b72154976ae80c1" aria-selected="false"
+        data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">toml</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-f7ce0b3f8b4ce7e91ba9958bb56206b5-tab" aria-controls="R-tab-id-f7ce0b3f8b4ce7e91ba9958bb56206b5" aria-selected="false"
+        data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">json</span>
+      </button>
+    </div>
+  </div>
+  <div class="tab-content-container">
+    <div
+      id="R-tab-id-9cb764cdb27febc159344a320a2d14d1" role="tabpanel" aria-labelledby="R-tab-id-9cb764cdb27febc159344a320a2d14d1-tab"
+      data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
+      class="tab-content tab-panel-style cstyle code active codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">params</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">table</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">sortable</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span></span></span></code></pre></div>
+      </div>
+    </div>
+    <div
+      id="R-tab-id-261e69b28ea58f829b72154976ae80c1" role="tabpanel" aria-labelledby="R-tab-id-261e69b28ea58f829b72154976ae80c1-tab"
+      data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
+      class="tab-content tab-panel-style cstyle code codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">params</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="p">[</span><span class="nx">params</span><span class="p">.</span><span class="nx">table</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">sortable</span> <span class="p">=</span> <span class="kc">true</span></span></span></code></pre></div>
+      </div>
+    </div>
+    <div
+      id="R-tab-id-f7ce0b3f8b4ce7e91ba9958bb56206b5" role="tabpanel" aria-labelledby="R-tab-id-f7ce0b3f8b4ce7e91ba9958bb56206b5-tab"
+      data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
+      class="tab-content tab-panel-style cstyle code codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">   <span class="nt">&#34;params&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nt">&#34;table&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">         <span class="nt">&#34;sortable&#34;</span><span class="p">:</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">      <span class="p">}</span>
+</span></span><span class="line"><span class="cl">   <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div>
+      </div>
+    </div>
+  </div>
+</div>
+<p>A single table can still be excluded by th' class <code>nosortable</code> or included by th' class <code>sortable</code>, whatever th' default be.</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-md" data-lang="md"><span class="line"><span class="cl">| Opt'n | Number | Descript'n |
+</span></span><span class="line"><span class="cl">|--------|--------|-------------|
+</span></span><span class="line"><span class="cl">| data   | 3      | path t' data files t' supply th' data that will be passed into templates. |
+</span></span><span class="line"><span class="cl">| engine | 10     | engine t' be used fer process'n templates. Handlebars be th' default. |
+</span></span><span class="line"><span class="cl">| ^      | 2      | also used fer partials. |
+</span></span><span class="line"><span class="cl">| layout | 1      | directories that be merged wit' those o' th' theme. |
+</span></span><span class="line"><span class="cl">| ext    | 20     | extension t' be used fer dest files. |
+</span></span><span class="line"><span class="cl">{.sortable}</span></span></code></pre></div>
+
+
+<div role="note" aria-labelledby="R-box-label-3521d6f5869d16632f208b19e0f47708" class="box cstyle callout example">
+  <div id="R-box-label-3521d6f5869d16632f208b19e0f47708" class="box-label">
+    <i class="fa-fw fas fa-eye" aria-hidden="true"></i> 
+    Result
+  </div>
+  <div class="box-content">
+<div class="sortable-table actionbar-wrapper">
+<table class="sortable">
+  <thead>
+    <tr>
+      <th data-sort-col="0">Opt'n</th>
+      <th data-sort-col="1">Number</th>
+      <th data-sort-col="2">Descript'n</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>data</td>
+      <td>3</td>
+      <td>path t' data files t' supply th' data that will be passed into templates.</td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td rowspan="2">engine</td>
+      <td>10</td>
+      <td>engine t' be used fer process'n templates. Handlebars be th' default.</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>also used fer partials.</td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td>layout</td>
+      <td>1</td>
+      <td>directories that be merged wit' those o' th' theme.</td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td>ext</td>
+      <td>20</td>
+      <td>extension t' be used fer dest files.</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+  </div>
+</div>
+<h2 id="links">Links<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h2>
+<h3 id="autolink">Autolink<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
+<p><span class="badge cstyle gfm badge-with-title"><span class="badge-title"><i class="fa-fw fab fa-github" aria-hidden="true"></i></span><span class="badge-content">GFM</span></span> Absolute URLs will automatically be converted into a link.</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-md" data-lang="md"><span class="line"><span class="cl">This be a link t' https://example.com.</span></span></code></pre></div>
+
+
+<div role="note" aria-labelledby="R-box-label-d2fc3c741539f3ea2e106371176f860b" class="box cstyle callout example">
+  <div id="R-box-label-d2fc3c741539f3ea2e106371176f860b" class="box-label">
+    <i class="fa-fw fas fa-eye" aria-hidden="true"></i> 
+    Result
+  </div>
+  <div class="box-content">
+<p>This be a link t' <a href="https://example.com" rel="external" target="_self">https://example.com</a>.</p>
+  </div>
+</div>
+<h3 id="basic-link">Basic Link<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
+<p>Ye can explicitly define links 'n case ye want t' use non-absolute URLs or want t' give different text.</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-md" data-lang="md"><span class="line"><span class="cl">[<span class="nt">Assemble</span>](<span class="na">http://assemble.io</span>)</span></span></code></pre></div>
+
+
+<div role="note" aria-labelledby="R-box-label-ae4e06f4e8741705d6cfcb4853a21a79" class="box cstyle callout example">
+  <div id="R-box-label-ae4e06f4e8741705d6cfcb4853a21a79" class="box-label">
+    <i class="fa-fw fas fa-eye" aria-hidden="true"></i> 
+    Result
+  </div>
+  <div class="box-content">
+<p><a href="http://assemble.io" rel="external" target="_self">Assemble</a></p>
+  </div>
+</div>
+<h3 id="link-with-tooltip">Link wit' Tooltip<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
+<p>For even further informat'n, ye can add an additional text, displayed 'n a tooltip on hover'n over th' link.</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-md" data-lang="md"><span class="line"><span class="cl">[<span class="nt">Upstage</span>](<span class="na">https://github.com/upstage/ &#34;Visit Upstage!&#34;</span>)</span></span></code></pre></div>
+
+
+<div role="note" aria-labelledby="R-box-label-b441efb5cb8729e53346469503321b00" class="box cstyle callout example">
+  <div id="R-box-label-b441efb5cb8729e53346469503321b00" class="box-label">
+    <i class="fa-fw fas fa-eye" aria-hidden="true"></i> 
+    Result
+  </div>
+  <div class="box-content">
+<p><a href="https://github.com/upstage/" rel="external" target="_self" title="Visit Upstage!">Upstage</a></p>
+  </div>
+</div>
+<h3 id="link-references">Link References<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
+<p>Links can be simplyfied fer recurr'n reuse by us'n a reference ID t' later define th' URL locat'n. This simplyfies writ'n if ye want t' use a link more than once 'n a document.</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-md" data-lang="md"><span class="line"><span class="cl">[Example][somelinkID]
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">[somelinkID]: https://example.com &#34;Go t' example domain&#34;</span></span></code></pre></div>
+
+
+<div role="note" aria-labelledby="R-box-label-510d3d72761bc19007966d34ba3f2067" class="box cstyle callout example">
+  <div id="R-box-label-510d3d72761bc19007966d34ba3f2067" class="box-label">
+    <i class="fa-fw fas fa-eye" aria-hidden="true"></i> 
+    Result
+  </div>
+  <div class="box-content">
+<p><a href="https://example.com" rel="external" target="_self" title="Go t' example domain">Example</a></p>
+  </div>
+</div>
+<h3 id="footnotes">Footnotes<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
+<p><span class="badge cstyle php badge-with-title"><span class="badge-title"><i class="fa-fw fab fa-php" aria-hidden="true"></i></span><span class="badge-content">PHP</span></span> Footnotes work mostly like reference-style links. A footnote be made o' two th'ns, a marker 'n th' text that will become a superscript number an' a footnote definit'n that will be placed 'n a list o' footnotes.</p>
+<p>Usually th' list o' footnotes will be shown at th' end o' yer document. If we use a footnote 'n a notice box it will instead be listed at th' end o' its box.</p>
+<p>Footnotes can contain block elements, which means that ye can put multiple paragraphs, lists, blockquotes an' so on 'n a footnote. It works th' same as fer list items, just indent th' follow'n paragraphs by four spaces 'n th' footnote definit'n.</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-md" data-lang="md"><span class="line"><span class="cl">That&#39;s some text wit' a footnote[^1]
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">[^1]: An' that&#39;s th' footnote.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">That&#39;s some more text wit' a footnote.[^someid]
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">[^someid]:
+</span></span><span class="line"><span class="cl">    Anyth'n o' interest goes here.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    Blue light glows blue.</span></span></code></pre></div>
+
+
+<div role="note" aria-labelledby="R-box-label-74b81bb66e4ec574c818e834d6c51593" class="box cstyle callout example">
+  <div id="R-box-label-74b81bb66e4ec574c818e834d6c51593" class="box-label">
+    <i class="fa-fw fas fa-eye" aria-hidden="true"></i> 
+    Result
+  </div>
+  <div class="box-content">
+<p>That&rsquo;s some text wit' a footnote<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+<p>That&rsquo;s some more text wit' a footnote.<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>An' that&rsquo;s th' footnote.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p>Anyth'n o' interest goes here.</p>
+<p>Blue light glows blue.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+  </div>
+</div>
+<h3 id="link-effects">Link Effects<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
+<p><span class="badge cstyle relearn badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-puzzle-piece" aria-hidden="true"></i></span><span class="badge-content">Relearrrn</span></span> This theme allows additional non-standard formatt'n by sett'n query parameter at th' end o' th' URL. See th' <a href="/hugo-theme-relearn/pir/authoring/linking/linkeffects/index.html">link effects docs</a> fer a detailed example an' how t' configure it.</p>
+<h4 id="target">Target<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h4>
+<p>Add query parameter <code>target=_self</code> or <code>target=_blank</code> t' override <a href="/hugo-theme-relearn/pir/authoring/frontmatter/linking/index.html#opening-links">site-wide sett'ns</a> o' <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#target" rel="external" target="_self">th' target behavior</a> individually fer each link.</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-md" data-lang="md"><span class="line"><span class="cl">[<span class="nt">Magic 'n new window</span>](<span class="na">images/magic.gif?target=_blank</span>)</span></span></code></pre></div>
+
+
+<div role="note" aria-labelledby="R-box-label-b359c432aeac91e9ca3388ac80d16ec5" class="box cstyle callout example">
+  <div id="R-box-label-b359c432aeac91e9ca3388ac80d16ec5" class="box-label">
+    <i class="fa-fw fas fa-eye" aria-hidden="true"></i> 
+    Result
+  </div>
+  <div class="box-content">
+<p><a href="/hugo-theme-relearn/pir/images/magic.gif?target=_blank" target="_blank">Magic 'n new window</a></p>
+  </div>
+</div>
+<h4 id="download">Download<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h4>
+<p>Add query parameter <code>download</code> or <code>download=myfile.gif</code> t' force yer browser <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#download" rel="external" target="_self">t' download th' link target</a> instead o' open'n it.</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-md" data-lang="md"><span class="line"><span class="cl">[<span class="nt">Magic as a download</span>](<span class="na">images/magic.gif?download</span>)</span></span></code></pre></div>
+
+
+<div role="note" aria-labelledby="R-box-label-50dd0eb31434ec2e0e37bcf65744ed2b" class="box cstyle callout example">
+  <div id="R-box-label-50dd0eb31434ec2e0e37bcf65744ed2b" class="box-label">
+    <i class="fa-fw fas fa-eye" aria-hidden="true"></i> 
+    Result
+  </div>
+  <div class="box-content">
+<p><a class="download" download href="/hugo-theme-relearn/pir/images/magic.gif?download">Magic as a download</a></p>
+  </div>
+</div>
+<h2 id="images">Images<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h2>
+<h3 id="basic-images">Basic Images<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
+<p>Images have a similar rules t' links but include a preced'n exclamat'n mark.</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-md" data-lang="md"><span class="line"><span class="cl">![<span class="nt">Spock</span>](<span class="na">https://octodex.github.com/images/spocktocat.png</span>)</span></span></code></pre></div>
+
+
+<div role="note" aria-labelledby="R-box-label-7027d687d624f671a3e6d8a14d60d4ee" class="box cstyle callout example">
+  <div id="R-box-label-7027d687d624f671a3e6d8a14d60d4ee" class="box-label">
+    <i class="fa-fw fas fa-eye" aria-hidden="true"></i> 
+    Result
+  </div>
+  <div class="box-content">
+<p><a href="#R-image-2f97f605befb603e640860f48b1a5d69" class="lightbox-link" id="R-image-2f97f605befb603e640860f48b1a5d69-link"><img alt="Spock" class="bg-white border lazy lightbox rounded figure-image" loading="lazy" src="https://octodex.github.com/images/spocktocat.png?width=20vw" style="width: 20vw;"></a>
+<span class="lightbox-back" id="R-image-2f97f605befb603e640860f48b1a5d69" role="dialog" aria-modal="true" aria-label="Spock" tabindex="-1"><a href="#R-image-2f97f605befb603e640860f48b1a5d69-link" class="lightbox-close" aria-label="Close enlarged image"><img alt="Spock" class="bg-white border lazy lightbox rounded lightbox-image" loading="lazy" src="https://octodex.github.com/images/spocktocat.png?width=20vw"></a></span></p>
+  </div>
+</div>
+<h3 id="image-with-tooltip">Image wit' Tooltip<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
+<p>Like links, images can also be given a tooltip.</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-md" data-lang="md"><span class="line"><span class="cl">![<span class="nt">Picard</span>](<span class="na">https://octodex.github.com/images/jean-luc-picat.jpg &#34;Jean Luc Picard&#34;</span>)</span></span></code></pre></div>
+
+
+<div role="note" aria-labelledby="R-box-label-4e17cb503b842633aeb00d7cbb488aad" class="box cstyle callout example">
+  <div id="R-box-label-4e17cb503b842633aeb00d7cbb488aad" class="box-label">
+    <i class="fa-fw fas fa-eye" aria-hidden="true"></i> 
+    Result
+  </div>
+  <div class="box-content">
+<p><a href="#R-image-1d53694d905d81467071c5944fda57c5" class="lightbox-link" id="R-image-1d53694d905d81467071c5944fda57c5-link"><img alt="Picard" class="bg-white border lazy lightbox rounded figure-image" loading="lazy" src="https://octodex.github.com/images/jean-luc-picat.jpg?width=20vw" style="width: 20vw;" title="Jean Luc Picard"></a>
+<span class="lightbox-back" id="R-image-1d53694d905d81467071c5944fda57c5" role="dialog" aria-modal="true" aria-label="Picard" tabindex="-1"><a href="#R-image-1d53694d905d81467071c5944fda57c5-link" class="lightbox-close" aria-label="Close enlarged image"><img alt="Picard" class="bg-white border lazy lightbox rounded lightbox-image" loading="lazy" src="https://octodex.github.com/images/jean-luc-picat.jpg?width=20vw" title="Jean Luc Picard"></a></span></p>
+  </div>
+</div>
+<h3 id="image-references">Image References<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
+<p>Images can also be linked by reference ID t' later define th' URL locat'n. This simplyfies writ'n if ye want t' use an image more than once 'n a document.</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-md" data-lang="md"><span class="line"><span class="cl">![La Forge][laforge]
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">[laforge]: https://octodex.github.com/images/trekkie.jpg &#34;Geordi La Forge&#34;</span></span></code></pre></div>
+
+
+<div role="note" aria-labelledby="R-box-label-ac2bbf5023bdd6497a577362ef1cc82b" class="box cstyle callout example">
+  <div id="R-box-label-ac2bbf5023bdd6497a577362ef1cc82b" class="box-label">
+    <i class="fa-fw fas fa-eye" aria-hidden="true"></i> 
+    Result
+  </div>
+  <div class="box-content">
+<p><a href="#R-image-b56053b35b125887b52318d9c674d818" class="lightbox-link" id="R-image-b56053b35b125887b52318d9c674d818-link"><img alt="La Forge" class="bg-white border lazy lightbox rounded figure-image" loading="lazy" src="https://octodex.github.com/images/trekkie.jpg?width=20vw" style="width: 20vw;" title="Geordi La Forge"></a>
+<span class="lightbox-back" id="R-image-b56053b35b125887b52318d9c674d818" role="dialog" aria-modal="true" aria-label="La Forge" tabindex="-1"><a href="#R-image-b56053b35b125887b52318d9c674d818-link" class="lightbox-close" aria-label="Close enlarged image"><img alt="La Forge" class="bg-white border lazy lightbox rounded lightbox-image" loading="lazy" src="https://octodex.github.com/images/trekkie.jpg?width=20vw" title="Geordi La Forge"></a></span></p>
+  </div>
+</div>
+<h3 id="image-effects">Image Effects<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
+<p><span class="badge cstyle relearn badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-puzzle-piece" aria-hidden="true"></i></span><span class="badge-content">Relearrrn</span></span> This theme allows additional non-standard formatt'n by sett'n query parameter at th' end o' th' image URL. See th' <a href="/hugo-theme-relearn/pir/authoring/linking/imageeffects/index.html">image effects docs</a> fer a detailed example an' how t' configure it.</p>
+<h4 id="resizing">Resiz'n<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h4>
+<p>Add query parameter <code>width</code> and/or <code>height</code> t' th' link image t' resize th' image. Values be CSS values (default be <code>auto</code>).</p>
+
+
+<div role="note" aria-labelledby="R-box-label-e39b36c88169bd56200cd7cdcb9a6f29" class="box cstyle callout note">
+  <div id="R-box-label-e39b36c88169bd56200cd7cdcb9a6f29" class="box-label">
+    <i class="fa-fw fas fa-exclamation-circle" aria-hidden="true"></i> 
+    Avast
+  </div>
+  <div class="box-content">
+<p>Regardless o' this, an image that resolves t' a resource th' theme can measure - a plank resource or a file 'n yer <code>assets</code> directory, 'n one o' th' common raster formats - be given its own dimensions 'n th' marrrkup, so a browser can reserve th' space it will take before it has boarded. An SVG, a remote address or a path 'n yer <code>static</code> directory has none t' give.</p>
+  </div>
+</div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-md" data-lang="md"><span class="line"><span class="cl">![<span class="nt">Minion</span>](<span class="na">https://octodex.github.com/images/minion.png?width=20vw</span>)</span></span></code></pre></div>
+
+
+<div role="note" aria-labelledby="R-box-label-d7d0c3d63c419f570431e2a7339feda8" class="box cstyle callout example">
+  <div id="R-box-label-d7d0c3d63c419f570431e2a7339feda8" class="box-label">
+    <i class="fa-fw fas fa-eye" aria-hidden="true"></i> 
+    Result
+  </div>
+  <div class="box-content">
+<p><a href="#R-image-e58bad3c8204b6838e91dedc42a59d1a" class="lightbox-link" id="R-image-e58bad3c8204b6838e91dedc42a59d1a-link"><img alt="Minion" class="bg-white border lazy lightbox rounded figure-image" loading="lazy" src="https://octodex.github.com/images/minion.png?width=20vw" style="width: 20vw;"></a>
+<span class="lightbox-back" id="R-image-e58bad3c8204b6838e91dedc42a59d1a" role="dialog" aria-modal="true" aria-label="Minion" tabindex="-1"><a href="#R-image-e58bad3c8204b6838e91dedc42a59d1a-link" class="lightbox-close" aria-label="Close enlarged image"><img alt="Minion" class="bg-white border lazy lightbox rounded lightbox-image" loading="lazy" src="https://octodex.github.com/images/minion.png?width=20vw"></a></span></p>
+  </div>
+</div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-md" data-lang="md"><span class="line"><span class="cl">![<span class="nt">Minion</span>](<span class="na">https://octodex.github.com/images/minion.png?height=50px</span>)</span></span></code></pre></div>
+
+
+<div role="note" aria-labelledby="R-box-label-8b1bd671004e2831ccd42fbe5d13b901" class="box cstyle callout example">
+  <div id="R-box-label-8b1bd671004e2831ccd42fbe5d13b901" class="box-label">
+    <i class="fa-fw fas fa-eye" aria-hidden="true"></i> 
+    Result
+  </div>
+  <div class="box-content">
+<p><a href="#R-image-566ddd813fe452d3d8118e19eb85c2ad" class="lightbox-link" id="R-image-566ddd813fe452d3d8118e19eb85c2ad-link"><img alt="Minion" class="bg-white border lazy lightbox rounded figure-image" loading="lazy" src="https://octodex.github.com/images/minion.png?height=50px" style="height: 50px;width: auto;"></a>
+<span class="lightbox-back" id="R-image-566ddd813fe452d3d8118e19eb85c2ad" role="dialog" aria-modal="true" aria-label="Minion" tabindex="-1"><a href="#R-image-566ddd813fe452d3d8118e19eb85c2ad-link" class="lightbox-close" aria-label="Close enlarged image"><img alt="Minion" class="bg-white border lazy lightbox rounded lightbox-image" loading="lazy" src="https://octodex.github.com/images/minion.png?height=50px"></a></span></p>
+  </div>
+</div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-md" data-lang="md"><span class="line"><span class="cl">![<span class="nt">Minion</span>](<span class="na">https://octodex.github.com/images/minion.png?height=50px&amp;width=40vw</span>)</span></span></code></pre></div>
+
+
+<div role="note" aria-labelledby="R-box-label-c1e5efb3653bbff9c5f9ee1fd5431926" class="box cstyle callout example">
+  <div id="R-box-label-c1e5efb3653bbff9c5f9ee1fd5431926" class="box-label">
+    <i class="fa-fw fas fa-eye" aria-hidden="true"></i> 
+    Result
+  </div>
+  <div class="box-content">
+<p><a href="#R-image-fc3cf75c3509ee3e3c66c1339c73cb35" class="lightbox-link" id="R-image-fc3cf75c3509ee3e3c66c1339c73cb35-link"><img alt="Minion" class="bg-white border lazy lightbox rounded figure-image" loading="lazy" src="https://octodex.github.com/images/minion.png?height=50px&amp;width=40vw" style="height: 50px;width: 40vw;"></a>
+<span class="lightbox-back" id="R-image-fc3cf75c3509ee3e3c66c1339c73cb35" role="dialog" aria-modal="true" aria-label="Minion" tabindex="-1"><a href="#R-image-fc3cf75c3509ee3e3c66c1339c73cb35-link" class="lightbox-close" aria-label="Close enlarged image"><img alt="Minion" class="bg-white border lazy lightbox rounded lightbox-image" loading="lazy" src="https://octodex.github.com/images/minion.png?height=50px&amp;width=40vw"></a></span></p>
+  </div>
+</div>
+<h4 id="css-classes">CSS Classes<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h4>
+<p>Add a query parameter <code>classes</code> t' th' link image t' add CSS classes. Add some o' th' predefined values or even define yer own 'n yer CSS.</p>
+<h5 id="shadow">Shadow<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h5>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-md" data-lang="md"><span class="line"><span class="cl">![<span class="nt">Spidertocat</span>](<span class="na">https://octodex.github.com/images/spidertocat.png?classes=shadow</span>)</span></span></code></pre></div>
+
+
+<div role="note" aria-labelledby="R-box-label-7f7533e81d39861ff5492a3e9f645cec" class="box cstyle callout example">
+  <div id="R-box-label-7f7533e81d39861ff5492a3e9f645cec" class="box-label">
+    <i class="fa-fw fas fa-eye" aria-hidden="true"></i> 
+    Result
+  </div>
+  <div class="box-content">
+<p><a href="#R-image-01154d7ef9f0b0167e325ac2fe641c0a" class="lightbox-link" id="R-image-01154d7ef9f0b0167e325ac2fe641c0a-link"><img alt="Spidertocat" class="bg-white lazy lightbox rounded shadow figure-image" loading="lazy" src="https://octodex.github.com/images/spidertocat.png?width=20vw&amp;classes=shadow,noborder" style="width: 20vw;"></a>
+<span class="lightbox-back" id="R-image-01154d7ef9f0b0167e325ac2fe641c0a" role="dialog" aria-modal="true" aria-label="Spidertocat" tabindex="-1"><a href="#R-image-01154d7ef9f0b0167e325ac2fe641c0a-link" class="lightbox-close" aria-label="Close enlarged image"><img alt="Spidertocat" class="bg-white lazy lightbox rounded shadow lightbox-image" loading="lazy" src="https://octodex.github.com/images/spidertocat.png?width=20vw&amp;classes=shadow,noborder"></a></span></p>
+  </div>
+</div>
+<h5 id="border">Border<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h5>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-md" data-lang="md"><span class="line"><span class="cl">![<span class="nt">DrOctocat</span>](<span class="na">https://octodex.github.com/images/droctocat.png?classes=border</span>)</span></span></code></pre></div>
+
+
+<div role="note" aria-labelledby="R-box-label-df9b925c67fe68504742f25d2447ede4" class="box cstyle callout example">
+  <div id="R-box-label-df9b925c67fe68504742f25d2447ede4" class="box-label">
+    <i class="fa-fw fas fa-eye" aria-hidden="true"></i> 
+    Result
+  </div>
+  <div class="box-content">
+<p><a href="#R-image-bf09fb14b4b5507dc0e9d47873090c5a" class="lightbox-link" id="R-image-bf09fb14b4b5507dc0e9d47873090c5a-link"><img alt="DrOctocat" class="bg-white border lazy lightbox rounded figure-image" loading="lazy" src="https://octodex.github.com/images/droctocat.png?width=20vw&amp;classes=border,noshadow" style="width: 20vw;"></a>
+<span class="lightbox-back" id="R-image-bf09fb14b4b5507dc0e9d47873090c5a" role="dialog" aria-modal="true" aria-label="DrOctocat" tabindex="-1"><a href="#R-image-bf09fb14b4b5507dc0e9d47873090c5a-link" class="lightbox-close" aria-label="Close enlarged image"><img alt="DrOctocat" class="bg-white border lazy lightbox rounded lightbox-image" loading="lazy" src="https://octodex.github.com/images/droctocat.png?width=20vw&amp;classes=border,noshadow"></a></span></p>
+  </div>
+</div>
+<h5 id="left">Left<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h5>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-md" data-lang="md"><span class="line"><span class="cl">![<span class="nt">Supertocat</span>](<span class="na">https://octodex.github.com/images/okal-eltocat.jpg?classes=left</span>)</span></span></code></pre></div>
+
+
+<div role="note" aria-labelledby="R-box-label-792e9042ff023f5882cd0896f275cf11" class="box cstyle callout example">
+  <div id="R-box-label-792e9042ff023f5882cd0896f275cf11" class="box-label">
+    <i class="fa-fw fas fa-eye" aria-hidden="true"></i> 
+    Result
+  </div>
+  <div class="box-content">
+<p><a href="#R-image-104e448cde936cac192e0b6305f26657" class="lightbox-link" id="R-image-104e448cde936cac192e0b6305f26657-link"><img alt="Supertocat" class="bg-white border lazy left lightbox rounded figure-image" loading="lazy" src="https://octodex.github.com/images/okal-eltocat.jpg?width=20vw&amp;classes=left" style="width: 20vw;"></a>
+<span class="lightbox-back" id="R-image-104e448cde936cac192e0b6305f26657" role="dialog" aria-modal="true" aria-label="Supertocat" tabindex="-1"><a href="#R-image-104e448cde936cac192e0b6305f26657-link" class="lightbox-close" aria-label="Close enlarged image"><img alt="Supertocat" class="bg-white border lazy left lightbox rounded lightbox-image" loading="lazy" src="https://octodex.github.com/images/okal-eltocat.jpg?width=20vw&amp;classes=left"></a></span></p>
+  </div>
+</div>
+<h5 id="right">Right<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h5>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-md" data-lang="md"><span class="line"><span class="cl">![<span class="nt">Riddlocat</span>](<span class="na">https://octodex.github.com/images/riddlocat.jpg?classes=right</span>)</span></span></code></pre></div>
+
+
+<div role="note" aria-labelledby="R-box-label-ee7216d5bcc5336b12b82673ca8f54c2" class="box cstyle callout example">
+  <div id="R-box-label-ee7216d5bcc5336b12b82673ca8f54c2" class="box-label">
+    <i class="fa-fw fas fa-eye" aria-hidden="true"></i> 
+    Result
+  </div>
+  <div class="box-content">
+<p><a href="#R-image-11d132779946592bb6e61ee236b10317" class="lightbox-link" id="R-image-11d132779946592bb6e61ee236b10317-link"><img alt="Riddlocat" class="bg-white border lazy lightbox right rounded figure-image" loading="lazy" src="https://octodex.github.com/images/riddlocat.jpg?width=20vw&amp;classes=right" style="width: 20vw;"></a>
+<span class="lightbox-back" id="R-image-11d132779946592bb6e61ee236b10317" role="dialog" aria-modal="true" aria-label="Riddlocat" tabindex="-1"><a href="#R-image-11d132779946592bb6e61ee236b10317-link" class="lightbox-close" aria-label="Close enlarged image"><img alt="Riddlocat" class="bg-white border lazy lightbox right rounded lightbox-image" loading="lazy" src="https://octodex.github.com/images/riddlocat.jpg?width=20vw&amp;classes=right"></a></span></p>
+  </div>
+</div>
+<h5 id="inline">Inline<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h5>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-md" data-lang="md"><span class="line"><span class="cl">![<span class="nt">Spidertocat</span>](<span class="na">https://octodex.github.com/images/spidertocat.png?classes=inline</span>)
+</span></span><span class="line"><span class="cl">![<span class="nt">DrOctocat</span>](<span class="na">https://octodex.github.com/images/droctocat.png?classes=inline</span>)
+</span></span><span class="line"><span class="cl">![<span class="nt">Supertocat</span>](<span class="na">https://octodex.github.com/images/okal-eltocat.jpg?classes=inline</span>)
+</span></span><span class="line"><span class="cl">![<span class="nt">Riddlocat</span>](<span class="na">https://octodex.github.com/images/riddlocat.jpg?classes=inline</span>)</span></span></code></pre></div>
+
+
+<div role="note" aria-labelledby="R-box-label-cf8678e40f7660bf58dd827ba2d33296" class="box cstyle callout example">
+  <div id="R-box-label-cf8678e40f7660bf58dd827ba2d33296" class="box-label">
+    <i class="fa-fw fas fa-eye" aria-hidden="true"></i> 
+    Result
+  </div>
+  <div class="box-content">
+<p><a href="#R-image-a935d60a36e07e3e9e1936d40b2131e5" class="lightbox-link" id="R-image-a935d60a36e07e3e9e1936d40b2131e5-link"><img alt="Spidertocat" class="bg-white border inline lazy lightbox rounded figure-image" loading="lazy" src="https://octodex.github.com/images/spidertocat.png?width=10vw&amp;classes=inline" style="width: 10vw;"></a>
+<span class="lightbox-back" id="R-image-a935d60a36e07e3e9e1936d40b2131e5" role="dialog" aria-modal="true" aria-label="Spidertocat" tabindex="-1"><a href="#R-image-a935d60a36e07e3e9e1936d40b2131e5-link" class="lightbox-close" aria-label="Close enlarged image"><img alt="Spidertocat" class="bg-white border inline lazy lightbox rounded lightbox-image" loading="lazy" src="https://octodex.github.com/images/spidertocat.png?width=10vw&amp;classes=inline"></a></span>
+<a href="#R-image-48d030a07f2ab99a8d27dcfcd02a069c" class="lightbox-link" id="R-image-48d030a07f2ab99a8d27dcfcd02a069c-link"><img alt="DrOctocat" class="bg-white border inline lazy lightbox rounded figure-image" loading="lazy" src="https://octodex.github.com/images/droctocat.png?width=10vw&amp;classes=inline" style="width: 10vw;"></a>
+<span class="lightbox-back" id="R-image-48d030a07f2ab99a8d27dcfcd02a069c" role="dialog" aria-modal="true" aria-label="DrOctocat" tabindex="-1"><a href="#R-image-48d030a07f2ab99a8d27dcfcd02a069c-link" class="lightbox-close" aria-label="Close enlarged image"><img alt="DrOctocat" class="bg-white border inline lazy lightbox rounded lightbox-image" loading="lazy" src="https://octodex.github.com/images/droctocat.png?width=10vw&amp;classes=inline"></a></span>
+<a href="#R-image-f43dbaec43ba8fa1dab0bbc896b7bd85" class="lightbox-link" id="R-image-f43dbaec43ba8fa1dab0bbc896b7bd85-link"><img alt="Supertocat" class="bg-white border inline lazy lightbox rounded figure-image" loading="lazy" src="https://octodex.github.com/images/okal-eltocat.jpg?width=10vw&amp;classes=inline" style="width: 10vw;"></a>
+<span class="lightbox-back" id="R-image-f43dbaec43ba8fa1dab0bbc896b7bd85" role="dialog" aria-modal="true" aria-label="Supertocat" tabindex="-1"><a href="#R-image-f43dbaec43ba8fa1dab0bbc896b7bd85-link" class="lightbox-close" aria-label="Close enlarged image"><img alt="Supertocat" class="bg-white border inline lazy lightbox rounded lightbox-image" loading="lazy" src="https://octodex.github.com/images/okal-eltocat.jpg?width=10vw&amp;classes=inline"></a></span>
+<a href="#R-image-2f19d72a9ec7bf2771d1d7093fc46021" class="lightbox-link" id="R-image-2f19d72a9ec7bf2771d1d7093fc46021-link"><img alt="Riddlocat" class="bg-white border inline lazy lightbox rounded figure-image" loading="lazy" src="https://octodex.github.com/images/riddlocat.jpg?width=10vw&amp;classes=inline" style="width: 10vw;"></a>
+<span class="lightbox-back" id="R-image-2f19d72a9ec7bf2771d1d7093fc46021" role="dialog" aria-modal="true" aria-label="Riddlocat" tabindex="-1"><a href="#R-image-2f19d72a9ec7bf2771d1d7093fc46021-link" class="lightbox-close" aria-label="Close enlarged image"><img alt="Riddlocat" class="bg-white border inline lazy lightbox rounded lightbox-image" loading="lazy" src="https://octodex.github.com/images/riddlocat.jpg?width=10vw&amp;classes=inline"></a></span></p>
+  </div>
+</div>
+<h5 id="combination">Combinat'n<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h5>
+<p>Images come wit' rounded corners. Add <code>norounded</code> t' keep th' corners o' an image as they be.</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-md" data-lang="md"><span class="line"><span class="cl">![<span class="nt">X-tocat</span>](<span class="na">https://octodex.github.com/images/xtocat.jpg?classes=shadow,border,left,norounded</span>)</span></span></code></pre></div>
+
+
+<div role="note" aria-labelledby="R-box-label-bb23e6ea073260799d7ceab3b92e2d06" class="box cstyle callout example">
+  <div id="R-box-label-bb23e6ea073260799d7ceab3b92e2d06" class="box-label">
+    <i class="fa-fw fas fa-eye" aria-hidden="true"></i> 
+    Result
+  </div>
+  <div class="box-content">
+<p><a href="#R-image-823f8f83b3f063da8d5bb431ca3ec0d5" class="lightbox-link" id="R-image-823f8f83b3f063da8d5bb431ca3ec0d5-link"><img alt="X-tocat" class="bg-white border lazy left lightbox shadow figure-image" loading="lazy" src="https://octodex.github.com/images/xtocat.jpg?width=20vw&amp;classes=shadow,border,left,norounded" style="width: 20vw;"></a>
+<span class="lightbox-back" id="R-image-823f8f83b3f063da8d5bb431ca3ec0d5" role="dialog" aria-modal="true" aria-label="X-tocat" tabindex="-1"><a href="#R-image-823f8f83b3f063da8d5bb431ca3ec0d5-link" class="lightbox-close" aria-label="Close enlarged image"><img alt="X-tocat" class="bg-white border lazy left lightbox shadow lightbox-image" loading="lazy" src="https://octodex.github.com/images/xtocat.jpg?width=20vw&amp;classes=shadow,border,left,norounded"></a></span></p>
+  </div>
+</div>
+<h4 id="lightbox">Lightbox<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h4>
+<p>Add th' query parameter <code>lightbox=false</code> t' th' image link t' dis'ble th' lightbox.</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-md" data-lang="md"><span class="line"><span class="cl">![<span class="nt">Homercat</span>](<span class="na">https://octodex.github.com/images/homercat.png?lightbox=false</span>)</span></span></code></pre></div>
+
+
+<div role="note" aria-labelledby="R-box-label-2aba886deff72e3a5241b3ff7d9a532f" class="box cstyle callout example">
+  <div id="R-box-label-2aba886deff72e3a5241b3ff7d9a532f" class="box-label">
+    <i class="fa-fw fas fa-eye" aria-hidden="true"></i> 
+    Result
+  </div>
+  <div class="box-content">
+<p><img alt="Homercat" class="bg-white border lazy rounded figure-image" loading="lazy" src="https://octodex.github.com/images/homercat.png?width=20vw&amp;lightbox=false" style="width: 20vw;"></p>
+  </div>
+</div>
+
+
+<div role="note" aria-labelledby="R-box-label-e187d7769943cb337ed22f6e0db6a037" class="box cstyle callout note">
+  <div id="R-box-label-e187d7769943cb337ed22f6e0db6a037" class="box-label">
+    <i class="fa-fw fas fa-exclamation-circle" aria-hidden="true"></i> 
+    Avast
+  </div>
+  <div class="box-content">
+<p>If ye want t' wrap an image 'n a link an' yer default fer <code>lightbox</code> be <code>true</code>, ye have t' explicitly dis'ble th' lightbox t' avoid it t' hijack'n yer link like:</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-md" data-lang="md"><span class="line"><span class="cl">[<span class="nt">![Homercat</span>](<span class="na">https://octodex.github.com/images/homercat.png?lightbox=false</span>)](https://octodex.github.com/<span class="ni">#homercat</span>)</span></span></code></pre></div>
+<p><a href="https://octodex.github.com/#homercat" rel="external" target="_self"><img alt="Homercat" class="bg-white border lazy rounded figure-image" loading="lazy" src="https://octodex.github.com/images/homercat.png?width=20vw&amp;lightbox=false" style="width: 20vw;"></a></p>
+  </div>
+</div>
+ 
+
+  <footer class="footline">
+<div class="R-taxonomy taxonomy-categories" title="Categorrries">
+  <i class="fa-fw fas fa-layer-group" aria-hidden="true"></i>
+  <ul>
+    <li><a class="term-link" href="/hugo-theme-relearn/pir/categories/howto/index.html">Howto</a></li>
+    <li><a class="term-link" href="/hugo-theme-relearn/pir/categories/reference/index.html">Reference</a></li>
+  </ul>
+</div>
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <script src="/hugo-theme-relearn/js/theme.min.96b966188f27166ddab5db2863a58101dd099db40ab5513f97556f286504ff8a.js" defer></script>
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
+  </body>
+</html>

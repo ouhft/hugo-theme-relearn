@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html id="R-html" lang="art-x-pir" dir="rtl" itemscope itemtype="http://schema.org/Article" data-r-output-format="print">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.168.0">
+    <meta name="generator" content="Relearn 9.4.0">
+    <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
+    <meta name="description" content="Heads-up fer th&#39; upcom&#39;n 10.0.0 version, th&#39; Decade Release – Clear&#39;n Out Ten Years o&#39; Baggage Th&#39; Relearrrn theme has come a long way. Its predecessor, th&#39; Learrrn theme, was started more than ten years ago, an&#39; Relearrrn was forked from it over five years ago. Since then, a lot has been added t&#39; th&#39; theme, an&#39; Cap&#39;n Hugo itself has evolved tremendously.
+All that history left its marks, an&#39; th&#39; source code still carries a lot o&#39; it along: options an&#39; features that have long been replaced an&#39; forgotten but be kept alive fer compatibility, an&#39; remnants whose only remain&#39;n job be t&#39; print a warning. In other places, th&#39; theme got there first, an&#39; Cap&#39;n Hugo later added similar functionality o&#39; its own, often under a different name. Today it be hard t&#39; argue why th&#39; theme should do th&#39;ns differently from Cap&#39;n Hugo, an&#39; two terms fer th&#39; same th&#39;n (like menuTitle vs. linkTitle, or th&#39; expand shortcode vs. details) only cause confusion.
+Version 10.0.0 be about clean&#39;n this up. It removes everyth&#39;n that currently triggers a DEPRECATED or UNSUPPORTED message dur&#39;n a build. That covers deprecated features that still work as well as th&#39; hints fer features that were already dropped.
+What ye should do now
+No messages, no work: if yer ship builds on th&#39; latest 9.x release without DEPRECATED, UNSUPPORTED or WARNING messages from th&#39; theme, ye can update t&#39; 10.0.0 without chang&#39;n anyth&#39;n. Messages? Fix them now: each message names th&#39; replacement an&#39; links t&#39; th&#39; release notes describ&#39;n th&#39; migrat&#39;n. Don’t wait: wit&#39; 10.0.0, these messages be gone. Old usages will simply stop work&#39;n, either silently or wit&#39; a build error.">
+    <meta name="author" content="Sören Weber">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://ouhft.github.io/hugo-theme-relearn/images/hero.png">
+    <meta name="twitter:title" content="Version 9 :: Cap&#39;n Hugo Relearrrn Theme">
+    <meta name="twitter:description" content="Heads-up fer th&#39; upcom&#39;n 10.0.0 version, th&#39; Decade Release – Clear&#39;n Out Ten Years o&#39; Baggage Th&#39; Relearrrn theme has come a long way. Its predecessor, th&#39; Learrrn theme, was started more than ten years ago, an&#39; Relearrrn was forked from it over five years ago. Since then, a lot has been added t&#39; th&#39; theme, an&#39; Cap&#39;n Hugo itself has evolved tremendously.
+All that history left its marks, an&#39; th&#39; source code still carries a lot o&#39; it along: options an&#39; features that have long been replaced an&#39; forgotten but be kept alive fer compatibility, an&#39; remnants whose only remain&#39;n job be t&#39; print a warning. In other places, th&#39; theme got there first, an&#39; Cap&#39;n Hugo later added similar functionality o&#39; its own, often under a different name. Today it be hard t&#39; argue why th&#39; theme should do th&#39;ns differently from Cap&#39;n Hugo, an&#39; two terms fer th&#39; same th&#39;n (like menuTitle vs. linkTitle, or th&#39; expand shortcode vs. details) only cause confusion.
+Version 10.0.0 be about clean&#39;n this up. It removes everyth&#39;n that currently triggers a DEPRECATED or UNSUPPORTED message dur&#39;n a build. That covers deprecated features that still work as well as th&#39; hints fer features that were already dropped.
+What ye should do now
+No messages, no work: if yer ship builds on th&#39; latest 9.x release without DEPRECATED, UNSUPPORTED or WARNING messages from th&#39; theme, ye can update t&#39; 10.0.0 without chang&#39;n anyth&#39;n. Messages? Fix them now: each message names th&#39; replacement an&#39; links t&#39; th&#39; release notes describ&#39;n th&#39; migrat&#39;n. Don’t wait: wit&#39; 10.0.0, these messages be gone. Old usages will simply stop work&#39;n, either silently or wit&#39; a build error.">
+    <meta property="og:url" content="https://ouhft.github.io/hugo-theme-relearn/pir/introduction/releasenotes/9/index.html">
+    <meta property="og:site_name" content="Cap&#39;n Hugo Relearrrn Theme">
+    <meta property="og:title" content="Version 9 :: Cap&#39;n Hugo Relearrrn Theme">
+    <meta property="og:description" content="Heads-up fer th&#39; upcom&#39;n 10.0.0 version, th&#39; Decade Release – Clear&#39;n Out Ten Years o&#39; Baggage Th&#39; Relearrrn theme has come a long way. Its predecessor, th&#39; Learrrn theme, was started more than ten years ago, an&#39; Relearrrn was forked from it over five years ago. Since then, a lot has been added t&#39; th&#39; theme, an&#39; Cap&#39;n Hugo itself has evolved tremendously.
+All that history left its marks, an&#39; th&#39; source code still carries a lot o&#39; it along: options an&#39; features that have long been replaced an&#39; forgotten but be kept alive fer compatibility, an&#39; remnants whose only remain&#39;n job be t&#39; print a warning. In other places, th&#39; theme got there first, an&#39; Cap&#39;n Hugo later added similar functionality o&#39; its own, often under a different name. Today it be hard t&#39; argue why th&#39; theme should do th&#39;ns differently from Cap&#39;n Hugo, an&#39; two terms fer th&#39; same th&#39;n (like menuTitle vs. linkTitle, or th&#39; expand shortcode vs. details) only cause confusion.
+Version 10.0.0 be about clean&#39;n this up. It removes everyth&#39;n that currently triggers a DEPRECATED or UNSUPPORTED message dur&#39;n a build. That covers deprecated features that still work as well as th&#39; hints fer features that were already dropped.
+What ye should do now
+No messages, no work: if yer ship builds on th&#39; latest 9.x release without DEPRECATED, UNSUPPORTED or WARNING messages from th&#39; theme, ye can update t&#39; 10.0.0 without chang&#39;n anyth&#39;n. Messages? Fix them now: each message names th&#39; replacement an&#39; links t&#39; th&#39; release notes describ&#39;n th&#39; migrat&#39;n. Don’t wait: wit&#39; 10.0.0, these messages be gone. Old usages will simply stop work&#39;n, either silently or wit&#39; a build error.">
+    <meta property="og:locale" content="art_x_pir">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://ouhft.github.io/hugo-theme-relearn/images/hero.png">
+    <meta itemprop="name" content="Version 9 :: Cap&#39;n Hugo Relearrrn Theme">
+    <meta itemprop="description" content="Heads-up fer th&#39; upcom&#39;n 10.0.0 version, th&#39; Decade Release – Clear&#39;n Out Ten Years o&#39; Baggage Th&#39; Relearrrn theme has come a long way. Its predecessor, th&#39; Learrrn theme, was started more than ten years ago, an&#39; Relearrrn was forked from it over five years ago. Since then, a lot has been added t&#39; th&#39; theme, an&#39; Cap&#39;n Hugo itself has evolved tremendously.
+All that history left its marks, an&#39; th&#39; source code still carries a lot o&#39; it along: options an&#39; features that have long been replaced an&#39; forgotten but be kept alive fer compatibility, an&#39; remnants whose only remain&#39;n job be t&#39; print a warning. In other places, th&#39; theme got there first, an&#39; Cap&#39;n Hugo later added similar functionality o&#39; its own, often under a different name. Today it be hard t&#39; argue why th&#39; theme should do th&#39;ns differently from Cap&#39;n Hugo, an&#39; two terms fer th&#39; same th&#39;n (like menuTitle vs. linkTitle, or th&#39; expand shortcode vs. details) only cause confusion.
+Version 10.0.0 be about clean&#39;n this up. It removes everyth&#39;n that currently triggers a DEPRECATED or UNSUPPORTED message dur&#39;n a build. That covers deprecated features that still work as well as th&#39; hints fer features that were already dropped.
+What ye should do now
+No messages, no work: if yer ship builds on th&#39; latest 9.x release without DEPRECATED, UNSUPPORTED or WARNING messages from th&#39; theme, ye can update t&#39; 10.0.0 without chang&#39;n anyth&#39;n. Messages? Fix them now: each message names th&#39; replacement an&#39; links t&#39; th&#39; release notes describ&#39;n th&#39; migrat&#39;n. Don’t wait: wit&#39; 10.0.0, these messages be gone. Old usages will simply stop work&#39;n, either silently or wit&#39; a build error.">
+    <meta itemprop="wordCount" content="4064">
+    <meta itemprop="image" content="https://ouhft.github.io/hugo-theme-relearn/images/hero.png">
+    <title>Version 9 :: Cap&#39;n Hugo Relearrrn Theme</title>
+    <link href="https://ouhft.github.io/hugo-theme-relearn/introduction/releasenotes/9/index.html" rel="alternate" hreflang="x-default">
+    <link href="https://ouhft.github.io/hugo-theme-relearn/introduction/releasenotes/9/index.html" rel="alternate" hreflang="en">
+    <link href="https://ouhft.github.io/hugo-theme-relearn/pir/introduction/releasenotes/9/index.html" rel="alternate" hreflang="art-x-pir">
+    <link href="https://ouhft.github.io/hugo-theme-relearn/pir/introduction/releasenotes/9/index.html" rel="canonical" type="text/html" title="Version 9 :: Cap&#39;n Hugo Relearrrn Theme">
+    <link href="/hugo-theme-relearn/pir/introduction/releasenotes/9/index.xml" rel="alternate" type="application/rss&#43;xml" title="Version 9 :: Cap&#39;n Hugo Relearrrn Theme">
+    <link href="/hugo-theme-relearn/pir/introduction/releasenotes/9/index.md" rel="alternate" type="text/markdown" title="Version 9 :: Cap&#39;n Hugo Relearrrn Theme">
+    <link href="/hugo-theme-relearn/pir/introduction/releasenotes/9/index.source.md" rel="alternate" type="text/markdown" title="Version 9 :: Cap&#39;n Hugo Relearrrn Theme">
+    <link href="/hugo-theme-relearn/images/logo.d2952b3b403590be64a7c6c1d73fd7d15a09e0fad6b532e5a2f23d990c5503df.svg" rel="icon" type="image/svg&#43;xml">
+    <link href="/hugo-theme-relearn/css/auto-complete/auto-complete.min.19b8eb7faa53e727a407aa2d781e21185a35cfc9330628acc11df190f919f003.css" rel="stylesheet">
+    <script src="/hugo-theme-relearn/js/auto-complete/auto-complete.min.ee095762d0ba22fe9c154ccbc9a1d92d5eae5ebaf7cedfbc9b9991710d739d05.js" defer></script>
+    <script src="/hugo-theme-relearn/js/search-lunr.min.9897ffe790e716e8b90e4a9e200dce63c2603e69a9eec9bbdce6a483811ea180.js" defer></script>
+    <script src="/hugo-theme-relearn/js/search.min.4bcf60afa00d9f5c3adf08ff55811ce4cc679bd6d4b5747d674667994ee1debb.js" defer></script>
+    <script type="application/json" id="R-search-config">{
+      "indexFile": "searchindex.pir.min.068859c60987ae31c517fadda0293a23424564fbce22cde7ffe6308c0255e0bd.js"
+    }</script>
+    <script src="/hugo-theme-relearn/js/lunr/lunr.min.75e90b6cec204a54a07060b42ec82f3816430c63ffd689d1e9771f469dc493dd.js" defer></script>
+    <script src="/hugo-theme-relearn/js/lunr/lunr.stemmer.support.min.5ff7b6bd53462911fc1311c09f654085b748338aced249e719c0b16fda0b90fb.js" defer></script>
+    <script src="/hugo-theme-relearn/js/lunr/lunr.multi.min.ffaee7f1e07179595fe8a4b7c469761f90999470e1f04dcb0a94dc2c1cb44f9c.js" defer></script>
+    <script src="/hugo-theme-relearn/js/lunr/lunr.en.min.94d0a7cb1f111200e2f5be9dc32699cf266aaa29011e414bdcd36a18ea0fd5ee.js" defer></script>
+    <script src="/hugo-theme-relearn/js/lunr/lunr.art.min.d3a9a00c6a815a619b46177e86e5d73b27b26c3b2a9d99951d359ab00deb7158.js" defer></script>
+    <script type="application/json" id="R-search-lunr-config">{
+      "contentLangs": [
+        "en",
+        "art"
+      ]
+    }</script>
+    <link href="/hugo-theme-relearn/fonts/fontawesome/css/all.min.e0b69df26e19596d4b81bf7eb0c54b6047e7221ec18d5d4d40c11eefd3ef8a4b.css" rel="stylesheet" media="print" class="R-async-style"><noscript><link href="/hugo-theme-relearn/fonts/fontawesome/css/all.min.e0b69df26e19596d4b81bf7eb0c54b6047e7221ec18d5d4d40c11eefd3ef8a4b.css" rel="stylesheet"></noscript>
+    <link href="/hugo-theme-relearn/css/theme.min.bba7025345a3ad33f5296e7fed3b0f46c339149a3d2af5a320b8957d4b66325c.css" rel="stylesheet">
+    <link href="/hugo-theme-relearn/css/format-print.min.54e295afb02765776f6e05d3a5b2076ff2f00800531d1db8f139fa068608a60a.css" rel="stylesheet" id="R-format-style">
+    <script type="application/json" id="R-theme-config">{
+      "disableInlineCopyToClipboard": true,
+      "enableBlockCodeWrap": true,
+      "path": "/pir/introduction/releasenotes/9/index.html",
+      "relBasePath": "../../../..",
+      "relBaseUri": "../../../../..",
+      "themevariants": [
+        "relearn-auto",
+        "relearn-dark",
+        "relearn-light",
+        "zen-auto",
+        "zen-dark",
+        "zen-light",
+        "contrast-auto",
+        "contrast-dark",
+        "contrast-light",
+        "tome-auto",
+        "tome-dark",
+        "tome-light",
+        "retro-auto",
+        "neon",
+        "learn",
+        "blue",
+        "green",
+        "red"
+      ],
+      "translations": {
+        "Browser_unsupported_feature": "This browserrr doesn't supporrrt this featurrre",
+        "Change_sorting": "Change th' sortin'",
+        "Close_graph": "Close th' enlarrrged chart",
+        "Copied_to_clipboard": "Text copied t' clipboard!",
+        "Copy_to_clipboard": "Copy text t' clipboard",
+        "Deleted_text_end": "End o' text sent overboard",
+        "Deleted_text_start": "Start o' text sent overboard",
+        "Enlarge_graph": "Enlarrrge th' chart",
+        "History_cleared": "Historrry clearrred",
+        "Inserted_text_end": "End o' text hauled aboard",
+        "Inserted_text_start": "Start o' text hauled aboard",
+        "Link_copied_to_clipboard": "Link copied t' clipboard!",
+        "N_matches_on_page": "{1} matches fer \"{0}\" on this here page",
+        "N_results_found": "{1} rrresults found fer \"{0}\"",
+        "No_results_found": "No rrresults found fer \"{0}\"",
+        "Reset_sorting": "Reset th' sortin'",
+        "Reset_view": "Rrreset view",
+        "Sort_key_ascending": "sorted at position {0}, risin'",
+        "Sort_key_descending": "sorted at position {0}, sinkin'",
+        "Sortable_columns": "Column headers wit' buttons can be sorted.",
+        "Sorted_by_ascending": "Sorted by \"{0}\", risin'",
+        "Sorted_by_descending": "Sorted by \"{0}\", sinkin'",
+        "Sorting_reset": "Sortin' reset!",
+        "Unsorted_by": "No longer sorted by \"{0}\"",
+        "View_reset": "View rrreset!"
+      }
+    }</script>
+    <script src="/hugo-theme-relearn/js/theme-head.min.f7e473c3e5d5d7ea4c1ad508c6ae60b8d3c54f1c5f68e660f71087333cc95e5a.js"></script>
+    <style>
+       
+      #R-body img.bg-white {
+        background-color: white;
+      }
+       
+      :root[data-r-theme-variant^='tome-'] .github-buttons {
+        filter: sepia(0.6) brightness(0.95);
+      }
+    </style>
+  </head>
+  <body class="mobile-support print" data-origin="/hugo-theme-relearn/pir/introduction/releasenotes/9/index.html">
+    <a id="R-skip-link" href="#R-body-inner">Skip t&#39; th&#39; main rrreadin&#39;</a>
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <header id="R-topbar" class="default-animation">
+        <a id="R-logo" class="R-default layout-sidebar-row" href="/hugo-theme-relearn/pir/index.html">
+          <span class="logo-image default-animation" data-r-logo-variant="blue contrast-dark contrast-light green learn red relearn-dark relearn-light tome-dark tome-light zen-dark zen-light">
+<svg aria-hidden="true" class="bg-white border inlinecontent lazy rounded figure-image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64.044 64.044" fill="currentColor"><style>svg:root{color:#000}@media (prefers-color-scheme:dark){svg:root{color:#fff}}</style><path d="M46.103 136.34c-.642-.394-1.222-2.242-1.98-2.358-.76-.117-1.353.506-1.618 1.519-.266 1.012-.446 4.188.173 5.538.213.435.482.787 1.03.845.547.057.967-.504 1.45-1.027.482-.523.437-.9 1.142-.612.705.289 1.051.4 1.586 1.229.535.828 1.085 4.043.868 5.598-.241 1.458-.531 2.8-.59 4.088.26.075.517.148.772.217 2.68.724 5.373 1.037 7.873.02.001-.028.01-.105.008-.11-.048-.165-.18-.41-.36-.698-.18-.29-.414-.645-.586-1.114a3.212 3.212 0 0 1-.125-1.735c.056-.21.153-.342.249-.475 1.237-1.193 2.932-1.373 4.244-1.384.557-.004 1.389.016 2.198.255.809.239 1.706.724 2.068 1.843.187.578.114 1.17-.043 1.623-.153.438-.369.783-.545 1.091-.178.31-.329.6-.401.821-.007.02-.003.071-.005.094 2.256 1.008 4.716.91 7.189.398.55-.114 1.11-.247 1.673-.377.344-1.085.678-2.145.852-3.208.124-.752.158-2.311-.078-3.538-.118-.613-.306-1.15-.52-1.489-.221-.349-.413-.501-.747-.538-.243-.027-.51.013-.796.098-.67.223-1.33.606-1.966.76l-.008.002-.109.032c-.556.152-1.233.158-1.797-.36-.556-.51-.89-1.367-1.117-2.596-.283-1.528-.075-3.279.89-4.518l.071-.09h.07c.65-.71 1.485-.802 2.16-.599.706.213 1.333.629 1.772.84.736.354 1.185.319 1.475.171.291-.148.5-.439.668-.955.332-1.017.301-2.819.022-4.106-.148-.684-.13-1.292-.13-1.883-1.558-.463-3.067-.982-4.574-1.208-1.128-.169-2.263-.173-3.298.164-.13.046-.256.095-.38.15-.373.164-.633.342-.805.52-.077.098-.081.105-.087.21-.004.068.031.289.13.571.1.282.256.634.467 1.03.279.524.448 1.063.431 1.618a2.12 2.12 0 0 1-.499 1.309 1.757 1.757 0 0 1-.62.51h-.002c-.515.291-1.107.404-1.723.464-.86.083-1.787.026-2.598-.097-.806-.123-1.47-.28-1.948-.555-.444-.256-.79-.547-1.037-.925a2.273 2.273 0 0 1-.356-1.301c.029-.837.403-1.437.625-1.897.111-.23.191-.433.236-.583.045-.15.044-.25.046-.24-.005-.029-.127-.355-1.015-.741-1.138-.495-2.322-.673-3.533-.668h-.015a9.711 9.711 0 0 0-.521.016h-.002c-1.163.057-2.35.308-3.541.569.383 1.531.79 2.753.818 4.502-.096 1.297.158 2.114-1.03 2.935-.85.588-1.508.729-2.15.335" transform="translate(-40.698 -95.175)"/><path d="M61.472 101.34v.002c-.3-.003-.603.01-.894.04-.544.055-1.39.165-1.778.306-1.238.364.13 2.344.41 2.913.28.569.285 2.03.14 2.134-.144.103-.375.261-.934.345-.56.084.03-.037-1.589.086-1.62.122-5.506.29-8.265.248-.022.26-.036.521-.097.808-.309 1.442-.63 3.163-.494 4.074.071.473.168.65.414.8.23.14.737.235 1.62-.004.834-.227 1.3-.442 1.887-.456.595-.016 1.555.472 1.965.717.411.245-.03-.008.002 0s.128.05.176.102c.049.053-.276-.523.104.199.379.721.72 3.256.002 4.68-.46.913-1.01 1.49-1.64 1.711-.63.22-1.229.067-1.734-.135-.881-.353-1.584-.7-2.205-.647-1.199 1.94-1.186 4.17-.6 6.602.097.397.212.814.327 1.23 2.68-.556 5.542-1.016 8.337.132 1.064.437 1.73 1.015 1.902 1.857.169.831-.193 1.508-.438 1.986-.122.238-.23.46-.307.642-.07.164-.096.28-.104.324.069.429.309.723.686.945.385.227.89.355 1.35.423.723.104 1.567.152 2.287.086.693-.064 1.032-.338 1.241-.544a2.447 2.447 0 0 0 .303-.437.175.175 0 0 0 .013-.035c-.004-.066-.037-.246-.195-.527-.46-.816-.87-1.595-.817-2.51.028-.476.218-.938.529-1.288.304-.343.698-.586 1.186-.79 1.442-.606 2.96-.609 4.372-.409 1.525.216 2.963.679 4.378 1.083.226-2.09.784-3.9.592-5.77-.058-.565-.287-1.333-.598-1.827-.32-.508-.59-.717-1.036-.642-.648.11-1.472.935-2.707 1.078-.791.092-1.494-.267-1.95-.86-.45-.583-.678-1.335-.78-2.101-.202-1.525.031-3.229.89-4.27.615-.747 1.45-.887 2.15-.74.687.145 1.307.492 1.857.745v-.002c.546.252 1.033.388 1.281.344a.547.547 0 0 0 .353-.188c.113-.124.242-.35.384-.75.604-1.712.206-3.68-.303-5.654-.667.145-1.336.293-2.018.413-1.341.236-2.73.392-4.136.273-.656-.055-1.695-.085-2.58-.476-.442-.195-.903-.514-1.157-1.093-.259-.591-.205-1.313.08-2.014.223-.64 1.082-2.178.692-2.585-.391-.407-1.651-.56-2.554-.571z" transform="translate(-40.698 -95.175)"/><path d="M83.128 98.116c-.484 1.875-1.057 3.757-2.486 5.033-.638.57-1.13.666-1.483.548-.401-.134-.715-.506-1.058-.973-.338-.461-.655-.97-1.076-1.332-.192-.165-.404-.315-.683-.38-.279-.066-.599-.02-.9.102-.489.196-.89.58-1.28 1.047a6.1 6.1 0 0 0-.985 1.632c-.234.591-.356 1.174-.277 1.713.072.487.392.977.905 1.185.463.187.926.156 1.36.154.433 0 .843.01 1.242.147.55.189.79.736.822 1.368.034.66-.145 1.412-.393 1.988l-.008.021c-.74 1.705-1.946 2.893-3.004 4.349l-.664.915.979.099c.924.092 1.788.26 2.468.675.46.281 1.806 1.205 2.794 2.222.497.513.888 1.031 1.047 1.502.078.231.095.422.05.6a.93.93 0 0 1-.345.474c-.301.223-.606.395-.864.532l-.354.186c-.107.058-.189.087-.345.228a.637.637 0 0 1 .062-.045l-.064.041-.209.236-.103.343s.003.126.007.152c.003.017.003.007.004.015v.002c.016.195.061.307.133.476a4.1 4.1 0 0 0 .32.596 5.7 5.7 0 0 0 2.8 2.258c.284.108.908.321 1.548.36.33.02.59.015.912-.13h.002c.08-.037.228-.095.382-.281.153-.186.19-.355.212-.445l.019-.075.003-.078c.023-.585-.037-1.296.072-1.899.153-.657.435-.956 1.009-.909 2.771.239 4.74 1.955 6.693 3.83l.742.714.279-1.155c.55-2.29 1.093-4.464 2.928-5.977.692-.57 1.184-.642 1.527-.509.39.151.676.536.996.995.319.458.605.926 1.07 1.212.194.119.464.232.784.209.32-.024.638-.163.988-.384 1.022-.645 1.778-1.756 2.086-2.942.136-.522.102-.991-.046-1.301-.158-.334-.433-.553-.754-.707-.653-.314-1.468-.373-2.094-.486-.825-.15-1.22-.475-1.345-.878-.13-.417 0-.953.335-1.61.6-1.173 1.887-2.602 3.13-3.911l.498-.526-.449-.432c-1.545-1.49-3.163-3.01-5.252-3.715h-.002c-.473-.16-1.097-.413-1.73-.424h-.003c-.311-.004-.596.04-.883.24v.002c-.22.155-.483.537-.583.937l-.008.036-.006.038c-.116.773-.06 1.467-.217 1.995-.063.212-.198.418-.359.507-.202.111-.492.153-.976.072-.582-.097-1.978-.69-3.021-1.503-.523-.407-.934-.85-1.117-1.3a1.153 1.153 0 0 1-.083-.63c.03-.184.1-.477.308-.593.21-.116.941-.32 1.377-.642h.002c.192-.141.403-.367.518-.64.114-.275.127-.526.123-.774-.006-.142-.036-.192-.08-.3a8.417 8.417 0 0 0-3-3.027c-1.226-.725-2.585-1.135-3.927-1.539-.434-.12-.844-.111-1.02.466zm.912.947c1.186.364 2.357.718 3.345 1.303 1.035.612 1.864 1.488 2.507 2.528-.514.263-1.095.5-1.44.79-.345.29-.729.914-.815 1.434-.084.509 0 .968.155 1.347.301.74.85 1.276 1.44 1.735 1.18.92 2.554 1.545 3.47 1.698.604.1 1.186.088 1.739-.216.594-.327.935-.911 1.088-1.427.264-.884.193-1.664.262-2.17h.1c.3.006.926.206 1.417.371 1.646.554 3.044 1.773 4.431 3.089-1.102 1.174-2.222 2.423-2.888 3.73-.42.823-.73 1.789-.453 2.687.283.913 1.1 1.415 2.138 1.603.691.126 1.472.226 1.84.403.19.091.258.182.278.223.03.064.058.075-.023.387-.21.804-.761 1.598-1.413 2.01-.247.155-.365.183-.407.187-.042.003-.061.002-.172-.066-.144-.088-.455-.473-.772-.929-.317-.454-.714-1.07-1.452-1.356-.783-.304-1.776-.022-2.713.75-1.942 1.6-2.626 3.764-3.146 5.8-1.802-1.676-3.772-3.138-6.589-3.517h-.002c-.346-.095-1.013-.031-1.293.143-.735.501-1.005 1.132-1.168 2.007-.125.69-.082 1.216-.074 1.659-.055.006-.046.01-.104.006-.42-.026-1.035-.215-1.244-.295-.947-.361-1.774-1.006-2.314-1.857-.054-.085-.072-.132-.109-.2l.027-.016c.284-.15.656-.36 1.045-.648.44-.327.789-.798.93-1.35a2.4 2.4 0 0 0-.068-1.379c-.254-.751-.753-1.353-1.295-1.911-1.09-1.124-2.452-2.049-2.99-2.378-.609-.372-1.303-.44-1.981-.56.875-1.094 1.878-2.251 2.596-3.921.294-.823.543-1.907.513-2.658-.049-.97-.489-2.013-1.52-2.367-.579-.2-1.131-.204-1.58-.203-.45.002-.786-.006-.97-.08h-.002c-.264-.107-.236-.108-.268-.33-.025-.17.021-.553.183-.962a4.67 4.67 0 0 1 .725-1.192c.29-.348.617-.59.705-.626.142-.057.176-.05.22-.04.045.011.127.052.263.17.235.201.56.671.92 1.161.354.484.791 1.08 1.543 1.33.8.267 1.784-.052 2.671-.846 1.594-1.424 2.235-3.317 2.714-5.051zm11.705 7.023c-.02.014.042-.002.042 0l-.008.035c.05-.2-.028-.04-.034-.035zM79.472 122.45a.198.198 0 0 1 .005.023v.014c-.002-.01-.003-.03-.005-.037zm-.29.732-.006.01-.044.027c.016-.01.033-.024.05-.036z" transform="translate(-40.698 -95.175)"/><path d="M76.694 128.845c-.85-.012-1.668.253-2.434.67-.01.592-.015 1.17.109 1.772.323 1.573.422 3.553-.07 5.147-.247.804-.684 1.535-1.347 1.891-.663.356-1.467.296-2.362-.159-.522-.266-1.059-.62-1.487-.757-.223-.072-.392-.096-.522-.069-.13.027-.232.094-.362.27-.53.719-.681 1.823-.497 2.876.177 1.012.418 1.438.543 1.56.143.137.26.154.604.055.548-.158 1.523-.857 2.573-.972l.02-.002.5.058c.686.081 1.247.562 1.622 1.19.372.62.591 1.37.73 2.136.279 1.532.25 3.16.083 4.232-.14.91-.394 1.72-.632 2.53 1.719-.385 3.485-.692 5.307-.36 1.174.214 2.749.574 3.762 1.977l.088.122.046.159c.162.551.16 1.114.024 1.578-.13.45-.348.772-.533 1.023-.181.246-.336.444-.437.606-.102.16-.141.275-.145.336-.01.17 0 .197.07.315.057.1.186.242.39.366.408.246 1.106.414 1.843.45a7.842 7.842 0 0 0 2.174-.21 4.28 4.28 0 0 0 .822-.296c.218-.106.385-.242.377-.233l.029-.031c.025-.035.05-.072.05-.068 0-.004 0-.017-.003-.05a2.733 2.733 0 0 0-.21-.579c-.26-.548-.839-1.333-.822-2.46.01-.657.27-1.21.598-1.576.32-.357.696-.575 1.074-.736.759-.323 1.57-.418 2.054-.458 1.653-.136 3.252.296 4.755.765.457.142.905.29 1.352.434.325-2.258.902-4.247.598-6.217-.071-.46-.25-1.169-.486-1.684-.238-.518-.495-.762-.675-.779-.351-.032-.716.14-1.174.418-.457.277-1.005.665-1.695.742-.745.082-1.406-.291-1.84-.908-.428-.608-.653-1.394-.754-2.196-.203-1.596.016-3.377.794-4.493.568-.813 1.358-.984 2.024-.835.65.146 1.243.51 1.769.779.524.267.99.413 1.237.365a.527.527 0 0 0 .346-.2c.11-.132.235-.373.37-.798.612-1.918.27-3.894-.246-6.054-2.815-.851-5.49-1.534-8.089-.267a.727.727 0 0 0-.223.148c-.024.028-.018.021-.026.056.001-.003-.01.178.07.44.162.522.611 1.29.911 1.978l.004.009.029.063.024.084V133c.162.635.016 1.297-.274 1.727-.272.404-.618.636-.952.81-.675.353-1.399.484-1.724.533a5.888 5.888 0 0 1-3.973-.795c-.512-.311-.876-.594-1.133-1.02-.282-.466-.318-1.084-.172-1.557.252-.814.715-1.266.971-1.89a.663.663 0 0 0 .047-.14c.001-.013 0-.006-.007-.037a.761.761 0 0 0-.184-.268c-.264-.267-.865-.595-1.54-.826-1.356-.462-3.07-.659-3.583-.686-.062-.002-.121-.006-.178-.006z" transform="translate(-40.698 -95.175)"/></svg>
+          </span>
+          <span class="logo-image default-animation" data-r-logo-variant="neon">
+<img alt="" class="bg-white border lazy rounded figure-image" height="252" loading="lazy" src="/hugo-theme-relearn/images/magic.gif" width="252">
+          </span>
+          <span class="logo-title default-animation">Relearn</span>
+        </a>
+        <div class="topbar-wrapper default-animation">
+          <div class="topbar-sidebar-divider default-animation"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+<span class="btn cstyle button link noborder notitle interactive"><button data-button-action="toggle-nav" type="button" title="Menu (CTRL&#43;ALT&#43;n)" aria-label="Menu (CTRL&#43;ALT&#43;n)" aria-expanded="false"><i class="fa-fw fas fa-bars" aria-hidden="true"></i></button></span>
+            </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button data-button-action="toggle-flyout" type="button" title="Table o&#39; Contents (CTRL&#43;ALT&#43;t)" aria-label="Table o&#39; Contents (CTRL&#43;ALT&#43;t)" aria-expanded="false"><i class="fa-fw fas fa-table-list" aria-hidden="true"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper" tabindex="-1">
+<nav class="TableOfContents" aria-label="Table o&#39; Contents">
+  <ul>
+    <li><a href="#9-4-0">9.4.0 (2026-10-25)</a>
+      <ul>
+        <li><a href="#change">Change</a></li>
+        <li><a href="#new">New</a></li>
+      </ul>
+    </li>
+    <li><a href="#9-3-0">9.3.0 (2026-10-21)</a>
+      <ul>
+        <li><a href="#change-1">Change</a></li>
+        <li><a href="#new-1">New</a></li>
+      </ul>
+    </li>
+    <li><a href="#9-2-0">9.2.0 (2026-10-11)</a>
+      <ul>
+        <li><a href="#hugo-01660">Cap'n Hugo 0.166.0</a></li>
+        <li><a href="#change-2">Change</a></li>
+        <li><a href="#new-2">New</a></li>
+      </ul>
+    </li>
+    <li><a href="#9-1-0">9.1.0 (2026-09-13)</a>
+      <ul>
+        <li><a href="#hugo-01650">Cap'n Hugo 0.165.0</a></li>
+        <li><a href="#change-3">Change</a></li>
+        <li><a href="#new-3">New</a></li>
+      </ul>
+    </li>
+    <li><a href="#9-0-0">9.0.0 (2026-01-01)</a>
+      <ul>
+        <li><a href="#hugo">Cap'n Hugo</a></li>
+        <li><a href="#breaking">Break'n</a></li>
+        <li><a href="#change-4">Change</a></li>
+        <li><a href="#new-4">New</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav> 
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="topbar-area topbar-area-middle" data-area="middle">
+            <nav class="topbar-breadcrumbs breadcrumbs highlightable" aria-label="Brrreadcrumbs" data-overflow-title="Introduction &gt; What&#39;s New &gt; Version 9">
+              <ol itemscope itemtype="http://schema.org/BreadcrumbList"><li class="topbar-breadcrumbs-divider" aria-hidden="true">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class="a11y-only"><a itemprop="item" href="/hugo-theme-relearn/pir/index.html" tabindex="-1"><span itemprop="name">Cap&#39;n Hugo Relearrrn Theme</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/hugo-theme-relearn/pir/introduction/index.html"><span itemprop="name">Introduction</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/hugo-theme-relearn/pir/introduction/releasenotes/index.html"><span itemprop="name">What&#39;s New</span></a><meta itemprop="position" content="3">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class="" aria-current="page"><span itemprop="name">Version 9</span><meta itemprop="position" content="4"></li>
+              </ol>
+            </nav>
+          </div>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a aria-label="What&#39;s New (🡒)" href="/hugo-theme-relearn/pir/introduction/releasenotes/index.html" title="What&#39;s New (🡒)"><i class="fa-fw fas fa-chevron-left" aria-hidden="true"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-next default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a aria-label="Version 8 (🡐)" href="/hugo-theme-relearn/pir/introduction/releasenotes/8/index.html" title="Version 8 (🡐)"><i class="fa-fw fas fa-chevron-right" aria-hidden="true"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-more default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button data-button-action="toggle-flyout" type="button" title="Morrre" aria-label="Morrre" aria-expanded="false"><i class="fa-fw fas fa-ellipsis-v" aria-hidden="true"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper" tabindex="-1">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+            <div class="topbar-button topbar-button-edit default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a aria-label="Edit (CTRL&#43;ALT&#43;w)" href="https://github.com/McShelby/hugo-theme-relearn/edit/main/docs/content/introduction/releasenotes/9/_index.pir.md" rel="external" target="_self" title="Edit (CTRL&#43;ALT&#43;w)"><i class="fa-fw fas fa-pen" aria-hidden="true"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-source default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a aria-label="Show source code" href="/hugo-theme-relearn/pir/introduction/releasenotes/9/index.source.md" title="Show source code"><i class="fa-fw fas fa-code" aria-hidden="true"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-markdown default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a aria-label="Show Marrrkd&#39;n" href="/hugo-theme-relearn/pir/introduction/releasenotes/9/index.md" title="Show Marrrkd&#39;n"><i class="fa-fw fab fa-markdown" aria-hidden="true"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-print default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a aria-label="Prrrint whole chapterrr (CTRL&#43;ALT&#43;p)" href="/hugo-theme-relearn/pir/introduction/releasenotes/9/index.print.html" title="Prrrint whole chapterrr (CTRL&#43;ALT&#43;p)"><i class="fa-fw fas fa-print" aria-hidden="true"></i></a></span>
+            </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable releasenotes" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="version-9">Version 9</h1>
+See the <a href="/hugo-theme-relearn/pir/introduction/changelog/9/index.html">changelog of this version</a> for a detailed list of changes.
+<hr>
+
+<ul>
+<li><p><span class="badge cstyle hugo badge-with-title"><span class="badge-title"><i class="fa-fw fab fa-hackerrank" aria-hidden="true"></i></span><span class="badge-content">0.166.0</span></span> Minimum required Hugo version</p></li>
+<li><p><span class="badge cstyle breaking badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-triangle" aria-hidden="true"></i></span><span class="badge-content">Breaking</span></span> Change requiring action after upgrade</p></li>
+<li><p><span class="badge cstyle change badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-circle" aria-hidden="true"></i></span><span class="badge-content">Change</span></span> Change of behavior, may require action</p></li>
+<li><p><span class="badge cstyle new badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-plus-circle" aria-hidden="true"></i></span><span class="badge-content">New</span></span> New behavior, often introducing new options</p></li>
+</ul>
+<hr>
+
+
+
+<details open class="box cstyle callout primary expand">
+  <summary class="box-label">
+    <i class="expander-icon fa-fw fas fa-chevron-right" aria-hidden="true"></i> 
+    Heads-up fer th' upcom'n 10.0.0 version, th' Decade Release – Clear'n Out Ten Years o' Baggage
+  </summary>
+  <div class="box-content">
+<p>Th' Relearrrn theme has come a long way. Its predecessor, th' Learrrn theme, was started more than ten years ago, an' Relearrrn was forked from it over five years ago. Since then, a lot has been added t' th' theme, an' Cap'n Hugo itself has evolved tremendously.</p>
+<p>All that history left its marks, an' th' source code still carries a lot o' it along: options an' features that have long been replaced an' forgotten but be kept alive fer compatibility, an' remnants whose only remain'n job be t' print a warning. In other places, th' theme got there first, an' Cap'n Hugo later added similar functionality o' its own, often under a different name. Today it be hard t' argue why th' theme should do th'ns differently from Cap'n Hugo, an' two terms fer th' same th'n (like <code>menuTitle</code> vs. <code>linkTitle</code>, or th' <code>expand</code> shortcode vs. <code>details</code>) only cause confusion.</p>
+<p>Version 10.0.0 be about clean'n this up. It removes everyth'n that currently triggers a <code>DEPRECATED</code> or <code>UNSUPPORTED</code> message dur'n a build. That covers deprecated features that still work as well as th' hints fer features that were already dropped.</p>
+<p><strong>What ye should do now</strong></p>
+<ul>
+<li><strong>No messages, no work:</strong> if yer ship builds on th' latest 9.x release without <code>DEPRECATED</code>, <code>UNSUPPORTED</code> or <code>WARNING</code> messages from th' theme, ye can update t' 10.0.0 without chang'n anyth'n.</li>
+<li><strong>Messages? Fix them now:</strong> each message names th' replacement an' links t' th' release notes describ'n th' migrat'n.</li>
+<li><strong>Don&rsquo;t wait:</strong> wit' 10.0.0, these messages be gone. Old usages will simply stop work'n, either silently or wit' a build error.</li>
+</ul>
+  </div>
+</details>
+<h2 id="9-4-0">9.4.0 (2026-10-25)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h2>
+<h3 id="change">Change<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
+<ul>
+<li>
+<p><span class="badge cstyle change badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-circle" aria-hidden="true"></i></span><span class="badge-content">Change</span></span> Th' text o' yer rrrambl'n be now better read'ble.</p>
+<p>If ye have changed th' font, yer text be now shown 'n th' weights most fonts offer: 400 fer normal, 500 fer medium an' 700 fer bold text, whar' it was 300 an' 400 fer normal an' medium text before. If ye have set font weights fer th' theme&rsquo;s own font, check them, as th' same values now result 'n lighter text.</p>
+</li>
+<li>
+<p><span class="badge cstyle change badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-circle" aria-hidden="true"></i></span><span class="badge-content">Change</span></span> Th' theme now escapes all values ye pass t' it before writ'n them into yer planks.</p>
+<p>Like Hugo&rsquo;s own templates, th' theme now removes <code>javascript:</code> URLs from links, images an' menu entries an' warns about each one dur'n th' build. This applies even if yer project configurat'n allows raw HTML. <a href="/hugo-theme-relearn/pir/shortcodes/button/index.html">Buttons</a> an' <a href="/hugo-theme-relearn/pir/shortcodes/cards/index.html">cards</a> wit' a <code>javascript:</code> URL as <code>href</code> still run that code.</p>
+</li>
+<li>
+<p><span class="badge cstyle change badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-circle" aria-hidden="true"></i></span><span class="badge-content">Change</span></span> A <a href="/hugo-theme-relearn/pir/configuration/sidebar/search/index.html#customizing-the-search-index-generation">custom search index template</a> set by <code>search.index.template</code> now returns only th' JSON data o' th' index, 'n a file end'n 'n <code>.json</code>.</p>
+<p>A template end'n 'n <code>.js</code> that assigns th' index t' <code>relearn_searchindex</code> still works but issues a deprecat'n warning. Rename it t' <code>.json</code> an' remove everyth'n except th' JSON data.</p>
+</li>
+</ul>
+<h3 id="new">New<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
+<ul>
+<li>
+<p><span class="badge cstyle new badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-plus-circle" aria-hidden="true"></i></span><span class="badge-content">New</span></span> Yer readers can now <a href="/hugo-theme-relearn/pir/authoring/markdown/index.html#sortable-columns">sort a table</a> by its columns, also by several o' them at once. Rows joined by merged cells stay together.</p>
+<p>Tables be not sortable by default. Give a single table th' class <code>sortable</code>, or make all tables sortable wit' th' new <code>table.sortable</code> option 'n yer project configurat'n or a page&rsquo;s front matter. A single table can then be excluded by th' class <code>nosortable</code>.</p>
+</li>
+<li>
+<p><span class="badge cstyle new badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-plus-circle" aria-hidden="true"></i></span><span class="badge-content">New</span></span> Th' search index can now be <a href="/hugo-theme-relearn/pir/configuration/sidebar/search/index.html#publishing-the-search-index-as-json">published as JSON</a> fer other tools t' read by sett'n <code>search.index.json</code> t' <code>true</code> 'n yer project configurat'n.</p>
+</li>
+<li>
+<p><span class="badge cstyle new badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-plus-circle" aria-hidden="true"></i></span><span class="badge-content">New</span></span> Th' new color style <code>purple</code> can be used wherever a style be accepted, like 'n <a href="/hugo-theme-relearn/pir/shortcodes/callout/index.html#by-color">callouts</a>. Yer theme variant can set its color wit' th' variables <code>BOX-PURPLE-color</code> an' <code>BOX-PURPLE-TEXT-color</code>.</p>
+</li>
+</ul>
+<hr>
+<h2 id="9-3-0">9.3.0 (2026-10-21)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h2>
+<h3 id="change-1">Change<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
+<ul>
+<li>
+<p><span class="badge cstyle change badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-circle" aria-hidden="true"></i></span><span class="badge-content">Change</span></span> Level one head'ns, th' section titles o' th' sidebar menu an' th' title o' th' <a href="/hugo-theme-relearn/pir/shortcodes/openapi/index.html"><code>openapi</code> shortcode</a> be no longer forced t' uppercase but show as written. Th' uppercase look, inherited from th' Learrrn theme, became iconic fer this theme, but it be strongly opinionated an' looks strange wit' many fonts, especially script an' serif fonts.</p>
+<p>If ye want t' keep th' iconic look fer head'ns an' th' sidebar menu, add th' follow'n t' yer <a href="/hugo-theme-relearn/pir/configuration/customization/extending/index.html#simple-solution"><code>assets/css/custom.css</code></a>:</p>
+<div class="tab-panel" data-tab-group="R-tabs-52bbae14ea5a52bd84cb0fe41000def4">
+  <div class="tab-nav">
+    <div class="tab-nav-title">&#8203;</div>
+    <div class="tab-nav-list" role="tablist">
+      <button
+        role="tab" id="R-tab-id-e83a4a40cc65a722fcec7e0c801cb987-tab" aria-controls="R-tab-id-e83a4a40cc65a722fcec7e0c801cb987" aria-selected="true"
+        data-tab-item="R-tab-311a161192e4ffa168423a7a9943b548"
+        class="tab-nav-button tab-panel-style cstyle code active" tabindex="0"
+      >
+        <span class="tab-nav-text">assets/css/custom.css</span>
+      </button>
+    </div>
+  </div>
+  <div class="tab-content-container">
+    <div
+      id="R-tab-id-e83a4a40cc65a722fcec7e0c801cb987" role="tabpanel" aria-labelledby="R-tab-id-e83a4a40cc65a722fcec7e0c801cb987-tab"
+      data-tab-item="R-tab-311a161192e4ffa168423a7a9943b548"
+      class="tab-content tab-panel-style cstyle code active codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="nt">h1</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl"><span class="p">#</span><span class="nn">R-sidebar</span> <span class="p">.</span><span class="nc">nav-title</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">text-transform</span><span class="p">:</span> <span class="kc">uppercase</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div>
+      </div>
+    </div>
+  </div>
+</div></li>
+<li>
+<p><span class="badge cstyle change badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-circle" aria-hidden="true"></i></span><span class="badge-content">Change</span></span> Th' greys o' th' theme now carry th' tint o' yer <a href="/hugo-theme-relearn/pir/configuration/branding/colors/index.html#modifying-variants">theme variant</a>.</p>
+<p>Th' borders an' stripes o' tables, th' borders o' a zoom'ble Merrrmaid diagram an' o' tabs wit' <code>style=transparent</code>, th' shadows o' cards an' images, th' hover o' buttons, th' titles o' badges an' th' tracks o' scrollbars now take their color from th' variables <code>BOX-NEUTRAL-color</code> an' <code>BOX-GREY-color</code>. <code>BOX-NEUTRAL-color</code> inherits from <code>BOX-GREY-color</code>. Formerly they were a fixed grey that could not be changed by a variant an' was too faint 'n th' high contrast variants.</p>
+<p>Th' border o' code blocks, <code>CODE-BLOCK-BORDER-color</code>, now inherits from <code>BOX-NEUTRAL-color</code> instead o' <code>CODE-BLOCK-BG-color</code>. Th' shipped variants were adjusted t' this.</p>
+<p>If yer own variant does not set <code>CODE-BLOCK-BORDER-color</code>, its code blocks now get a vis'ble border 'n th' neutral color. As code boxes take their color from it, th' title an' frame o' callouts an' tabs wit' <code>style=code</code> change as well. T' restore th' previous look, set <code>CODE-BLOCK-BORDER-color</code> 'n yer variant t' th' value o' <code>CODE-BLOCK-BG-color</code>, or set <code>BOX-CODE-color</code> t' only change code boxes.</p>
+<p>If yer variant sets <code>BOX-NEUTRAL-color</code> or <code>BOX-GREY-color</code> t' a strong color, all these greys now show it as well.</p>
+</li>
+<li>
+<p><span class="badge cstyle change badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-circle" aria-hidden="true"></i></span><span class="badge-content">Change</span></span> Th' <a href="/hugo-theme-relearn/pir/configuration/branding/logo/index.html#variant-specific-logos">logo o' a variant</a> be now set 'n th' new <a href="/hugo-theme-relearn/pir/configuration/branding/colors/index.html#variant-parameters"><code>params</code> o' th' variant</a>, which holds th' values that override th' site&rsquo;s <code>params</code> while th' variant be active. Sett'n <code>logo</code> directly on th' variant be deprecated an' you&rsquo;ll get a warning; it still works fer now.</p>
+<p>Change <code>{ identifier = 'neon', logo = { src = '/images/logo-neon.svg' } }</code> t' <code>{ identifier = 'neon', params = { logo = { src = '/images/logo-neon.svg' } } }</code>.</p>
+</li>
+<li>
+<p><span class="badge cstyle change badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-circle" aria-hidden="true"></i></span><span class="badge-content">Change</span></span> Print'n a plank an' its print version now use a <a href="/hugo-theme-relearn/pir/configuration/branding/colors/index.html#theme-variant-print">print variant</a>, by default <code>relearn-light</code>, wit' th' theme&rsquo;s print variables made fer paper on top o' it. Formerly th' print used a fixed look that no variant could change.</p>
+<p>Printed planks now also show th' logo an' title o' yer ship.</p>
+<p>Ye can choose th' print variant o' yer ship wit' th' new <code>themeVariantPrint</code> option, or one fer each variant wit' its new <code>print</code> parameter. A variant that names itself as its print variant keeps its own fonts on paper.</p>
+<p>Th' variables <code>PRINT-MERMAID-theme</code>, <code>PRINT-OPENAPI-theme</code> an' <code>PRINT-OPENAPI-CODE-theme</code> were removed. If you&rsquo;ve set them, set <code>MERMAID-theme</code>, <code>OPENAPI-theme</code> an' <code>OPENAPI-CODE-theme</code> 'n yer copy o' th' <a href="/hugo-theme-relearn/pir/configuration/branding/colors/index.html#theme-variant-print">print variables</a> instead, or mark them <code>!important</code> 'n yer print variant.</p>
+</li>
+<li>
+<p><span class="badge cstyle change badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-circle" aria-hidden="true"></i></span><span class="badge-content">Change</span></span> Th' color variant <code>relearn-bright</code> be deprecated an' will be removed wit' th' next major release. You&rsquo;ll get a warning if ye use it.</p>
+<p>T' keep it, copy <code>assets/css/theme-relearn-bright.css</code> from th' theme into yer site&rsquo;s <code>assets/css</code> directory under a different name, like <code>theme-my-bright.css</code>, an' use that name 'n th' <a href="/hugo-theme-relearn/pir/configuration/branding/colors/index.html#changing-the-variant"><code>themeVariant</code> option</a>.</p>
+</li>
+<li>
+<p><span class="badge cstyle change badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-circle" aria-hidden="true"></i></span><span class="badge-content">Change</span></span> Th' color variant <code>relearn</code> has only been kept fer compatibility since 3.0.0, whar' <code>relearn-light</code> replaced it. It will be removed wit' th' next major release an' you&rsquo;ll now get a warning if ye use it.</p>
+<p>It be identical t' <code>relearn-light</code>, use that name 'n th' <a href="/hugo-theme-relearn/pir/configuration/branding/colors/index.html#changing-the-variant"><code>themeVariant</code> option</a> instead.</p>
+</li>
+</ul>
+<h3 id="new-1">New<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
+<ul>
+<li>
+<p><span class="badge cstyle new badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-plus-circle" aria-hidden="true"></i></span><span class="badge-content">New</span></span> Th' new <a href="/hugo-theme-relearn/pir/configuration/branding/colors/index.html#shipped-variants">color variants</a> <a href="/hugo-theme-relearn/pir/configuration/branding/colors/index.html?variant=tome-light#shipped-variants"><code>tome-light</code></a> an' <a href="/hugo-theme-relearn/pir/configuration/branding/colors/index.html?variant=tome-dark#shipped-variants"><code>tome-dark</code></a> give yer ship th' look o' a book, wit' calligraphic titles. They be th' first shipped variants wit' tinted instead o' grey rrrambl'n backgrounds, an' show how colors th' theme derives, like shadows, follow such a tint. Use them as a start'n point fer yer own tinted variant.</p>
+<p>Many o' th' changes 'n this release were made t' support this variant.</p>
+</li>
+<li>
+<p><span class="badge cstyle new badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-plus-circle" aria-hidden="true"></i></span><span class="badge-content">New</span></span> Th' new color <code>yellow</code> can be used as <code>style</code> 'n <a href="/hugo-theme-relearn/pir/shortcodes/callout/index.html#parameters">every shortcode tak'n one</a> an' set wit' <code>BOX-YELLOW-color</code> 'n yer <a href="/hugo-theme-relearn/pir/configuration/branding/colors/index.html#modifying-variants">theme variant</a>. Each shipped variant picks a yellow that be read'ble wit' its title an' text colors.</p>
+<p>T' keep it apart from yellow, <code>orange</code> - an' wit' it th' <code>note</code> severity - be now a true orange instead o' an amber, an' darker so its titles be read'ble as well.</p>
+</li>
+<li>
+<p><span class="badge cstyle new badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-plus-circle" aria-hidden="true"></i></span><span class="badge-content">New</span></span> Th' entries o' th' variant switcher can now be grouped by putt'n <a href="/hugo-theme-relearn/pir/configuration/branding/colors/index.html#dividers">dividers</a> into th' <code>themeVariant</code> option. A divider wit' a name labels its group.</p>
+</li>
+</ul>
+<hr>
+<h2 id="9-2-0">9.2.0 (2026-10-11)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h2>
+<h3 id="hugo-01660">Cap'n Hugo 0.166.0<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
+<ul>
+<li><span class="badge cstyle hugo badge-with-title"><span class="badge-title"><i class="fa-fw fab fa-hackerrank" aria-hidden="true"></i></span><span class="badge-content">0.166.0</span></span> This release requires a newer Cap'n Hugo version.</li>
+</ul>
+<h3 id="change-2">Change<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
+<ul>
+<li>
+<p><span class="badge cstyle change badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-circle" aria-hidden="true"></i></span><span class="badge-content">Change</span></span> <a href="/hugo-theme-relearn/pir/configuration/publishing/accessibility/index.html">Accessibility</a> be now a supported feature o' th' theme.</p>
+<p>Wit' th' new option <code>link.underline</code> set t' <code>true</code>, links 'n yer rrrambl'n be underlined, so they be told apart from th' text around them by more than their color.</p>
+<p>T' make accessibility happen, there were numerous changes, affect'n all parts o' th' theme includ'n th' DOM.</p>
+<p>As a side effect, th' <a href="/hugo-theme-relearn/pir/configuration/publishing/shortcuts/index.html">keyboard shortcuts</a> o' th' theme be now documented as well.</p>
+</li>
+<li>
+<p><span class="badge cstyle change badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-circle" aria-hidden="true"></i></span><span class="badge-content">Change</span></span> Th' elements o' yer rrrambl'n, like tables, callouts, tabs, code blocks, blockquotes, Merrrmaid diagrams an' images, now have rounded corners.</p>
+<p>For images, this be th' new <a href="/hugo-theme-relearn/pir/authoring/linking/imageeffects/index.html">image effect</a> <code>rounded</code>, which be enabled by default. If ye want t' restore th' previous look o' yer images, set <code>imageEffects.rounded</code> t' <code>false</code> 'n yer project configurat'n.</p>
+</li>
+<li>
+<p><span class="badge cstyle change badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-circle" aria-hidden="true"></i></span><span class="badge-content">Change</span></span> Marrrkdown tables can now <a href="/hugo-theme-relearn/pir/authoring/markdown/index.html#merged-cells">merge cells</a>, us'n th' rules o' Marrrkdown Preview Enhanced. A cell contain'n only <code>&gt;</code> merges into th' cell t' its right, a cell contain'n only <code>^</code> into th' cell above.</p>
+<p>If one o' yer tables already has such a cell an' should show th' character itself, escape it wit' two backslashes, like <code>\\&gt;</code>.</p>
+</li>
+<li>
+<p><span class="badge cstyle change badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-circle" aria-hidden="true"></i></span><span class="badge-content">Change</span></span> Th' new <a href="/hugo-theme-relearn/pir/shortcodes/pages/index.html"><code>planks</code> shortcode</a> lists planks o' yer ship. Besides th' layouts known from th' now deprecated <code>children</code> shortcode, it can list descendants, sibl'ns or ancestors, filter them an' group an' order them by any field or front matter parameter o' a plank.</p>
+<p>Th' <a href="/hugo-theme-relearn/pir/shortcodes/children/index.html"><code>children</code> shortcode</a> still works but issues a deprecat'n warning fer each use, nam'n th' <code>planks</code> call that replaces it. See th' <a href="/hugo-theme-relearn/pir/shortcodes/children/index.html#migration">migrat'n instruct'ns</a>.</p>
+<p>Wit' <code>type=group</code>, th' <a href="/hugo-theme-relearn/pir/shortcodes/children/index.html"><code>children</code> shortcode</a> no longer shows a multi-column layout. If ye want t' restore th' previous behavior, replace it wit' th' <code>planks</code> shortcode an' <code>columns=3</code>.</p>
+</li>
+<li>
+<p><span class="badge cstyle change badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-circle" aria-hidden="true"></i></span><span class="badge-content">Change</span></span> Th' new <a href="/hugo-theme-relearn/pir/shortcodes/callout/index.html"><code>callout</code> shortcode</a> replaces th' now deprecated <a href="/hugo-theme-relearn/pir/shortcodes/notice/index.html"><code>notice</code> shortcode</a>, match'n th' name o' th' Marrrkdown callouts it shares its boxes wit'. Th' parameters be unchanged.</p>
+<p>Th' <a href="/hugo-theme-relearn/pir/shortcodes/notice/index.html"><code>notice</code> shortcode</a> still works but issues a deprecat'n warning fer each use. Rename yer calls t' <code>callout</code>. See th' <a href="/hugo-theme-relearn/pir/shortcodes/notice/index.html#migration">migrat'n instruct'ns</a>.</p>
+</li>
+<li>
+<p><span class="badge cstyle change badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-circle" aria-hidden="true"></i></span><span class="badge-content">Change</span></span> Hugo&rsquo;s built-in <a href="/hugo-theme-relearn/pir/shortcodes/details/index.html"><code>details</code> shortcode</a> replaces th' now deprecated <a href="/hugo-theme-relearn/pir/shortcodes/expand/index.html"><code>expand</code> shortcode</a>, so yer rrrambl'n stays portable t' other themes.</p>
+<p>Th' <a href="/hugo-theme-relearn/pir/shortcodes/expand/index.html"><code>expand</code> shortcode</a> still works but issues a deprecat'n warning fer each use. Th' parameters o' th' <code>details</code> shortcode be named differently, so a call can not just be renamed. See th' <a href="/hugo-theme-relearn/pir/shortcodes/expand/index.html#migration">migrat'n instruct'ns</a>.</p>
+<p>If ye already use th' <code>details</code> shortcode, it now behaves like th' one built into Cap'n Hugo. Its rrrambl'n be rendered as Marrrkdown if called wit' <code>{{&lt; details &gt;}}</code>, an' th' <code>title</code> parameter be honored. If yer rrrambl'n be HTML or contains other shorrrtcodes, set th' new <code>raw=true</code> parameter t' have it written as it be.</p>
+</li>
+<li>
+<p><span class="badge cstyle change badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-circle" aria-hidden="true"></i></span><span class="badge-content">Change</span></span> Th' <a href="/hugo-theme-relearn/pir/shortcodes/math/index.html"><code>math</code> shortcode</a> now renders yer formulae us'n Hugo&rsquo;s built-in KaTeX while yer ship be built, instead o' th' MathJax library 'n th' browser.</p>
+<p>Th' theme finds yer formulae by th' delimiters o' Hugo&rsquo;s <a href="/hugo-theme-relearn/pir/shortcodes/math/index.html#passthrough-configuration">Passthrough configurat'n</a>. If yer ship doesn&rsquo;t have it yet, add it, otherwise formulae marked by these delimiters be not rendered. Wit' th' codefence, shortcode an' partial rules, rrrambl'n without delimiters be rendered as one formula regardless.</p>
+<p>By default, formulae be written as MathML an' displayed by th' browser. If ye prefer th' look o' KaTeX, which be th' same 'n every browser, set <a href="/hugo-theme-relearn/pir/shortcodes/math/index.html#output-of-the-formulae"><code>math.output</code> t' <code>htmlAndMathml</code></a>.</p>
+<p>Th' options <code>mathJaxInitialize</code> an' <code>customMathJaxURL</code> be gone. Instead, ye can set <a href="/hugo-theme-relearn/pir/shortcodes/math/index.html#providing-options-for-katex">any KaTeX option</a> 'n <code>math</code>. If ye defined yer own macros, move them t' <code>math.macros</code>.</p>
+<p>KaTeX doesn&rsquo;t know every command o' MathJax. A formula it can not render be written as its source an' reported as a warning 'n yer build.</p>
+</li>
+<li>
+<p><span class="badge cstyle change badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-circle" aria-hidden="true"></i></span><span class="badge-content">Change</span></span> Th' front matter <code>params.pages</code> replaces <code>params.children</code> an' be now honored on every plank, not only on taxonomy an' term planks. Together wit' Hugo&rsquo;s <code>cascade</code>, ye can give all list'ns o' a subtree th' same look.</p>
+<p>Th' former <code>params.children</code> be still honored as long as th' <code>children</code> shortcode exists, but us'n it now prints a warning.</p>
+</li>
+<li>
+<p><span class="badge cstyle change badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-circle" aria-hidden="true"></i></span><span class="badge-content">Change</span></span> How th' logo an' title be arranged be now set wit' th' new <a href="/hugo-theme-relearn/pir/configuration/branding/logo/index.html#setting-layout-of-title--logo"><code>logo.layout</code></a> option.</p>
+<p>Th' <code>logo.direct'n</code> option be deprecated. It still works, but th' theme warns ye if ye use it. Replace <code>direct'n</code> set t' <code>row</code> by <code>layout</code> set t' <code>sidebar-row</code> an' <code>direct'n</code> set t' <code>column</code> by <code>layout</code> set t' <code>sidebar-column</code>.</p>
+</li>
+<li>
+<p><span class="badge cstyle change badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-circle" aria-hidden="true"></i></span><span class="badge-content">Change</span></span> Th' elements o' th' topbar, like its buttons, be now <a href="/hugo-theme-relearn/pir/configuration/customization/topbar/index.html#defining-topbar-elements">configured</a> wit' th' <code>topbarstart</code>, <code>topbarmiddle</code>, <code>topbarend</code> an' <code>topbarmore</code> options, th' same way as th' sidebar menus. Th' breadcrumb be now an element o' th' new <em>middle</em> area. Ye can set them 'n yer project configurat'n or 'n th' front matter o' yer planks.</p>
+<p>Redefin'n an area by a template 'n <code>layouts/partials/topbar/area</code> an' call'n th' theme&rsquo;s templates 'n <code>layouts/partials/topbar/button</code> be deprecated. Such an area template still defines its area, tak'n precedence over th' options, an' th' button templates can still be called, but th' theme warns ye if ye use them. Th' elements now live 'n <code>layouts/partials/topbar/element</code>. See th' <a href="/hugo-theme-relearn/pir/configuration/customization/topbar/index.html#migration-for-relearn-9">migrat'n instruct'ns</a>.</p>
+</li>
+<li>
+<p><span class="badge cstyle change badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-circle" aria-hidden="true"></i></span><span class="badge-content">Change</span></span> <a href="/hugo-theme-relearn/pir/configuration/sitemanagement/versioning/index.html">Version'n</a> now builds on Hugo&rsquo;s <code>versions</code>. All versions o' yer ship be generated 'n one build o' one project, an' th' version switcher links directly t' th' same plank 'n th' other versions.</p>
+<p>Links can point t' a plank 'n <a href="/hugo-theme-relearn/pir/configuration/sitemanagement/versioning/index.html#linking-to-other-versions">another version</a> o' yer ship wit' th' new <code>version</code> query parameter, like <code>/my-page?version=v1.0.0</code>.</p>
+<p>Th' options <code>versions</code>, <code>version</code> an' <code>versionIndexURL</code> be deprecated. They still work as long as ye have not configured Hugo&rsquo;s <code>versions</code>, but th' theme warns ye if ye use them. See th' <a href="/hugo-theme-relearn/pir/configuration/sitemanagement/versioning/index.html#migration-for-relearn-9">migrat'n instruct'ns</a>.</p>
+</li>
+<li>
+<p><span class="badge cstyle change badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-circle" aria-hidden="true"></i></span><span class="badge-content">Change</span></span> Links into another language written wit' a language prefix like <code>/pir/my-page</code> be deprecated, an' wit' them th' option <code>enableLegacyLanguageLinks</code>. They still work if th' option be set, but th' theme warns ye fer each such link. Use th' <a href="/hugo-theme-relearn/pir/authoring/linking/pages/index.html"><code>lang</code> query parameter</a> instead, like <code>/my-page?lang=pir</code>.</p>
+</li>
+<li>
+<p><span class="badge cstyle change badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-circle" aria-hidden="true"></i></span><span class="badge-content">Change</span></span> Th' front matter <code>pre</code> an' <code>post</code>, <a href="/hugo-theme-relearn/pir/introduction/releasenotes/5/index.html#5-0-0">renamed 'n 5.0.0</a>, now issue a deprecat'n warning. Use <code>menuPre</code> an' <code>menuPost</code> instead.</p>
+</li>
+<li>
+<p><span class="badge cstyle change badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-circle" aria-hidden="true"></i></span><span class="badge-content">Change</span></span> Th' options <code>customMermaidURL</code> an' <code>customOpenapiURL</code> be deprecated. They still work, but th' theme warns ye if ye use them.</p>
+<p>T' use a different version o' a library, store it 'n th' <code>assets</code> directory o' yer ship, whar' it replaces th' shipped version. See th' documentat'n o' th' <a href="/hugo-theme-relearn/pir/shortcodes/mermaid/index.html#using-a-different-version-of-the-mermaid-library"><code>mermaid</code></a> an' <a href="/hugo-theme-relearn/pir/shortcodes/openapi/index.html#using-a-different-version-of-the-swagger-ui-library"><code>openapi</code></a> shorrrtcodes.</p>
+</li>
+<li>
+<p><span class="badge cstyle change badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-circle" aria-hidden="true"></i></span><span class="badge-content">Change</span></span> Th' <a href="/hugo-theme-relearn/pir/configuration/sidebar/search/index.html">search</a> wit' th' Lunr engine now only looks fer similarly written words if a word o' yer search term isn&rsquo;t found as written. Previously, such words were always included an' could bury th' hits ye were ask'n fer.</p>
+</li>
+</ul>
+<h3 id="new-2">New<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
+<ul>
+<li>
+<p><span class="badge cstyle new badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-plus-circle" aria-hidden="true"></i></span><span class="badge-content">New</span></span> Th' new <a href="/hugo-theme-relearn/pir/configuration/branding/colors/index.html#shipped-variants">color variants</a> <a href="/hugo-theme-relearn/pir/configuration/branding/colors/index.html?variant=contrast-light#shipped-variants"><code>contrast-light</code></a> an' <a href="/hugo-theme-relearn/pir/configuration/branding/colors/index.html?variant=contrast-dark#shipped-variants"><code>contrast-dark</code></a> have colors chosen fer high contrast.</p>
+</li>
+<li>
+<p><span class="badge cstyle new badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-plus-circle" aria-hidden="true"></i></span><span class="badge-content">New</span></span> A <a href="/hugo-theme-relearn/pir/configuration/branding/colors/index.html#linking-to-a-variant">color variant</a> can now be selected by a link wit' th' new <code>variant</code> query parameter, like <code>/my-page?variant=relearn-dark</code>.</p>
+</li>
+<li>
+<p><span class="badge cstyle new badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-plus-circle" aria-hidden="true"></i></span><span class="badge-content">New</span></span> Marrrkdown blockquotes can <a href="/hugo-theme-relearn/pir/authoring/markdown/index.html#quotations-with-attribution">name th' author an' th' source o' th' quotat'n</a> wit' th' new <code>author</code>, <code>source</code> an' <code>href</code> Marrrkdown attributes.</p>
+</li>
+<li>
+<p><span class="badge cstyle new badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-plus-circle" aria-hidden="true"></i></span><span class="badge-content">New</span></span> Th' <a href="/hugo-theme-relearn/pir/shortcodes/callout/index.html#with-hint"><code>callout</code> shortcode</a> has a new <code>hint</code> parameter t' show a tooltip fer th' title o' th' box.</p>
+</li>
+<li>
+<p><span class="badge cstyle new badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-plus-circle" aria-hidden="true"></i></span><span class="badge-content">New</span></span> Th' <a href="/hugo-theme-relearn/pir/shortcodes/tabs/index.html#tab-parameters"><code>tab</code> shortcode</a> has a new <code>hint</code> parameter t' show a tooltip fer a tab, which also names a tab that shows noth'n but an ay'con.</p>
+</li>
+<li>
+<p><span class="badge cstyle new badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-plus-circle" aria-hidden="true"></i></span><span class="badge-content">New</span></span> Th' <a href="/hugo-theme-relearn/pir/shortcodes/button/index.html#toggle-button"><code>button</code> shortcode</a> an' <a href="/hugo-theme-relearn/pir/configuration/customization/topbar/index.html#button">topbar buttons</a> have a new <code>istoggle</code> parameter fer buttons that show an' hide someth'n, tell'n assistive technology whether it be shown.</p>
+</li>
+<li>
+<p><span class="badge cstyle new badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-plus-circle" aria-hidden="true"></i></span><span class="badge-content">New</span></span> Th' <a href="/hugo-theme-relearn/pir/shortcodes/cards/index.html"><code>cards</code> shortcode</a> has a new <code>columns</code> parameter t' set th' number o' columns 'n full width mode.</p>
+</li>
+<li>
+<p><span class="badge cstyle new badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-plus-circle" aria-hidden="true"></i></span><span class="badge-content">New</span></span> Th' <a href="/hugo-theme-relearn/pir/shortcodes/resources/index.html"><code>resources</code> shortcode</a> has a new <code>pageref</code> parameter t' list th' resources o' another plank bundle.</p>
+</li>
+<li>
+<p><span class="badge cstyle new badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-plus-circle" aria-hidden="true"></i></span><span class="badge-content">New</span></span> Th' <a href="/hugo-theme-relearn/pir/shortcodes/openapi/index.html"><code>openapi</code> shortcode</a> has a new <code>lang</code> parameter t' set th' language used fer th' read'n direct'n o' th' Swagger UI an' fer th' texts th' theme adds t' it. These texts be now translated.</p>
+</li>
+<li>
+<p><span class="badge cstyle new badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-plus-circle" aria-hidden="true"></i></span><span class="badge-content">New</span></span> Th' <a href="/hugo-theme-relearn/pir/shortcodes/mermaid/index.html#configuring-pan-and-zoom"><code>mermaid</code> shortcode&rsquo;s</a> graph can now be focused, panned an' zoomed wit' th' <a href="/hugo-theme-relearn/pir/configuration/publishing/shortcuts/index.html">keyboard</a>.</p>
+<p>They now contain a new button t' show it 'n a lightbox, whar' it be panned an' zoomed th' same way as on th' plank itself. Like an enlarged image, th' enlarged graph has its own URL.</p>
+</li>
+<li>
+<p><span class="badge cstyle new badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-plus-circle" aria-hidden="true"></i></span><span class="badge-content">New</span></span> Th' results o' th' dedicated search plank can now be <a href="/hugo-theme-relearn/pir/configuration/sidebar/search/index.html#printing-the-search-results">printed</a>, if yer home plank has print support activated. Th' new <code>search.page.outputs</code> option lets ye decide this independently o' yer home plank.</p>
+</li>
+<li>
+<p><span class="badge cstyle new badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-plus-circle" aria-hidden="true"></i></span><span class="badge-content">New</span></span> An entry o' a Cap'n Hugo menu can now be <a href="/hugo-theme-relearn/pir/configuration/sidebar/menus/index.html#page-trees-in-hugo-menus">continued by th' tree o' th' plank it links t'</a> by sett'n <code>params.type</code> t' <code>plank</code>. For a taxonomy plank, this shows all o' its terms without list'n them 'n yer menu definit'n.</p>
+</li>
+<li>
+<p><span class="badge cstyle new badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-plus-circle" aria-hidden="true"></i></span><span class="badge-content">New</span></span> Th' theme writes no inline JavaScript anymore, so yer ship can be served wit' a strict <a href="/hugo-theme-relearn/pir/configuration/publishing/csp/index.html">Rrrambl'n Security Policy</a>. On request, it also adds <a href="/hugo-theme-relearn/pir/configuration/publishing/csp/index.html#subresource-integrity">subresource integrity</a> hashes t' its scripts an' stylesheets. Th' <a href="/hugo-theme-relearn/pir/shortcodes/button/index.html#button-with-own-action"><code>button</code></a> an' <a href="/hugo-theme-relearn/pir/shortcodes/cards/index.html#card-with-own-action"><code>card</code></a> shorrrtcodes an' <a href="/hugo-theme-relearn/pir/configuration/customization/topbar/index.html#button">topbar buttons</a> have a new <code>action</code> parameter t' run yer own code without inline JavaScript.</p>
+</li>
+<li>
+<p><span class="badge cstyle new badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-plus-circle" aria-hidden="true"></i></span><span class="badge-content">New</span></span> Th' theme now ships a machine-read'ble <a href="/hugo-theme-relearn/pir/configuration/publishing/sbom/index.html">SBOM</a> at <code>sbom.cdx.json</code>, list'n every third-party resource it can publish wit' yer ship, each wit' a license, a digest o' th' files th' theme ships an' - whar' upstream publishes them - a version an' a package URL.</p>
+</li>
+</ul>
+<hr>
+<h2 id="9-1-0">9.1.0 (2026-09-13)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h2>
+<h3 id="hugo-01650">Cap'n Hugo 0.165.0<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
+<ul>
+<li><span class="badge cstyle hugo badge-with-title"><span class="badge-title"><i class="fa-fw fab fa-hackerrank" aria-hidden="true"></i></span><span class="badge-content">0.165.0</span></span> This release requires a newer Cap'n Hugo version.</li>
+</ul>
+<h3 id="change-3">Change<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
+<ul>
+<li>
+<p><span class="badge cstyle change badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-circle" aria-hidden="true"></i></span><span class="badge-content">Change</span></span> Assets be now busted by their rrrambl'n instead o' by th' time o' yer build, so a visitor only refetches what actually changed.</p>
+<p>Formerly every build appended a new id t' each asset&rsquo;s URL, empty'n a visitor&rsquo;s cache on each deployment even when no asset was different. If ye referenced assets from yer own partials, <code>assetbust'n.gotmpl</code> be replaced by <code>asset.gotmpl</code>, which takes a resource an' returns it ready t' be linked. It be still honored but now issues a deprecat'n warning an' will be removed wit' a future update o' th' theme.</p>
+<div class="tab-panel" data-tab-group="R-tabs-738b7c98c0c3f4257b41106f945723bb">
+  <div class="tab-nav">
+    <div class="tab-nav-title">&#8203;</div>
+    <div class="tab-nav-list" role="tablist">
+      <button
+        role="tab" id="R-tab-id-971ad94765a3dd97447a7c68b6f6f8fb-tab" aria-controls="R-tab-id-971ad94765a3dd97447a7c68b6f6f8fb" aria-selected="true"
+        data-tab-item="R-tab-9d4cc6bb0d840c16e06ccc32f8403c2a"
+        class="tab-nav-button tab-panel-style cstyle code active" tabindex="0"
+      >
+        <span class="tab-nav-text">layouts/partials/custom-header.html</span>
+      </button>
+    </div>
+  </div>
+  <div class="tab-content-container">
+    <div
+      id="R-tab-id-971ad94765a3dd97447a7c68b6f6f8fb" role="tabpanel" aria-labelledby="R-tab-id-971ad94765a3dd97447a7c68b6f6f8fb-tab"
+      data-tab-item="R-tab-9d4cc6bb0d840c16e06ccc32f8403c2a"
+      class="tab-content tab-panel-style cstyle code active codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">{{ wit' resources.Get &#34;/css/mine.css&#34; }}
+</span></span><span class="line"><span class="cl">  {{ wit' partial &#34;asset.gotmpl&#34; . }}
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">link</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;{{ .RelPermalink }}&#34;</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  {{ end }}
+</span></span><span class="line"><span class="cl">{{ end }}</span></span></code></pre></div>
+      </div>
+    </div>
+  </div>
+</div><p>Below <code>static</code> this only concerns <code>css/custom.css</code>, <code>js/custom.js</code> an' th' favicon an' logo images; everyth'n else there be published as before. Those be published twice, once untouched an' once processed - move them t' <code>assets</code> t' avoid th' superfluous copy.</p>
+<p>As a busted name changes wit' its rrrambl'n, a build no longer overwrites th' file its predecessor wrote an' both remain. Purge yer output directory, e.g. by build'n wit' Hugo&rsquo;s <code>--cleanDestinationDir</code>, or it accumulates every version ye ever built - which weighs most if ye commit what ye build, as publish'n t' a GitHub Planks branch does.</p>
+</li>
+<li>
+<p><span class="badge cstyle change badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-circle" aria-hidden="true"></i></span><span class="badge-content">Change</span></span> Th' Perfect Scrollbar library be no longer shipped wit' th' theme. All scrollbars be th' ones o' yer browser now, styled by th' theme.</p>
+<p>Th' scrollbars colors come from new <a href="/hugo-theme-relearn/pir/configuration/branding/colors/index.html#modifying-variants">theme variant</a> variables, four fer each o' th' three areas, th' main rrrambl'n, th' menu an' th' topbar flyouts. <code>MAIN-SCROLLBAR-THUMB-color</code>, <code>MENU-SCROLLBAR-THUMB-color</code> an' <code>TOPBAR-SCROLLBAR-THUMB-color</code> color th' mov'n thumb, <code>MAIN-SCROLLBAR-TRACK-color</code>, <code>MENU-SCROLLBAR-TRACK-color</code> an' <code>TOPBAR-SCROLLBAR-TRACK-color</code> th' track it moves 'n. Each o' them has a <code>-HOVER</code> counterpart - like <code>MAIN-SCROLLBAR-THUMB-HOVER-color</code> or <code>MENU-SCROLLBAR-TRACK-HOVER-color</code> - fer th' respective hovered area.</p>
+<p>How many o' those twelve colors ye see an effect from depends on th' scrollbar model yer browser implements, so don&rsquo;t expect all o' them t' show everywhere. Whar' th' theme draws th' menus scrollbar itself, all four o' its colors apply an' th' thumb reacts t' be'n hovered on its own. A browser that offers only th' standard styl'n has no state fer th' thumb, so there th' <code>-HOVER</code> colors be taken while th' surround'n area be hovered instead. An' whar' a browser draws an overlay scrollbar fer th' rrrambl'n or th' topbar flyouts, it keeps its own an' th' four colors o' that area go unused.</p>
+</li>
+<li>
+<p><span class="badge cstyle change badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-circle" aria-hidden="true"></i></span><span class="badge-content">Change</span></span> Th' <a href="/hugo-theme-relearn/pir/configuration/branding/colors/index.html#parameters">theme variant configurat'n</a> has a new <code>hidden</code> parameter.</p>
+<p>If set t' <code>true</code>, th' variant will not be shown 'n th' <a href="/hugo-theme-relearn/pir/configuration/sidebar/menus/index.html">variant switcher</a> but be still us'ble, e.g. as a sub-variant o' an auto mode variant.</p>
+</li>
+<li>
+<p><span class="badge cstyle change badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-circle" aria-hidden="true"></i></span><span class="badge-content">Change</span></span> Th' <a href="/hugo-theme-relearn/pir/configuration/sidebar/menus/index.html#title-for-arbitrary-menus">title above a plank sidebar menu</a> be now taken from th' root page&rsquo;s <code>linkTitle</code> front matter.</p>
+<p>Formerly this was documented t' use th' <code>menuTitle</code> front matter, although that was already <a href="/hugo-theme-relearn/pir/introduction/releasenotes/6/index.html#6-0-0">removed 'n 6.0.0</a> 'n favor o' Hugo&rsquo;s own <code>linkTitle</code>. It be still honored if no <code>linkTitle</code> be set but now issues a deprecat'n warning an' will be removed wit' a future update o' th' theme.</p>
+</li>
+<li>
+<p><span class="badge cstyle change badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-circle" aria-hidden="true"></i></span><span class="badge-content">Change</span></span> Images now carry th' dimensions o' their resource, so a browser can reserve th' space they will take before they have arrived.</p>
+<p>This avoids plank reflows as each image loads an' affects images that resolve t' a resource Cap'n Hugo can measure: a plank resource or a file 'n yer <code>assets</code> directory, 'n one o' th' common raster formats. An SVG, a remote address or a path 'n yer <code>static</code> directory has no dimensions t' give an' be unchanged.</p>
+</li>
+<li>
+<p><span class="badge cstyle change badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-circle" aria-hidden="true"></i></span><span class="badge-content">Change</span></span> Th' <a href="https://github.com/MihaiValentin/lunr-languages" rel="external" target="_self">Lunr Languages</a> whar' updated t' 1.21.0.</p>
+<p>Search'n wit' th' Lunr adapter now finds terms that consist o' digits only, like part or standard numbers.</p>
+</li>
+</ul>
+<h3 id="new-3">New<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
+<ul>
+<li>
+<p><span class="badge cstyle new badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-plus-circle" aria-hidden="true"></i></span><span class="badge-content">New</span></span> Th' <a href="/hugo-theme-relearn/pir/authoring/frontmatter/topbar/index.html#edit-button"><code>editURL</code> option</a> has a new macro <code>${BaseDir}</code>, contain'n th' directory <code>${FilePath}</code> be resolved against.</p>
+<p>Joined, th' two be th' locat'n o' th' displayed plank on yer disk dur'n build, which lets th' edit button open yer local editor instead o' a web service.</p>
+<div class="tab-panel" data-tab-group="R-tabs-c9edc9b3721ed1719443e64b6ad9a1a9">
+  <div class="tab-nav">
+    <div class="tab-nav-title">&#8203;</div>
+    <div class="tab-nav-list" role="tablist">
+      <button
+        role="tab" id="R-tab-id-9536b1bcac763c21dd9cd5b472ca58d3-tab" aria-controls="R-tab-id-9536b1bcac763c21dd9cd5b472ca58d3" aria-selected="true"
+        data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
+        class="tab-nav-button tab-panel-style cstyle code active" tabindex="0"
+      >
+        <span class="tab-nav-text">yaml</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-cb9a27763dd79aab9a176d9fddd5081c-tab" aria-controls="R-tab-id-cb9a27763dd79aab9a176d9fddd5081c" aria-selected="false"
+        data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">toml</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-ed185e257c55b813053cb95d42110e22-tab" aria-controls="R-tab-id-ed185e257c55b813053cb95d42110e22" aria-selected="false"
+        data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">json</span>
+      </button>
+    </div>
+  </div>
+  <div class="tab-content-container">
+    <div
+      id="R-tab-id-9536b1bcac763c21dd9cd5b472ca58d3" role="tabpanel" aria-labelledby="R-tab-id-9536b1bcac763c21dd9cd5b472ca58d3-tab"
+      data-tab-item="R-tab-6eedc03a68a69933c763e674f2d7c42f"
+      class="tab-content tab-panel-style cstyle code active codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">params</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">editURL</span><span class="p">:</span><span class="w"> </span><span class="l">vscode://file/${BaseDir}/${FilePath}</span></span></span></code></pre></div>
+      </div>
+    </div>
+    <div
+      id="R-tab-id-cb9a27763dd79aab9a176d9fddd5081c" role="tabpanel" aria-labelledby="R-tab-id-cb9a27763dd79aab9a176d9fddd5081c-tab"
+      data-tab-item="R-tab-ec18ad9a83c312380533fa93ac6fc61c"
+      class="tab-content tab-panel-style cstyle code codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">params</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">editURL</span> <span class="p">=</span> <span class="s1">&#39;vscode://file/${BaseDir}/${FilePath}&#39;</span></span></span></code></pre></div>
+      </div>
+    </div>
+    <div
+      id="R-tab-id-ed185e257c55b813053cb95d42110e22" role="tabpanel" aria-labelledby="R-tab-id-ed185e257c55b813053cb95d42110e22-tab"
+      data-tab-item="R-tab-466deec76ecdf5fca6d38571f6324d54"
+      class="tab-content tab-panel-style cstyle code codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">   <span class="nt">&#34;params&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nt">&#34;editURL&#34;</span><span class="p">:</span> <span class="s2">&#34;vscode://file/${BaseDir}/${FilePath}&#34;</span>
+</span></span><span class="line"><span class="cl">   <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div>
+      </div>
+    </div>
+  </div>
+</div>
+<p>Th' macro be written th' way a URL writes a path - wit' forward slashes an' without a lead'n slash - so th' same sett'n works on Windows an' on Unix-like systems.</p>
+</li>
+<li>
+<p><span class="badge cstyle new badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-plus-circle" aria-hidden="true"></i></span><span class="badge-content">New</span></span> Th' <a href="/hugo-theme-relearn/pir/shortcodes/cards/index.html#card-parameters"><code>card</code> shortcode</a> has a new <code>imagealt</code> parameter, giv'n th' card&rsquo;s image a text alternative.</p>
+</li>
+<li>
+<p><span class="badge cstyle new badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-plus-circle" aria-hidden="true"></i></span><span class="badge-content">New</span></span> Th' theme has updated its Merrrmaid dependency t' 11.17.2. This adds support fer <a href="/hugo-theme-relearn/pir/shortcodes/mermaid/index.html#swimlanes">swimlanes</a>, <a href="/hugo-theme-relearn/pir/shortcodes/mermaid/index.html#venn">Venn</a>, <a href="/hugo-theme-relearn/pir/shortcodes/mermaid/index.html#ishikawa">Ishikawa</a>, <a href="/hugo-theme-relearn/pir/shortcodes/mermaid/index.html#wardley">Wardley</a>, <a href="/hugo-theme-relearn/pir/shortcodes/mermaid/index.html#cynefin">Cynefin</a> an' <a href="/hugo-theme-relearn/pir/shortcodes/mermaid/index.html#treeview">TreeView</a>.</p>
+</li>
+<li>
+<p><span class="badge cstyle new badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-plus-circle" aria-hidden="true"></i></span><span class="badge-content">New</span></span> Th' translat'n fer Portuguese was divided into European Portuguese an' Brazilian Portuguese.</p>
+</li>
+<li>
+<p><span class="badge cstyle new badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-plus-circle" aria-hidden="true"></i></span><span class="badge-content">New</span></span> Th' search now supports th' Polish language.</p>
+</li>
+</ul>
+<hr>
+<h2 id="9-0-0">9.0.0 (2026-01-01)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h2>
+<h3 id="hugo">Cap'n Hugo<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
+<ul>
+<li>
+<p><span class="badge cstyle hugo badge-with-title"><span class="badge-title"><i class="fa-fw fab fa-hackerrank" aria-hidden="true"></i></span><span class="badge-content">Cap'n Hugo</span></span> When th' theme introduced compatibility wit' Cap'n Hugo <span class="badge cstyle hugo badge-with-title"><span class="badge-title"><i class="fa-fw fab fa-hackerrank" aria-hidden="true"></i></span><span class="badge-content">0.146.7</span></span> it had t' remove a performance optimizat'n due t' a limitat'n 'n Hugo. This was later fixed 'n Hugo <span class="badge cstyle hugo badge-with-title"><span class="badge-title"><i class="fa-fw fab fa-hackerrank" aria-hidden="true"></i></span><span class="badge-content">0.149.0</span></span>.</p>
+<p>This release reintroduces th' performance optimizat'n an' will cause yer plank build t' fail wit' th' above mentioned Cap'n Hugo versions. Ye either need t' upgrade or downgrade Cap'n Hugo t' an unaffected version.</p>
+</li>
+</ul>
+<h3 id="breaking">Break'n<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
+<ul>
+<li>
+<p><span class="badge cstyle breaking badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-triangle" aria-hidden="true"></i></span><span class="badge-content">Break'n</span></span> Th' <a href="/hugo-theme-relearn/pir/shortcodes/children/index.html"><code>children</code> shortcode</a> has a new layout resembl'n th' taxonomy an' term planks by sett'n <code>type=group</code>.</p>
+<p>Sadly, introduc'n usage o' th' shortcode 'n th' taxonomy an' term planks (see below) caused necessary breaking changes</p>
+<ul>
+<li>th' shortcode now requires enabl'n block attributes 'n yer project configurat'n by sett'n <code>marrrkup.goldmark.parser.attribute.block</code> t' <code>true</code></li>
+<li>th' call rules fer <code>type=card</code> now be <code>{{&lt; children &gt;}}</code> instead o' <code>{{% children %}}</code> if <code>marrrkup.goldmark.renderer.unsafe</code> be set t' <code>false</code> 'n yer project configurat'n (which be th' default)</li>
+</ul>
+<p>In addit'n th' shortcode learned some new parameter fer display'n breadcrumbs an' sett'n a head'n depth.</p>
+</li>
+</ul>
+<h3 id="change-4">Change<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
+<ul>
+<li>
+<p><span class="badge cstyle change badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-circle" aria-hidden="true"></i></span><span class="badge-content">Change</span></span> This release comes wit' a new way t' <a href="/hugo-theme-relearn/pir/configuration/branding/logo/index.html#changing-the-title">configure yer logo image an' title</a> 'n th' menu sidebar.</p>
+<p>Wit' th' new system ye can</p>
+<ul>
+<li>rely on auto detect'n fer an image</li>
+<li>remove th' image completely</li>
+<li>override th' image fer each variant</li>
+<li>set color, sizes an' fonts fer title an' image</li>
+<li>let th' image an' title lay out vertically or horizontally</li>
+<li>override th' complete layout wit' yer own partial (that&rsquo;s th' old way an' still works)</li>
+</ul>
+<p>Nevertheless, this required massive changes t' th' CSS an' most likely yer logo will require tweak'n o' th' CSS styles after an update.</p>
+<p>Th' easiest way t' fix this be t' remove a overridden <code>layouts/partials/logo.html</code> template 'n <strong>yer installat'n</strong> an' rely on th' new configurat'n.</p>
+</li>
+<li>
+<p><span class="badge cstyle change badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-circle" aria-hidden="true"></i></span><span class="badge-content">Change</span></span> Font Awesome was updated t' version 7.1.0 which results 'n slightly different ay'cons.</p>
+</li>
+<li>
+<p><span class="badge cstyle change badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-circle" aria-hidden="true"></i></span><span class="badge-content">Change</span></span> Th' search results o' th' search box be now colored 'n th' same way as th' search results on th' dedicated search plank us'n color styles o' th' rrrambl'n area.</p>
+</li>
+<li>
+<p><span class="badge cstyle change badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-exclamation-circle" aria-hidden="true"></i></span><span class="badge-content">Change</span></span> Th' <a href="/hugo-theme-relearn/pir/shortcodes/details/index.html"><code>expand</code> shortcode</a> has changed its default text o' <code>Expand me...</code> t' <code>Details</code> t' be 'n sync wit' Hugo&rsquo;s built-in <code>details</code> shortcode an' th' <code>details</code> HTML element.</p>
+</li>
+</ul>
+<h3 id="new-4">New<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link t' clipboard" aria-label="Copy link t' clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
+<ul>
+<li>
+<p><span class="badge cstyle new badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-plus-circle" aria-hidden="true"></i></span><span class="badge-content">New</span></span> Th' <a href="/hugo-theme-relearn/pir/authoring/taxterm/index.html">taxonomy an' term</a> planks be now internally us'n th' <a href="/hugo-theme-relearn/pir/shortcodes/children/index.html"><code>children</code> shortcode</a>. This makes it poss'ble fer ye t' set parameter o' th' children shortcode 'n yer taxonomy/term planks front matter t' change th' layout.</p>
+<p>By that ye can - fer example - display th' sub planks 'n a card layout. See th' <a href="/hugo-theme-relearn/pir/categories/index.html">categories taxonomy</a> fer an example.</p>
+</li>
+<li>
+<p><span class="badge cstyle new badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-plus-circle" aria-hidden="true"></i></span><span class="badge-content">New</span></span> Th' themes dark-mode support fer th' <a href="/hugo-theme-relearn/pir/shortcodes/openapi/index.html"><code>openapi</code> shortcode</a> was changed t' th' built-in implementat'n o' th' used Swagger library.</p>
+</li>
+</ul>
+ 
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <script src="/hugo-theme-relearn/js/theme.min.96b966188f27166ddab5db2863a58101dd099db40ab5513f97556f286504ff8a.js" defer></script>
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
+  </body>
+</html>

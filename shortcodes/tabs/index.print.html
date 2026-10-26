@@ -1,0 +1,1551 @@
+<!DOCTYPE html>
+<html id="R-html" lang="en" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="print">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.168.0">
+    <meta name="generator" content="Relearn 9.4.0">
+    <meta name="description" content="Show content in tabbed views">
+    <meta name="author" content="Sören Weber">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://ouhft.github.io/hugo-theme-relearn/shortcodes/tabs/featured.png">
+    <meta name="twitter:title" content="Tabs :: Hugo Relearn Theme">
+    <meta name="twitter:description" content="Show content in tabbed views">
+    <meta property="og:url" content="https://ouhft.github.io/hugo-theme-relearn/shortcodes/tabs/index.html">
+    <meta property="og:site_name" content="Hugo Relearn Theme">
+    <meta property="og:title" content="Tabs :: Hugo Relearn Theme">
+    <meta property="og:description" content="Show content in tabbed views">
+    <meta property="og:locale" content="en">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://ouhft.github.io/hugo-theme-relearn/shortcodes/tabs/featured.png">
+    <meta itemprop="name" content="Tabs :: Hugo Relearn Theme">
+    <meta itemprop="description" content="Show content in tabbed views">
+    <meta itemprop="wordCount" content="2206">
+    <meta itemprop="image" content="https://ouhft.github.io/hugo-theme-relearn/shortcodes/tabs/featured.png">
+    <meta itemprop="keywords" content="Howto,Reference">
+    <title>Tabs :: Hugo Relearn Theme</title>
+    <link href="https://ouhft.github.io/hugo-theme-relearn/shortcodes/tabs/index.html" rel="alternate" hreflang="x-default">
+    <link href="https://ouhft.github.io/hugo-theme-relearn/shortcodes/tabs/index.html" rel="alternate" hreflang="en">
+    <link href="https://ouhft.github.io/hugo-theme-relearn/pir/shortcodes/tabs/index.html" rel="alternate" hreflang="art-x-pir">
+    <link href="https://ouhft.github.io/hugo-theme-relearn/shortcodes/tabs/index.html" rel="canonical" type="text/html" title="Tabs :: Hugo Relearn Theme">
+    <link href="/hugo-theme-relearn/shortcodes/tabs/index.xml" rel="alternate" type="application/rss&#43;xml" title="Tabs :: Hugo Relearn Theme">
+    <link href="/hugo-theme-relearn/shortcodes/tabs/index.md" rel="alternate" type="text/markdown" title="Tabs :: Hugo Relearn Theme">
+    <link href="/hugo-theme-relearn/shortcodes/tabs/index.source.md" rel="alternate" type="text/markdown" title="Tabs :: Hugo Relearn Theme">
+    <link href="/hugo-theme-relearn/images/logo.d2952b3b403590be64a7c6c1d73fd7d15a09e0fad6b532e5a2f23d990c5503df.svg" rel="icon" type="image/svg&#43;xml">
+    <link href="/hugo-theme-relearn/css/auto-complete/auto-complete.min.19b8eb7faa53e727a407aa2d781e21185a35cfc9330628acc11df190f919f003.css" rel="stylesheet">
+    <script src="/hugo-theme-relearn/js/auto-complete/auto-complete.min.ee095762d0ba22fe9c154ccbc9a1d92d5eae5ebaf7cedfbc9b9991710d739d05.js" defer></script>
+    <script src="/hugo-theme-relearn/js/search-lunr.min.9897ffe790e716e8b90e4a9e200dce63c2603e69a9eec9bbdce6a483811ea180.js" defer></script>
+    <script src="/hugo-theme-relearn/js/search.min.4bcf60afa00d9f5c3adf08ff55811ce4cc679bd6d4b5747d674667994ee1debb.js" defer></script>
+    <script type="application/json" id="R-search-config">{
+      "indexFile": "searchindex.en.min.a4b92b6768431257f172f784e199904a21e42e2ad877a6354bbde54e8b0a72fc.js"
+    }</script>
+    <script src="/hugo-theme-relearn/js/lunr/lunr.min.75e90b6cec204a54a07060b42ec82f3816430c63ffd689d1e9771f469dc493dd.js" defer></script>
+    <script src="/hugo-theme-relearn/js/lunr/lunr.stemmer.support.min.5ff7b6bd53462911fc1311c09f654085b748338aced249e719c0b16fda0b90fb.js" defer></script>
+    <script src="/hugo-theme-relearn/js/lunr/lunr.multi.min.ffaee7f1e07179595fe8a4b7c469761f90999470e1f04dcb0a94dc2c1cb44f9c.js" defer></script>
+    <script src="/hugo-theme-relearn/js/lunr/lunr.en.min.94d0a7cb1f111200e2f5be9dc32699cf266aaa29011e414bdcd36a18ea0fd5ee.js" defer></script>
+    <script type="application/json" id="R-search-lunr-config">{
+      "contentLangs": [
+        "en"
+      ]
+    }</script>
+    <link href="/hugo-theme-relearn/fonts/fontawesome/css/all.min.e0b69df26e19596d4b81bf7eb0c54b6047e7221ec18d5d4d40c11eefd3ef8a4b.css" rel="stylesheet" media="print" class="R-async-style"><noscript><link href="/hugo-theme-relearn/fonts/fontawesome/css/all.min.e0b69df26e19596d4b81bf7eb0c54b6047e7221ec18d5d4d40c11eefd3ef8a4b.css" rel="stylesheet"></noscript>
+    <link href="/hugo-theme-relearn/css/theme.min.bba7025345a3ad33f5296e7fed3b0f46c339149a3d2af5a320b8957d4b66325c.css" rel="stylesheet">
+    <link href="/hugo-theme-relearn/css/format-print.min.54e295afb02765776f6e05d3a5b2076ff2f00800531d1db8f139fa068608a60a.css" rel="stylesheet" id="R-format-style">
+    <script type="application/json" id="R-theme-config">{
+      "disableInlineCopyToClipboard": true,
+      "enableBlockCodeWrap": true,
+      "path": "/shortcodes/tabs/index.html",
+      "relBasePath": "../..",
+      "relBaseUri": "../../..",
+      "themevariants": [
+        "relearn-auto",
+        "relearn-dark",
+        "relearn-light",
+        "zen-auto",
+        "zen-dark",
+        "zen-light",
+        "contrast-auto",
+        "contrast-dark",
+        "contrast-light",
+        "tome-auto",
+        "tome-dark",
+        "tome-light",
+        "retro-auto",
+        "neon",
+        "learn",
+        "blue",
+        "green",
+        "red"
+      ],
+      "translations": {
+        "Browser_unsupported_feature": "This browser doesn't support this feature",
+        "Change_sorting": "Change sorting",
+        "Close_graph": "Close enlarged graph",
+        "Copied_to_clipboard": "Text copied to clipboard!",
+        "Copy_to_clipboard": "Copy text to clipboard",
+        "Deleted_text_end": "End of deleted text",
+        "Deleted_text_start": "Start of deleted text",
+        "Enlarge_graph": "Enlarge graph",
+        "History_cleared": "History cleared",
+        "Inserted_text_end": "End of inserted text",
+        "Inserted_text_start": "Start of inserted text",
+        "Link_copied_to_clipboard": "Link copied to clipboard!",
+        "N_matches_on_page": "{1} matches for \"{0}\" on this page",
+        "N_results_found": "{1} results found for \"{0}\"",
+        "No_results_found": "No results found for \"{0}\"",
+        "Reset_sorting": "Reset sorting",
+        "Reset_view": "Reset view",
+        "Sort_key_ascending": "sorted at position {0}, ascending",
+        "Sort_key_descending": "sorted at position {0}, descending",
+        "Sortable_columns": "Column headers with buttons are sortable.",
+        "Sorted_by_ascending": "Sorted by \"{0}\", ascending",
+        "Sorted_by_descending": "Sorted by \"{0}\", descending",
+        "Sorting_reset": "Sorting reset!",
+        "Unsorted_by": "No longer sorted by \"{0}\"",
+        "View_reset": "View reset!"
+      }
+    }</script>
+    <script src="/hugo-theme-relearn/js/theme-head.min.f7e473c3e5d5d7ea4c1ad508c6ae60b8d3c54f1c5f68e660f71087333cc95e5a.js"></script>
+    <style>
+       
+      #R-body img.bg-white {
+        background-color: white;
+      }
+       
+      :root[data-r-theme-variant^='tome-'] .github-buttons {
+        filter: sepia(0.6) brightness(0.95);
+      }
+    </style>
+  </head>
+  <body class="mobile-support print" data-origin="/hugo-theme-relearn/shortcodes/tabs/index.html">
+    <a id="R-skip-link" href="#R-body-inner">Skip to main content</a>
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <header id="R-topbar" class="default-animation">
+        <a id="R-logo" class="R-default layout-sidebar-row" href="/hugo-theme-relearn/index.html">
+          <span class="logo-image default-animation" data-r-logo-variant="blue contrast-dark contrast-light green learn red relearn-dark relearn-light tome-dark tome-light zen-dark zen-light">
+<svg aria-hidden="true" class="bg-white border inlinecontent lazy rounded figure-image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64.044 64.044" fill="currentColor"><style>svg:root{color:#000}@media (prefers-color-scheme:dark){svg:root{color:#fff}}</style><path d="M46.103 136.34c-.642-.394-1.222-2.242-1.98-2.358-.76-.117-1.353.506-1.618 1.519-.266 1.012-.446 4.188.173 5.538.213.435.482.787 1.03.845.547.057.967-.504 1.45-1.027.482-.523.437-.9 1.142-.612.705.289 1.051.4 1.586 1.229.535.828 1.085 4.043.868 5.598-.241 1.458-.531 2.8-.59 4.088.26.075.517.148.772.217 2.68.724 5.373 1.037 7.873.02.001-.028.01-.105.008-.11-.048-.165-.18-.41-.36-.698-.18-.29-.414-.645-.586-1.114a3.212 3.212 0 0 1-.125-1.735c.056-.21.153-.342.249-.475 1.237-1.193 2.932-1.373 4.244-1.384.557-.004 1.389.016 2.198.255.809.239 1.706.724 2.068 1.843.187.578.114 1.17-.043 1.623-.153.438-.369.783-.545 1.091-.178.31-.329.6-.401.821-.007.02-.003.071-.005.094 2.256 1.008 4.716.91 7.189.398.55-.114 1.11-.247 1.673-.377.344-1.085.678-2.145.852-3.208.124-.752.158-2.311-.078-3.538-.118-.613-.306-1.15-.52-1.489-.221-.349-.413-.501-.747-.538-.243-.027-.51.013-.796.098-.67.223-1.33.606-1.966.76l-.008.002-.109.032c-.556.152-1.233.158-1.797-.36-.556-.51-.89-1.367-1.117-2.596-.283-1.528-.075-3.279.89-4.518l.071-.09h.07c.65-.71 1.485-.802 2.16-.599.706.213 1.333.629 1.772.84.736.354 1.185.319 1.475.171.291-.148.5-.439.668-.955.332-1.017.301-2.819.022-4.106-.148-.684-.13-1.292-.13-1.883-1.558-.463-3.067-.982-4.574-1.208-1.128-.169-2.263-.173-3.298.164-.13.046-.256.095-.38.15-.373.164-.633.342-.805.52-.077.098-.081.105-.087.21-.004.068.031.289.13.571.1.282.256.634.467 1.03.279.524.448 1.063.431 1.618a2.12 2.12 0 0 1-.499 1.309 1.757 1.757 0 0 1-.62.51h-.002c-.515.291-1.107.404-1.723.464-.86.083-1.787.026-2.598-.097-.806-.123-1.47-.28-1.948-.555-.444-.256-.79-.547-1.037-.925a2.273 2.273 0 0 1-.356-1.301c.029-.837.403-1.437.625-1.897.111-.23.191-.433.236-.583.045-.15.044-.25.046-.24-.005-.029-.127-.355-1.015-.741-1.138-.495-2.322-.673-3.533-.668h-.015a9.711 9.711 0 0 0-.521.016h-.002c-1.163.057-2.35.308-3.541.569.383 1.531.79 2.753.818 4.502-.096 1.297.158 2.114-1.03 2.935-.85.588-1.508.729-2.15.335" transform="translate(-40.698 -95.175)"/><path d="M61.472 101.34v.002c-.3-.003-.603.01-.894.04-.544.055-1.39.165-1.778.306-1.238.364.13 2.344.41 2.913.28.569.285 2.03.14 2.134-.144.103-.375.261-.934.345-.56.084.03-.037-1.589.086-1.62.122-5.506.29-8.265.248-.022.26-.036.521-.097.808-.309 1.442-.63 3.163-.494 4.074.071.473.168.65.414.8.23.14.737.235 1.62-.004.834-.227 1.3-.442 1.887-.456.595-.016 1.555.472 1.965.717.411.245-.03-.008.002 0s.128.05.176.102c.049.053-.276-.523.104.199.379.721.72 3.256.002 4.68-.46.913-1.01 1.49-1.64 1.711-.63.22-1.229.067-1.734-.135-.881-.353-1.584-.7-2.205-.647-1.199 1.94-1.186 4.17-.6 6.602.097.397.212.814.327 1.23 2.68-.556 5.542-1.016 8.337.132 1.064.437 1.73 1.015 1.902 1.857.169.831-.193 1.508-.438 1.986-.122.238-.23.46-.307.642-.07.164-.096.28-.104.324.069.429.309.723.686.945.385.227.89.355 1.35.423.723.104 1.567.152 2.287.086.693-.064 1.032-.338 1.241-.544a2.447 2.447 0 0 0 .303-.437.175.175 0 0 0 .013-.035c-.004-.066-.037-.246-.195-.527-.46-.816-.87-1.595-.817-2.51.028-.476.218-.938.529-1.288.304-.343.698-.586 1.186-.79 1.442-.606 2.96-.609 4.372-.409 1.525.216 2.963.679 4.378 1.083.226-2.09.784-3.9.592-5.77-.058-.565-.287-1.333-.598-1.827-.32-.508-.59-.717-1.036-.642-.648.11-1.472.935-2.707 1.078-.791.092-1.494-.267-1.95-.86-.45-.583-.678-1.335-.78-2.101-.202-1.525.031-3.229.89-4.27.615-.747 1.45-.887 2.15-.74.687.145 1.307.492 1.857.745v-.002c.546.252 1.033.388 1.281.344a.547.547 0 0 0 .353-.188c.113-.124.242-.35.384-.75.604-1.712.206-3.68-.303-5.654-.667.145-1.336.293-2.018.413-1.341.236-2.73.392-4.136.273-.656-.055-1.695-.085-2.58-.476-.442-.195-.903-.514-1.157-1.093-.259-.591-.205-1.313.08-2.014.223-.64 1.082-2.178.692-2.585-.391-.407-1.651-.56-2.554-.571z" transform="translate(-40.698 -95.175)"/><path d="M83.128 98.116c-.484 1.875-1.057 3.757-2.486 5.033-.638.57-1.13.666-1.483.548-.401-.134-.715-.506-1.058-.973-.338-.461-.655-.97-1.076-1.332-.192-.165-.404-.315-.683-.38-.279-.066-.599-.02-.9.102-.489.196-.89.58-1.28 1.047a6.1 6.1 0 0 0-.985 1.632c-.234.591-.356 1.174-.277 1.713.072.487.392.977.905 1.185.463.187.926.156 1.36.154.433 0 .843.01 1.242.147.55.189.79.736.822 1.368.034.66-.145 1.412-.393 1.988l-.008.021c-.74 1.705-1.946 2.893-3.004 4.349l-.664.915.979.099c.924.092 1.788.26 2.468.675.46.281 1.806 1.205 2.794 2.222.497.513.888 1.031 1.047 1.502.078.231.095.422.05.6a.93.93 0 0 1-.345.474c-.301.223-.606.395-.864.532l-.354.186c-.107.058-.189.087-.345.228a.637.637 0 0 1 .062-.045l-.064.041-.209.236-.103.343s.003.126.007.152c.003.017.003.007.004.015v.002c.016.195.061.307.133.476a4.1 4.1 0 0 0 .32.596 5.7 5.7 0 0 0 2.8 2.258c.284.108.908.321 1.548.36.33.02.59.015.912-.13h.002c.08-.037.228-.095.382-.281.153-.186.19-.355.212-.445l.019-.075.003-.078c.023-.585-.037-1.296.072-1.899.153-.657.435-.956 1.009-.909 2.771.239 4.74 1.955 6.693 3.83l.742.714.279-1.155c.55-2.29 1.093-4.464 2.928-5.977.692-.57 1.184-.642 1.527-.509.39.151.676.536.996.995.319.458.605.926 1.07 1.212.194.119.464.232.784.209.32-.024.638-.163.988-.384 1.022-.645 1.778-1.756 2.086-2.942.136-.522.102-.991-.046-1.301-.158-.334-.433-.553-.754-.707-.653-.314-1.468-.373-2.094-.486-.825-.15-1.22-.475-1.345-.878-.13-.417 0-.953.335-1.61.6-1.173 1.887-2.602 3.13-3.911l.498-.526-.449-.432c-1.545-1.49-3.163-3.01-5.252-3.715h-.002c-.473-.16-1.097-.413-1.73-.424h-.003c-.311-.004-.596.04-.883.24v.002c-.22.155-.483.537-.583.937l-.008.036-.006.038c-.116.773-.06 1.467-.217 1.995-.063.212-.198.418-.359.507-.202.111-.492.153-.976.072-.582-.097-1.978-.69-3.021-1.503-.523-.407-.934-.85-1.117-1.3a1.153 1.153 0 0 1-.083-.63c.03-.184.1-.477.308-.593.21-.116.941-.32 1.377-.642h.002c.192-.141.403-.367.518-.64.114-.275.127-.526.123-.774-.006-.142-.036-.192-.08-.3a8.417 8.417 0 0 0-3-3.027c-1.226-.725-2.585-1.135-3.927-1.539-.434-.12-.844-.111-1.02.466zm.912.947c1.186.364 2.357.718 3.345 1.303 1.035.612 1.864 1.488 2.507 2.528-.514.263-1.095.5-1.44.79-.345.29-.729.914-.815 1.434-.084.509 0 .968.155 1.347.301.74.85 1.276 1.44 1.735 1.18.92 2.554 1.545 3.47 1.698.604.1 1.186.088 1.739-.216.594-.327.935-.911 1.088-1.427.264-.884.193-1.664.262-2.17h.1c.3.006.926.206 1.417.371 1.646.554 3.044 1.773 4.431 3.089-1.102 1.174-2.222 2.423-2.888 3.73-.42.823-.73 1.789-.453 2.687.283.913 1.1 1.415 2.138 1.603.691.126 1.472.226 1.84.403.19.091.258.182.278.223.03.064.058.075-.023.387-.21.804-.761 1.598-1.413 2.01-.247.155-.365.183-.407.187-.042.003-.061.002-.172-.066-.144-.088-.455-.473-.772-.929-.317-.454-.714-1.07-1.452-1.356-.783-.304-1.776-.022-2.713.75-1.942 1.6-2.626 3.764-3.146 5.8-1.802-1.676-3.772-3.138-6.589-3.517h-.002c-.346-.095-1.013-.031-1.293.143-.735.501-1.005 1.132-1.168 2.007-.125.69-.082 1.216-.074 1.659-.055.006-.046.01-.104.006-.42-.026-1.035-.215-1.244-.295-.947-.361-1.774-1.006-2.314-1.857-.054-.085-.072-.132-.109-.2l.027-.016c.284-.15.656-.36 1.045-.648.44-.327.789-.798.93-1.35a2.4 2.4 0 0 0-.068-1.379c-.254-.751-.753-1.353-1.295-1.911-1.09-1.124-2.452-2.049-2.99-2.378-.609-.372-1.303-.44-1.981-.56.875-1.094 1.878-2.251 2.596-3.921.294-.823.543-1.907.513-2.658-.049-.97-.489-2.013-1.52-2.367-.579-.2-1.131-.204-1.58-.203-.45.002-.786-.006-.97-.08h-.002c-.264-.107-.236-.108-.268-.33-.025-.17.021-.553.183-.962a4.67 4.67 0 0 1 .725-1.192c.29-.348.617-.59.705-.626.142-.057.176-.05.22-.04.045.011.127.052.263.17.235.201.56.671.92 1.161.354.484.791 1.08 1.543 1.33.8.267 1.784-.052 2.671-.846 1.594-1.424 2.235-3.317 2.714-5.051zm11.705 7.023c-.02.014.042-.002.042 0l-.008.035c.05-.2-.028-.04-.034-.035zM79.472 122.45a.198.198 0 0 1 .005.023v.014c-.002-.01-.003-.03-.005-.037zm-.29.732-.006.01-.044.027c.016-.01.033-.024.05-.036z" transform="translate(-40.698 -95.175)"/><path d="M76.694 128.845c-.85-.012-1.668.253-2.434.67-.01.592-.015 1.17.109 1.772.323 1.573.422 3.553-.07 5.147-.247.804-.684 1.535-1.347 1.891-.663.356-1.467.296-2.362-.159-.522-.266-1.059-.62-1.487-.757-.223-.072-.392-.096-.522-.069-.13.027-.232.094-.362.27-.53.719-.681 1.823-.497 2.876.177 1.012.418 1.438.543 1.56.143.137.26.154.604.055.548-.158 1.523-.857 2.573-.972l.02-.002.5.058c.686.081 1.247.562 1.622 1.19.372.62.591 1.37.73 2.136.279 1.532.25 3.16.083 4.232-.14.91-.394 1.72-.632 2.53 1.719-.385 3.485-.692 5.307-.36 1.174.214 2.749.574 3.762 1.977l.088.122.046.159c.162.551.16 1.114.024 1.578-.13.45-.348.772-.533 1.023-.181.246-.336.444-.437.606-.102.16-.141.275-.145.336-.01.17 0 .197.07.315.057.1.186.242.39.366.408.246 1.106.414 1.843.45a7.842 7.842 0 0 0 2.174-.21 4.28 4.28 0 0 0 .822-.296c.218-.106.385-.242.377-.233l.029-.031c.025-.035.05-.072.05-.068 0-.004 0-.017-.003-.05a2.733 2.733 0 0 0-.21-.579c-.26-.548-.839-1.333-.822-2.46.01-.657.27-1.21.598-1.576.32-.357.696-.575 1.074-.736.759-.323 1.57-.418 2.054-.458 1.653-.136 3.252.296 4.755.765.457.142.905.29 1.352.434.325-2.258.902-4.247.598-6.217-.071-.46-.25-1.169-.486-1.684-.238-.518-.495-.762-.675-.779-.351-.032-.716.14-1.174.418-.457.277-1.005.665-1.695.742-.745.082-1.406-.291-1.84-.908-.428-.608-.653-1.394-.754-2.196-.203-1.596.016-3.377.794-4.493.568-.813 1.358-.984 2.024-.835.65.146 1.243.51 1.769.779.524.267.99.413 1.237.365a.527.527 0 0 0 .346-.2c.11-.132.235-.373.37-.798.612-1.918.27-3.894-.246-6.054-2.815-.851-5.49-1.534-8.089-.267a.727.727 0 0 0-.223.148c-.024.028-.018.021-.026.056.001-.003-.01.178.07.44.162.522.611 1.29.911 1.978l.004.009.029.063.024.084V133c.162.635.016 1.297-.274 1.727-.272.404-.618.636-.952.81-.675.353-1.399.484-1.724.533a5.888 5.888 0 0 1-3.973-.795c-.512-.311-.876-.594-1.133-1.02-.282-.466-.318-1.084-.172-1.557.252-.814.715-1.266.971-1.89a.663.663 0 0 0 .047-.14c.001-.013 0-.006-.007-.037a.761.761 0 0 0-.184-.268c-.264-.267-.865-.595-1.54-.826-1.356-.462-3.07-.659-3.583-.686-.062-.002-.121-.006-.178-.006z" transform="translate(-40.698 -95.175)"/></svg>
+          </span>
+          <span class="logo-image default-animation" data-r-logo-variant="neon">
+<img alt="" class="bg-white border lazy rounded figure-image" height="252" loading="lazy" src="/hugo-theme-relearn/images/magic.gif" width="252">
+          </span>
+          <span class="logo-title default-animation">Relearn</span>
+        </a>
+        <div class="topbar-wrapper default-animation">
+          <div class="topbar-sidebar-divider default-animation"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+<span class="btn cstyle button link noborder notitle interactive"><button data-button-action="toggle-nav" type="button" title="Menu (CTRL&#43;ALT&#43;n)" aria-label="Menu (CTRL&#43;ALT&#43;n)" aria-expanded="false"><i class="fa-fw fas fa-bars" aria-hidden="true"></i></button></span>
+            </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button data-button-action="toggle-flyout" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)" aria-label="Table of Contents (CTRL&#43;ALT&#43;t)" aria-expanded="false"><i class="fa-fw fas fa-table-list" aria-hidden="true"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper" tabindex="-1">
+<nav class="TableOfContents" aria-label="Table of Contents">
+  <ul>
+    <li><a href="#usage">Usage</a>
+      <ul>
+        <li><a href="#parameters">Parameters</a></li>
+        <li><a href="#tab-parameters">Tab Parameters</a></li>
+        <li><a href="#single-tab">Single Tab</a></li>
+      </ul>
+    </li>
+    <li><a href="#examples">Examples</a>
+      <ul>
+        <li><a href="#behavior-of-the-groupid">Behavior of the <code>groupid</code></a></li>
+        <li><a href="#nested-tab-views-and-color">Nested Tab Views and Color</a></li>
+        <li><a href="#single-code-block-with-collapsed-margins">Single Code Block with Collapsed Margins</a></li>
+        <li><a href="#mixed-markdown-content">Mixed Markdown Content</a></li>
+        <li><a href="#icon-with-hint">Icon with Hint</a></li>
+        <li><a href="#understanding-style-and-color-behavior">Understanding <code>style</code> and <code>color</code> Behavior</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav> 
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="topbar-area topbar-area-middle" data-area="middle">
+            <nav class="topbar-breadcrumbs breadcrumbs highlightable" aria-label="Breadcrumbs" data-overflow-title="Shortcodes &gt; Tabs">
+              <ol itemscope itemtype="http://schema.org/BreadcrumbList"><li class="topbar-breadcrumbs-divider" aria-hidden="true">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class="a11y-only"><a itemprop="item" href="/hugo-theme-relearn/index.html" tabindex="-1"><span itemprop="name">Hugo Relearn Theme</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/hugo-theme-relearn/shortcodes/index.html"><span itemprop="name">Shortcodes</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class="" aria-current="page"><span itemprop="name">Tabs</span><meta itemprop="position" content="3"></li>
+              </ol>
+            </nav>
+          </div>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a aria-label="SiteParam (🡐)" href="/hugo-theme-relearn/shortcodes/siteparam/index.html" title="SiteParam (🡐)"><i class="fa-fw fas fa-chevron-left" aria-hidden="true"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-next default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a aria-label="Tree (🡒)" href="/hugo-theme-relearn/shortcodes/tree/index.html" title="Tree (🡒)"><i class="fa-fw fas fa-chevron-right" aria-hidden="true"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-more default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button data-button-action="toggle-flyout" type="button" title="More" aria-label="More" aria-expanded="false"><i class="fa-fw fas fa-ellipsis-v" aria-hidden="true"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper" tabindex="-1">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+            <div class="topbar-button topbar-button-edit default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a aria-label="Edit (CTRL&#43;ALT&#43;w)" href="https://github.com/McShelby/hugo-theme-relearn/edit/main/docs/content/shortcodes/tabs/_index.en.md" rel="external" target="_self" title="Edit (CTRL&#43;ALT&#43;w)"><i class="fa-fw fas fa-pen" aria-hidden="true"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-source default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a aria-label="Show source code" href="/hugo-theme-relearn/shortcodes/tabs/index.source.md" title="Show source code"><i class="fa-fw fas fa-code" aria-hidden="true"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-markdown default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a aria-label="Show Markdown" href="/hugo-theme-relearn/shortcodes/tabs/index.md" title="Show Markdown"><i class="fa-fw fab fa-markdown" aria-hidden="true"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-print default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a aria-label="Print whole chapter (CTRL&#43;ALT&#43;p)" href="/hugo-theme-relearn/shortcodes/tabs/index.print.html" title="Print whole chapter (CTRL&#43;ALT&#43;p)"><i class="fa-fw fas fa-print" aria-hidden="true"></i></a></span>
+            </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable shortcodes" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="tabs">Tabs</h1>
+
+<p>The <code>tabs</code> shortcode displays arbitrary content in an unlimited number of tabs.</p>
+
+<div class="tab-panel" data-tab-group="R-tabs-f58f75253d5c813230865b01baa11136">
+  <div class="tab-nav">
+    <div class="tab-nav-title">&#8203;</div>
+    <div class="tab-nav-list" role="tablist">
+      <button
+        role="tab" id="R-tab-id-04f148750cf40ee5e803ecffced80a70-tab" aria-controls="R-tab-id-04f148750cf40ee5e803ecffced80a70" aria-selected="true"
+        data-tab-item="R-tab-a7f5f35426b927411fc9231b56382173"
+        class="tab-nav-button tab-panel-style cstyle initial active" tabindex="0"
+      >
+        <span class="tab-nav-text">Python</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-e8a6be4a8d7102afc5a66ad5735e42d3-tab" aria-controls="R-tab-id-e8a6be4a8d7102afc5a66ad5735e42d3" aria-selected="false"
+        data-tab-item="R-tab-7024ff0860dec6ab1519a3f71c7d8779"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">Bash</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-5031a894043032268122b685e94d75bd-tab" aria-controls="R-tab-id-5031a894043032268122b685e94d75bd" aria-selected="false"
+        data-tab-item="R-tab-0d61f8370cad1d412f80b84d143e1257"
+        class="tab-nav-button tab-panel-style cstyle filled" style="--VARIABLE-BOX-color: fuchsia;" tabindex="-1"
+      >
+        <span class="tab-nav-text">C</span>
+      </button>
+    </div>
+  </div>
+  <div class="tab-content-container">
+    <div
+      id="R-tab-id-04f148750cf40ee5e803ecffced80a70" role="tabpanel" aria-labelledby="R-tab-id-04f148750cf40ee5e803ecffced80a70-tab"
+      data-tab-item="R-tab-a7f5f35426b927411fc9231b56382173"
+      class="tab-content tab-panel-style cstyle initial active">
+      <div class="tab-content-text">
+The AI native programming language.
+      </div>
+    </div>
+    <div
+      id="R-tab-id-e8a6be4a8d7102afc5a66ad5735e42d3" role="tabpanel" aria-labelledby="R-tab-id-e8a6be4a8d7102afc5a66ad5735e42d3-tab"
+      data-tab-item="R-tab-7024ff0860dec6ab1519a3f71c7d8779"
+      class="tab-content tab-panel-style cstyle code codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;For guys who like to tinker.&#34;</span></span></span></code></pre></div>
+      </div>
+    </div>
+    <div
+      id="R-tab-id-5031a894043032268122b685e94d75bd" role="tabpanel" aria-labelledby="R-tab-id-5031a894043032268122b685e94d75bd-tab"
+      data-tab-item="R-tab-0d61f8370cad1d412f80b84d143e1257"
+      class="tab-content tab-panel-style cstyle filled" style="--VARIABLE-BOX-color: fuchsia;">
+      <div class="tab-content-text">
+For the connoisseur of programming.
+      </div>
+    </div>
+  </div>
+</div>
+<h2 id="usage">Usage<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h2>
+
+<div class="tab-panel" data-tab-group="R-tabs-e1fc9564fa2c053a1e6269a64309529d">
+  <div class="tab-nav">
+    <div class="tab-nav-title">&#8203;</div>
+    <div class="tab-nav-list" role="tablist">
+      <button
+        role="tab" id="R-tab-id-f793e5a75d53e3463f191f15b67b513a-tab" aria-controls="R-tab-id-f793e5a75d53e3463f191f15b67b513a" aria-selected="true"
+        data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
+        class="tab-nav-button tab-panel-style cstyle code active" tabindex="0"
+      >
+        <span class="tab-nav-text">Shortcode</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-10f0915a04cb824597cd7c14808e22ec-tab" aria-controls="R-tab-id-10f0915a04cb824597cd7c14808e22ec" aria-selected="false"
+        data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">Partial</span>
+      </button>
+    </div>
+  </div>
+  <div class="tab-content-container">
+    <div
+      id="R-tab-id-f793e5a75d53e3463f191f15b67b513a" role="tabpanel" aria-labelledby="R-tab-id-f793e5a75d53e3463f191f15b67b513a-tab"
+      data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
+      class="tab-content tab-panel-style cstyle code active codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;&lt;</span><span class="w"> </span><span class="nx">tabs</span><span class="w"> </span><span class="p">&gt;&#125;&#125;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">tab</span><span class="w"> </span><span class="nx">title</span><span class="p">=</span><span class="s">&#34;Python Saying&#34;</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="nx">The</span><span class="w"> </span><span class="nx">AI</span><span class="w"> </span><span class="nx">native</span><span class="w"> </span><span class="nx">programming</span><span class="w"> </span><span class="nx">language</span><span class="p">.&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="o">/</span><span class="nx">tab</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">tab</span><span class="w"> </span><span class="nx">title</span><span class="p">=</span><span class="s">&#34;Terminal Sourcecode&#34;</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="s">```bash
+</span></span></span><span class="line"><span class="cl"><span class="s">echo &#34;For guys who like to tinker.&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s">```</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="o">/</span><span class="nx">tab</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">tab</span><span class="w"> </span><span class="nx">color</span><span class="p">=</span><span class="s">&#34;fuchsia&#34;</span><span class="w"> </span><span class="nx">title</span><span class="p">=</span><span class="s">&#34;C Ramblings&#34;</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="nx">For</span><span class="w"> </span><span class="nx">the</span><span class="w"> </span><span class="nx">connoisseur</span><span class="w"> </span><span class="nx">of</span><span class="w"> </span><span class="nx">programming</span><span class="p">.&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="o">/</span><span class="nx">tab</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">tab</span><span class="w"> </span><span class="nx">color</span><span class="p">=</span><span class="s">&#34;red&#34;</span><span class="w"> </span><span class="nx">title</span><span class="p">=</span><span class="s">&#34;C++ Ramblings++&#34;</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="nx">For</span><span class="w"> </span><span class="nx">the</span><span class="w"> </span><span class="nx">guys</span><span class="w"> </span><span class="nx">that</span><span class="w"> </span><span class="nx">can</span><span class="w"> </span><span class="nx">cope</span><span class="w"> </span><span class="nx">with</span><span class="w"> </span><span class="nx">syntax</span><span class="p">.&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="o">/</span><span class="nx">tab</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">tab</span><span class="w"> </span><span class="nx">title</span><span class="p">=</span><span class="s">&#34;C# ~~GC is cool~~&#34;</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="nx">For</span><span class="w"> </span><span class="nx">guys</span><span class="w"> </span><span class="nx">that</span><span class="w"> </span><span class="nx">need</span><span class="w"> </span><span class="nx">two</span><span class="w"> </span><span class="nx">destructors</span><span class="p">.&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="o">/</span><span class="nx">tab</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="p">&#123;&#123;&lt;</span><span class="w"> </span><span class="o">/</span><span class="nx">tabs</span><span class="w"> </span><span class="p">&gt;&#125;&#125;</span></span></span></code></pre></div>
+      </div>
+    </div>
+    <div
+      id="R-tab-id-10f0915a04cb824597cd7c14808e22ec" role="tabpanel" aria-labelledby="R-tab-id-10f0915a04cb824597cd7c14808e22ec-tab"
+      data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
+      class="tab-content tab-panel-style cstyle code codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="w"> </span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/tabs.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;page&#34;</span><span class="w"> </span><span class="p">.</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;content&#34;</span><span class="w"> </span><span class="p">(</span><span class="nf">slice</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">(</span><span class="nx">dict</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="s">&#34;content&#34;</span><span class="w"> </span><span class="s">&#34;The AI native programming language.&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="s">&#34;title&#34;</span><span class="w"> </span><span class="s">&#34;Python Saying&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">(</span><span class="nx">dict</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="s">&#34;content&#34;</span><span class="w"> </span><span class="s">&#34;```bash\necho \&#34;For guys who like to tinker.\&#34;\n```&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="s">&#34;title&#34;</span><span class="w"> </span><span class="s">&#34;Terminal Sourcecode&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">(</span><span class="nx">dict</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="s">&#34;color&#34;</span><span class="w"> </span><span class="s">&#34;fuchsia&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="s">&#34;content&#34;</span><span class="w"> </span><span class="s">&#34;For the connoisseur of programming.&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="s">&#34;title&#34;</span><span class="w"> </span><span class="s">&#34;C Ramblings&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">(</span><span class="nx">dict</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="s">&#34;color&#34;</span><span class="w"> </span><span class="s">&#34;red&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="s">&#34;content&#34;</span><span class="w"> </span><span class="s">&#34;For the guys that can cope with syntax.&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="s">&#34;title&#34;</span><span class="w"> </span><span class="s">&#34;C++ Ramblings++&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">(</span><span class="nx">dict</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="s">&#34;content&#34;</span><span class="w"> </span><span class="s">&#34;For guys that need two destructors.&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="s">&#34;title&#34;</span><span class="w"> </span><span class="s">&#34;C# ~~GC is cool~~&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="p">)&#125;&#125;</span></span></span></code></pre></div>
+      </div>
+    </div>
+  </div>
+</div>
+<h3 id="parameters">Parameters<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Default</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>groupid</strong></td>
+      <td><em>&lt;random&gt;</em></td>
+      <td>Arbitrary name of the group the tab view belongs to.<br><br>Tab views with the same <strong>groupid</strong> synchronize their selected tab. The tab selection is restored automatically based on the <code>groupid</code> for tab view. If the selected tab cannot be found in a tab group the first tab is selected instead.<br><br>This synchronization applies to the whole site!</td>
+    </tr>
+    <tr>
+      <td><strong>style</strong></td>
+      <td><em>&lt;empty&gt;</em></td>
+      <td>Sets a default value for every contained tab. Can be overridden by each tab. See the <a href="/hugo-theme-relearn/shortcodes/tabs/index.html#tab-parameters">tab parameters</a> for possible values.</td>
+    </tr>
+    <tr>
+      <td><strong>color</strong></td>
+      <td><em>&lt;empty&gt;</em></td>
+      <td>Sets a default value for every contained tab. Can be overridden by each tab. See the <a href="/hugo-theme-relearn/shortcodes/tabs/index.html#tab-parameters">tab parameters</a> for possible values.</td>
+    </tr>
+    <tr>
+      <td><strong>title</strong></td>
+      <td><em>&lt;empty&gt;</em></td>
+      <td>Arbitrary title written in front of the tab view.</td>
+    </tr>
+    <tr>
+      <td><strong>icon</strong></td>
+      <td><em>&lt;empty&gt;</em></td>
+      <td><a href="/hugo-theme-relearn/shortcodes/icon/index.html#finding-an-icon">Font Awesome icon name</a> set to the left of the title.</td>
+    </tr>
+    <tr>
+      <td><em><strong>&lt;content&gt;</strong></em></td>
+      <td><em>&lt;empty&gt;</em></td>
+      <td>Arbitrary number of tabs defined with the <a href="/hugo-theme-relearn/shortcodes/tabs/index.html#tab-parameters"><code>tab</code> sub-shortcode</a>.</td>
+    </tr>
+  </tbody>
+</table>
+<h3 id="tab-parameters">Tab Parameters<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
+<p>Each tab of the view is defined with the <code>tab</code> shortcode.</p>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Default</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>style</strong></td>
+      <td>see notes</td>
+      <td>The style scheme used for the tab. If you don&rsquo;t set a style and you display a single code block inside of the tab, its default styling will adapt to that of a <code>code</code> block. Otherwise <code>default</code> is used.<br><br>- by severity: <code>caution</code>, <code>important</code>, <code>info</code>, <code>note</code>, <code>tip</code>, <code>warning</code><br>- by brand color: <code>primary</code>, <code>secondary</code>, <code>accent</code><br>- by color: <code>blue</code>, <code>cyan</code>, <code>green</code>, <code>grey</code>, <code>magenta</code>, <code>orange</code>, <code>purple</code>, <code>red</code>, <code>yellow</code><br>- by special color: <code>default</code>, <code>transparent</code>, <code>code</code>, <code>link</code>, <code>action</code>, <code>inline</code><br><br>You can also <a href="/hugo-theme-relearn/shortcodes/callout/index.html#defining-own-styles">define your own styles</a>.</td>
+    </tr>
+    <tr>
+      <td><strong>color</strong></td>
+      <td>see notes</td>
+      <td>The <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value" rel="external" target="_self">CSS color value</a> to be used. If not set, the chosen color depends on the <strong>style</strong>. Any given value will overwrite the default.<br><br>- for severity styles: a nice matching color for the severity<br>- for all other styles: the corresponding color</td>
+    </tr>
+    <tr>
+      <td><strong>title</strong></td>
+      <td>see notes</td>
+      <td>Arbitrary title for the tab. Depending on the <strong>style</strong> there may be a default title. Any given value will overwrite the default.<br><br>- for severity styles: the matching title for the severity<br>- for all other styles: <em>&lt;empty&gt;</em><br><br>If you want no title for a severity style, you have to set this parameter to <code>&quot; &quot;</code> (a non empty string filled with spaces)</td>
+    </tr>
+    <tr>
+      <td><strong>icon</strong></td>
+      <td>see notes</td>
+      <td><a href="/hugo-theme-relearn/shortcodes/icon/index.html#finding-an-icon">Font Awesome icon name</a> set to the left of the title. Depending on the <strong>style</strong> there may be a default icon. Any given value will overwrite the default.<br><br>- for severity styles: a nice matching icon for the severity<br>- for all other styles: <em>&lt;empty&gt;</em><br><br>If you want no icon for a severity style, you have to set this parameter to <code>&quot; &quot;</code> (a non empty string filled with spaces)</td>
+    </tr>
+    <tr>
+      <td><strong>hint</strong></td>
+      <td><em>&lt;empty&gt;</em></td>
+      <td>Tooltip for the tab. A tab showing an icon but no title should have one, as it is what assistive technology announces for it.</td>
+    </tr>
+    <tr>
+      <td><em><strong>&lt;content&gt;</strong></em></td>
+      <td><em>&lt;empty&gt;</em></td>
+      <td>Arbitrary text to be displayed in the tab.</td>
+    </tr>
+  </tbody>
+</table>
+<h3 id="single-tab">Single Tab<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
+<p>If you just want a single tab, you can call the <code>tab</code> shortcode standalone, without the enclosing <code>tabs</code> shortcode.</p>
+
+<div class="tab-panel" data-tab-group="R-tabs-e1fc9564fa2c053a1e6269a64309529d">
+  <div class="tab-nav">
+    <div class="tab-nav-title">&#8203;</div>
+    <div class="tab-nav-list" role="tablist">
+      <button
+        role="tab" id="R-tab-id-3f99993f80f73bc9f3dfa8a96f9b4fcc-tab" aria-controls="R-tab-id-3f99993f80f73bc9f3dfa8a96f9b4fcc" aria-selected="true"
+        data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
+        class="tab-nav-button tab-panel-style cstyle code active" tabindex="0"
+      >
+        <span class="tab-nav-text">Shortcode</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-2b088addba1210a9893ad5d302a41935-tab" aria-controls="R-tab-id-2b088addba1210a9893ad5d302a41935" aria-selected="false"
+        data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">Partial</span>
+      </button>
+    </div>
+  </div>
+  <div class="tab-content-container">
+    <div
+      id="R-tab-id-3f99993f80f73bc9f3dfa8a96f9b4fcc" role="tabpanel" aria-labelledby="R-tab-id-3f99993f80f73bc9f3dfa8a96f9b4fcc-tab"
+      data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
+      class="tab-content tab-panel-style cstyle code active codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">tab</span><span class="w"> </span><span class="nx">title</span><span class="p">=</span><span class="s">&#34;c&#34;</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="s">```c
+</span></span></span><span class="line"><span class="cl"><span class="s">printf(&#34;Hello World!&#34;);
+</span></span></span><span class="line"><span class="cl"><span class="s">```</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="o">/</span><span class="nx">tab</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span></span></span></code></pre></div>
+      </div>
+    </div>
+    <div
+      id="R-tab-id-2b088addba1210a9893ad5d302a41935" role="tabpanel" aria-labelledby="R-tab-id-2b088addba1210a9893ad5d302a41935-tab"
+      data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
+      class="tab-content tab-panel-style cstyle code codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="w"> </span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/tab.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;page&#34;</span><span class="w"> </span><span class="p">.</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;content&#34;</span><span class="w"> </span><span class="s">&#34;```c\nprintf(\&#34;Hello World!\&#34;);\n```&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;title&#34;</span><span class="w"> </span><span class="s">&#34;c&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="p">)&#125;&#125;</span></span></span></code></pre></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="tab-panel" data-tab-group="R-tabs-42a1251fbb164d806a10825dee986898">
+  <div class="tab-nav">
+    <div class="tab-nav-title">&#8203;</div>
+    <div class="tab-nav-list" role="tablist">
+      <button
+        role="tab" id="R-tab-id-c46f452aefcdbd46656cccd763adc0b0-tab" aria-controls="R-tab-id-c46f452aefcdbd46656cccd763adc0b0" aria-selected="true"
+        data-tab-item="R-tab-4a8a08f09d37b73795649038408b5f33"
+        class="tab-nav-button tab-panel-style cstyle code active" tabindex="0"
+      >
+        <span class="tab-nav-text">c</span>
+      </button>
+    </div>
+  </div>
+  <div class="tab-content-container">
+    <div
+      id="R-tab-id-c46f452aefcdbd46656cccd763adc0b0" role="tabpanel" aria-labelledby="R-tab-id-c46f452aefcdbd46656cccd763adc0b0-tab"
+      data-tab-item="R-tab-4a8a08f09d37b73795649038408b5f33"
+      class="tab-content tab-panel-style cstyle code active codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="nf">printf</span><span class="p">(</span><span class="s">&#34;Hello World!&#34;</span><span class="p">);</span></span></span></code></pre></div>
+      </div>
+    </div>
+  </div>
+</div>
+<p>If you want further options when using a single code tab, you can also use the <a href="/hugo-theme-relearn/shortcodes/highlight/index.html"><code>highlight</code> shortcode</a>.</p>
+<h2 id="examples">Examples<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h2>
+<h3 id="behavior-of-the-groupid">Behavior of the <code>groupid</code><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
+<p>See what happens to the tab views while you select different tabs.</p>
+<p>While pressing a tab of Group A switches all tab views of Group A in sync (if the tab is available), the tabs of Group B are left untouched.</p>
+
+
+<div role="note" aria-labelledby="R-box-label-9fd7ffb8768e1b6a30b730816e930ea2" class="box cstyle callout note">
+  <div id="R-box-label-9fd7ffb8768e1b6a30b730816e930ea2" class="box-label">
+    <i class="fa-fw fas fa-exclamation-circle" aria-hidden="true"></i> 
+    Note
+  </div>
+  <div class="box-content">
+<p>The selected tab will be <a href="/hugo-theme-relearn/configuration/publishing/storedinformation/index.html">stored in the reader&rsquo;s browser</a>.</p>
+  </div>
+</div>
+<h4 id="group-a-tabs-1">Group A, Tabs 1<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h4>
+
+<div class="tab-panel" data-tab-group="R-tabs-e1fc9564fa2c053a1e6269a64309529d">
+  <div class="tab-nav">
+    <div class="tab-nav-title">&#8203;</div>
+    <div class="tab-nav-list" role="tablist">
+      <button
+        role="tab" id="R-tab-id-4004eb8a3f560d4def4ec298140cdd15-tab" aria-controls="R-tab-id-4004eb8a3f560d4def4ec298140cdd15" aria-selected="true"
+        data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
+        class="tab-nav-button tab-panel-style cstyle code active" tabindex="0"
+      >
+        <span class="tab-nav-text">Shortcode</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-75cf08d633ef606dba4c1ebd0ea97942-tab" aria-controls="R-tab-id-75cf08d633ef606dba4c1ebd0ea97942" aria-selected="false"
+        data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">Partial</span>
+      </button>
+    </div>
+  </div>
+  <div class="tab-content-container">
+    <div
+      id="R-tab-id-4004eb8a3f560d4def4ec298140cdd15" role="tabpanel" aria-labelledby="R-tab-id-4004eb8a3f560d4def4ec298140cdd15-tab"
+      data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
+      class="tab-content tab-panel-style cstyle code active codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;&lt;</span><span class="w"> </span><span class="nx">tabs</span><span class="w"> </span><span class="nx">groupid</span><span class="p">=</span><span class="s">&#34;tab-example-a&#34;</span><span class="w"> </span><span class="nx">title</span><span class="p">=</span><span class="s">&#34;Group A, Tabs 1&#34;</span><span class="w"> </span><span class="p">&gt;&#125;&#125;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">tab</span><span class="w"> </span><span class="nx">title</span><span class="p">=</span><span class="s">&#34;JSON&#34;</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="s">```json
+</span></span></span><span class="line"><span class="cl"><span class="s">{ &#34;Hello&#34;: &#34;World&#34; }
+</span></span></span><span class="line"><span class="cl"><span class="s">```</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="o">/</span><span class="nx">tab</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">tab</span><span class="w"> </span><span class="nx">title</span><span class="p">=</span><span class="s">&#34;_**XML**_&#34;</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="s">```xml
+</span></span></span><span class="line"><span class="cl"><span class="s">&lt;Hello&gt;World&lt;/Hello&gt;
+</span></span></span><span class="line"><span class="cl"><span class="s">```</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="o">/</span><span class="nx">tab</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">tab</span><span class="w"> </span><span class="nx">title</span><span class="p">=</span><span class="s">&#34;Text&#34;</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">    </span><span class="nx">World</span><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="o">/</span><span class="nx">tab</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="p">&#123;&#123;&lt;</span><span class="w"> </span><span class="o">/</span><span class="nx">tabs</span><span class="w"> </span><span class="p">&gt;&#125;&#125;</span></span></span></code></pre></div>
+      </div>
+    </div>
+    <div
+      id="R-tab-id-75cf08d633ef606dba4c1ebd0ea97942" role="tabpanel" aria-labelledby="R-tab-id-75cf08d633ef606dba4c1ebd0ea97942-tab"
+      data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
+      class="tab-content tab-panel-style cstyle code codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="w"> </span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/tabs.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;page&#34;</span><span class="w"> </span><span class="p">.</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;content&#34;</span><span class="w"> </span><span class="p">(</span><span class="nf">slice</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">(</span><span class="nx">dict</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="s">&#34;content&#34;</span><span class="w"> </span><span class="s">&#34;```json\n{ \&#34;Hello\&#34;: \&#34;World\&#34; }\n```&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="s">&#34;title&#34;</span><span class="w"> </span><span class="s">&#34;JSON&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">(</span><span class="nx">dict</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="s">&#34;content&#34;</span><span class="w"> </span><span class="s">&#34;```xml\n&lt;Hello&gt;World&lt;/Hello&gt;\n```&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="s">&#34;title&#34;</span><span class="w"> </span><span class="s">&#34;_**XML**_&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">(</span><span class="nx">dict</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="s">&#34;content&#34;</span><span class="w"> </span><span class="s">&#34;    World&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="s">&#34;title&#34;</span><span class="w"> </span><span class="s">&#34;Text&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;groupid&#34;</span><span class="w"> </span><span class="s">&#34;tab-example-a&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;title&#34;</span><span class="w"> </span><span class="s">&#34;Group A, Tabs 1&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="p">)&#125;&#125;</span></span></span></code></pre></div>
+      </div>
+    </div>
+  </div>
+</div>
+<h4 id="group-a-tabs-2">Group A, Tabs 2<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h4>
+
+<div class="tab-panel" data-tab-group="R-tabs-e1fc9564fa2c053a1e6269a64309529d">
+  <div class="tab-nav">
+    <div class="tab-nav-title">&#8203;</div>
+    <div class="tab-nav-list" role="tablist">
+      <button
+        role="tab" id="R-tab-id-322ce3849672dc80e6110ba972a3e515-tab" aria-controls="R-tab-id-322ce3849672dc80e6110ba972a3e515" aria-selected="true"
+        data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
+        class="tab-nav-button tab-panel-style cstyle code active" tabindex="0"
+      >
+        <span class="tab-nav-text">Shortcode</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-a21943200c5859debeae17874f7022b6-tab" aria-controls="R-tab-id-a21943200c5859debeae17874f7022b6" aria-selected="false"
+        data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">Partial</span>
+      </button>
+    </div>
+  </div>
+  <div class="tab-content-container">
+    <div
+      id="R-tab-id-322ce3849672dc80e6110ba972a3e515" role="tabpanel" aria-labelledby="R-tab-id-322ce3849672dc80e6110ba972a3e515-tab"
+      data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
+      class="tab-content tab-panel-style cstyle code active codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;&lt;</span><span class="w"> </span><span class="nx">tabs</span><span class="w"> </span><span class="nx">groupid</span><span class="p">=</span><span class="s">&#34;tab-example-a&#34;</span><span class="w"> </span><span class="nx">title</span><span class="p">=</span><span class="s">&#34;Group A, Tabs 2&#34;</span><span class="w"> </span><span class="p">&gt;&#125;&#125;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">tab</span><span class="w"> </span><span class="nx">title</span><span class="p">=</span><span class="s">&#34;JSON&#34;</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="s">```json
+</span></span></span><span class="line"><span class="cl"><span class="s">{ &#34;Hello&#34;: &#34;World&#34; }
+</span></span></span><span class="line"><span class="cl"><span class="s">```</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="o">/</span><span class="nx">tab</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">tab</span><span class="w"> </span><span class="nx">title</span><span class="p">=</span><span class="s">&#34;XML&#34;</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="s">```xml
+</span></span></span><span class="line"><span class="cl"><span class="s">&lt;Hello&gt;World&lt;/Hello&gt;
+</span></span></span><span class="line"><span class="cl"><span class="s">```</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="o">/</span><span class="nx">tab</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="p">&#123;&#123;&lt;</span><span class="w"> </span><span class="o">/</span><span class="nx">tabs</span><span class="w"> </span><span class="p">&gt;&#125;&#125;</span></span></span></code></pre></div>
+      </div>
+    </div>
+    <div
+      id="R-tab-id-a21943200c5859debeae17874f7022b6" role="tabpanel" aria-labelledby="R-tab-id-a21943200c5859debeae17874f7022b6-tab"
+      data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
+      class="tab-content tab-panel-style cstyle code codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="w"> </span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/tabs.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;page&#34;</span><span class="w"> </span><span class="p">.</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;content&#34;</span><span class="w"> </span><span class="p">(</span><span class="nf">slice</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">(</span><span class="nx">dict</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="s">&#34;content&#34;</span><span class="w"> </span><span class="s">&#34;```json\n{ \&#34;Hello\&#34;: \&#34;World\&#34; }\n```&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="s">&#34;title&#34;</span><span class="w"> </span><span class="s">&#34;JSON&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">(</span><span class="nx">dict</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="s">&#34;content&#34;</span><span class="w"> </span><span class="s">&#34;```xml\n&lt;Hello&gt;World&lt;/Hello&gt;\n```&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="s">&#34;title&#34;</span><span class="w"> </span><span class="s">&#34;XML&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;groupid&#34;</span><span class="w"> </span><span class="s">&#34;tab-example-a&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;title&#34;</span><span class="w"> </span><span class="s">&#34;Group A, Tabs 2&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="p">)&#125;&#125;</span></span></span></code></pre></div>
+      </div>
+    </div>
+  </div>
+</div>
+<h4 id="group-b">Group B<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h4>
+
+<div class="tab-panel" data-tab-group="R-tabs-e1fc9564fa2c053a1e6269a64309529d">
+  <div class="tab-nav">
+    <div class="tab-nav-title">&#8203;</div>
+    <div class="tab-nav-list" role="tablist">
+      <button
+        role="tab" id="R-tab-id-c44ba872f07d271e2b5a14a95b93bf8f-tab" aria-controls="R-tab-id-c44ba872f07d271e2b5a14a95b93bf8f" aria-selected="true"
+        data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
+        class="tab-nav-button tab-panel-style cstyle code active" tabindex="0"
+      >
+        <span class="tab-nav-text">Shortcode</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-d3a31a3eb7eb0e27f81033007c4497c9-tab" aria-controls="R-tab-id-d3a31a3eb7eb0e27f81033007c4497c9" aria-selected="false"
+        data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">Partial</span>
+      </button>
+    </div>
+  </div>
+  <div class="tab-content-container">
+    <div
+      id="R-tab-id-c44ba872f07d271e2b5a14a95b93bf8f" role="tabpanel" aria-labelledby="R-tab-id-c44ba872f07d271e2b5a14a95b93bf8f-tab"
+      data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
+      class="tab-content tab-panel-style cstyle code active codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;&lt;</span><span class="w"> </span><span class="nx">tabs</span><span class="w"> </span><span class="nx">groupid</span><span class="p">=</span><span class="s">&#34;tab-example-b&#34;</span><span class="w"> </span><span class="nx">title</span><span class="p">=</span><span class="s">&#34;Group B&#34;</span><span class="w"> </span><span class="p">&gt;&#125;&#125;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">tab</span><span class="w"> </span><span class="nx">title</span><span class="p">=</span><span class="s">&#34;JSON&#34;</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="s">```json
+</span></span></span><span class="line"><span class="cl"><span class="s">{ &#34;Hello&#34;: &#34;World&#34; }
+</span></span></span><span class="line"><span class="cl"><span class="s">```</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="o">/</span><span class="nx">tab</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">tab</span><span class="w"> </span><span class="nx">title</span><span class="p">=</span><span class="s">&#34;XML&#34;</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="s">```xml
+</span></span></span><span class="line"><span class="cl"><span class="s">&lt;Hello&gt;World&lt;/Hello&gt;
+</span></span></span><span class="line"><span class="cl"><span class="s">```</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="o">/</span><span class="nx">tab</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="p">&#123;&#123;&lt;</span><span class="w"> </span><span class="o">/</span><span class="nx">tabs</span><span class="w"> </span><span class="p">&gt;&#125;&#125;</span></span></span></code></pre></div>
+      </div>
+    </div>
+    <div
+      id="R-tab-id-d3a31a3eb7eb0e27f81033007c4497c9" role="tabpanel" aria-labelledby="R-tab-id-d3a31a3eb7eb0e27f81033007c4497c9-tab"
+      data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
+      class="tab-content tab-panel-style cstyle code codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="w"> </span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/tabs.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;page&#34;</span><span class="w"> </span><span class="p">.</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;content&#34;</span><span class="w"> </span><span class="p">(</span><span class="nf">slice</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">(</span><span class="nx">dict</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="s">&#34;content&#34;</span><span class="w"> </span><span class="s">&#34;```json\n{ \&#34;Hello\&#34;: \&#34;World\&#34; }\n```&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="s">&#34;title&#34;</span><span class="w"> </span><span class="s">&#34;JSON&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">(</span><span class="nx">dict</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="s">&#34;content&#34;</span><span class="w"> </span><span class="s">&#34;```xml\n&lt;Hello&gt;World&lt;/Hello&gt;\n```&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="s">&#34;title&#34;</span><span class="w"> </span><span class="s">&#34;XML&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;groupid&#34;</span><span class="w"> </span><span class="s">&#34;tab-example-b&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;title&#34;</span><span class="w"> </span><span class="s">&#34;Group B&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="p">)&#125;&#125;</span></span></span></code></pre></div>
+      </div>
+    </div>
+  </div>
+</div>
+<h4 id="rendered-example">Rendered Example<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h4>
+
+<div class="tab-panel" data-tab-group="R-tabs-d7195bd26e9e5eec6028c8a5454dfd0d">
+  <div class="tab-nav">
+    <div class="tab-nav-title" id="R-tabs-title-9d0a44a64e8784eb4f7552c62e02def8">Group A, Tabs 1</div>
+    <div class="tab-nav-list" role="tablist" aria-labelledby="R-tabs-title-9d0a44a64e8784eb4f7552c62e02def8">
+      <button
+        role="tab" id="R-tab-id-dfb1f6f3c01f34297ea74420576f37a5-tab" aria-controls="R-tab-id-dfb1f6f3c01f34297ea74420576f37a5" aria-selected="true"
+        data-tab-item="R-tab-0ecd11c1d7a287401d148a23bbd7a2f8"
+        class="tab-nav-button tab-panel-style cstyle code active" tabindex="0"
+      >
+        <span class="tab-nav-text">JSON</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-f83e0c24c2ba948a1940910fc8dcfcfb-tab" aria-controls="R-tab-id-f83e0c24c2ba948a1940910fc8dcfcfb" aria-selected="false"
+        data-tab-item="R-tab-3501bb093d363810b671059b9cfed3f8"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text"><em><strong>XML</strong></em></span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-c64baf91511678a888abc97bed4f6926-tab" aria-controls="R-tab-id-c64baf91511678a888abc97bed4f6926" aria-selected="false"
+        data-tab-item="R-tab-9dffbf69ffba8bc38bc4e01abf4b1675"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">Text</span>
+      </button>
+    </div>
+  </div>
+  <div class="tab-content-container">
+    <div
+      id="R-tab-id-dfb1f6f3c01f34297ea74420576f37a5" role="tabpanel" aria-labelledby="R-tab-id-dfb1f6f3c01f34297ea74420576f37a5-tab"
+      data-tab-item="R-tab-0ecd11c1d7a287401d148a23bbd7a2f8"
+      class="tab-content tab-panel-style cstyle code active codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span> <span class="nt">&#34;Hello&#34;</span><span class="p">:</span> <span class="s2">&#34;World&#34;</span> <span class="p">}</span></span></span></code></pre></div>
+      </div>
+    </div>
+    <div
+      id="R-tab-id-f83e0c24c2ba948a1940910fc8dcfcfb" role="tabpanel" aria-labelledby="R-tab-id-f83e0c24c2ba948a1940910fc8dcfcfb-tab"
+      data-tab-item="R-tab-3501bb093d363810b671059b9cfed3f8"
+      class="tab-content tab-panel-style cstyle code codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl"><span class="nt">&lt;Hello&gt;</span>World<span class="nt">&lt;/Hello&gt;</span></span></span></code></pre></div>
+      </div>
+    </div>
+    <div
+      id="R-tab-id-c64baf91511678a888abc97bed4f6926" role="tabpanel" aria-labelledby="R-tab-id-c64baf91511678a888abc97bed4f6926-tab"
+      data-tab-item="R-tab-9dffbf69ffba8bc38bc4e01abf4b1675"
+      class="tab-content tab-panel-style cstyle code codify">
+      <div class="tab-content-text">
+<pre><code>World
+</code></pre>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="tab-panel" data-tab-group="R-tabs-d7195bd26e9e5eec6028c8a5454dfd0d">
+  <div class="tab-nav">
+    <div class="tab-nav-title" id="R-tabs-title-1d444e8be28b719b199f1e73daab4ef2">Group A, Tabs 2</div>
+    <div class="tab-nav-list" role="tablist" aria-labelledby="R-tabs-title-1d444e8be28b719b199f1e73daab4ef2">
+      <button
+        role="tab" id="R-tab-id-a405a955bb8a4961edada75531d1feee-tab" aria-controls="R-tab-id-a405a955bb8a4961edada75531d1feee" aria-selected="true"
+        data-tab-item="R-tab-0ecd11c1d7a287401d148a23bbd7a2f8"
+        class="tab-nav-button tab-panel-style cstyle code active" tabindex="0"
+      >
+        <span class="tab-nav-text">JSON</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-3faaaacef7db5c23a543670208b51f4e-tab" aria-controls="R-tab-id-3faaaacef7db5c23a543670208b51f4e" aria-selected="false"
+        data-tab-item="R-tab-3501bb093d363810b671059b9cfed3f8"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">XML</span>
+      </button>
+    </div>
+  </div>
+  <div class="tab-content-container">
+    <div
+      id="R-tab-id-a405a955bb8a4961edada75531d1feee" role="tabpanel" aria-labelledby="R-tab-id-a405a955bb8a4961edada75531d1feee-tab"
+      data-tab-item="R-tab-0ecd11c1d7a287401d148a23bbd7a2f8"
+      class="tab-content tab-panel-style cstyle code active codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span> <span class="nt">&#34;Hello&#34;</span><span class="p">:</span> <span class="s2">&#34;World&#34;</span> <span class="p">}</span></span></span></code></pre></div>
+      </div>
+    </div>
+    <div
+      id="R-tab-id-3faaaacef7db5c23a543670208b51f4e" role="tabpanel" aria-labelledby="R-tab-id-3faaaacef7db5c23a543670208b51f4e-tab"
+      data-tab-item="R-tab-3501bb093d363810b671059b9cfed3f8"
+      class="tab-content tab-panel-style cstyle code codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl"><span class="nt">&lt;Hello&gt;</span>World<span class="nt">&lt;/Hello&gt;</span></span></span></code></pre></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="tab-panel" data-tab-group="R-tabs-7fe8053a023f8e50e519830def56ae42">
+  <div class="tab-nav">
+    <div class="tab-nav-title" id="R-tabs-title-b9c8e3b86c27593647aa80c94594c9e6">Group B</div>
+    <div class="tab-nav-list" role="tablist" aria-labelledby="R-tabs-title-b9c8e3b86c27593647aa80c94594c9e6">
+      <button
+        role="tab" id="R-tab-id-66a6a8833dc9e3883773363fdc9aede5-tab" aria-controls="R-tab-id-66a6a8833dc9e3883773363fdc9aede5" aria-selected="true"
+        data-tab-item="R-tab-0ecd11c1d7a287401d148a23bbd7a2f8"
+        class="tab-nav-button tab-panel-style cstyle code active" tabindex="0"
+      >
+        <span class="tab-nav-text">JSON</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-dd192e319de0d94011bc0b83303b8a14-tab" aria-controls="R-tab-id-dd192e319de0d94011bc0b83303b8a14" aria-selected="false"
+        data-tab-item="R-tab-3501bb093d363810b671059b9cfed3f8"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">XML</span>
+      </button>
+    </div>
+  </div>
+  <div class="tab-content-container">
+    <div
+      id="R-tab-id-66a6a8833dc9e3883773363fdc9aede5" role="tabpanel" aria-labelledby="R-tab-id-66a6a8833dc9e3883773363fdc9aede5-tab"
+      data-tab-item="R-tab-0ecd11c1d7a287401d148a23bbd7a2f8"
+      class="tab-content tab-panel-style cstyle code active codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span> <span class="nt">&#34;Hello&#34;</span><span class="p">:</span> <span class="s2">&#34;World&#34;</span> <span class="p">}</span></span></span></code></pre></div>
+      </div>
+    </div>
+    <div
+      id="R-tab-id-dd192e319de0d94011bc0b83303b8a14" role="tabpanel" aria-labelledby="R-tab-id-dd192e319de0d94011bc0b83303b8a14-tab"
+      data-tab-item="R-tab-3501bb093d363810b671059b9cfed3f8"
+      class="tab-content tab-panel-style cstyle code codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl"><span class="nt">&lt;Hello&gt;</span>World<span class="nt">&lt;/Hello&gt;</span></span></span></code></pre></div>
+      </div>
+    </div>
+  </div>
+</div>
+<h3 id="nested-tab-views-and-color">Nested Tab Views and Color<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
+<p>In case you want to nest tab views, the parent tab that contains nested tab views needs to be declared with <code>{{&lt; tab &gt;}}</code> instead of <code>{{% tab %}}</code>. Note, that in this case it is not possible to put markdown in the parent tab.</p>
+<p>You can also set style and color parameter for all tabs and overwrite them on tab level. See the <a href="/hugo-theme-relearn/shortcodes/tabs/index.html#tab-parameters">tab parameters</a> for possible values.</p>
+
+<div class="tab-panel" data-tab-group="R-tabs-e1fc9564fa2c053a1e6269a64309529d">
+  <div class="tab-nav">
+    <div class="tab-nav-title">&#8203;</div>
+    <div class="tab-nav-list" role="tablist">
+      <button
+        role="tab" id="R-tab-id-268e5747eada386a3ef6dc59ea11b554-tab" aria-controls="R-tab-id-268e5747eada386a3ef6dc59ea11b554" aria-selected="true"
+        data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
+        class="tab-nav-button tab-panel-style cstyle code active" tabindex="0"
+      >
+        <span class="tab-nav-text">Shortcode</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-45a5474f11bc96384990f161cd20c5da-tab" aria-controls="R-tab-id-45a5474f11bc96384990f161cd20c5da" aria-selected="false"
+        data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">Partial</span>
+      </button>
+    </div>
+  </div>
+  <div class="tab-content-container">
+    <div
+      id="R-tab-id-268e5747eada386a3ef6dc59ea11b554" role="tabpanel" aria-labelledby="R-tab-id-268e5747eada386a3ef6dc59ea11b554-tab"
+      data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
+      class="tab-content tab-panel-style cstyle code active codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;&lt;</span><span class="w"> </span><span class="nx">tabs</span><span class="w"> </span><span class="nx">groupid</span><span class="p">=</span><span class="s">&#34;main&#34;</span><span class="w"> </span><span class="nx">icon</span><span class="p">=</span><span class="s">&#34;thumbtack&#34;</span><span class="w"> </span><span class="nx">style</span><span class="p">=</span><span class="s">&#34;primary&#34;</span><span class="w"> </span><span class="nx">title</span><span class="p">=</span><span class="s">&#34;Rationale&#34;</span><span class="w"> </span><span class="p">&gt;&#125;&#125;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="p">&#123;&#123;&lt;</span><span class="w"> </span><span class="nx">tab</span><span class="w"> </span><span class="nx">title</span><span class="p">=</span><span class="s">&#34;Text&#34;</span><span class="w"> </span><span class="p">&gt;&#125;&#125;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nx">Simple</span><span class="w"> </span><span class="nx">text</span><span class="w"> </span><span class="nx">is</span><span class="w"> </span><span class="nx">possible</span><span class="w"> </span><span class="nx">here</span><span class="o">...</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="p">&#123;&#123;&lt;</span><span class="w"> </span><span class="nx">tabs</span><span class="w"> </span><span class="nx">groupid</span><span class="p">=</span><span class="s">&#34;tabs-example-language&#34;</span><span class="w"> </span><span class="p">&gt;&#125;&#125;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">tab</span><span class="w"> </span><span class="nx">title</span><span class="p">=</span><span class="s">&#34;python&#34;</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nx">Python</span><span class="w"> </span><span class="nx">is</span><span class="w"> </span><span class="o">**</span><span class="nx">super</span><span class="o">**</span><span class="w"> </span><span class="nx">easy</span><span class="p">.</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="o">-</span><span class="w"> </span><span class="nx">most</span><span class="w"> </span><span class="nx">of</span><span class="w"> </span><span class="nx">the</span><span class="w"> </span><span class="nx">time</span><span class="p">.</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="o">-</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="nx">you</span><span class="w"> </span><span class="nx">don</span><span class="err">&#39;</span><span class="nx">t</span><span class="w"> </span><span class="nx">want</span><span class="w"> </span><span class="nx">to</span><span class="w"> </span><span class="nx">output</span><span class="w"> </span><span class="nx">unicode</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="o">/</span><span class="nx">tab</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">tab</span><span class="w"> </span><span class="nx">title</span><span class="p">=</span><span class="s">&#34;bash&#34;</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="nx">Bash</span><span class="w"> </span><span class="nx">is</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="o">**</span><span class="nx">hackers</span><span class="o">**</span><span class="p">.&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="o">/</span><span class="nx">tab</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="p">&#123;&#123;&lt;</span><span class="w"> </span><span class="o">/</span><span class="nx">tabs</span><span class="w"> </span><span class="p">&gt;&#125;&#125;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="p">&#123;&#123;&lt;</span><span class="w"> </span><span class="o">/</span><span class="nx">tab</span><span class="w"> </span><span class="p">&gt;&#125;&#125;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="p">&#123;&#123;&lt;</span><span class="w"> </span><span class="nx">tab</span><span class="w"> </span><span class="nx">color</span><span class="p">=</span><span class="s">&#34;darkorchid&#34;</span><span class="w"> </span><span class="nx">style</span><span class="p">=</span><span class="s">&#34;default&#34;</span><span class="w"> </span><span class="nx">title</span><span class="p">=</span><span class="s">&#34;Code&#34;</span><span class="w"> </span><span class="p">&gt;&#125;&#125;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="o">...</span><span class="nx">but</span><span class="w"> </span><span class="nx">no</span><span class="w"> </span><span class="nx">markdown</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="p">&#123;&#123;&lt;</span><span class="w"> </span><span class="nx">tabs</span><span class="w"> </span><span class="nx">groupid</span><span class="p">=</span><span class="s">&#34;tabs-example-language&#34;</span><span class="w"> </span><span class="p">&gt;&#125;&#125;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">tab</span><span class="w"> </span><span class="nx">title</span><span class="p">=</span><span class="s">&#34;python&#34;</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">```python
+</span></span></span><span class="line"><span class="cl"><span class="s">  print(&#34;Hello World!&#34;)
+</span></span></span><span class="line"><span class="cl"><span class="s">  ```</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="o">/</span><span class="nx">tab</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">tab</span><span class="w"> </span><span class="nx">title</span><span class="p">=</span><span class="s">&#34;bash&#34;</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">```bash
+</span></span></span><span class="line"><span class="cl"><span class="s">  echo &#34;Hello World!&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s">  ```</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="o">/</span><span class="nx">tab</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="p">&#123;&#123;&lt;</span><span class="w"> </span><span class="o">/</span><span class="nx">tabs</span><span class="w"> </span><span class="p">&gt;&#125;&#125;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="p">&#123;&#123;&lt;</span><span class="w"> </span><span class="o">/</span><span class="nx">tab</span><span class="w"> </span><span class="p">&gt;&#125;&#125;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="p">&#123;&#123;&lt;</span><span class="w"> </span><span class="o">/</span><span class="nx">tabs</span><span class="w"> </span><span class="p">&gt;&#125;&#125;</span></span></span></code></pre></div>
+      </div>
+    </div>
+    <div
+      id="R-tab-id-45a5474f11bc96384990f161cd20c5da" role="tabpanel" aria-labelledby="R-tab-id-45a5474f11bc96384990f161cd20c5da-tab"
+      data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
+      class="tab-content tab-panel-style cstyle code codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="w"> </span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/tabs.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;page&#34;</span><span class="w"> </span><span class="p">.</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;content&#34;</span><span class="w"> </span><span class="p">(</span><span class="nf">slice</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">(</span><span class="nx">dict</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="s">&#34;content&#34;</span><span class="w"> </span><span class="s">&#34;Simple text is possible here...&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="s">&#34;content&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/tabs.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="s">&#34;page&#34;</span><span class="w"> </span><span class="p">.</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="s">&#34;content&#34;</span><span class="w"> </span><span class="p">(</span><span class="nf">slice</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="p">(</span><span class="nx">dict</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="s">&#34;content&#34;</span><span class="w"> </span><span class="s">&#34;Python is **super** easy.\n\n- most of the time.\n- if you don&#39;t want to output unicode&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="s">&#34;title&#34;</span><span class="w"> </span><span class="s">&#34;python&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="p">(</span><span class="nx">dict</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="s">&#34;content&#34;</span><span class="w"> </span><span class="s">&#34;Bash is for **hackers**.&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="s">&#34;title&#34;</span><span class="w"> </span><span class="s">&#34;bash&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="s">&#34;groupid&#34;</span><span class="w"> </span><span class="s">&#34;tabs-example-language&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="p">))</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="s">&#34;title&#34;</span><span class="w"> </span><span class="s">&#34;Text&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">(</span><span class="nx">dict</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="s">&#34;color&#34;</span><span class="w"> </span><span class="s">&#34;darkorchid&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="s">&#34;content&#34;</span><span class="w"> </span><span class="s">&#34;...but no markdown&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="s">&#34;content&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/tabs.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="s">&#34;page&#34;</span><span class="w"> </span><span class="p">.</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="s">&#34;content&#34;</span><span class="w"> </span><span class="p">(</span><span class="nf">slice</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="p">(</span><span class="nx">dict</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="s">&#34;content&#34;</span><span class="w"> </span><span class="s">&#34;```python\nprint(\&#34;Hello World!\&#34;)\n```&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="s">&#34;title&#34;</span><span class="w"> </span><span class="s">&#34;python&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="p">(</span><span class="nx">dict</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="s">&#34;content&#34;</span><span class="w"> </span><span class="s">&#34;```bash\necho \&#34;Hello World!\&#34;\n```&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="s">&#34;title&#34;</span><span class="w"> </span><span class="s">&#34;bash&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="s">&#34;groupid&#34;</span><span class="w"> </span><span class="s">&#34;tabs-example-language&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="p">))</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="s">&#34;style&#34;</span><span class="w"> </span><span class="s">&#34;default&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="s">&#34;title&#34;</span><span class="w"> </span><span class="s">&#34;Code&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;groupid&#34;</span><span class="w"> </span><span class="s">&#34;main&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;icon&#34;</span><span class="w"> </span><span class="s">&#34;thumbtack&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;style&#34;</span><span class="w"> </span><span class="s">&#34;primary&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;title&#34;</span><span class="w"> </span><span class="s">&#34;Rationale&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="p">)&#125;&#125;</span></span></span></code></pre></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="tab-panel" data-tab-group="R-tabs-fad58de7366495db4650cfefac2fcd61">
+  <div class="tab-nav">
+    <div class="tab-nav-title" id="R-tabs-title-318051113975f3cd2d55e9454f4eac29"><i class="fa-fw fas fa-thumbtack" aria-hidden="true"></i> Rationale</div>
+    <div class="tab-nav-list" role="tablist" aria-labelledby="R-tabs-title-318051113975f3cd2d55e9454f4eac29">
+      <button
+        role="tab" id="R-tab-id-14abd1c2a4147882c874b7c81ea99fad-tab" aria-controls="R-tab-id-14abd1c2a4147882c874b7c81ea99fad" aria-selected="true"
+        data-tab-item="R-tab-9dffbf69ffba8bc38bc4e01abf4b1675"
+        class="tab-nav-button tab-panel-style cstyle primary active" tabindex="0"
+      >
+        <span class="tab-nav-text">Text</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-a7432ac3f966fb1b3f46aae87896e12d-tab" aria-controls="R-tab-id-a7432ac3f966fb1b3f46aae87896e12d" aria-selected="false"
+        data-tab-item="R-tab-ca0dbad92a874b2f69b549293387925e"
+        class="tab-nav-button tab-panel-style cstyle default" style="--VARIABLE-BOX-color: darkorchid;" tabindex="-1"
+      >
+        <span class="tab-nav-text">Code</span>
+      </button>
+    </div>
+  </div>
+  <div class="tab-content-container">
+    <div
+      id="R-tab-id-14abd1c2a4147882c874b7c81ea99fad" role="tabpanel" aria-labelledby="R-tab-id-14abd1c2a4147882c874b7c81ea99fad-tab"
+      data-tab-item="R-tab-9dffbf69ffba8bc38bc4e01abf4b1675"
+      class="tab-content tab-panel-style cstyle primary active">
+      <div class="tab-content-text">
+<div class="tab-panel" data-tab-group="R-tabs-684da3d4a062ce84a1077bc558ba12cc">
+  <div class="tab-nav">
+    <div class="tab-nav-title">&#8203;</div>
+    <div class="tab-nav-list" role="tablist">
+      <button
+        role="tab" id="R-tab-id-aa1829b1d06b1221f655b97d1068c6e9-tab" aria-controls="R-tab-id-aa1829b1d06b1221f655b97d1068c6e9" aria-selected="true"
+        data-tab-item="R-tab-23eeeb4347bdd26bfc6b7ee9a3b755dd"
+        class="tab-nav-button tab-panel-style cstyle initial active" tabindex="0"
+      >
+        <span class="tab-nav-text">python</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-cd204a91025610f5852331fe4d4c86bf-tab" aria-controls="R-tab-id-cd204a91025610f5852331fe4d4c86bf" aria-selected="false"
+        data-tab-item="R-tab-d574d4bb40c84861791a694a999cce69"
+        class="tab-nav-button tab-panel-style cstyle initial" tabindex="-1"
+      >
+        <span class="tab-nav-text">bash</span>
+      </button>
+    </div>
+  </div>
+  <div class="tab-content-container">
+    <div
+      id="R-tab-id-aa1829b1d06b1221f655b97d1068c6e9" role="tabpanel" aria-labelledby="R-tab-id-aa1829b1d06b1221f655b97d1068c6e9-tab"
+      data-tab-item="R-tab-23eeeb4347bdd26bfc6b7ee9a3b755dd"
+      class="tab-content tab-panel-style cstyle initial active">
+      <div class="tab-content-text">
+<p>Python is <strong>super</strong> easy.</p>
+<ul>
+<li>most of the time.</li>
+<li>if you don&rsquo;t want to output unicode</li>
+</ul>
+      </div>
+    </div>
+    <div
+      id="R-tab-id-cd204a91025610f5852331fe4d4c86bf" role="tabpanel" aria-labelledby="R-tab-id-cd204a91025610f5852331fe4d4c86bf-tab"
+      data-tab-item="R-tab-d574d4bb40c84861791a694a999cce69"
+      class="tab-content tab-panel-style cstyle initial">
+      <div class="tab-content-text">
+Bash is for <strong>hackers</strong>.
+      </div>
+    </div>
+  </div>
+</div>
+      </div>
+    </div>
+    <div
+      id="R-tab-id-a7432ac3f966fb1b3f46aae87896e12d" role="tabpanel" aria-labelledby="R-tab-id-a7432ac3f966fb1b3f46aae87896e12d-tab"
+      data-tab-item="R-tab-ca0dbad92a874b2f69b549293387925e"
+      class="tab-content tab-panel-style cstyle default" style="--VARIABLE-BOX-color: darkorchid;">
+      <div class="tab-content-text">
+<div class="tab-panel" data-tab-group="R-tabs-684da3d4a062ce84a1077bc558ba12cc">
+  <div class="tab-nav">
+    <div class="tab-nav-title">&#8203;</div>
+    <div class="tab-nav-list" role="tablist">
+      <button
+        role="tab" id="R-tab-id-2762a0567482716979856d63277500ef-tab" aria-controls="R-tab-id-2762a0567482716979856d63277500ef" aria-selected="true"
+        data-tab-item="R-tab-23eeeb4347bdd26bfc6b7ee9a3b755dd"
+        class="tab-nav-button tab-panel-style cstyle code active" tabindex="0"
+      >
+        <span class="tab-nav-text">python</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-ad30927f6eb3ee296f4d696dcd4a7b86-tab" aria-controls="R-tab-id-ad30927f6eb3ee296f4d696dcd4a7b86" aria-selected="false"
+        data-tab-item="R-tab-d574d4bb40c84861791a694a999cce69"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">bash</span>
+      </button>
+    </div>
+  </div>
+  <div class="tab-content-container">
+    <div
+      id="R-tab-id-2762a0567482716979856d63277500ef" role="tabpanel" aria-labelledby="R-tab-id-2762a0567482716979856d63277500ef-tab"
+      data-tab-item="R-tab-23eeeb4347bdd26bfc6b7ee9a3b755dd"
+      class="tab-content tab-panel-style cstyle code active codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Hello World!&#34;</span><span class="p">)</span></span></span></code></pre></div>
+      </div>
+    </div>
+    <div
+      id="R-tab-id-ad30927f6eb3ee296f4d696dcd4a7b86" role="tabpanel" aria-labelledby="R-tab-id-ad30927f6eb3ee296f4d696dcd4a7b86-tab"
+      data-tab-item="R-tab-d574d4bb40c84861791a694a999cce69"
+      class="tab-content tab-panel-style cstyle code codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;Hello World!&#34;</span></span></span></code></pre></div>
+      </div>
+    </div>
+  </div>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
+<h3 id="single-code-block-with-collapsed-margins">Single Code Block with Collapsed Margins<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
+
+<div class="tab-panel" data-tab-group="R-tabs-e1fc9564fa2c053a1e6269a64309529d">
+  <div class="tab-nav">
+    <div class="tab-nav-title">&#8203;</div>
+    <div class="tab-nav-list" role="tablist">
+      <button
+        role="tab" id="R-tab-id-16e058ec75121770f8dd29ac2697a149-tab" aria-controls="R-tab-id-16e058ec75121770f8dd29ac2697a149" aria-selected="true"
+        data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
+        class="tab-nav-button tab-panel-style cstyle code active" tabindex="0"
+      >
+        <span class="tab-nav-text">Shortcode</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-b7fe3ada92c2f9d204ae9a4b61a14d42-tab" aria-controls="R-tab-id-b7fe3ada92c2f9d204ae9a4b61a14d42" aria-selected="false"
+        data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">Partial</span>
+      </button>
+    </div>
+  </div>
+  <div class="tab-content-container">
+    <div
+      id="R-tab-id-16e058ec75121770f8dd29ac2697a149" role="tabpanel" aria-labelledby="R-tab-id-16e058ec75121770f8dd29ac2697a149-tab"
+      data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
+      class="tab-content tab-panel-style cstyle code active codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">tab</span><span class="w"> </span><span class="nx">title</span><span class="p">=</span><span class="s">&#34;Code&#34;</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="s">```python
+</span></span></span><span class="line"><span class="cl"><span class="s">printf(&#34;Hello World!&#34;);
+</span></span></span><span class="line"><span class="cl"><span class="s">```</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="o">/</span><span class="nx">tab</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span></span></span></code></pre></div>
+      </div>
+    </div>
+    <div
+      id="R-tab-id-b7fe3ada92c2f9d204ae9a4b61a14d42" role="tabpanel" aria-labelledby="R-tab-id-b7fe3ada92c2f9d204ae9a4b61a14d42-tab"
+      data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
+      class="tab-content tab-panel-style cstyle code codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="w"> </span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/tab.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;page&#34;</span><span class="w"> </span><span class="p">.</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;content&#34;</span><span class="w"> </span><span class="s">&#34;```python\nprintf(\&#34;Hello World!\&#34;);\n```&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;title&#34;</span><span class="w"> </span><span class="s">&#34;Code&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="p">)&#125;&#125;</span></span></span></code></pre></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="tab-panel" data-tab-group="R-tabs-d86548744a7e26a983b8facbd1fd31f8">
+  <div class="tab-nav">
+    <div class="tab-nav-title">&#8203;</div>
+    <div class="tab-nav-list" role="tablist">
+      <button
+        role="tab" id="R-tab-id-eafb8b4e0f6bbc2c5dd28b1f6c04aa79-tab" aria-controls="R-tab-id-eafb8b4e0f6bbc2c5dd28b1f6c04aa79" aria-selected="true"
+        data-tab-item="R-tab-ca0dbad92a874b2f69b549293387925e"
+        class="tab-nav-button tab-panel-style cstyle code active" tabindex="0"
+      >
+        <span class="tab-nav-text">Code</span>
+      </button>
+    </div>
+  </div>
+  <div class="tab-content-container">
+    <div
+      id="R-tab-id-eafb8b4e0f6bbc2c5dd28b1f6c04aa79" role="tabpanel" aria-labelledby="R-tab-id-eafb8b4e0f6bbc2c5dd28b1f6c04aa79-tab"
+      data-tab-item="R-tab-ca0dbad92a874b2f69b549293387925e"
+      class="tab-content tab-panel-style cstyle code active codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">printf</span><span class="p">(</span><span class="s2">&#34;Hello World!&#34;</span><span class="p">);</span></span></span></code></pre></div>
+      </div>
+    </div>
+  </div>
+</div>
+<h3 id="mixed-markdown-content">Mixed Markdown Content<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
+
+<div class="tab-panel" data-tab-group="R-tabs-e1fc9564fa2c053a1e6269a64309529d">
+  <div class="tab-nav">
+    <div class="tab-nav-title">&#8203;</div>
+    <div class="tab-nav-list" role="tablist">
+      <button
+        role="tab" id="R-tab-id-9e184696d8ad3ce4052c20790201b2b7-tab" aria-controls="R-tab-id-9e184696d8ad3ce4052c20790201b2b7" aria-selected="true"
+        data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
+        class="tab-nav-button tab-panel-style cstyle code active" tabindex="0"
+      >
+        <span class="tab-nav-text">Shortcode</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-b88b80a51651c7db3f9f6db51a7c8d89-tab" aria-controls="R-tab-id-b88b80a51651c7db3f9f6db51a7c8d89" aria-selected="false"
+        data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">Partial</span>
+      </button>
+    </div>
+  </div>
+  <div class="tab-content-container">
+    <div
+      id="R-tab-id-9e184696d8ad3ce4052c20790201b2b7" role="tabpanel" aria-labelledby="R-tab-id-9e184696d8ad3ce4052c20790201b2b7-tab"
+      data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
+      class="tab-content tab-panel-style cstyle code active codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">tab</span><span class="w"> </span><span class="nx">title</span><span class="p">=</span><span class="s">&#34;_**Mixed**_&#34;</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nx">A</span><span class="w"> </span><span class="nx">tab</span><span class="w"> </span><span class="nx">cannot</span><span class="w"> </span><span class="nx">only</span><span class="w"> </span><span class="nx">contain</span><span class="w"> </span><span class="nx">code</span><span class="w"> </span><span class="nx">but</span><span class="w"> </span><span class="nx">arbitrary</span><span class="w"> </span><span class="nx">text</span><span class="p">.</span><span class="w"> </span><span class="nx">In</span><span class="w"> </span><span class="nx">this</span><span class="w"> </span><span class="k">case</span><span class="w"> </span><span class="nx">text</span><span class="w"> </span><span class="o">**</span><span class="nx">and</span><span class="o">**</span><span class="w"> </span><span class="nx">code</span><span class="w"> </span><span class="nx">will</span><span class="w"> </span><span class="nx">get</span><span class="w"> </span><span class="nx">a</span><span class="w"> </span><span class="nx">margin</span><span class="p">.</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="s">```python
+</span></span></span><span class="line"><span class="cl"><span class="s">printf(&#34;Hello World!&#34;);
+</span></span></span><span class="line"><span class="cl"><span class="s">```</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="o">/</span><span class="nx">tab</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span></span></span></code></pre></div>
+      </div>
+    </div>
+    <div
+      id="R-tab-id-b88b80a51651c7db3f9f6db51a7c8d89" role="tabpanel" aria-labelledby="R-tab-id-b88b80a51651c7db3f9f6db51a7c8d89-tab"
+      data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
+      class="tab-content tab-panel-style cstyle code codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="w"> </span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/tab.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;page&#34;</span><span class="w"> </span><span class="p">.</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;content&#34;</span><span class="w"> </span><span class="s">&#34;A tab cannot only contain code but arbitrary text. In this case text **and** code will get a margin.\n```python\nprintf(\&#34;Hello World!\&#34;);\n```&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;title&#34;</span><span class="w"> </span><span class="s">&#34;_**Mixed**_&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="p">)&#125;&#125;</span></span></span></code></pre></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="tab-panel" data-tab-group="R-tabs-91928e8c854c2ae92cbfb9c65973c89a">
+  <div class="tab-nav">
+    <div class="tab-nav-title">&#8203;</div>
+    <div class="tab-nav-list" role="tablist">
+      <button
+        role="tab" id="R-tab-id-b55a0d6a68919eeba749d6551208aefb-tab" aria-controls="R-tab-id-b55a0d6a68919eeba749d6551208aefb" aria-selected="true"
+        data-tab-item="R-tab-699b4f79215d191584653efebf156e52"
+        class="tab-nav-button tab-panel-style cstyle initial active" tabindex="0"
+      >
+        <span class="tab-nav-text"><em><strong>Mixed</strong></em></span>
+      </button>
+    </div>
+  </div>
+  <div class="tab-content-container">
+    <div
+      id="R-tab-id-b55a0d6a68919eeba749d6551208aefb" role="tabpanel" aria-labelledby="R-tab-id-b55a0d6a68919eeba749d6551208aefb-tab"
+      data-tab-item="R-tab-699b4f79215d191584653efebf156e52"
+      class="tab-content tab-panel-style cstyle initial active">
+      <div class="tab-content-text">
+<p>A tab cannot only contain code but arbitrary text. In this case text <strong>and</strong> code will get a margin.</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">printf</span><span class="p">(</span><span class="s2">&#34;Hello World!&#34;</span><span class="p">);</span></span></span></code></pre></div>
+      </div>
+    </div>
+  </div>
+</div>
+<h3 id="icon-with-hint">Icon with Hint<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
+<p>A tab showing nothing but an icon needs a <code>hint</code>: it is shown as a tooltip and is what assistive technology announces for the tab.</p>
+
+<div class="tab-panel" data-tab-group="R-tabs-e1fc9564fa2c053a1e6269a64309529d">
+  <div class="tab-nav">
+    <div class="tab-nav-title">&#8203;</div>
+    <div class="tab-nav-list" role="tablist">
+      <button
+        role="tab" id="R-tab-id-e16b4f6aecd60e4233ad04dad8d6461b-tab" aria-controls="R-tab-id-e16b4f6aecd60e4233ad04dad8d6461b" aria-selected="true"
+        data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
+        class="tab-nav-button tab-panel-style cstyle code active" tabindex="0"
+      >
+        <span class="tab-nav-text">Shortcode</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-be7aba77da1e1b00856fbeffe93cf3c4-tab" aria-controls="R-tab-id-be7aba77da1e1b00856fbeffe93cf3c4" aria-selected="false"
+        data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">Partial</span>
+      </button>
+    </div>
+  </div>
+  <div class="tab-content-container">
+    <div
+      id="R-tab-id-e16b4f6aecd60e4233ad04dad8d6461b" role="tabpanel" aria-labelledby="R-tab-id-e16b4f6aecd60e4233ad04dad8d6461b-tab"
+      data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
+      class="tab-content tab-panel-style cstyle code active codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;&lt;</span><span class="w"> </span><span class="nx">tabs</span><span class="w"> </span><span class="p">&gt;&#125;&#125;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">tab</span><span class="w"> </span><span class="nx">hint</span><span class="p">=</span><span class="s">&#34;Download&#34;</span><span class="w"> </span><span class="nx">icon</span><span class="p">=</span><span class="s">&#34;download&#34;</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="nx">Get</span><span class="w"> </span><span class="nx">the</span><span class="w"> </span><span class="nx">theme</span><span class="w"> </span><span class="nx">from</span><span class="w"> </span><span class="nx">its</span><span class="w"> </span><span class="nx">repository</span><span class="p">.&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="o">/</span><span class="nx">tab</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">tab</span><span class="w"> </span><span class="nx">hint</span><span class="p">=</span><span class="s">&#34;Configure&#34;</span><span class="w"> </span><span class="nx">icon</span><span class="p">=</span><span class="s">&#34;gears&#34;</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="nx">Set</span><span class="w"> </span><span class="nx">the</span><span class="w"> </span><span class="nx">options</span><span class="w"> </span><span class="nx">in</span><span class="w"> </span><span class="nx">your</span><span class="w"> </span><span class="nx">project</span><span class="w"> </span><span class="nx">configuration</span><span class="p">.&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="o">/</span><span class="nx">tab</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="p">&#123;&#123;&lt;</span><span class="w"> </span><span class="o">/</span><span class="nx">tabs</span><span class="w"> </span><span class="p">&gt;&#125;&#125;</span></span></span></code></pre></div>
+      </div>
+    </div>
+    <div
+      id="R-tab-id-be7aba77da1e1b00856fbeffe93cf3c4" role="tabpanel" aria-labelledby="R-tab-id-be7aba77da1e1b00856fbeffe93cf3c4-tab"
+      data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
+      class="tab-content tab-panel-style cstyle code codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="w"> </span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/tabs.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;page&#34;</span><span class="w"> </span><span class="p">.</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;content&#34;</span><span class="w"> </span><span class="p">(</span><span class="nf">slice</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">(</span><span class="nx">dict</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="s">&#34;content&#34;</span><span class="w"> </span><span class="s">&#34;Get the theme from its repository.&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="s">&#34;hint&#34;</span><span class="w"> </span><span class="s">&#34;Download&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="s">&#34;icon&#34;</span><span class="w"> </span><span class="s">&#34;download&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">(</span><span class="nx">dict</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="s">&#34;content&#34;</span><span class="w"> </span><span class="s">&#34;Set the options in your project configuration.&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="s">&#34;hint&#34;</span><span class="w"> </span><span class="s">&#34;Configure&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="s">&#34;icon&#34;</span><span class="w"> </span><span class="s">&#34;gears&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="p">)&#125;&#125;</span></span></span></code></pre></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="tab-panel" data-tab-group="R-tabs-5437613cd3d8e954706737833b002b66">
+  <div class="tab-nav">
+    <div class="tab-nav-title">&#8203;</div>
+    <div class="tab-nav-list" role="tablist">
+      <button
+        role="tab" id="R-tab-id-e55efa4bd840aafc001d83e72f44dd8a-tab" aria-controls="R-tab-id-e55efa4bd840aafc001d83e72f44dd8a" aria-selected="true" title="Download" aria-label="Download"
+        data-tab-item="R-tab-ccd7d921d744c6e0a005c495249b5e15"
+        class="tab-nav-button tab-panel-style cstyle initial active" tabindex="0"
+      >
+        <span class="tab-nav-text"><i class="fa-fw fas fa-download" aria-hidden="true"></i>&#8203;</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-e08f3d7dd9d5025a62055dc7bc66d2ce-tab" aria-controls="R-tab-id-e08f3d7dd9d5025a62055dc7bc66d2ce" aria-selected="false" title="Configure" aria-label="Configure"
+        data-tab-item="R-tab-13d3ba3aeb443a6aa4d269527db219c6"
+        class="tab-nav-button tab-panel-style cstyle initial" tabindex="-1"
+      >
+        <span class="tab-nav-text"><i class="fa-fw fas fa-gears" aria-hidden="true"></i>&#8203;</span>
+      </button>
+    </div>
+  </div>
+  <div class="tab-content-container">
+    <div
+      id="R-tab-id-e55efa4bd840aafc001d83e72f44dd8a" role="tabpanel" aria-labelledby="R-tab-id-e55efa4bd840aafc001d83e72f44dd8a-tab"
+      data-tab-item="R-tab-ccd7d921d744c6e0a005c495249b5e15"
+      class="tab-content tab-panel-style cstyle initial active">
+      <div class="tab-content-text">
+Get the theme from its repository.
+      </div>
+    </div>
+    <div
+      id="R-tab-id-e08f3d7dd9d5025a62055dc7bc66d2ce" role="tabpanel" aria-labelledby="R-tab-id-e08f3d7dd9d5025a62055dc7bc66d2ce-tab"
+      data-tab-item="R-tab-13d3ba3aeb443a6aa4d269527db219c6"
+      class="tab-content tab-panel-style cstyle initial">
+      <div class="tab-content-text">
+Set the options in your project configuration.
+      </div>
+    </div>
+  </div>
+</div>
+<h3 id="understanding-style-and-color-behavior">Understanding <code>style</code> and <code>color</code> Behavior<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard" aria-label="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg" aria-hidden="true"></i></button></span></h3>
+<p>The <code>style</code> parameter affects how the <code>color</code> parameter is applied.</p>
+
+<div class="tab-panel" data-tab-group="R-tabs-e1fc9564fa2c053a1e6269a64309529d">
+  <div class="tab-nav">
+    <div class="tab-nav-title">&#8203;</div>
+    <div class="tab-nav-list" role="tablist">
+      <button
+        role="tab" id="R-tab-id-cced1df92947f7729c77dc899c00faa5-tab" aria-controls="R-tab-id-cced1df92947f7729c77dc899c00faa5" aria-selected="true"
+        data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
+        class="tab-nav-button tab-panel-style cstyle code active" tabindex="0"
+      >
+        <span class="tab-nav-text">Shortcode</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-5c32a9eafdcf73bcea2cfdd7c77574ce-tab" aria-controls="R-tab-id-5c32a9eafdcf73bcea2cfdd7c77574ce" aria-selected="false"
+        data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
+        class="tab-nav-button tab-panel-style cstyle code" tabindex="-1"
+      >
+        <span class="tab-nav-text">Partial</span>
+      </button>
+    </div>
+  </div>
+  <div class="tab-content-container">
+    <div
+      id="R-tab-id-cced1df92947f7729c77dc899c00faa5" role="tabpanel" aria-labelledby="R-tab-id-cced1df92947f7729c77dc899c00faa5-tab"
+      data-tab-item="R-tab-6feadb455c64759731e453380c52fbd9"
+      class="tab-content tab-panel-style cstyle code active codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;&lt;</span><span class="w"> </span><span class="nx">tabs</span><span class="w"> </span><span class="p">&gt;&#125;&#125;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">tab</span><span class="w"> </span><span class="nx">style</span><span class="p">=</span><span class="s">&#34;blue&#34;</span><span class="w"> </span><span class="nx">title</span><span class="p">=</span><span class="s">&#34;just colored style&#34;</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nx">The</span><span class="w"> </span><span class="s">`style`</span><span class="w"> </span><span class="nx">parameter</span><span class="w"> </span><span class="nx">is</span><span class="w"> </span><span class="nx">set</span><span class="w"> </span><span class="nx">to</span><span class="w"> </span><span class="nx">a</span><span class="w"> </span><span class="nx">color</span><span class="w"> </span><span class="nx">style</span><span class="p">.</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nx">This</span><span class="w"> </span><span class="nx">will</span><span class="w"> </span><span class="nx">set</span><span class="w"> </span><span class="nx">the</span><span class="w"> </span><span class="nx">background</span><span class="w"> </span><span class="nx">to</span><span class="w"> </span><span class="nx">a</span><span class="w"> </span><span class="nx">lighter</span><span class="w"> </span><span class="nx">version</span><span class="w"> </span><span class="nx">of</span><span class="w"> </span><span class="nx">the</span><span class="w"> </span><span class="nx">chosen</span><span class="w"> </span><span class="nx">style</span><span class="w"> </span><span class="nx">color</span><span class="w"> </span><span class="nx">as</span><span class="w"> </span><span class="nx">configured</span><span class="w"> </span><span class="nx">in</span><span class="w"> </span><span class="nx">your</span><span class="w"> </span><span class="nx">theme</span><span class="w"> </span><span class="nx">variant</span><span class="p">.</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="o">/</span><span class="nx">tab</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">tab</span><span class="w"> </span><span class="nx">color</span><span class="p">=</span><span class="s">&#34;blue&#34;</span><span class="w"> </span><span class="nx">title</span><span class="p">=</span><span class="s">&#34;just color&#34;</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nx">Only</span><span class="w"> </span><span class="nx">the</span><span class="w"> </span><span class="s">`color`</span><span class="w"> </span><span class="nx">parameter</span><span class="w"> </span><span class="nx">is</span><span class="w"> </span><span class="nx">set</span><span class="p">.</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nx">This</span><span class="w"> </span><span class="nx">will</span><span class="w"> </span><span class="nx">set</span><span class="w"> </span><span class="nx">the</span><span class="w"> </span><span class="nx">background</span><span class="w"> </span><span class="nx">to</span><span class="w"> </span><span class="nx">a</span><span class="w"> </span><span class="nx">lighter</span><span class="w"> </span><span class="nx">version</span><span class="w"> </span><span class="nx">of</span><span class="w"> </span><span class="nx">the</span><span class="w"> </span><span class="nx">chosen</span><span class="w"> </span><span class="nx">CSS</span><span class="w"> </span><span class="nx">color</span><span class="w"> </span><span class="nx">value</span><span class="p">.</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="o">/</span><span class="nx">tab</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">tab</span><span class="w"> </span><span class="nx">color</span><span class="p">=</span><span class="s">&#34;blue&#34;</span><span class="w"> </span><span class="nx">style</span><span class="p">=</span><span class="s">&#34;default&#34;</span><span class="w"> </span><span class="nx">title</span><span class="p">=</span><span class="s">&#34;default style and color&#34;</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nx">The</span><span class="w"> </span><span class="s">`style`</span><span class="w"> </span><span class="nx">parameter</span><span class="w"> </span><span class="nx">affects</span><span class="w"> </span><span class="nx">how</span><span class="w"> </span><span class="nx">the</span><span class="w"> </span><span class="s">`color`</span><span class="w"> </span><span class="nx">parameter</span><span class="w"> </span><span class="nx">is</span><span class="w"> </span><span class="nx">applied</span><span class="p">.</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nx">The</span><span class="w"> </span><span class="s">`default`</span><span class="w"> </span><span class="nx">style</span><span class="w"> </span><span class="nx">will</span><span class="w"> </span><span class="nx">set</span><span class="w"> </span><span class="nx">the</span><span class="w"> </span><span class="nx">background</span><span class="w"> </span><span class="nx">to</span><span class="w"> </span><span class="nx">your</span><span class="w"> </span><span class="s">`--MAIN-BG-color`</span><span class="w"> </span><span class="nx">as</span><span class="w"> </span><span class="nx">configured</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="nx">your</span><span class="w"> </span><span class="nx">theme</span><span class="w"> </span><span class="nx">variant</span><span class="w"> </span><span class="nx">resembling</span><span class="w"> </span><span class="nx">the</span><span class="w"> </span><span class="k">default</span><span class="w"> </span><span class="nx">style</span><span class="w"> </span><span class="nx">but</span><span class="w"> </span><span class="nx">with</span><span class="w"> </span><span class="nx">different</span><span class="w"> </span><span class="nx">color</span><span class="p">.</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="o">/</span><span class="nx">tab</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">tab</span><span class="w"> </span><span class="nx">style</span><span class="p">=</span><span class="s">&#34;info&#34;</span><span class="w"> </span><span class="nx">title</span><span class="p">=</span><span class="s">&#34;just severity style&#34;</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nx">The</span><span class="w"> </span><span class="s">`style`</span><span class="w"> </span><span class="nx">parameter</span><span class="w"> </span><span class="nx">is</span><span class="w"> </span><span class="nx">set</span><span class="w"> </span><span class="nx">to</span><span class="w"> </span><span class="nx">a</span><span class="w"> </span><span class="nx">severity</span><span class="w"> </span><span class="nx">style</span><span class="p">.</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nx">This</span><span class="w"> </span><span class="nx">will</span><span class="w"> </span><span class="nx">set</span><span class="w"> </span><span class="nx">the</span><span class="w"> </span><span class="nx">background</span><span class="w"> </span><span class="nx">to</span><span class="w"> </span><span class="nx">a</span><span class="w"> </span><span class="nx">lighter</span><span class="w"> </span><span class="nx">version</span><span class="w"> </span><span class="nx">of</span><span class="w"> </span><span class="nx">the</span><span class="w"> </span><span class="nx">chosen</span><span class="w"> </span><span class="nx">style</span><span class="w"> </span><span class="nx">color</span><span class="w"> </span><span class="nx">as</span><span class="w"> </span><span class="nx">configured</span><span class="w"> </span><span class="nx">in</span><span class="w"> </span><span class="nx">your</span><span class="w"> </span><span class="nx">theme</span><span class="w"> </span><span class="nx">variant</span><span class="w"> </span><span class="nx">and</span><span class="w"> </span><span class="nx">also</span><span class="w"> </span><span class="nx">affects</span><span class="w"> </span><span class="nx">the</span><span class="w"> </span><span class="nx">chosen</span><span class="w"> </span><span class="nx">icon</span><span class="p">.</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="o">/</span><span class="nx">tab</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="nx">tab</span><span class="w"> </span><span class="nx">color</span><span class="p">=</span><span class="s">&#34;blue&#34;</span><span class="w"> </span><span class="nx">style</span><span class="p">=</span><span class="s">&#34;info&#34;</span><span class="w"> </span><span class="nx">title</span><span class="p">=</span><span class="s">&#34;severity style and color&#34;</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nx">The</span><span class="w"> </span><span class="s">`style`</span><span class="w"> </span><span class="nx">parameter</span><span class="w"> </span><span class="nx">affects</span><span class="w"> </span><span class="nx">how</span><span class="w"> </span><span class="nx">the</span><span class="w"> </span><span class="s">`color`</span><span class="w"> </span><span class="nx">parameter</span><span class="w"> </span><span class="nx">is</span><span class="w"> </span><span class="nx">applied</span><span class="p">.</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nx">This</span><span class="w"> </span><span class="nx">will</span><span class="w"> </span><span class="nx">set</span><span class="w"> </span><span class="nx">the</span><span class="w"> </span><span class="nx">background</span><span class="w"> </span><span class="nx">to</span><span class="w"> </span><span class="nx">a</span><span class="w"> </span><span class="nx">lighter</span><span class="w"> </span><span class="nx">version</span><span class="w"> </span><span class="nx">of</span><span class="w"> </span><span class="nx">the</span><span class="w"> </span><span class="nx">chosen</span><span class="w"> </span><span class="nx">CSS</span><span class="w"> </span><span class="nx">color</span><span class="w"> </span><span class="nx">value</span><span class="w"> </span><span class="nx">and</span><span class="w"> </span><span class="nx">also</span><span class="w"> </span><span class="nx">affects</span><span class="w"> </span><span class="nx">the</span><span class="w"> </span><span class="nx">chosen</span><span class="w"> </span><span class="nx">icon</span><span class="p">.</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="o">%</span><span class="w"> </span><span class="o">/</span><span class="nx">tab</span><span class="w"> </span><span class="o">%</span><span class="p">&#125;&#125;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="p">&#123;&#123;&lt;</span><span class="w"> </span><span class="o">/</span><span class="nx">tabs</span><span class="w"> </span><span class="p">&gt;&#125;&#125;</span></span></span></code></pre></div>
+      </div>
+    </div>
+    <div
+      id="R-tab-id-5c32a9eafdcf73bcea2cfdd7c77574ce" role="tabpanel" aria-labelledby="R-tab-id-5c32a9eafdcf73bcea2cfdd7c77574ce-tab"
+      data-tab-item="R-tab-44ffd38a6dea695cbe2b34efdcc6cf27"
+      class="tab-content tab-panel-style cstyle code codify">
+      <div class="tab-content-text">
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&#123;&#123;</span><span class="w"> </span><span class="nx">partial</span><span class="w"> </span><span class="s">&#34;shortcodes/tabs.html&#34;</span><span class="w"> </span><span class="p">(</span><span class="nx">dict</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;page&#34;</span><span class="w"> </span><span class="p">.</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s">&#34;content&#34;</span><span class="w"> </span><span class="p">(</span><span class="nf">slice</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">(</span><span class="nx">dict</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="s">&#34;content&#34;</span><span class="w"> </span><span class="s">&#34;The `style` parameter is set to a color style.\n\nThis will set the background to a lighter version of the chosen style color as configured in your theme variant.&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="s">&#34;style&#34;</span><span class="w"> </span><span class="s">&#34;blue&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="s">&#34;title&#34;</span><span class="w"> </span><span class="s">&#34;just colored style&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">(</span><span class="nx">dict</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="s">&#34;color&#34;</span><span class="w"> </span><span class="s">&#34;blue&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="s">&#34;content&#34;</span><span class="w"> </span><span class="s">&#34;Only the `color` parameter is set.\n\nThis will set the background to a lighter version of the chosen CSS color value.&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="s">&#34;title&#34;</span><span class="w"> </span><span class="s">&#34;just color&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">(</span><span class="nx">dict</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="s">&#34;color&#34;</span><span class="w"> </span><span class="s">&#34;blue&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="s">&#34;content&#34;</span><span class="w"> </span><span class="s">&#34;The `style` parameter affects how the `color` parameter is applied.\n\nThe `default` style will set the background to your `--MAIN-BG-color` as configured for your theme variant resembling the default style but with different color.&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="s">&#34;style&#34;</span><span class="w"> </span><span class="s">&#34;default&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="s">&#34;title&#34;</span><span class="w"> </span><span class="s">&#34;default style and color&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">(</span><span class="nx">dict</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="s">&#34;content&#34;</span><span class="w"> </span><span class="s">&#34;The `style` parameter is set to a severity style.\n\nThis will set the background to a lighter version of the chosen style color as configured in your theme variant and also affects the chosen icon.&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="s">&#34;style&#34;</span><span class="w"> </span><span class="s">&#34;info&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="s">&#34;title&#34;</span><span class="w"> </span><span class="s">&#34;just severity style&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">(</span><span class="nx">dict</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="s">&#34;color&#34;</span><span class="w"> </span><span class="s">&#34;blue&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="s">&#34;content&#34;</span><span class="w"> </span><span class="s">&#34;The `style` parameter affects how the `color` parameter is applied.\n\nThis will set the background to a lighter version of the chosen CSS color value and also affects the chosen icon.&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="s">&#34;style&#34;</span><span class="w"> </span><span class="s">&#34;info&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="s">&#34;title&#34;</span><span class="w"> </span><span class="s">&#34;severity style and color&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="p">)&#125;&#125;</span></span></span></code></pre></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="tab-panel" data-tab-group="R-tabs-07e3fd366200f967a8365bd05677d1af">
+  <div class="tab-nav">
+    <div class="tab-nav-title">&#8203;</div>
+    <div class="tab-nav-list" role="tablist">
+      <button
+        role="tab" id="R-tab-id-2edf6278699d42803bc7edd98359ae2b-tab" aria-controls="R-tab-id-2edf6278699d42803bc7edd98359ae2b" aria-selected="true"
+        data-tab-item="R-tab-ff4917d1eb9a1d83d864f1909d5e9bab"
+        class="tab-nav-button tab-panel-style cstyle blue active" tabindex="0"
+      >
+        <span class="tab-nav-text">just colored style</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-a16a66d586901a0bbaaac5c7912730dd-tab" aria-controls="R-tab-id-a16a66d586901a0bbaaac5c7912730dd" aria-selected="false"
+        data-tab-item="R-tab-6c45925b24aade031d63b7397c82b71b"
+        class="tab-nav-button tab-panel-style cstyle filled" style="--VARIABLE-BOX-color: blue;" tabindex="-1"
+      >
+        <span class="tab-nav-text">just color</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-3ff3c1a71c580519a9505dbaec32b7a1-tab" aria-controls="R-tab-id-3ff3c1a71c580519a9505dbaec32b7a1" aria-selected="false"
+        data-tab-item="R-tab-e705d2c767e548231f214413fefa448d"
+        class="tab-nav-button tab-panel-style cstyle default" style="--VARIABLE-BOX-color: blue;" tabindex="-1"
+      >
+        <span class="tab-nav-text">default style and color</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-3372ce3d717a9c67a4e2cc450ead6459-tab" aria-controls="R-tab-id-3372ce3d717a9c67a4e2cc450ead6459" aria-selected="false"
+        data-tab-item="R-tab-a31be03e34ad44a369706414e9b55b69"
+        class="tab-nav-button tab-panel-style cstyle info" tabindex="-1"
+      >
+        <span class="tab-nav-text"><i class="fa-fw fas fa-info-circle" aria-hidden="true"></i> just severity style</span>
+      </button>
+      <button
+        role="tab" id="R-tab-id-a1545872489175cbf77f431e7fc27f30-tab" aria-controls="R-tab-id-a1545872489175cbf77f431e7fc27f30" aria-selected="false"
+        data-tab-item="R-tab-1dd91ff914cc659fa23da7cfdf4b645e"
+        class="tab-nav-button tab-panel-style cstyle info" style="--VARIABLE-BOX-color: blue;" tabindex="-1"
+      >
+        <span class="tab-nav-text"><i class="fa-fw fas fa-info-circle" aria-hidden="true"></i> severity style and color</span>
+      </button>
+    </div>
+  </div>
+  <div class="tab-content-container">
+    <div
+      id="R-tab-id-2edf6278699d42803bc7edd98359ae2b" role="tabpanel" aria-labelledby="R-tab-id-2edf6278699d42803bc7edd98359ae2b-tab"
+      data-tab-item="R-tab-ff4917d1eb9a1d83d864f1909d5e9bab"
+      class="tab-content tab-panel-style cstyle blue active">
+      <div class="tab-content-text">
+<p>The <code>style</code> parameter is set to a color style.</p>
+<p>This will set the background to a lighter version of the chosen style color as configured in your theme variant.</p>
+      </div>
+    </div>
+    <div
+      id="R-tab-id-a16a66d586901a0bbaaac5c7912730dd" role="tabpanel" aria-labelledby="R-tab-id-a16a66d586901a0bbaaac5c7912730dd-tab"
+      data-tab-item="R-tab-6c45925b24aade031d63b7397c82b71b"
+      class="tab-content tab-panel-style cstyle filled" style="--VARIABLE-BOX-color: blue;">
+      <div class="tab-content-text">
+<p>Only the <code>color</code> parameter is set.</p>
+<p>This will set the background to a lighter version of the chosen CSS color value.</p>
+      </div>
+    </div>
+    <div
+      id="R-tab-id-3ff3c1a71c580519a9505dbaec32b7a1" role="tabpanel" aria-labelledby="R-tab-id-3ff3c1a71c580519a9505dbaec32b7a1-tab"
+      data-tab-item="R-tab-e705d2c767e548231f214413fefa448d"
+      class="tab-content tab-panel-style cstyle default" style="--VARIABLE-BOX-color: blue;">
+      <div class="tab-content-text">
+<p>The <code>style</code> parameter affects how the <code>color</code> parameter is applied.</p>
+<p>The <code>default</code> style will set the background to your <code>--MAIN-BG-color</code> as configured for your theme variant resembling the default style but with different color.</p>
+      </div>
+    </div>
+    <div
+      id="R-tab-id-3372ce3d717a9c67a4e2cc450ead6459" role="tabpanel" aria-labelledby="R-tab-id-3372ce3d717a9c67a4e2cc450ead6459-tab"
+      data-tab-item="R-tab-a31be03e34ad44a369706414e9b55b69"
+      class="tab-content tab-panel-style cstyle info">
+      <div class="tab-content-text">
+<p>The <code>style</code> parameter is set to a severity style.</p>
+<p>This will set the background to a lighter version of the chosen style color as configured in your theme variant and also affects the chosen icon.</p>
+      </div>
+    </div>
+    <div
+      id="R-tab-id-a1545872489175cbf77f431e7fc27f30" role="tabpanel" aria-labelledby="R-tab-id-a1545872489175cbf77f431e7fc27f30-tab"
+      data-tab-item="R-tab-1dd91ff914cc659fa23da7cfdf4b645e"
+      class="tab-content tab-panel-style cstyle info" style="--VARIABLE-BOX-color: blue;">
+      <div class="tab-content-text">
+<p>The <code>style</code> parameter affects how the <code>color</code> parameter is applied.</p>
+<p>This will set the background to a lighter version of the chosen CSS color value and also affects the chosen icon.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <footer class="footline">
+<div class="R-taxonomy taxonomy-categories" title="Categories">
+  <i class="fa-fw fas fa-layer-group" aria-hidden="true"></i>
+  <ul>
+    <li><a class="term-link" href="/hugo-theme-relearn/categories/howto/index.html">Howto</a></li>
+    <li><a class="term-link" href="/hugo-theme-relearn/categories/reference/index.html">Reference</a></li>
+  </ul>
+</div>
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <script src="/hugo-theme-relearn/js/theme.min.96b966188f27166ddab5db2863a58101dd099db40ab5513f97556f286504ff8a.js" defer></script>
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
+  </body>
+</html>

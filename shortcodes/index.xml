@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Shortcodes :: Hugo Relearn Theme</title>
+    <link>https://ouhft.github.io/hugo-theme-relearn/shortcodes/index.html</link>
+    <description>Hugo uses Markdown as its content format. However, there are a lot of things that Markdown doesn’t support well. To overcome those limitations, Hugo created the concept of shortcodes.</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 15 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://ouhft.github.io/hugo-theme-relearn/shortcodes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pages</title>
+      <link>https://ouhft.github.io/hugo-theme-relearn/shortcodes/pages/index.html</link>
+      <pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://ouhft.github.io/hugo-theme-relearn/shortcodes/pages/index.html</guid>
+      <description>Group, order and list pages of your site</description>
+    </item>
+    <item>
+      <title>Badge</title>
+      <link>https://ouhft.github.io/hugo-theme-relearn/shortcodes/badge/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ouhft.github.io/hugo-theme-relearn/shortcodes/badge/index.html</guid>
+      <description>Marker badges to display in your text</description>
+    </item>
+    <item>
+      <title>Button</title>
+      <link>https://ouhft.github.io/hugo-theme-relearn/shortcodes/button/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ouhft.github.io/hugo-theme-relearn/shortcodes/button/index.html</guid>
+      <description>Clickable buttons</description>
+    </item>
+    <item>
+      <title>Callout</title>
+      <link>https://ouhft.github.io/hugo-theme-relearn/shortcodes/callout/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ouhft.github.io/hugo-theme-relearn/shortcodes/callout/index.html</guid>
+      <description>Boxes to help you structure your page</description>
+    </item>
+    <item>
+      <title>Cards</title>
+      <link>https://ouhft.github.io/hugo-theme-relearn/shortcodes/cards/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ouhft.github.io/hugo-theme-relearn/shortcodes/cards/index.html</guid>
+      <description>Show content in cards</description>
+    </item>
+    <item>
+      <title>Details</title>
+      <link>https://ouhft.github.io/hugo-theme-relearn/shortcodes/details/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ouhft.github.io/hugo-theme-relearn/shortcodes/details/index.html</guid>
+      <description>Expandable/collapsible sections of text</description>
+    </item>
+    <item>
+      <title>Highlight</title>
+      <link>https://ouhft.github.io/hugo-theme-relearn/shortcodes/highlight/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ouhft.github.io/hugo-theme-relearn/shortcodes/highlight/index.html</guid>
+      <description>Render code with a syntax highlighter</description>
+    </item>
+    <item>
+      <title>Icon</title>
+      <link>https://ouhft.github.io/hugo-theme-relearn/shortcodes/icon/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ouhft.github.io/hugo-theme-relearn/shortcodes/icon/index.html</guid>
+      <description>Nice icons for your page</description>
+    </item>
+    <item>
+      <title>Include</title>
+      <link>https://ouhft.github.io/hugo-theme-relearn/shortcodes/include/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ouhft.github.io/hugo-theme-relearn/shortcodes/include/index.html</guid>
+      <description>Displays content from other files</description>
+    </item>
+    <item>
+      <title>Math</title>
+      <link>https://ouhft.github.io/hugo-theme-relearn/shortcodes/math/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ouhft.github.io/hugo-theme-relearn/shortcodes/math/index.html</guid>
+      <description>Beautiful math and chemical formulae</description>
+    </item>
+    <item>
+      <title>Mermaid</title>
+      <link>https://ouhft.github.io/hugo-theme-relearn/shortcodes/mermaid/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ouhft.github.io/hugo-theme-relearn/shortcodes/mermaid/index.html</guid>
+      <description>Generate diagrams and flowcharts from text</description>
+    </item>
+    <item>
+      <title>OpenAPI</title>
+      <link>https://ouhft.github.io/hugo-theme-relearn/shortcodes/openapi/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ouhft.github.io/hugo-theme-relearn/shortcodes/openapi/index.html</guid>
+      <description>UI for your OpenAPI / Swagger specifications</description>
+    </item>
+    <item>
+      <title>Resources</title>
+      <link>https://ouhft.github.io/hugo-theme-relearn/shortcodes/resources/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ouhft.github.io/hugo-theme-relearn/shortcodes/resources/index.html</guid>
+      <description>List resources contained in a page bundle</description>
+    </item>
+    <item>
+      <title>SiteParam</title>
+      <link>https://ouhft.github.io/hugo-theme-relearn/shortcodes/siteparam/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ouhft.github.io/hugo-theme-relearn/shortcodes/siteparam/index.html</guid>
+      <description>Get value of site params</description>
+    </item>
+    <item>
+      <title>Tabs</title>
+      <link>https://ouhft.github.io/hugo-theme-relearn/shortcodes/tabs/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ouhft.github.io/hugo-theme-relearn/shortcodes/tabs/index.html</guid>
+      <description>Show content in tabbed views</description>
+    </item>
+    <item>
+      <title>Tree</title>
+      <link>https://ouhft.github.io/hugo-theme-relearn/shortcodes/tree/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ouhft.github.io/hugo-theme-relearn/shortcodes/tree/index.html</guid>
+      <description>Display text as a tree</description>
+    </item>
+  </channel>
+</rss>

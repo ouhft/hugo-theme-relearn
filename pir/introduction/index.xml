@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Introduction :: Cap&#39;n Hugo Relearrrn Theme</title>
+    <link>https://ouhft.github.io/hugo-theme-relearn/pir/introduction/index.html</link>
+    <description>Discover what this Cap&#39;n Hugo theme be all about.&#xA;Gett&#39;n Started Initialize yer website &#39;n a few simple steps&#xA;Upgrade How t&#39; upgrade yer Relearrrn ship&#xA;What&#39;s New What&#39;s new &#39;n this version&#xA;Changelog Th&#39; detailed changelog</description>
+    <generator>Hugo</generator>
+    <language>art-x-pir</language>
+    <atom:link href="https://ouhft.github.io/hugo-theme-relearn/pir/introduction/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Gettin&#39; started</title>
+      <link>https://ouhft.github.io/hugo-theme-relearn/pir/introduction/quickstart/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ouhft.github.io/hugo-theme-relearn/pir/introduction/quickstart/index.html</guid>
+      <description>Initialize your website in a few simple steps</description>
+    </item>
+    <item>
+      <title>Upgrade</title>
+      <link>https://ouhft.github.io/hugo-theme-relearn/pir/introduction/upgrade/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ouhft.github.io/hugo-theme-relearn/pir/introduction/upgrade/index.html</guid>
+      <description>How to upgrade your Relearn site</description>
+    </item>
+    <item>
+      <title>What&#39;s New</title>
+      <link>https://ouhft.github.io/hugo-theme-relearn/pir/introduction/releasenotes/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ouhft.github.io/hugo-theme-relearn/pir/introduction/releasenotes/index.html</guid>
+      <description>What&#39;s new in this version</description>
+    </item>
+    <item>
+      <title>Changelog</title>
+      <link>https://ouhft.github.io/hugo-theme-relearn/pir/introduction/changelog/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ouhft.github.io/hugo-theme-relearn/pir/introduction/changelog/index.html</guid>
+      <description>The detailed changelog</description>
+    </item>
+  </channel>
+</rss>

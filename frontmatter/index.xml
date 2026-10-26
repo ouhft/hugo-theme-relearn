@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Front Matter :: Hugo Relearn Theme</title>
+    <link>https://ouhft.github.io/hugo-theme-relearn/frontmatter/index.html</link>
+    <description></description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 15 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://ouhft.github.io/hugo-theme-relearn/frontmatter/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Front Matter :: Ordersectionsby</title>
+      <link>https://ouhft.github.io/hugo-theme-relearn/frontmatter/ordersectionsby/index.html</link>
+      <pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://ouhft.github.io/hugo-theme-relearn/frontmatter/ordersectionsby/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Front Matter :: Pages</title>
+      <link>https://ouhft.github.io/hugo-theme-relearn/frontmatter/pages/index.html</link>
+      <pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://ouhft.github.io/hugo-theme-relearn/frontmatter/pages/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Front Matter :: Alwaysopen</title>
+      <link>https://ouhft.github.io/hugo-theme-relearn/frontmatter/alwaysopen/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ouhft.github.io/hugo-theme-relearn/frontmatter/alwaysopen/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Front Matter :: CollapsibleMenu</title>
+      <link>https://ouhft.github.io/hugo-theme-relearn/frontmatter/collapsiblemenu/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ouhft.github.io/hugo-theme-relearn/frontmatter/collapsiblemenu/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Front Matter :: Description</title>
+      <link>https://ouhft.github.io/hugo-theme-relearn/frontmatter/description/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ouhft.github.io/hugo-theme-relearn/frontmatter/description/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Front Matter :: DisableBreadcrumb</title>
+      <link>https://ouhft.github.io/hugo-theme-relearn/frontmatter/disablebreadcrumb/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ouhft.github.io/hugo-theme-relearn/frontmatter/disablebreadcrumb/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Front Matter :: DisableMarkdownButton</title>
+      <link>https://ouhft.github.io/hugo-theme-relearn/frontmatter/disablemarkdownbutton/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ouhft.github.io/hugo-theme-relearn/frontmatter/disablemarkdownbutton/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Front Matter :: DisableNextPrev</title>
+      <link>https://ouhft.github.io/hugo-theme-relearn/frontmatter/disablenextprev/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ouhft.github.io/hugo-theme-relearn/frontmatter/disablenextprev/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Front Matter :: DisablePrintButton</title>
+      <link>https://ouhft.github.io/hugo-theme-relearn/frontmatter/disableprintbutton/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ouhft.github.io/hugo-theme-relearn/frontmatter/disableprintbutton/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Front Matter :: DisableSourceButton</title>
+      <link>https://ouhft.github.io/hugo-theme-relearn/frontmatter/disablesourcebutton/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ouhft.github.io/hugo-theme-relearn/frontmatter/disablesourcebutton/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Front Matter :: DisableToc</title>
+      <link>https://ouhft.github.io/hugo-theme-relearn/frontmatter/disabletoc/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ouhft.github.io/hugo-theme-relearn/frontmatter/disabletoc/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Front Matter :: EditURL</title>
+      <link>https://ouhft.github.io/hugo-theme-relearn/frontmatter/editurl/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ouhft.github.io/hugo-theme-relearn/frontmatter/editurl/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Front Matter :: ExternalLinkTarget</title>
+      <link>https://ouhft.github.io/hugo-theme-relearn/frontmatter/externallinktarget/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ouhft.github.io/hugo-theme-relearn/frontmatter/externallinktarget/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Front Matter :: HeadingPost</title>
+      <link>https://ouhft.github.io/hugo-theme-relearn/frontmatter/headingpost/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ouhft.github.io/hugo-theme-relearn/frontmatter/headingpost/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Front Matter :: HeadingPre</title>
+      <link>https://ouhft.github.io/hugo-theme-relearn/frontmatter/headingpre/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ouhft.github.io/hugo-theme-relearn/frontmatter/headingpre/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Front Matter :: Hidden</title>
+      <link>https://ouhft.github.io/hugo-theme-relearn/frontmatter/hidden/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ouhft.github.io/hugo-theme-relearn/frontmatter/hidden/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Front Matter :: HighlightWrap</title>
+      <link>https://ouhft.github.io/hugo-theme-relearn/frontmatter/highlightwrap/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ouhft.github.io/hugo-theme-relearn/frontmatter/highlightwrap/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Front Matter :: Image.errorlevel</title>
+      <link>https://ouhft.github.io/hugo-theme-relearn/frontmatter/image.errorlevel/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ouhft.github.io/hugo-theme-relearn/frontmatter/image.errorlevel/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Front Matter :: ImageEffects</title>
+      <link>https://ouhft.github.io/hugo-theme-relearn/frontmatter/imageeffects/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ouhft.github.io/hugo-theme-relearn/frontmatter/imageeffects/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Front Matter :: Include.errorlevel</title>
+      <link>https://ouhft.github.io/hugo-theme-relearn/frontmatter/include.errorlevel/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ouhft.github.io/hugo-theme-relearn/frontmatter/include.errorlevel/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Front Matter :: LastModifierDisplayName</title>
+      <link>https://ouhft.github.io/hugo-theme-relearn/frontmatter/lastmodifierdisplayname/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ouhft.github.io/hugo-theme-relearn/frontmatter/lastmodifierdisplayname/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Front Matter :: LastModifierEmail</title>
+      <link>https://ouhft.github.io/hugo-theme-relearn/frontmatter/lastmodifieremail/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ouhft.github.io/hugo-theme-relearn/frontmatter/lastmodifieremail/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Front Matter :: Link.errorlevel</title>
+      <link>https://ouhft.github.io/hugo-theme-relearn/frontmatter/link.errorlevel/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ouhft.github.io/hugo-theme-relearn/frontmatter/link.errorlevel/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Front Matter :: LinkEffects</title>
+      <link>https://ouhft.github.io/hugo-theme-relearn/frontmatter/linkeffects/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ouhft.github.io/hugo-theme-relearn/frontmatter/linkeffects/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Front Matter :: LinkTitle</title>
+      <link>https://ouhft.github.io/hugo-theme-relearn/frontmatter/linktitle/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ouhft.github.io/hugo-theme-relearn/frontmatter/linktitle/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Front Matter :: Math</title>
+      <link>https://ouhft.github.io/hugo-theme-relearn/frontmatter/math/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ouhft.github.io/hugo-theme-relearn/frontmatter/math/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Front Matter :: Math.force</title>
+      <link>https://ouhft.github.io/hugo-theme-relearn/frontmatter/math.force/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ouhft.github.io/hugo-theme-relearn/frontmatter/math.force/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Front Matter :: Math.output</title>
+      <link>https://ouhft.github.io/hugo-theme-relearn/frontmatter/math.output/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ouhft.github.io/hugo-theme-relearn/frontmatter/math.output/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Front Matter :: MenuPageRef</title>
+      <link>https://ouhft.github.io/hugo-theme-relearn/frontmatter/menupageref/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ouhft.github.io/hugo-theme-relearn/frontmatter/menupageref/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Front Matter :: MenuPost</title>
+      <link>https://ouhft.github.io/hugo-theme-relearn/frontmatter/menupost/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ouhft.github.io/hugo-theme-relearn/frontmatter/menupost/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Front Matter :: MenuPre</title>
+      <link>https://ouhft.github.io/hugo-theme-relearn/frontmatter/menupre/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ouhft.github.io/hugo-theme-relearn/frontmatter/menupre/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Front Matter :: MenuUrl</title>
+      <link>https://ouhft.github.io/hugo-theme-relearn/frontmatter/menuurl/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ouhft.github.io/hugo-theme-relearn/frontmatter/menuurl/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Front Matter :: Mermaid.force</title>
+      <link>https://ouhft.github.io/hugo-theme-relearn/frontmatter/mermaid.force/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ouhft.github.io/hugo-theme-relearn/frontmatter/mermaid.force/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Front Matter :: MermaidInitialize</title>
+      <link>https://ouhft.github.io/hugo-theme-relearn/frontmatter/mermaidinitialize/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ouhft.github.io/hugo-theme-relearn/frontmatter/mermaidinitialize/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Front Matter :: MermaidZoom</title>
+      <link>https://ouhft.github.io/hugo-theme-relearn/frontmatter/mermaidzoom/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ouhft.github.io/hugo-theme-relearn/frontmatter/mermaidzoom/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Front Matter :: Openapi.errorlevel</title>
+      <link>https://ouhft.github.io/hugo-theme-relearn/frontmatter/openapi.errorlevel/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ouhft.github.io/hugo-theme-relearn/frontmatter/openapi.errorlevel/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Front Matter :: Openapi.force</title>
+      <link>https://ouhft.github.io/hugo-theme-relearn/frontmatter/openapi.force/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ouhft.github.io/hugo-theme-relearn/frontmatter/openapi.force/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Front Matter :: Sidebarfootermenus</title>
+      <link>https://ouhft.github.io/hugo-theme-relearn/frontmatter/sidebarfootermenus/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ouhft.github.io/hugo-theme-relearn/frontmatter/sidebarfootermenus/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Front Matter :: Sidebarheadermenus</title>
+      <link>https://ouhft.github.io/hugo-theme-relearn/frontmatter/sidebarheadermenus/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ouhft.github.io/hugo-theme-relearn/frontmatter/sidebarheadermenus/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Front Matter :: Sidebarmenus</title>
+      <link>https://ouhft.github.io/hugo-theme-relearn/frontmatter/sidebarmenus/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ouhft.github.io/hugo-theme-relearn/frontmatter/sidebarmenus/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Front Matter :: Table.sortable</title>
+      <link>https://ouhft.github.io/hugo-theme-relearn/frontmatter/table.sortable/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ouhft.github.io/hugo-theme-relearn/frontmatter/table.sortable/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Front Matter :: Topbarend</title>
+      <link>https://ouhft.github.io/hugo-theme-relearn/frontmatter/topbarend/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ouhft.github.io/hugo-theme-relearn/frontmatter/topbarend/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Front Matter :: Topbarmiddle</title>
+      <link>https://ouhft.github.io/hugo-theme-relearn/frontmatter/topbarmiddle/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ouhft.github.io/hugo-theme-relearn/frontmatter/topbarmiddle/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Front Matter :: Topbarmore</title>
+      <link>https://ouhft.github.io/hugo-theme-relearn/frontmatter/topbarmore/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ouhft.github.io/hugo-theme-relearn/frontmatter/topbarmore/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Front Matter :: Topbarstart</title>
+      <link>https://ouhft.github.io/hugo-theme-relearn/frontmatter/topbarstart/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ouhft.github.io/hugo-theme-relearn/frontmatter/topbarstart/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Front Matter :: UrlExternalCheck</title>
+      <link>https://ouhft.github.io/hugo-theme-relearn/frontmatter/urlexternalcheck/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ouhft.github.io/hugo-theme-relearn/frontmatter/urlexternalcheck/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Front Matter :: UrlIgnoreCheck</title>
+      <link>https://ouhft.github.io/hugo-theme-relearn/frontmatter/urlignorecheck/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ouhft.github.io/hugo-theme-relearn/frontmatter/urlignorecheck/index.html</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

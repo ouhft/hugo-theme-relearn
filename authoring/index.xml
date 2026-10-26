@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Authoring :: Hugo Relearn Theme</title>
+    <link>https://ouhft.github.io/hugo-theme-relearn/authoring/index.html</link>
+    <description>Learn how to create and organize your content pages.&#xA;Directory Structure Your content&#39;s directory structure&#xA;Front Matter All things front matter&#xA;Meta Information What page meta information are available&#xA;Markdown Syntax Reference of CommonMark and Markdown extensions&#xA;Linking How to link your content&#xA;Taxonomy / Term Pages How to adjust taxonomy and term pages</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://ouhft.github.io/hugo-theme-relearn/authoring/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Directory Structure</title>
+      <link>https://ouhft.github.io/hugo-theme-relearn/authoring/structure/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ouhft.github.io/hugo-theme-relearn/authoring/structure/index.html</guid>
+      <description>Your content&#39;s directory structure</description>
+    </item>
+    <item>
+      <title>Front Matter</title>
+      <link>https://ouhft.github.io/hugo-theme-relearn/authoring/frontmatter/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ouhft.github.io/hugo-theme-relearn/authoring/frontmatter/index.html</guid>
+      <description>All things front matter</description>
+    </item>
+    <item>
+      <title>Meta Information</title>
+      <link>https://ouhft.github.io/hugo-theme-relearn/authoring/meta/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ouhft.github.io/hugo-theme-relearn/authoring/meta/index.html</guid>
+      <description>What page meta information are available</description>
+    </item>
+    <item>
+      <title>Markdown Syntax</title>
+      <link>https://ouhft.github.io/hugo-theme-relearn/authoring/markdown/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ouhft.github.io/hugo-theme-relearn/authoring/markdown/index.html</guid>
+      <description>Reference of CommonMark and Markdown extensions</description>
+    </item>
+    <item>
+      <title>Linking</title>
+      <link>https://ouhft.github.io/hugo-theme-relearn/authoring/linking/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ouhft.github.io/hugo-theme-relearn/authoring/linking/index.html</guid>
+      <description>How to link your content</description>
+    </item>
+    <item>
+      <title>Taxonomy / Term Pages</title>
+      <link>https://ouhft.github.io/hugo-theme-relearn/authoring/taxterm/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ouhft.github.io/hugo-theme-relearn/authoring/taxterm/index.html</guid>
+      <description>How to adjust taxonomy and term pages</description>
+    </item>
+  </channel>
+</rss>

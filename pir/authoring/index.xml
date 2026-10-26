@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rambl&#39;n :: Cap&#39;n Hugo Relearrrn Theme</title>
+    <link>https://ouhft.github.io/hugo-theme-relearn/pir/authoring/index.html</link>
+    <description>Learrrn how t&#39; create an&#39; org&#39;nize yer rrrambl&#39;n planks.&#xA;Directory Structure Yer content&#39;s directory structure&#xA;Front Matter All th&#39;ns front matter&#xA;Meta Informat&#39;n What plank meta informat&#39;n be avail&#39;ble&#xA;Marrrkdown Rules Reference o&#39; CommonMark an&#39; Marrrkdown extensions&#xA;Link&#39;n How t&#39; link yer rrrambl&#39;n&#xA;Taxonomy / Term Planks How t&#39; adjust taxonomy an&#39; term planks</description>
+    <generator>Hugo</generator>
+    <language>art-x-pir</language>
+    <atom:link href="https://ouhft.github.io/hugo-theme-relearn/pir/authoring/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Directory Structure</title>
+      <link>https://ouhft.github.io/hugo-theme-relearn/pir/authoring/structure/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ouhft.github.io/hugo-theme-relearn/pir/authoring/structure/index.html</guid>
+      <description>Your content&#39;s directory structure</description>
+    </item>
+    <item>
+      <title>Front Matter</title>
+      <link>https://ouhft.github.io/hugo-theme-relearn/pir/authoring/frontmatter/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ouhft.github.io/hugo-theme-relearn/pir/authoring/frontmatter/index.html</guid>
+      <description>All things front matter</description>
+    </item>
+    <item>
+      <title>Meta Information</title>
+      <link>https://ouhft.github.io/hugo-theme-relearn/pir/authoring/meta/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ouhft.github.io/hugo-theme-relearn/pir/authoring/meta/index.html</guid>
+      <description>What page meta information are available</description>
+    </item>
+    <item>
+      <title>Marrrkdown Rules</title>
+      <link>https://ouhft.github.io/hugo-theme-relearn/pir/authoring/markdown/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ouhft.github.io/hugo-theme-relearn/pir/authoring/markdown/index.html</guid>
+      <description>Reference of CommonMark and Markdown extensions</description>
+    </item>
+    <item>
+      <title>Linking</title>
+      <link>https://ouhft.github.io/hugo-theme-relearn/pir/authoring/linking/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ouhft.github.io/hugo-theme-relearn/pir/authoring/linking/index.html</guid>
+      <description>How to link your content</description>
+    </item>
+    <item>
+      <title>Taxonomy / Term Pages</title>
+      <link>https://ouhft.github.io/hugo-theme-relearn/pir/authoring/taxterm/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ouhft.github.io/hugo-theme-relearn/pir/authoring/taxterm/index.html</guid>
+      <description>How to adjust taxonomy and term pages</description>
+    </item>
+  </channel>
+</rss>
