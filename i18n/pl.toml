@@ -22,6 +22,15 @@ other = "Znaleziono {1} wyników dla \"{0}\""
 [Clear-History]
 other = "Wyczyść historię"
 
+[History-cleared]
+other = "Historia wyczyszczona"
+
+[Enlarge-graph]
+other = "Powiększ wykres"
+
+[Close-graph]
+other = "Zamknij powiększony wykres"
+
 [Reset-view]
 other = "Resetowanie widoku"
 
@@ -141,3 +150,66 @@ other = "Wersja"
 
 [Browser-unsupported-feature]
 other = "Ta przeglądarka nie obsługuje tej funkcji"
+
+[Pages-group-fallback]
+other = "Inne"
+
+[Skip-to-content]
+other = "Przejdź do głównej treści"
+
+[Breadcrumbs]
+other = "Ścieżka nawigacji"
+
+[Search-page]
+other = "Otwórz stronę wyszukiwania"
+
+[Close-image]
+other = "Zamknij powiększony obraz"
+
+[Expand-all]
+other = "Rozwiń wszystko"
+
+[Collapse-all]
+other = "Zwiń wszystko"
+
+[Inserted-text-start]
+other = "Początek wstawionego tekstu"
+
+[Inserted-text-end]
+other = "Koniec wstawionego tekstu"
+
+[Deleted-text-start]
+other = "Początek usuniętego tekstu"
+
+[Deleted-text-end]
+other = "Koniec usuniętego tekstu"
+
+[N-matches-on-page]
+other = "Znaleziono {1} wystąpień \"{0}\" na tej stronie"
+
+[Sortable-columns]
+other = "Nagłówki kolumn z przyciskami umożliwiają sortowanie."
+
+[Sort-key-ascending]
+other = "posortowane na pozycji {0}, rosnąco"
+
+[Sort-key-descending]
+other = "posortowane na pozycji {0}, malejąco"
+
+[Sorted-by-ascending]
+other = "Posortowano według \"{0}\", rosnąco"
+
+[Sorted-by-descending]
+other = "Posortowano według \"{0}\", malejąco"
+
+[Unsorted-by]
+other = "Nie jest już sortowane według \"{0}\""
+
+[Change-sorting]
+other = "Zmień sortowanie"
+
+[Reset-sorting]
+other = "Resetuj sortowanie"
+
+[Sorting-reset]
+other = "Sortowanie zresetowane!"

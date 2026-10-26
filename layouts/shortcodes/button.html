@@ -5,6 +5,7 @@
 {{- end }}
 {{- partial "shortcodes/button.html" (dict
   "page"          .Page
+  "action"        (.Get "action")
   "borderless"    (.Get "borderless")
   "color"         (.Get "color")
   "content"       .Inner
@@ -12,6 +13,7 @@
   "href"          (.Get "href")
   "icon"          (.Get "icon")
   "iconposition"  ((.Get "iconposition") | default (.Get "icon-position"))
+  "istoggle"      (.Get "istoggle")
   "style"         (.Get "style")
   "title"         (.Get "title")
   "target"        (.Get "target")
