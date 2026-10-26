@@ -130,20 +130,22 @@ params:
           name: NHS Auto
         - identifier: nhs-light
           name: NHS Light
-          logoOUH:
-              src: /branding/ouh/OUHFT-White-Left-Logo.svg
-              alt: "Oxford University Hospitals NHS Foundation Trust (brandmark)"
-          logo:
-              src: /branding/des/logos/DES-Logo-1-Wide-White.svg
-              alt: "Digital Engineering Service (logo)"
+          params:
+            logoOUH:
+                src: /branding/ouh/OUHFT-White-Left-Logo.svg
+                alt: "Oxford University Hospitals NHS Foundation Trust (brandmark)"
+            logo:
+                src: /branding/des/logos/DES-Logo-1-Wide-White.svg
+                alt: "Digital Engineering Service (logo)"
         - identifier: nhs-dark
           name: NHS Dark
-          logoOUH:
-              src: /branding/ouh/OUHFT-Black-Left-Logo.svg
-              alt: "Oxford University Hospitals NHS Foundation Trust (brandmark)"
-          logo:
-              src: /branding/des/logos/DES-Logo-1-Wide-Black.svg
-              alt: "Digital Engineering Service (logo)"
+          params:
+            logoOUH:
+                src: /branding/ouh/OUHFT-Black-Left-Logo.svg
+                alt: "Oxford University Hospitals NHS Foundation Trust (brandmark)"
+            logo:
+                src: /branding/des/logos/DES-Logo-1-Wide-Black.svg
+                alt: "Digital Engineering Service (logo)"
   
 # permalinks
 permalinks:
