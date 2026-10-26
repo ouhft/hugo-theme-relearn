@@ -8,7 +8,7 @@ defaultoutputformat: html
 enableRobotsTXT: true
 enableGitInfo: true
 environment: development
-languageCode: en-gb
+locale: en-gb
 
 ### Root Hugo Configuration keys - https://gohugo.io/configuration/introduction/
 # HTTPCache
