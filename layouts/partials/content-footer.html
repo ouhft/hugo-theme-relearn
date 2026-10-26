@@ -19,7 +19,7 @@
   {{- with and (not site.Params.hideAuthorEmail) .Params.LastModifierEmail }}
     {{- $LastModifierEmail = . }}
   {{- end }}
-  {{- with and (not site.Params.hideAuthorDate) .AuthorDate }}
+  {{- with and (not site.Params.hideAuthorDate) .Date }}
     {{- $Date = . | time.Format $dateFormat }}
   {{- end }}
 {{- end }}
