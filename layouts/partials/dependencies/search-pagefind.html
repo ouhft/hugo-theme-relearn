@@ -6,11 +6,11 @@
     {{- /* Load Pagefind CSS */ -}}
     {{- with partial "asset.gotmpl" "/css/search-pagefind.css" }}
     <link href="{{ .RelPermalink }}"{{ partial "_relearn/integrityAttribute.gotmpl" . }} rel="stylesheet">
-    {{ -end }}
+    {{- end }}
 
     {{- /* Load our Pagefind adapter early so it's available */ -}}
     {{- with partial "asset.gotmpl" "/js/search-pagefind.js" }}
     <script src="{{ .RelPermalink }}"{{ partial "_relearn/integrityAttribute.gotmpl" . }}></script>
-    {{ -end }}
-  {{ -end }}
+    {{- end }}
+  {{- end }}
 {{- end }}
