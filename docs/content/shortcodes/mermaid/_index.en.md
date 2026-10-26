@@ -1,10 +1,18 @@
-+++
-categories = ['howto', 'reference']
-description = 'Generate diagrams and flowcharts from text'
-frontmatter = ['customMermaidURL', 'mermaid.force', 'mermaidInitialize', 'mermaidZoom']
-options = ['customMermaidURL', 'mermaid.force', 'mermaidInitialize', 'mermaidZoom']
-title = 'Mermaid'
-+++
+---
+categories:
+- howto
+- reference
+description: Generate diagrams and flowcharts from text
+frontmatter:
+- mermaid.force
+- mermaidInitialize
+- mermaidZoom
+options:
+- mermaid.force
+- mermaidInitialize
+- mermaidZoom
+title: Mermaid
+---
 
 The `mermaid` shortcode generates diagrams and flowcharts from text using the [Mermaid](https://mermaidjs.github.io/) library.
 
@@ -16,6 +24,8 @@ content: |
     If --> Then
     Then --> Else
 {{% /multishortcode %}}
+
+Every graph has a button to show it in a lightbox. Press the button again, click beside the graph, press <kbd>ESC</kbd> or go back in your browser to return to the page. The enlarged graph has its own URL, so you can share a link to it, like you can for an enlarged image. In the lightbox, a graph is [panned and zoomed](#configuring-pan-and-zoom) the same way as on the page.
 
 ## Usage
 
@@ -40,9 +50,9 @@ content: |
 
 ### Configuring Pan and Zoom
 
-{{% badge style="option" %}}Option{{% /badge %}} {{% badge style="frontmatter" %}}Front Matter{{% /badge %}} The generated graphs can be panned by dragging them and zoomed by using the mousewheel. On mobile devices you can use finger gestures.
+{{% badge style="option" %}}Option{{% /badge %}} {{% badge style="frontmatter" %}}Front Matter{{% /badge %}} The generated graphs can be panned by dragging them and zoomed by using the mousewheel. On mobile devices you can use finger gestures. With the keyboard, a focused graph is panned by the cursor keys and zoomed by <kbd>+</kbd> and <kbd>-</kbd>, as listed with the other [keyboard shortcuts](configuration/publishing/shortcuts).
 
-By default this is disabled. Set `mermaidZoom=true` to enable it.
+By default this is disabled. Set `mermaidZoom` to `true` to enable it.
 
 Individual settings of a graphs [`zoom` parameter](#parameters) have precedence over the page's front matter and configuration options in that order.
 
@@ -56,7 +66,7 @@ mermaidZoom = true
 
 You can overwrite the settings by providing a JSON object in `mermaidInitialize`. See [Mermaid's documentation](https://mermaid-js.github.io/mermaid/#/Setup?id=mermaidapi-configuration-defaults) for all allowed settings.
 
-> [!NOTE]
+> [!note]
 > Using the `theme` setting in the initialization options is unsupported. To set the theme globally edit the `--MERMAID-theme` variable of your [color variant](configuration/branding/colors/#modifying-variants).
 
 Keep in mind that initialization settings of your pages front matter overwrite all settings of your configuration options.
@@ -67,21 +77,17 @@ In addition, you can merge settings for each individual graph through [diagram d
 mermaidInitialize = '{ "securityLevel": "loose" }'
 {{< /multiconfig >}}
 
-### Loading an External Version of the Mermaid Library
+### Using a Different Version of the Mermaid Library
 
-{{% badge style="option" %}}Option{{% /badge %}} {{% badge style="frontmatter" %}}Front Matter{{% /badge %}} The theme uses the shipped Mermaid library by default.
+The theme uses the shipped Mermaid library by default.
 
-In case you want do use a different version of the Mermaid library but don't want to override the shipped version, you can set `customMermaidURL` to the URL of the external Mermaid library.
-
-{{< multiconfig section=params >}}
-customMermaidURL = 'https://unpkg.com/mermaid/dist/mermaid.min.js'
-{{< /multiconfig >}}
+In case you want to use a different version of the Mermaid library, store it as `assets/js/mermaid/mermaid.min.js` in your site. It replaces the shipped version.
 
 ### Force Loading of the Mermaid Library
 
 {{% badge style="option" %}}Option{{% /badge %}} {{% badge style="frontmatter" %}}Front Matter{{% /badge %}} The Mermaid library will be loaded if the page contains an `mermaid` shortcode, Markdown codefence or the partial is called from your templates.
 
-You can force loading the Mermaid library if no shortcode, Markdown codefence or partial was called by setting `mermaid.force=true`. If a shortcode, Markdown codefence or partial was called, this option has no effect. This comes handy in case you are using scripting to render a graph.
+You can force loading the Mermaid library if no shortcode, Markdown codefence or partial was called by setting `mermaid.force` to `true`. If a shortcode, Markdown codefence or partial was called, this option has no effect. This comes handy in case you are using scripting to render a graph.
 
 {{< multiconfig section=params >}}
 mermaid.force = true
@@ -105,6 +111,33 @@ content: |
     B --> C{<strong>Decision</strong>}
     C -->|One| D[Result one]
     C -->|Two| E[Result two]
+{{% /multishortcode %}}
+
+### Swimlanes
+
+{{% multishortcode name="mermaid" %}}
+content: |
+  swimlane-beta LR
+    subgraph Customer
+      request[Request service]
+      receive[Receive update]
+    end
+
+    subgraph Support
+      triage[Triage request]
+      answer[Send answer]
+    end
+
+    subgraph Engineering
+      investigate[Investigate issue]
+      fix[Prepare fix]
+    end
+
+    request --> triage
+    triage -->|Known issue| answer
+    triage -->|Needs code change| investigate
+    investigate --> fix --> answer
+    answer --> receive
 {{% /multishortcode %}}
 
 ### Sequence Diagram with Configuration Directive
@@ -538,4 +571,106 @@ content: |
   "Section 2"
       "Leaf 2.1": 20
       "Leaf 2.2": 25
+{{% /multishortcode %}}
+
+### Venn
+
+{{% multishortcode name="mermaid" %}}
+content: |
+  venn-beta
+    title "Team overlap"
+    set Frontend
+    set Backend
+    union Frontend,Backend["APIs"]
+{{% /multishortcode %}}
+
+### Ishikawa
+
+{{% multishortcode name="mermaid" %}}
+content: |
+  ishikawa-beta
+    Blurry Photo
+    Process
+        Out of focus
+        Shutter speed too slow
+        Protective film not removed
+        Beautification filter applied
+    User
+        Shaky hands
+    Equipment
+        LENS
+            Inappropriate lens
+            Damaged lens
+            Dirty lens
+        SENSOR
+            Damaged sensor
+            Dirty sensor
+    Environment
+        Subject moved too quickly
+        Too dark
+{{% /multishortcode %}}
+
+### Wardley
+
+{{% multishortcode name="mermaid" %}}
+content: |
+  wardley-beta
+    title Tea Shop Value Chain
+
+    anchor Business [0.95, 0.63]
+    component Cup of Tea [0.79, 0.61]
+    component Tea [0.63, 0.81]
+    component Hot Water [0.52, 0.80]
+    component Kettle [0.43, 0.35]
+    component Power [0.10, 0.70]
+
+    Business -> Cup of Tea
+    Cup of Tea -> Tea
+    Cup of Tea -> Hot Water
+    Hot Water -> Kettle
+    Kettle -> Power
+
+    evolve Kettle 0.62
+    evolve Power 0.89
+
+    note "Standardising power allows Kettles to evolve faster" [0.30, 0.49]
+{{% /multishortcode %}}
+
+### Cynefin
+
+{{% multishortcode name="mermaid" %}}
+content: |
+  cynefin-beta
+  title Optional Diagram Title
+
+  complex
+  "Item label"
+  "Another item"
+
+  complicated
+  "Expert analysis needed"
+
+  clear
+  "Known procedure"
+
+  chaotic
+  "Crisis response"
+
+  confusion
+  "Item of unknown domain"
+
+  complex --> complicated : "Pattern identified"
+  clear --> chaotic : "Complacency"
+{{% /multishortcode %}}
+
+### TreeView
+
+{{% multishortcode name="mermaid" %}}
+content: |
+  treeView-beta
+    my-project/
+        src/
+            index.js
+        package.json
+        README.md
 {{% /multishortcode %}}

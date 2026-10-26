@@ -1,10 +1,21 @@
-+++
-categories = ['howto', 'reference']
-description = 'Displays content from other files'
-frontmatter = ['include.errorlevel']
-options = ['include.errorlevel']
-title = 'Include'
-+++
+---
+cascade:
+- params:
+    build:
+      list: never
+      render: never
+  target:
+    path: /shortcodes/include/*
+categories:
+- howto
+- reference
+description: Displays content from other files
+frontmatter:
+- include.errorlevel
+options:
+- include.errorlevel
+title: Include
+---
 
 The `include` shortcode includes other pages, resources or files from your project.
 

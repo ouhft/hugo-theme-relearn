@@ -1,18 +1,24 @@
-+++
-categories = ['howto', 'reference']
-description = 'Get value of site params'
-title = 'SiteParam'
-+++
+---
+categories:
+- howto
+- reference
+description: Get value of site params
+title: SiteParam
+---
 
-The `siteparam` shortcode prints values of site-wide params contained in your `hugo.toml`.
+The `siteparam` shortcode prints values of site-wide params contained in your project configuration.
+
+{{% multishortcode name="siteparam" print="false" %}}
+name = "siteparam.test.greetings"
+{{% /multishortcode %}}
 
 ## Usage
 
-To print params from a page's front matter and falling back to the site options, use Hugo's built-in [`param` shortcode](https://gohugo.io/shortcodes/param/).
-
 {{% multishortcode name="siteparam" execute="false" %}}
-name = "editURL"
+name = "siteparam.test.greetings"
 {{% /multishortcode %}}
+
+To print params from a page's front matter and falling back to the site options, use Hugo's built-in [`param` shortcode](https://gohugo.io/shortcodes/param/).
 
 ### Parameters
 
@@ -30,7 +36,7 @@ name = "editURL"
 
 ### Nested Parameter with Markdown and HTML Formatting
 
-To use formatted parameter, add this in your `hugo.toml`:
+To use formatted parameter, add this in your project configuration:
 
 {{< multiconfig file=hugo >}}
 [markup.goldmark.renderer]

@@ -1,8 +1,10 @@
-+++
-categories = ['howto', 'reference']
-description = 'Clickable buttons'
-title = 'Button'
-+++
+---
+categories:
+- howto
+- reference
+description: Clickable buttons
+title: Button
+---
 
 The `button` shortcode displays a clickable button with adjustable color, title and icon.
 
@@ -31,10 +33,12 @@ The `button` shortcode displays a clickable button with adjustable color, title 
 | Name                  | Default         | Notes       |
 |-----------------------|-----------------|-------------|
 | **href**              | _&lt;empty&gt;_ | Either the destination URL for the button or JavaScript code to be executed on click. If this parameter is not set, the button will do nothing but is still displayed as clickable.<br><br>- if starting with `javascript:` all following text will be executed in your browser<br>- every other string will be interpreted as URL, you can use [link effects](authoring/markdown#link-effects) as well. |
-| **type**              | see notes       | The [button type](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button#attr-type) if **href** is JavaScript. Otherwise the parameter is not used. If the parameter is not given it defaults to `button`. |
+| **action**            | _&lt;empty&gt;_ | Name of an action executed by your own script on click, without inline JavaScript. Use this instead of a JavaScript **href** if your site uses a strict [Content Security Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP). See [example](#button-with-own-action). |
+| **type**              | see notes       | The [button type](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button#attr-type) if **href** is JavaScript or **action** is set. Otherwise the parameter is not used. If the parameter is not given it defaults to `button`. |
+| **istoggle**          | `false`         | When `true`, the button announces to assistive technology that it shows and hides something. It starts as hidden and the theme changes the state with each click. Only used if **href** is JavaScript or **action** is set. See [example](#toggle-button). |
 | **borderless**        | `false`         | When `true`, no border will be shown around the button. |
 | **hint**              | _&lt;empty&gt;_ | Tooltip for the button. |
-| **style**             | `transparent`   | The style scheme used for the button.<br><br>- by severity: `caution`, `important`, `info`, `note`, `tip`, `warning`<br>- by brand color: `primary`, `secondary`, `accent`<br>- by color: `blue`, `cyan`, `green`, `grey`, `magenta`, `orange`, `red`<br>- by special color: `default`, `transparent`, `code`, `link`, `action`, `inline`<br><br>You can also [define your own styles](shortcodes/notice#defining-own-styles). |
+| **style**             | `transparent`   | The style scheme used for the button.<br><br>- by severity: `caution`, `important`, `info`, `note`, `tip`, `warning`<br>- by brand color: `primary`, `secondary`, `accent`<br>- by color: `blue`, `cyan`, `green`, `grey`, `magenta`, `orange`, `purple`, `red`, `yellow`<br>- by special color: `default`, `transparent`, `code`, `link`, `action`, `inline`<br><br>You can also [define your own styles](shortcodes/callout#defining-own-styles). |
 | **color**             | see notes       | The [CSS color value](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value) to be used. If not set, the chosen color depends on the **style**. Any given value will overwrite the default.<br><br>- for severity styles: a nice matching color for the severity<br>- for all other styles: the corresponding color |
 | **icon**              | see notes       | [Font Awesome icon name](shortcodes/icon#finding-an-icon) set to the left of the title. Depending on the **style** there may be a default icon. Any given value will overwrite the default.<br><br>- for severity styles: a nice matching icon for the severity<br>- for all other styles: _&lt;empty&gt;_<br><br>If you want no icon for a severity style, you have to set this parameter to `" "` (a non empty string filled with spaces) |
 | **iconposition**      | `left`          | Places the icon to the `left` or `right` of the title. |
@@ -84,7 +88,7 @@ The `button` shortcode displays a clickable button with adjustable color, title 
 
 #### By Color
 
-{{% multishortcode name="button" format="%s\n%s\n%s\n%s\n%s\n%s\n%s\n" %}}
+{{% multishortcode name="button" format="%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n" %}}
 - content: "Get Hugo"
   href: "https://gohugo.io/"
   style: "blue"
@@ -105,7 +109,13 @@ The `button` shortcode displays a clickable button with adjustable color, title 
   style: "orange"
 - content: "Get Hugo"
   href: "https://gohugo.io/"
+  style: "purple"
+- content: "Get Hugo"
+  href: "https://gohugo.io/"
   style: "red"
+- content: "Get Hugo"
+  href: "https://gohugo.io/"
+  style: "yellow"
 {{% /multishortcode %}}
 
 #### By Special Color
@@ -169,6 +179,7 @@ The `button` shortcode displays a clickable button with adjustable color, title 
 - content: ""
   href: "https://gohugo.io/"
   icon: " "
+  hint: "Go Hugo"
 {{% /multishortcode %}}  
 
 #### Only with Hint
@@ -275,25 +286,73 @@ If your JavaScript action does not change the focus afterwards, make sure to cal
   href: "javascript:alert('Hello world!');this.blur();"
 {{% /multishortcode %}}
 
-#### Button within a `form` Element
+#### Button with Own Action
 
-To use native HTML elements in your Markdown, add this in your `hugo.toml`
+The button is written with a `data-button-action` attribute. Handle it in your `assets/js/custom.js`, which the theme [loads on every page](configuration/customization/extending#simple-solution).
 
-````toml
-[markup.goldmark.renderer]
-  unsafe = true
+{{% multishortcode name="button" execute="false" format="%s" %}}
+- content: "Shout it out"
+  style: "primary"
+  icon: "bullhorn"
+  action: "shout"
+{{% /multishortcode %}}
+
+````js {title="custom.js"}
+document.addEventListener('click', function (event) {
+  var button = event.target.closest('button[data-button-action="shout"]');
+  if (button) {
+    alert('Hello world!');
+    button.blur();
+  }
+});
 ````
 
+#### Toggle Button
+
+If your button shows and hides something, set `istoggle`. The button is written with an `aria-expanded` attribute telling assistive technology whether the thing is shown, and the theme flips it with each click.
+
+{{% multishortcode name="button" execute="false" format="%s" %}}
+- content: "Details"
+  icon: "eye"
+  action: "details"
+  istoggle: "true"
+{{% /multishortcode %}}
+
+Your script reads the attribute to know what to do. The theme has flipped it by the time your listener runs, so it already tells the new state.
+
+````js {title="custom.js"}
+document.addEventListener('click', function (event) {
+  var button = event.target.closest('button[data-button-action="details"]');
+  if (button) {
+    var show = button.getAttribute('aria-expanded') == 'true';
+    document.querySelector('#my-details').hidden = !show;
+  }
+});
+````
+
+If what you show can also be hidden by other means than the button, your script has to set the attribute itself in that case.
+
+#### Button within a `form` Element
+
+To use native HTML elements in your Markdown, add this in your project configuration
+
+{{< multiconfig file=hugo >}}
+[markup.goldmark.renderer]
+  unsafe = true
+{{< /multiconfig >}}
+
 ````html
-<form action="../../search.html" method="get">
-  <input name="search-by-detail" class="search-by" type="search">
-  {{%/* button type="submit" style="secondary" icon="search" %}}Search{{% /button */%}}
+<form action="../../search/index.html" method="get">
+  <div class="searchform" style="width: 20vw;">
+    <input name="search-by" class="search-by" type="search" placeholder="Search...">
+    {{%/* button type="submit" style="secondary" icon="search" %}}Search{{% /button */%}}
+  </div>
 </form>
 ````
 
-<form action="../../search.html" method="get">
+<form action="../../search/index.html" method="get">
   <div class="searchform" style="width: 20vw;">
-    <input name="search-by-detail" class="search-by" type="search" placeholder="Search...">
+    <input name="search-by" class="search-by" type="search" placeholder="Search...">
     {{% button type="submit" style="secondary" icon="search" %}}Search{{% /button %}}
   </div>
 </form>

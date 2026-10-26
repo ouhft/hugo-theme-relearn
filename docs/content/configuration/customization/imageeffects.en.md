@@ -1,16 +1,19 @@
-+++
-categories = ['explanation', 'howto']
-description = 'How to extend image effects'
-options = ['imageEffects']
-title = 'Image Effects'
-weight = 4
-+++
+---
+categories:
+- explanation
+- howto
+description: How to extend image effects
+options:
+- imageEffects
+title: Image Effects
+weight: 4
+---
 
 This page shows you, how to configure custom [image effects](authoring/markdown#image-effects) on top of existing ones.
 
 This setting can also [be overridden by your front matter](authoring/linking/imageeffects).
 
-If you don't configure anything in your `hugo.toml`, the image effects default to
+If you don't configure anything in your project configuration, the image effects default to
 
 ## Default Values
 
@@ -20,12 +23,13 @@ imageEffects.dataurl = false
 imageEffects.inlinecontent = false
 imageEffects.lazy = true
 imageEffects.lightbox = true
+imageEffects.rounded = true
 imageEffects.shadow = false
 {{< /multiconfig >}}
 
 ## Configuration
 
-{{% badge style="option" %}}Option{{% /badge %}} You can change these settings in your `hugo.toml` and add arbitrary custom effects as boolean values (like `bg-white` in the below snippet).
+{{% badge style="option" %}}Option{{% /badge %}} You can change these settings in your project configuration and add arbitrary custom effects as boolean values (like `bg-white` in the below snippet).
 
 {{< multiconfig file=hugo section=params >}}
 imageEffects.bg-white = true
@@ -42,6 +46,7 @@ imageEffects.dataurl = false
 imageEffects.inlinecontent = false
 imageEffects.lazy = false
 imageEffects.lightbox = true
+imageEffects.rounded = true
 imageEffects.shadow = false
 {{< /multiconfig >}}
 
@@ -56,7 +61,7 @@ With this configuration in effect, the following URL
 would result in
 
 ````html {title="HTML"}
-<img src="https://octodex.github.com/images/minion.png" loading="lazy" alt="Minion" class="bg-white border lightbox">
+<img src="https://octodex.github.com/images/minion.png" loading="lazy" alt="Minion" class="bg-white border lightbox rounded">
 ````
 
 ## Styling Effects

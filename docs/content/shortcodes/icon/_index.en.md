@@ -1,8 +1,10 @@
-+++
-categories = ['howto', 'reference']
-description = 'Nice icons for your page'
-title = 'Icon'
-+++
+---
+categories:
+- howto
+- reference
+description: Nice icons for your page
+title: Icon
+---
 
 The `icon` shortcode displays icons using the [Font Awesome](https://fontawesome.com) library.
 
@@ -31,7 +33,7 @@ The `icon` shortcode displays icons using the [Font Awesome](https://fontawesome
 | Name                  | Position | Default         | Notes       |
 |-----------------------|----------|-----------------|-------------|
 | **icon**              | 1        | _&lt;empty&gt;_ | [Font Awesome icon name](#finding-an-icon) to be displayed. It will be displayed in the text color of its according context. |
-| **style**             | 2        | _&lt;empty&gt;_ | The style scheme used for the icon.<br><br>- by severity: `caution`, `important`, `info`, `note`, `tip`, `warning`<br>- by brand color: `primary`, `secondary`, `accent`<br>- by color: `blue`, `cyan`, `green`, `grey`, `magenta`, `orange`, `red`<br>- by special color: `default`, `transparent`, `code`, `link`, `action`, `inline`<br><br>You can also [define your own styles](shortcodes/notice#defining-own-styles). |
+| **style**             | 2        | _&lt;empty&gt;_ | The style scheme used for the icon.<br><br>- by severity: `caution`, `important`, `info`, `note`, `tip`, `warning`<br>- by brand color: `primary`, `secondary`, `accent`<br>- by color: `blue`, `cyan`, `green`, `grey`, `magenta`, `orange`, `purple`, `red`, `yellow`<br>- by special color: `default`, `transparent`, `code`, `link`, `action`, `inline`<br><br>You can also [define your own styles](shortcodes/callout#defining-own-styles). |
 | **color**             |          | _&lt;empty&gt;_ | The [CSS color value](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value) to be used. If not set, the chosen color depends on the **style**. Any given value will overwrite the default.<br><br>- for severity styles: a nice matching color for the severity<br>- for all other styles: the corresponding color<br><br> |
 
 ### Finding an icon
@@ -76,12 +78,12 @@ Built with <i class="fas fa-heart"></i> by Relearn and Hugo
 
 Built with <i class="fas fa-heart"></i> by Relearn and Hugo
 
-To use these native HTML elements in your Markdown, add this in your `hugo.toml`:
+To use these native HTML elements in your Markdown, add this in your project configuration:
 
-````toml
+{{< multiconfig file=hugo >}}
 [markup.goldmark.renderer]
   unsafe = true
-````
+{{< /multiconfig >}}
 
 ### Style
 
@@ -109,7 +111,7 @@ To use these native HTML elements in your Markdown, add this in your `hugo.toml`
 
 #### By Color
 
-{{% multishortcode name="icon" format="%s\n%s\n%s\n%s\n%s\n%s\n%s\n" %}}
+{{% multishortcode name="icon" format="%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n" %}}
 - icon: "palette"
   style: "blue"
 - icon: "palette"
@@ -123,7 +125,11 @@ To use these native HTML elements in your Markdown, add this in your `hugo.toml`
 - icon: "palette"
   style: "orange"
 - icon: "palette"
+  style: "purple"
+- icon: "palette"
   style: "red"
+- icon: "palette"
+  style: "yellow"
 {{% /multishortcode %}}
 
 #### By Special Color

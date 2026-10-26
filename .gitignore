@@ -3,7 +3,7 @@
 .DS_Store
 .githooks/hooks.log
 .hugo_build.lock
-**/node_modules
+/infra/
 docs/public*
 exampleSite/public*
 hugo*.exe
