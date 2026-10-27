@@ -9,17 +9,16 @@
 
   let pagefind = null;
 
-  async function init(baseURL, lang) {
-    // Load the Pagefind search API (not the UI)
+  async function init() {
     try {
-      if (typeof window.pagefind === 'undefined') {
-        // Dynamically import the Pagefind library
-        pagefind = await import('/pagefind/pagefind.js');
-      } else {
-        pagefind = window.pagefind;
+      const config = JSON.parse(document.querySelector('#R-search-pagefind-config').textContent);
+      pagefind = await import(config.apiUrl);
+      await pagefind.options({ baseUrl: config.baseUrl });
+      for (const index of config.mergeIndex) {
+        const { bundlePath, ...options } = index;
+        await pagefind.mergeIndex(bundlePath, options);
       }
 
-      console.log('Pagefind initialized successfully');
       window.relearn.isSearchEngineReady = true;
       window.relearn.executeInitialSearch();
     } catch (error) {
@@ -41,11 +40,9 @@
     }
 
     try {
-      // Perform the search using Pagefind API
       const searchResults = await pagefind.search(term);
-
-      // Limit results
-      const limitedResults = searchResults.results.slice(0, maxResults);
+      const resultLimit = document.documentElement.dataset.rOutputFormat === 'print' ? Infinity : maxResults;
+      const limitedResults = searchResults.results.slice(0, resultLimit);
 
       // Load the full data for each result
       const results = await Promise.all(
@@ -56,7 +53,7 @@
             page: {
               uri: data.url,
               title: stripMarkTags(data.meta?.title || ''),
-              breadcrumb: '', // Not supported - would require data-pagefind-body configuration
+              breadcrumb: '',
               content: stripMarkTags(data.excerpt || data.content || ''),
               tags: data.meta?.tags || [],
             },

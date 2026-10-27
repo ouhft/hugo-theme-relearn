@@ -18,6 +18,8 @@ exclude_selectors:
   - .copy-to-clipboard-button
   - "[aria-hidden='true']"
   - .hidden
+  # Hugo print output nests Pagefind body elements inside body.print.
+  - "body.print [data-pagefind-body]"
 
 # Keep HTML structure for better excerpts
 keep_index_url: true

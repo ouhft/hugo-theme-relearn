@@ -20,6 +20,10 @@
         return;
       }
       var value = input.value;
+      if (document.documentElement.dataset.rOutputFormat === 'print') {
+        value = new URL(window.location).searchParams.get('search-by') || '';
+        input.value = value;
+      }
       executeSearch(value);
     }
   };

@@ -3,14 +3,47 @@
 
 {{- if eq $location "header" }}
   {{- with $page }}
-    {{- /* Load Pagefind CSS */ -}}
-    {{- with partial "asset.gotmpl" "/css/search-pagefind.css" }}
-    <link href="{{ .RelPermalink }}"{{ partial "_relearn/integrityAttribute.gotmpl" . }} rel="stylesheet">
+    {{- $baseURL := (urls.Parse site.BaseURL).Path }}
+    {{- $baseURL = printf "/%s/" (strings.Trim $baseURL "/") }}
+    {{- if eq $baseURL "//" }}
+      {{- $baseURL = "/" }}
     {{- end }}
 
-    {{- /* Load our Pagefind adapter early so it's available */ -}}
-    {{- with partial "asset.gotmpl" "/js/search-pagefind.js" }}
-    <script src="{{ .RelPermalink }}"{{ partial "_relearn/integrityAttribute.gotmpl" . }}></script>
+    {{- $mergeIndex := slice }}
+    {{- with and (reflect.IsMap site.Params.search) (reflect.IsMap site.Params.search.pagefind) (index site.Params.search.pagefind "mergeindex") }}
+      {{- range . }}
+        {{- $index := dict "bundlePath" .bundlepath }}
+        {{- with .language }}
+          {{- $index = merge $index (dict "language" .) }}
+        {{- end }}
+        {{- if isset . "indexweight" }}
+          {{- $index = merge $index (dict "indexWeight" (index . "indexweight")) }}
+        {{- end }}
+        {{- with .mergefilter }}
+          {{- $index = merge $index (dict "mergeFilter" .) }}
+        {{- end }}
+        {{- $mergeIndex = $mergeIndex | append $index }}
+      {{- end }}
+    {{- end }}
+    {{- $config := dict
+      "apiUrl" (printf "%spagefind/pagefind.js" $baseURL)
+      "componentUiUrl" ("pagefind/pagefind-component-ui.js" | absURL)
+      "bundlePath" (printf "%spagefind/" $baseURL)
+      "baseUrl" $baseURL
+      "mergeIndex" $mergeIndex
+    }}
+    {{- with $page.OutputFormats.Get "print" }}
+      {{- $config = merge $config (dict "printUrl" .Permalink) }}
+    {{- end }}
+<script type="application/json" id="R-search-pagefind-config">{{ $config | jsonify | safeJS }}</script>
+    {{- if and (eq $page (site.GetPage "_relearn_searchpage")) (ne (.Store.Get "relearnOutputFormat") "print") }}
+      {{- with partial "asset.gotmpl" "/css/search-pagefind.css" }}
+<link href="{{ .Permalink }}"{{ partial "_relearn/integrityAttribute.gotmpl" . }} rel="stylesheet">
+      {{- end }}
+<link href="{{ "pagefind/pagefind-component-ui.css" | absURL }}" rel="stylesheet">
+      {{- with partial "asset.gotmpl" "/js/search-pagefind-ui.js" }}
+<script src="{{ .Permalink }}"{{ partial "_relearn/integrityAttribute.gotmpl" . }} defer></script>
+      {{- end }}
     {{- end }}
   {{- end }}
 {{- end }}

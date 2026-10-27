@@ -98,6 +98,27 @@ You can add multiple languages to this array.
 
 The theme also ships with the additional experimental `orama` and `orama-esm` (not usable for headless server deployments) adapters.
 
+### Pagefind
+
+The `pagefind` adapter can be selected by project-specific integrations. It uses Pagefind for sidebar suggestions and the Pagefind Component UI for the dedicated search page. The full results page reports Pagefind's complete result count and loads further results as the reader scrolls. Print output continues to use the theme's result layout.
+
+Pagefind runs after Hugo has built the site. Run it from the project root, where `pagefind.yml` is located, against the generated site directory before publishing so the `pagefind/` search bundle and Component UI assets exist. The supplied configuration excludes print output from the index:
+
+```sh
+hugo
+npx pagefind --site public
+```
+
+The Pagefind integration derives its bundle URL and result URL prefix from `baseURL`, including when the site is hosted below a path. If multiple sites share a host, each site should have its own Pagefind bundle directory. To merge other site bundles into this site's search, configure their paths under `search.pagefind.mergeindex`:
+
+{{< multiconfig file=hugo section=params >}}
+search.pagefind.mergeindex = [
+  { bundlepath = "/other-site/pagefind/", language = "en", indexweight = 0.5 }
+]
+{{< /multiconfig >}}
+
+Each entry requires `bundlepath`. Optional fields are `language`, `indexweight`, and `mergefilter`, matching Pagefind's [multi-site search options](https://pagefind.app/docs/multisite/). Use same-origin paths for sites hosted on the same server; cross-origin bundles additionally require CORS configuration.
+
 ## Publishing the Search Index as JSON
 
 {{%badge style="cyan" icon="gears" title=" "%}}Option{{%/badge%}} The search popup loads its index as a script, so your site's search keeps working when it is opened from the file system. If other tools want to read your index, like an MCP server, set `search.index.json` to `true` to additionally write the same data as a plain JSON file.
