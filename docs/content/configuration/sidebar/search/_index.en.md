@@ -102,7 +102,7 @@ The theme also ships with the additional experimental `orama` and `orama-esm` (n
 
 The `pagefind` adapter can be selected by project-specific integrations. It uses Pagefind for sidebar suggestions and the Pagefind Component UI for the dedicated search page. The full results page reports Pagefind's complete result count and loads further results as the reader scrolls. Print output continues to use the theme's result layout.
 
-Pagefind runs after Hugo has built the site. Run it from the project root, where `pagefind.yml` is located, against the generated site directory before publishing so the `pagefind/` search bundle and Component UI assets exist. The supplied configuration excludes print output from the index:
+Pagefind runs after Hugo has built the site. Run it from the project root, where `pagefind.yml` is located, against the generated site directory before publishing so the `pagefind/` search bundle and Component UI assets exist. Print output is marked to be ignored by Pagefind, so it remains printable without appearing as a duplicate result. The supplied configuration also excludes print output as a fallback:
 
 ```sh
 hugo
