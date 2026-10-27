@@ -16,51 +16,38 @@
 {{- $themevariantsdata := partialCached "_relearn/themeVariants.gotmpl" site.Home }}
 {{- $layout := $themevariantsdata.logolayout }}
 
-{{- /* Build map of variant logos */}}
-{{- $logoMap := dict }}
+{{- /* Build map of variant OUH logos */}}
+{{- $logoOUHMap := dict }}
 {{- $themevariants := $themevariantsdata.variants }}
 {{- range $themevariants }}
-  {{- if and (isset . "logoOUH") (not (isset . "auto")) }}
-    {{- $logoMap = merge $logoMap (dict .identifier (dict "src" .logoOUH.src "variant" .identifier "alt" .logoOUH.alt)) }}
+  {{- if and (isset . "params") (isset .params "logoOUH") (not (isset . "auto")) }}
+    {{- $logoOUHMap = merge $logoOUHMap (dict .identifier (dict "src" .params.logoOUH.src "variant" .identifier "alt" .params.logoOUH.alt)) }}
   {{- end }}
 {{- end }}
 
-{{- /* Group logos by source, preserving alt text */}}
-{{- $logoGroups := dict }}
-{{- range $variantId, $logoInfo := $logoMap }}
+{{- /* Group OUH logos by source, preserving alt text */}}
+{{- $logoOUHGroups := dict }}
+{{- range $variantId, $logoInfo := $logoOUHMap }}
   {{- $src := $logoInfo.src }}
   {{- if $src }}
     {{- $existingVariants := slice }}
-    {{- if isset $logoGroups $src }}
-      {{- $existingVariants = index $logoGroups $src }}
+    {{- if isset $logoOUHGroups $src }}
+      {{- $existingVariants = index $logoOUHGroups $src }}
     {{- end }}
     {{- $existingVariants = $existingVariants | append $variantId }}
-    {{- $logoGroups = merge $logoGroups (dict $src $existingVariants) }}
+    {{- $logoOUHGroups = merge $logoOUHGroups (dict $src $existingVariants) }}
   {{- end }}
 {{- end }}
 
-{{- /* Render logo container with all variants */}}
-{{- if or $logoGroups $title }}
-        <a id="R-logo" class="R-default layout-{{ $layout }}{{ if $manualWrap }} manual-wrap{{ end }}" href="{{ partial "permalink.gotmpl" (dict "to" site.Home) }}">
-  {{- range $logoSrc, $variants := $logoGroups }}
-    {{- $variantList := delimit $variants " " }}
-          <span class="logo-image default-animation" data-r-logo-variant="{{ $variantList }}">
-{{ partial "shortcodes/image.html" (dict "page" site.Home "url" $logoSrc "alt" $alt "attributes" $attributes) }}
-          </span>
-  {{- end }}
-        </a>
-{{- end }}
-
-{{- /* Build map of variant logos (standard logo) */}}
+{{- /* Build map of variant DES logos */}}
 {{- $logoMap := dict }}
-{{- $themevariants := $themevariantsdata.variants }}
 {{- range $themevariants }}
   {{- if and (isset . "logo") (not (isset . "auto")) }}
     {{- $logoMap = merge $logoMap (dict .identifier (dict "src" .logo.src "variant" .identifier)) }}
   {{- end }}
 {{- end }}
 
-{{- /* Group logos by source */}}
+{{- /* Group DES logos by source */}}
 {{- $logoGroups := dict }}
 {{- range $variantId, $logoInfo := $logoMap }}
   {{- $src := $logoInfo.src }}
@@ -74,9 +61,15 @@
   {{- end }}
 {{- end }}
 
-{{- /* Render logo container with all variants */}}
-{{- if or $logoGroups $title }}
+{{- /* Render both logos inside one theme-controlled logo container */}}
+{{- if or $logoOUHGroups $logoGroups $title }}
         <a id="R-logo" class="R-default layout-{{ $layout }}{{ if $manualWrap }} manual-wrap{{ end }}" href="{{ partial "permalink.gotmpl" (dict "to" site.Home) }}">
+  {{- range $logoSrc, $variants := $logoOUHGroups }}
+    {{- $variantList := delimit $variants " " }}
+          <span class="logo-image default-animation" data-r-logo-variant="{{ $variantList }}">
+{{ partial "shortcodes/image.html" (dict "page" site.Home "url" $logoSrc "alt" $alt "attributes" $attributes) }}
+          </span>
+  {{- end }}
   {{- range $logoSrc, $variants := $logoGroups }}
     {{- $variantList := delimit $variants " " }}
           <span class="logo-image default-animation" data-r-logo-variant="{{ $variantList }}">
