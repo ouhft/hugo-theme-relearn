@@ -10,9 +10,6 @@
 
 {{- $manualWrap := strings.Contains $title "\n" }}
 
-{{- /* next to a title the image is decorative, without one it has to name the link */}}
-{{- $alt := cond (gt (len $title) 0) "" site.Title }}
-
 {{- $themevariantsdata := partialCached "_relearn/themeVariants.gotmpl" site.Home }}
 {{- $layout := $themevariantsdata.logolayout }}
 
@@ -43,7 +40,11 @@
 {{- $logoMap := dict }}
 {{- range $themevariants }}
   {{- if and (isset . "logo") (not (isset . "auto")) }}
-    {{- $logoMap = merge $logoMap (dict .identifier (dict "src" .logo.src "variant" .identifier)) }}
+    {{- $logoAlt := "" }}
+    {{- with .params.logo }}
+      {{- $logoAlt = .alt | default "" }}
+    {{- end }}
+    {{- $logoMap = merge $logoMap (dict .identifier (dict "src" .logo.src "variant" .identifier "alt" $logoAlt)) }}
   {{- end }}
 {{- end }}
 
@@ -66,14 +67,16 @@
         <a id="R-logo" class="R-default layout-{{ $layout }}{{ if $manualWrap }} manual-wrap{{ end }}" href="{{ partial "permalink.gotmpl" (dict "to" site.Home) }}">
   {{- range $logoSrc, $variants := $logoOUHGroups }}
     {{- $variantList := delimit $variants " " }}
-          <span class="logo-image default-animation" data-r-logo-variant="{{ $variantList }}">
-{{ partial "shortcodes/image.html" (dict "page" site.Home "url" $logoSrc "alt" $alt "attributes" $attributes) }}
+    {{- $logoInfo := index $logoOUHMap (index $variants 0) }}
+          <span class="logo-image ouh-logo default-animation" data-r-logo-variant="{{ $variantList }}">
+{{ partial "shortcodes/image.html" (dict "page" site.Home "url" $logoSrc "alt" ($logoInfo.alt | default $title) "attributes" $attributes) }}
           </span>
   {{- end }}
   {{- range $logoSrc, $variants := $logoGroups }}
     {{- $variantList := delimit $variants " " }}
-          <span class="logo-image default-animation" data-r-logo-variant="{{ $variantList }}">
-{{ partial "shortcodes/image.html" (dict "page" site.Home "url" $logoSrc "alt" $alt "attributes" $attributes) }}
+    {{- $logoInfo := index $logoMap (index $variants 0) }}
+          <span class="logo-image des-logo default-animation" data-r-logo-variant="{{ $variantList }}">
+{{ partial "shortcodes/image.html" (dict "page" site.Home "url" $logoSrc "alt" ($logoInfo.alt | default $title) "attributes" $attributes) }}
           </span>
   {{- end }}
         </a>
@@ -86,5 +89,15 @@
 .logo-image {
     margin-top: 0.25rem;
     margin-bottom: 0.25rem;
+}
+#R-logo.R-default.layout-sidebar-row {
+    align-items: flex-start;
+    flex-direction: column;
+}
+#R-logo.R-default > .logo-image.ouh-logo {
+    view-transition-name: R-logo-ouh-image;
+}
+#R-logo.R-default > .logo-image.des-logo {
+    view-transition-name: R-logo-des-image;
 }
 </style>
