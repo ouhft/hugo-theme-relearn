@@ -17,7 +17,16 @@
 
 .pagefind-search {
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   gap: 1rem;
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.pagefind-search > * {
+  min-width: 0;
+  max-width: 100%;
 }
 
 pagefind-input {
