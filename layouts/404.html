@@ -9,7 +9,7 @@
     <title>{{ $title }}</title>
 
     {{- /* because this file can be called from literally any URL inside your project, we need to base all relative URLs to make them work */}}
-    <base href="{{ site.BaseURL }}">
+    <base href="/">
 
     {{- partialCached "favicon.html" site.Home }}
     {{- partial "dependencies.html" (dict "page" . "location" "header") }}

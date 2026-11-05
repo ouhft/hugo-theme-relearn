@@ -1,7 +1,7 @@
 <!-- Moved to content-footer.html 
 {{- partial "tags.html" . }}
 -->
-{{- if .Params.draft }}
+{{- if .Draft }}
 {{ partial "shortcodes/callout.html" (dict
   "page"  .
   "style" "warning"

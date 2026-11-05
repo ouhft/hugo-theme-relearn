@@ -57,9 +57,9 @@
         </span>
       </div>
       
-      {{- with .Description }}
+      {{- with .Summary }}
       <div class="blog-post-description">
-        {{ . | markdownify | safeHTML }}
+        {{ . }}
       </div>
       {{- end }}
 

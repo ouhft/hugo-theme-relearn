@@ -26,12 +26,6 @@
       <i class="fa-fw fas fa-clock"></i>
       {{ .ReadingTime }} min read
     </span>
-    
-    {{- with .Description }}
-    <div class="blog-article-description">
-      {{ . | markdownify | safeHTML }}
-    </div>
-    {{- end }}
   </div>
 
   {{ partial "article-content.html" . }}
